@@ -14,7 +14,6 @@ using UnityEngine;
 using UnityEditor;
 
 public class BundleBuilder : Editor {
-
     [MenuItem("Assets/ Build AssetBundles")]
     static void BuildAllAssetBundles()
     {
