@@ -4,14 +4,14 @@ title: Unity3D
 permalink: /Unity3D/
 ---
 <div class="man-title">
-  UP AND RUNNING WITH DevJournal
+  
 </div>
 <div class="manual manual-title">
-  Posting
+  AssetBundle
   </div>
 <p>  <div class="manual-content">
 
-      - Create a .markdown file inside <code class="highlighter-rouge">_posts</code> folder.<br />
+      - 유니티 에셋번들에 관련된 포스팅입니다.
       - Name the file according to the format YY-MM-DD-[short name for your post].<br />
       &nbsp;&nbsp;&nbsp;<code>2016-03-30-i-love-design.markdown</code><br />
       - Write the <a href="jekyll">Front Matter</a> and content in the file.<br><br>
