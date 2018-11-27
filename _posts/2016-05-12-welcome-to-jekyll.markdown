@@ -2,7 +2,7 @@
 layout: post
 title:  "Unity3D Assetbundle, 에셋번들 구현하기 01"
 date:   2018-11-27 22:01:43 +0530
-categories: jekyll update
+categories: AssetBundle update
 author: "BeatChoi"
 ---
 
