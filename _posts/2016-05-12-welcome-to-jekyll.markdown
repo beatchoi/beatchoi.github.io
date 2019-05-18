@@ -7,18 +7,4 @@ author: "BeatChoi"
 ---
 https://drive.google.com/open?id=1R5vcfC9uX1sg3aXuicm923GeUyWZjQpm
 
-{% highlight ruby %}
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
 
-public class BundleBuilder : Editor {
-    [MenuItem("Assets/ Build AssetBundles")]
-    static void BuildAllAssetBundles()
-    {
-        BuildPipeline.BuildAssetBundles(@"C:\Users\BeatChoi.DESKTOP-BSQNIUE\Desktop\HelloVR\AssetBundles", BuildAssetBundleOptions.None, BuildTarget.Android);
-    }
-}
-
-{% endhighlight %}
