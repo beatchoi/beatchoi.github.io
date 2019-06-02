@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "So you should get rid of them!"
+title:  "현대"
 date:   2016-05-12 22:01:43 +0530
 categories: jekyll update
 ---
