@@ -11,7 +11,7 @@ Unity Touch Specifics
 01. Simple Unity Drag and Drop with Touch
 
 Source Code
-```cs
+{% highlight ruby %}
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,4 +32,4 @@ public class touchSample : MonoBehaviour
         }
     }
 }
-```
+{% endhighlight %}
