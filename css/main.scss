@@ -189,9 +189,8 @@ $on-laptop:        800px;
     }
 }
 
-@import url(monokai.css);
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "monokai"
+        "syntax-highlighting"
 ;
