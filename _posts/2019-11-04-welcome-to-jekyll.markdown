@@ -11,17 +11,16 @@ Unity Touch Specifics
 
 
 {% highlight ruby %}
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class touchSample : MonoBehaviour
 {   // Update is called once per frame
     void Update()
     {
        touchDrag();
     }
-
     void touchDrag()
     {
         if (Input.GetMouseButton(0))
@@ -33,4 +32,5 @@ public class touchSample : MonoBehaviour
         }
     }
 }
-{% endhighlight %
+
+{% endhighlight %}
