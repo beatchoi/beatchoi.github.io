@@ -12,14 +12,6 @@
             word-wrap: normal;
         }
     }
-    
-    .lineno{ 
-        color: #ccc; 
-        display: inline-block; 
-        padding: 0 5px; 
-        border-right: 1px solid #ccc; 
-        @include browser-prefix(user-select, none);
-    }
     .c     { color: #75715e; font-style: italic } // Comment
     .err   { color: #960050; background-color: #1e0010 } // Error
     .k     { color: #66d9ef; font-weight:bold } // Keyword
