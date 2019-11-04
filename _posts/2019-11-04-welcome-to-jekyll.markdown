@@ -8,9 +8,9 @@ author: "BeatChoi"
 
 Unity Touch Specifics
 
+01. 
 
-
-{% highlight cs %}
+,,,
 
 using System.Collections;
 using System.Collections.Generic;
@@ -33,4 +33,4 @@ public class touchSample : MonoBehaviour
     }
 }
 
-{% endhighlight %}
+,,,
