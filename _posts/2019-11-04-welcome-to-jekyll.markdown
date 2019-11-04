@@ -10,8 +10,7 @@ Unity Touch Specifics
 
 01. 
 
-,,,
-
+```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,5 +31,4 @@ public class touchSample : MonoBehaviour
         }
     }
 }
-
-,,,
+```
