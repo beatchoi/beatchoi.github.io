@@ -11,7 +11,7 @@ Unity Touch Specifics
 01. Simple Unity Drag and Drop with Touch
 
 Source Code
-```python
+```c
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
