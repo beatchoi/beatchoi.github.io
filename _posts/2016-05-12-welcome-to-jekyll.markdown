@@ -10,6 +10,6 @@ author: "BeatChoi"
 
 
 
-[증강현실 콘텐츠 개발자료]: https://drive.google.com/open?id=1kRvgRFR3MAMRmbGW7fU1MQsYItYtc8XJ
+[증강현실 콘텐츠 개발자료]: https://drive.google.com/open?id=19BZX4u046I57clEwl0dxtMnds6OEul9-
 
 
