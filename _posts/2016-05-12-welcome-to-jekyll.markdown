@@ -14,5 +14,5 @@ Ae2X7yL/////AAABmUJ//kSTaksPsC7LOyGUyPsJy2/wI272zbKkybPz5AVAwlzzRraY/yCr46dH86i9
 
 
 [증강현실 콘텐츠 개발자료]: https://drive.google.com/open?id=19BZX4u046I57clEwl0dxtMnds6OEul9-
-[가상현시 콘텐츠 개발자료]: https://drive.google.com/open?id=1BqiQ6kiemFutxGp7ejyxt1nORvDPJX1r
+[가상현실 콘텐츠 개발자료]: https://drive.google.com/open?id=1BqiQ6kiemFutxGp7ejyxt1nORvDPJX1r
 
