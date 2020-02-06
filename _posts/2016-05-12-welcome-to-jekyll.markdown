@@ -8,65 +8,7 @@ author: "BeatChoi"
 [증강현실 콘텐츠 개발자료][증강현실 콘텐츠 개발자료]
 [가상현실 콘텐츠 개발자료][가상현실 콘텐츠 개발자료]
 
-////
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class rayCasting : MonoBehaviour
-{
-    public Image redImage;
-    float timeElapsed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        raycast();
-    }
-
-    void raycast()
-    {
-        RaycastHit hit;
-        Vector3 forward = transform.TransformDirection(Vector3.forward * 1000);
-        if(Physics.Raycast(transform.position, forward, out hit))
-        {
-            timeElapsed = Time.deltaTime + timeElapsed;
-            redImage.fillAmount = timeElapsed / 3;
-            Debug.Log(timeElapsed);
-            if(timeElapsed >= 3)
-            {
-                hit.transform.GetComponent<Button>().onClick.Invoke();
-                Debug.Log("hit!!");
-                timeElapsed = 3;
-            }
-        }
-        else
-        {
-            timeElapsed = timeElapsed - Time.deltaTime;
-            redImage.fillAmount = timeElapsed / 3;
-            if(timeElapsed <= 0)
-            {
-                timeElapsed = 0;
-            }
-        }
-        Debug.DrawRay(transform.position, forward, Color.red);
-    }
-}
-
-
-
-
-////
-
-
-
-
+AcHiwjL/////AAABmUt9uno0Dkfsi+P+G+C3rGBJeQuxAiD2FvenwrTaC0tEwNPmh4+iR6TAFpCAHMU7+Qzk94spiuv2ueG7iZZjuQswSiOpvnV8RWChgJX/2Txtiz+WZ9O0xx/Z0yuYoPNLWoZQW3qnqq9XkYXDTgn91RphiO5NqIqaNd9sQT2mGFtCIe8xOxc+SxSUp1OG834jKfDENBbxAL3PR11sUr/M3w35uMkOZSKDUIAQ4u+BABjllHN6HHm7nrqx85OaHm+Qa5w8yShdZ7KQqADW+7OKRNsb9TpCEEOU5MACcvmN+ZA71JhSuUCVJC14KiwxzYEDCrVDhQf+b+3B/qhbaIoyRYJnVEnLF6P7cFsCyrWe4/Rz
 
 
 
