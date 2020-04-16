@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
+{%- include header.html -%}
 
-{% if page.toc %}
-    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
-{% endif %}
-<div class="content">
-    {{ content }}
+<!-- Main -->
+<div id="main">
+	<!-- Page -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>{{- page.title -}}</h2>
+				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
+			</header>
+	    {{- content -}}
+	  </div>
+	</article>
 </div>
