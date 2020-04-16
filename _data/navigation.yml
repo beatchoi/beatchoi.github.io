@@ -1,17 +1,17 @@
 - name: Pages
   link: /#
   dropdown:
-    - name: Page With Sidebar
+    - name: Unity3d Basic
       link: /page-1/
-    - name: Page No Sidebar
+    - name: Unity3D OpenCV
       link: /page-2/
-    - name: Page With Menubar
+    - name: Unity3D GoogleVR
       link: /page-3/
-    - name: Page With Tabs
+    - name: Unity3d Vuforia
       link: /page-4/
-    - name: Page Without Footer
+    - name: Unity3D PicoVR
       link: /page-5/
-    - name: Page Without Hero
+    - name: Unity3D Vive
       link: /page-without-hero/
     - name: Page With Contents
       link: /page-with-contents/
