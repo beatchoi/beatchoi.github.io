@@ -1,8 +1,8 @@
 ---
-title: Page With Sidebar
-subtitle: A demo page with a sidebar
+title: Unity3d Basic
+subtitle: Fundamentals for Unity3D
 layout: page
-show_sidebar: true
+show_sidebar: false
 ---
 
 This is a demo page showing the sidebar.
