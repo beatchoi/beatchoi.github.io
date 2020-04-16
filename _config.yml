@@ -4,7 +4,7 @@ tagline: Beatchoi
 email: polariz90@gmail.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-baseurl: "beatchoi.github.io"
+baseurl: ""
 url: "beatchoi.github.io"
 permalink: pretty
 #favicon: /path/to/favicon.png
