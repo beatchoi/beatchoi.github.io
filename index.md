@@ -8,11 +8,11 @@ show_sidebar: true
 
 # Beatchoi's VR&AR Contents Creation Lab
 
-`유니티3D`를 활용하여 가상현실 및 증강현실 인터렉티브 콘텐츠들을 만드는데 필요한 리소스들을 정리합니다. 콘텐츠 개발중 겪은 trouble shooting을 기록합니다.  
+`유니티3D`를 활용하여 `가상현실` 및 `증강현실` 인터렉티브 콘텐츠들을 만드는데 필요한 리소스들을 정리합니다. 콘텐츠 개발중 겪은 trouble shooting을 기록합니다.  
 
 ## Unity3D
 
-유니티3D라는 게임 개발 툴을 이용해 가상현실 증강현실 콘텐츠들을 개발합니다. [https://unity.com](https://unity.com)
+`유니티3D`라는 게임 개발 툴을 이용해 가상현실 증강현실 콘텐츠들을 개발합니다. [https://unity.com](https://unity.com)
 
 ## Virtual Reality
 
