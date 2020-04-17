@@ -6,29 +6,21 @@ callouts: home_callouts
 show_sidebar: true
 ---
 
-# Bulma Clean Theme demo website
+# Beatchoi's VR&AR Contents Creation Lab
 
-This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages. 
+유니티3D를 활용하여 가상현실 및 증강현실 인터렉티브 콘텐츠들을 만드는데 필요한 리소스들을 정리합니다. 콘텐츠 개발중 겪은 trouble shooting을 기록합니다.  
 
-[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
-![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
+## Unity3D
 
-## Ruby Gem
+유니티3D라는 게임 개발 툴을 이용해 가상현실 증강현실 콘텐츠들을 개발합니다. [https://unity.com](https://unity.com)
 
-The ruby gem is available on the Ruby Gems website at the following location. [https://rubygems.org/gems/bulma-clean-theme](https://rubygems.org/gems/bulma-clean-theme)
+## Virtual Reality
 
-## GitHub Pages
+가장 기본적인 `GoogleVR_SDK` 부터 `PICO VR` 같은 스탠드얼론 HMD나 `HTC VIVE` 사용법을 기록합니다.
 
-The theme can be used with GitHub Pages bu setting the `remote_theme` in your Jekyll sites `_config.yml`
+## Augmented Reality
 
-```yml
-remote_theme: chrisrhymes/bulma-clean-theme
-```
-
-## Instructions
-
-For full instructions, please see the Readme at the GitHub repo:
-[https://github.com/chrisrhymes/bulma-clean-theme/blob/master/README.md](https://github.com/chrisrhymes/bulma-clean-theme/blob/master/README.md)
+`Vuforia SDK` 의 활용법 그리고 `AR Foundation` 의 활용법도 기록합니다.
 
 ## Page Layouts
 
