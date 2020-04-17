@@ -1,6 +1,6 @@
 ---
-title: Bulma Clean Theme
-subtitle: This is the demo site for Bulma Clean Theme
+title: Unity3D, Virtual Reality and Augmented Reality
+subtitle: Easy ways to create vr&ar contents
 layout: page
 callouts: home_callouts
 show_sidebar: true
