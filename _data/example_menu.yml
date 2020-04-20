@@ -5,9 +5,9 @@
     - name: Pages
       link: /#
       items:
-        - name: Page With Sidebar 
+        - name: Unity3D Basics
           link: /page-1/
-        - name: Page Without Sidebar
+        - name: Unity3D Fundamentals
           link: /page-2/
         - name: Page With Menubar
           link: /page-3/
