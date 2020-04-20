@@ -1,17 +1,9 @@
 ---
-title: Page without sidebar
-subtitle: Demo page without the sidebar
+title: Unity3d Basic
+subtitle: Fundamentals for Unity3D
 layout: page
 show_sidebar: false
 ---
 
-This is another sample page showing how a page can look without a sidebar. 
+[1. 웹캠 인풋 받아오기](https://beatchoi.github.io/unity3d/basics/2020/04/17/webcam-texture/)
 
-To hide the sidebar, set the show_sidebar to false in the page's frontmatter
-
-```yml
-title: Page without sidebar
-subtitle: Demo page without the sidebar
-layout: page
-show_sidebar: false
-```
