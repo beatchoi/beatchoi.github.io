@@ -12,7 +12,7 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
 유니티 내에서 웹캠 인풋을 활용하는 법을 알아봅니다
 
 ## 스크립트 작성
-```
+```cs
 void Awake()
 {
    WebCamTexture webcamTexture = new WebCamTexture();
