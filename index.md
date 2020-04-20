@@ -24,10 +24,8 @@ show_sidebar: true
 
 ## Page Layouts
 
-This demo site showcases the available page layout options.
-
-* Page With Sidebar
-* Page Without Sidebar
+* Unity3D Basics
+* Unity3D Fundamentals
 * Page With Menubar
 * Page With Tabs
 * Page Without Footer
