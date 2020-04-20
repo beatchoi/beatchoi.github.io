@@ -1,5 +1,5 @@
 ---
-title: Unity3d Basic
+title: Unity3d Fundamentals
 subtitle: Fundamentals for Unity3D
 layout: page
 show_sidebar: false
