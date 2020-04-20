@@ -3,7 +3,7 @@
   dropdown:
     - name: Unity3d Basic
       link: /page-1/
-    - name: Unity3D OpenCV
+    - name: Unity3D Fundamentals
       link: /page-2/
     - name: Unity3D GoogleVR
       link: /page-3/
