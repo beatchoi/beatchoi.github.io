@@ -1,1 +1,47 @@
+---
+layout: post
+title:  "터치 기초"
+date:   2020-04-17 10:50:07
+categories: Unity3D Basics
+description: "유니티 터치 기초"
+image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+published: true
+canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+---
+
+유니티 내에서 웹캠 인풋을 활용하는 법을 알아봅니다
+
+## 스크립트 작성
+```ruby
+void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log("mouseButton");
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Debug.Log("mouseButtonDown");
+        }
+        if (Input.GetMouseButtonUp(2))
+        {
+            Debug.Log("mouseButtonUp");
+        }
+    }
+```
+GetMouseButton은 마우스버튼 또는 터치를 하는 동안 계속 참의 값을 호출합니다.
+GetMouseButtonDown은 마우스버튼 또는 터치를 하는 순간 한번 참의 값을 호출합니다.
+GetMouseButtonUp은 마우스버튼 또는 터치를 하고 떼는 순간 한번 참의 값을 호출합니다.
+
+## 유니티3D 에디터에서
+메인 카메라에 해당 스크립트를 연결시킵니다.
+
+## 테스트
+에디터 상단 플레이 버튼을 누릅니다.
+
+게임 창에서 마우스 왼쪽 버튼을 누르는 동안 콘솔창에 "mouseButton" 이라고 표시됩니다.
+
+게임 창에서 마우스 오른쪽 버튼을 누르는 순간 콘솔창에 "mouseButtonDown" 이라고 표시됩니다.
+
+게임 창에서 마우스 가운데 버튼을 누르고 떼는 순간 콘솔창에 "mouseButtonUp" 이라고 표시됩니다.
 
