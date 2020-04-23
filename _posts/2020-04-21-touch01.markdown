@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "터치 기초"
-date:   2020-04-17 10:50:07
+date:   2020-04-21 10:50:07
 categories: Unity3D Basics
 description: "유니티 터치 기초"
 image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
