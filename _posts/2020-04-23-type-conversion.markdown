@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "정수 문자열 형변환"
-date:   2020-04-17 10:50:07
+date:   2020-04-23 17:00:00
 categories: Unity3D Basics
 description: "유니티 정수 문자열 형변환"
 image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
@@ -11,7 +11,7 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
 
 유니티에서 문자와 정수를 형변환을 해봅니다.
 
-##정수와 문자열의 덧셈
+## 정수와 문자열의 덧셈
 정수 a 와 문자열 b를 더해서 다시 문자열로 표현하는 방법입니다.
 문자나 숫자를 이런식으로 계산하고 표현해야 하는 때가 생깁니다.
 한번 해보도록 하겠습니다.
