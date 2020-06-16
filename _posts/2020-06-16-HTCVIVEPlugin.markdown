@@ -17,7 +17,7 @@ HTC VIVE를 활용한 콘텐츠를 만들기 위해서 유니티 프로젝트를
 
 ## Steam VR Plugin 설치
 Ctrl + 9 를 눌러 에셋스토어에 들어갑니다. 
-![AssetStore](./img/06_HTCVIVE/01/01.PNG)
+![AssetStore](./img/bulma-clean-theme-4by3.jpg)
 에셋스토어에서 SteamVR을 검색해서 나오는 Steam VR Plugin을 다운로드 받고 프로젝트로 임포트 합니다. 임포트 말미에 유니티 세팅 변경 창이 나오는데 해당 창 하단에 Accept All을 클릭하여 변경을 해줍니다. 
 
 ## Steam VR 적용
