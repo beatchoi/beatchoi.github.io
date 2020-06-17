@@ -7,7 +7,6 @@ description: "HTC Vive 프로젝트 환경설정 세팅"
 image: 'https://www.pikpng.com/pngl/b/135-1352255_htc-vive-pro-htc-vive-pro-full-kit.png'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
-menubar: VIVEMENU
 ---
 
 ## HTC VIVE 설치
