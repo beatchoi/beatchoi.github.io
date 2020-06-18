@@ -4,7 +4,7 @@ title:  "HTC VIVE Plugin 적용(Vive Controller Binding)"
 date:   2020-06-17 00:46:07
 categories: Unity3D Vive
 description: "HTC Vive 컨트롤러 바인딩"
-image: 'https://www.pikpng.com/pngl/b/135-1352255_htc-vive-pro-htc-vive-pro-full-kit.png'
+image: '/img/06_HTCVIVE/02/05.JPG'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
