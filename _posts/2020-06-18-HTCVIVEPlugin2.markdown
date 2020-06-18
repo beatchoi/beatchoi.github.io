@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTC VIVE Plugin 적용(Vive Controller Binding)"
-date:   2020-06-17 00:46:07
+date:   2020-06-18 16:07:07
 categories: Unity3D Vive
 description: "HTC Vive 컨트롤러 바인딩"
 image: '/img/06_HTCVIVE/02/05.JPG'
