@@ -4,7 +4,7 @@ title:  "바이브 컨트롤러로 총알 발사하기"
 date:   2020-06-18 16:07:07
 categories: Unity3D Vive
 description: "바이브 컨트롤러로 기본적인 발사 "
-image: '/img/06_HTCVIVE/02/05.JPG'
+image: '/img/06_HTCVIVE/shooting/07.PNG)'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
