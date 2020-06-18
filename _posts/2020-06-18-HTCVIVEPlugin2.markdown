@@ -64,10 +64,10 @@ public class ButtonTrigger : MonoBehaviour
     }
 }
 ```
-4) Valve.VR 네임스페이스를 등록하여야 Steam VR API를 활용할 수 있습니다.  
+4)Valve.VR 네임스페이스를 등록하여야 Steam VR API를 활용할 수 있습니다.  
 8)SteamVR_Input_Sources 는 입력이 되는 디바이스인데 이 경우엔 컨트롤러(좌, 우) 입니다.  
 9)SteamVR_Action_Boolean 은 Boolean 값을 가지는 액션을 선택합니다. 이경우엔 GrabPinch가 됩니다.  
-19) grabPinch.GetState(handType) : 참 거짓 값을 리턴하는 메소드인 GetState를 활용합니다. 인자값으로 입력 소스를 넣으면 됩니다. 이경우엔 위에서선택한 컨트롤러입니다. 이 경우 grabPinch에 해당하는 액션에 지정된 입력이 실행될 경우 참을 호출합니다.  
+19)grabPinch.GetState(handType) : 참 거짓 값을 리턴하는 메소드인 GetState를 활용합니다. 인자값으로 입력 소스를 넣으면 됩니다. 이경우엔 위에서선택한 컨트롤러입니다. 이 경우 grabPinch에 해당하는 액션에 지정된 입력이 실행될 경우 참을 호출합니다.  
 
 해당 스크립트를 [CameraRig] 프리펩 하위에 있는 Controller (left) 또는 Controller  (right)에 인스턴스화 시킵니다.  
 
