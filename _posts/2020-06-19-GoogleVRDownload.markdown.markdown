@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "GoogleVR 다운로드"
-date:   2020-06-18 16:07:07
+date:   2020-06-19 16:33:07
 categories: Unity3D Vive
 description: "GoogleVR SDK 다운로드 "
-image: '/img/06_HTCVIVE/shooting/06.PNG'
+image: 'https://developers.google.com/vr/images/Cardboard_viewer_cropped.png'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
