@@ -19,7 +19,7 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
 
 19년 11월 13일 기준으로 구글에서는 Google VR SDK(Cardboard SDK)를 오픈소스로 열고 구글 데이드림 HMD의 개발 및 판매 중단 한다는 내용입니다. 좌측 메뉴에 Unity란에서 Download 항목이 선택되어있는지 확인하고 Terms & Conditions 를 체크합니다.
 
-![img]((/img/GoogleVR/01/02.JPG)  
+![img](/img/GoogleVR/01/02.JPG)  
 
 체크를 하게되면 하단에 다운로드 버튼이 생성됩니다. 클릭해서 들어갑니다.
 
