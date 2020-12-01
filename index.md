@@ -6,7 +6,7 @@ callouts: home_callouts
 show_sidebar: true
 ---
 
-# Beatchoi's VR&AR Contents Creation Lab
+# What's Life Studio <VR&AR Contents Creation Lab>
 
 `유니티3D`를 활용하여 `가상현실` 및 `증강현실` 인터렉티브 콘텐츠들을 만드는데 필요한 리소스들을 정리합니다. 콘텐츠 개발중 겪은 trouble shooting을 기록합니다.  
 
@@ -26,12 +26,10 @@ show_sidebar: true
 
 * Unity3D Basics
 * Unity3D Fundamentals
-* Page With Menubar
-* Page With Tabs
-* Page Without Footer
-* Page Without Hero
-* Page With Contents
-* Landing Page With Callouts
+* Unity3D GoogleVR
+* Unity3D Vuforia
+* Unity3D PicoVR
+* Unity3D Vive
 * Blog
 * Post
 
