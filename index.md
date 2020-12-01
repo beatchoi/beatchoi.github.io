@@ -1,6 +1,6 @@
 ---
-title: Unity3D, Virtual Reality and Augmented Reality
-subtitle: Easy ways to create vr&ar contents
+title: What's Life Studio
+subtitle: Unity3D, Virtual Reality and Augmented Reality
 layout: page
 callouts: home_callouts
 show_sidebar: true
