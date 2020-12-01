@@ -35,8 +35,6 @@ show_sidebar: true
 * Blog
 * Post
 
-## Supported By JetBrains
-
-JetBrains have kindly provided an Open Source licence to aid in the future development of Bulma Clean Theme.
+## Supported By What's Life Studio
 
 [![JetBrains](img/logoWhtls.png)](https://www.whtls.com)
