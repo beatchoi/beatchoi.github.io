@@ -2,7 +2,7 @@ style: is-light
 items:
   - title: VR/AR 콘텐츠 개발
     subtitle: 가상현실 증강현실 프로젝트 개발
-    icon: fas fa-vr-cardboard
+    icon: 
   - title: 왓츠라이프 스튜디오
     subtitle: What's Life Studio
     icon: 
