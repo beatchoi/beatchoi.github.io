@@ -6,7 +6,7 @@ items:
     icon: fas fa-vr-cardboard
   - title: 왓츠라이프 스튜디오
     subtitle: What's Life Studio
-    icon: 
+    icon: far fa-question-circle
   - title: VR/AR 개발 가이드
     subtitle: 가상현실 증강현실 콘텐츠 개발 강의
     icon: fa-chalkboard-teacher
