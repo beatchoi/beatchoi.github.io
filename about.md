@@ -14,7 +14,7 @@ show_sidebar: false
 현) 한양대학교 소프트웨어 융합대학 ICT융합학부 겸임교수  
 전) 헬로브이알 이사  
  
-[Book] 
+[Book]  
 • 손에 잡히는 유니티 3D VR/AR 출간  
   
 [강의]  
