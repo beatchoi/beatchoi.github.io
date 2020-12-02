@@ -1,6 +1,6 @@
 ---
 title: Showcase
-subtitle: An example showcase page
+subtitle: 왓츠라이프 스튜디오의 개발 포트폴리오
 description: An example showcase page to help you easily display your work
 layout: page
 showcase: showcase_example
