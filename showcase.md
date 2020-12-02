@@ -7,6 +7,7 @@ showcase: showcase_example
 show_sidebar: false
 ---
 
+<!--
 ## Creating A Showcase Datafile
 
 Create a datafile in your sites `_data` directory in the following format. Subtitle, features and tags are not required. 
@@ -55,5 +56,5 @@ showcase: showcase_example
 show_sidebar: false
 ```
 
-
+-->
 
