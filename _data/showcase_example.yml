@@ -8,32 +8,14 @@ items:
       
     image: /img/vrplay.gif
     image_ratio: is-16by9
-    <!--
-    link: https://www.csrhymes.com
-    link_text: View the CS Rhymes Website
-    -->
     tags: VR,증강현실,슈팅게임, VIVE, Unity3D
-    <!--
-    github: chrisrhymes/chrisrhymes.github.io
-    -->
   - title: 순천만 AR
     subtitle: 증강현실 색칠하기
     description: |-
       태블릿으로 캐릭터를 색칠하고 자신이 색칠한 캐릭터를 프로젝터 화면으로 띄워 3D로 볼 수 있는 콘텐츠
-      
-    features:
-      - Responsive
-      - Page With Sidebar
-      - Page With Menubar
-      - Page With Tabs
-      - Page Contents
-      - Landing Page With Callouts
-      - Blog and Posts
-      - Showcases
+   
     features_styles: is-centered is-outlined
     image: /img/arplay.png
     image_ratio: is-16by9
-    link: https://github.com/chrisrhymes/bulma-clean-theme
-    link_text: View Theme
-    tags: Jekyll,Bulma,CSS
-    github: chrisrhymes/bulma-clean-theme
+   
+    tags: AR,증강현실,색칠하기
