@@ -1,5 +1,5 @@
 intro: |-
-  This is an example showcase page to show you how you can use it to easily showcase your work.
+  
 items:
   - title: 순천만 대소동
     subtitle: VR 슈팅 게임
@@ -28,7 +28,7 @@ items:
       - Showcases
     features_styles: is-centered is-outlined
     image: /img/arplay.png
-    image_ratio: is-4by3
+    image_ratio: is-16by9
     link: https://github.com/chrisrhymes/bulma-clean-theme
     link_text: View Theme
     tags: Jekyll,Bulma,CSS
