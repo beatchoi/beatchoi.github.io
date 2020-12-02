@@ -4,13 +4,13 @@ items:
   - title: 순천만 대소동
     subtitle: VR 슈팅 게임
     description: |-
-      HTC VIVE를 활용한 디펜스 슈팅 게임
+      HTC VIVE와 Unity3D를 활용하여 개발한 디펜스 슈팅 게임
       
     image: /img/vrplay.gif
     image_ratio: is-16by9
     link: https://www.csrhymes.com
     link_text: View the CS Rhymes Website
-    tags: Bulma,CSS,Jekyll
+    tags: VR,증강현실,슈팅게임, VIVE, Unity3D
     github: chrisrhymes/chrisrhymes.github.io
   - title: 순천만 AR
     subtitle: 증강현실 색칠하기
