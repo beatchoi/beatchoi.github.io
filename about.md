@@ -1,8 +1,8 @@
 ---
-title: About Us
+title: 왓츠라이프 스튜디오는
 subtitle: About What's Life Studio
 layout: page
 show_sidebar: false
 ---
 
-This is an example products page you can use to display a simple listing of your products and their ratings and reviews.
+![profile](./img/profile.jpg)
