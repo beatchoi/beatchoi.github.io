@@ -1,12 +1,11 @@
 intro: |-
   This is an example showcase page to show you how you can use it to easily showcase your work.
 items:
-  - title: C.S. Rhymes Website
-    subtitle: csrhymes.com
+  - title: 순천만 대소동
+    subtitle: VR 슈팅 게임
     description: |-
-      The C.S. Rhymes website is built using Bulma Clean Theme.
-
-      This website utilises the built in blog and products layouts that come included with the theme.
+      HTC VIVE를 활용한 디펜스 슈팅 게임
+      
     image: /img/csrhymes-com.jpg
     image_ratio: is-16by9
     link: https://www.csrhymes.com
