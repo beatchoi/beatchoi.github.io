@@ -36,3 +36,12 @@ show_sidebar: true
 ## Supported By What's Life Studio
 
 [![JetBrains](img/logoWhtls.png)](https://www.whtls.com)
+
+
+COMPANY. 왓츠라이프 스튜디오 OWNER. 최윤석  
+  
+Email. beat@whtls.com  
+
+Business License. 246-22-00802  
+  
+© 왓츠라이프 스튜디오.All rights reserved.  
