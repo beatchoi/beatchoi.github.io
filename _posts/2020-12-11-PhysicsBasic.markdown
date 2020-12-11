@@ -4,7 +4,7 @@ title:  "유니티에서의 물리엔진 - Physics in Unity"
 date:   2020-12-11 14:00:07
 categories: Unity3D Basics
 description: "유니티 물리 기초"
-image: '/img/UnityBasic/PhysicsBasic/07.PNG'
+image: '/img/UnityBasic/PhysicsBasic/12.gif'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
