@@ -36,7 +36,9 @@ Plane 오브젝트의 위치와 크기를 다음과 같이 변경합니다.
 <p align="center"><img src="/img/UnityBasic/PhysicsBasic/07.PNG"><br/>
 <05. 플레이 버튼 클릭></p>  
   
-  
+시연 영상
+<p align="center"><img src="/img/UnityBasic/PhysicsBasic/12.PNG"><br/>
+<06. 테스트 영상></p>  
 ## 물리 엔진 활용을 위한 컴포넌트  
   
 #### Rigidbody :: 강체  
@@ -55,17 +57,25 @@ Sphere 오브젝트를 선택하고 우측 인스펙터 창을 확인해봅니�
   
 `Rigidbody`컴포넌트를 확인해 봅니다.  
 <p align="center"><img src="/img/UnityBasic/PhysicsBasic/08.PNG"><br/>
-<0. Rigidbody 컴포넌트></p>
+<07. Rigidbody 컴포넌트></p>
   
 `Use Gravity` 항목을 체크 해제하고 다시한번 재생해 봅니다.  
+<p align="center"><img src="/img/UnityBasic/PhysicsBasic/09.PNG"><br/>
+<08. Rigidbody 컴포넌트 - Use Gravity></p>  
 아마 구체가 낙하하지 않을 것입니다.  
 `Use Gravity` 항목은 해당 오브젝트가 중력의 힘을 받는가 여부를 정할 수 있습니다.  
 이렇게 해당 컴포넌트안의 값을 조절함으로서 해당 오브젝트에 어떠한 형태의 힘이 가해질 수 있는지 제어할 수 있습니다.  
   
 이번엔 `Drag`항목의 값을 3으로 바꿔봅니다.  
+<p align="center"><img src="/img/UnityBasic/PhysicsBasic/09.PNG"><br/>
+<09. Rigidbody 컴포넌트 - Drag></p> 
 구체가 낙하하는 속도 및 굴러가는 속도가 느려질 것입니다.  
 `Drag`항목은 마찰력, 공기저항 등 해당 오브젝트에 가해지는 저항값을 지정할 수 있습니다.  
-  
+   
+    
+  <p align="center"><img src="/img/UnityBasic/PhysicsBasic/13.PNG"><br/>
+<09.1 Drag - 3 이후 테스트></p>
+   
 이 외 기타 항목들에 대한 자세한 내용들은 하단 링크를 통해 알 수 있습니다.  
 https://docs.unity3d.com/kr/2018.4/Manual/class-Rigidbody.html  
   
@@ -82,14 +92,19 @@ Sphere 오브젝트와 Plane 오브젝트를 확인해 보도록 하겠습니다
   * `Sphere Collider` 컴포넌트와 `Mesh Collider`컴포넌트가 추가되어 있는 것을 확인할 수 있습니다.  
 물론 해당 컴포넌트들은 기본 오브젝트가 생성될때 부착이 되어 생성됩니다만,  
 유저가 따로 추가할 수도 있습니다.  
-  
+   
+  <p align="center"><img src="/img/UnityBasic/PhysicsBasic/10.PNG"><br/>
+<10. Sphere Collider 컴포넌트></p> 
+  <p align="center"><img src="/img/UnityBasic/PhysicsBasic/11.PNG"><br/>
+<11. Mesh Collider 컴포넌트></p> 
+   
 충돌체는 오브젝트의 실제 물리 충돌 연산을 위해 존재합니다.  
 충돌체 컴포넌트가 있어야 위 샘플처럼 오브젝트들 끼리 부딪치고 튕겨져 나가는 등의 물리 연산을 할 수 있습니다.  
   
 ## 정리
 유니티 내에서 물리 연산의 기본인 충돌을 구현하기 위해서는 기본적으로  
   * `Rigidbody` :: `강체`
-  * `Collider` :: `충돌체`
+  * `Collider` :: `충돌체`  
   가 있어야 하며 각각
   * 오브젝트에 물리적 힘의 영향을 받을 수 있도록
   * 오브젝트에 충돌 연산을 할 수 있도록
