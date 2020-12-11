@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "라인 렌더러<LineRenderer>"
+title:  "라인 렌더러<Line Renderer>"
 date:   2020-04-21 10:50:07
 categories: Unity3D Basics
 description: "유니티 라인 렌더러 기초"
-image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+image: '/img/UnityBasic/LineRenderer/08.PNG'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
+  
+## 라인 렌더러<Line Renderer>  
 
 유니티에서 라인 렌더러를 알아봅니다.  
 라인렌더러는 3D 공간에서 설정된 꼭지점들을 연결하는 직선을 그립니다.
