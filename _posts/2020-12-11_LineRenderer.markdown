@@ -18,7 +18,7 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
   
 프로젝트에서 빈 게임 오브젝트를 생성합니다.  
 빈 게임 오브젝트의 이름을 `Line` 으로 변경합니다.  
-<p align="center"><img src="/img/UnityBasic/LineRenderer/01.PNG">  
+<p align="center"><img src="/img/UnityBasic/LineRenderer/01.PNG"><br/>
 <01. 빈게임 오브젝트 생성 및 이름 변경></p>  
   
 빈 게임 오브젝트에 `<LineRenderer>` 컴포넌트를 추가합니다.  
