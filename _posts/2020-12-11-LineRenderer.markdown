@@ -8,8 +8,6 @@ image: '/img/UnityBasic/LineRenderer/08.PNG'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
-  
-## 라인 렌더러<Line Renderer>  
 
 유니티에서 `라인 렌더러`를 알아봅니다.  
 라인렌더러는 3D 공간에서 설정된 `꼭지점`들을 연결하는 직선을 그립니다.
