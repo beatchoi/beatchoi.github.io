@@ -15,7 +15,7 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
 ## 유니티3D 에디터에서  
   
 프로젝트에서 빈 게임 오브젝트를 생성합니다.  
-빈 게임 오브젝트의 이름을 Line 으로 변경합니다. 
+빈 게임 오브젝트의 이름을 Line 으로 변경합니다.  
 ![01](/img/UnityBasic/LineRenderer/01.PNG)  
 <01. 빈게임 오브젝트 생성 및 이름 변경>  
   
