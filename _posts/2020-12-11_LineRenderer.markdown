@@ -18,22 +18,27 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
 프로젝트에서 빈 게임 오브젝트를 생성합니다.  
 빈 게임 오브젝트의 이름을 Line 으로 변경합니다.  
   
+  
 ![02](/img/UnityBasic/LineRenderer/02.PNG)  
 빈 게임 오브젝트에 <LineRenderer> 컴포넌트를 추가합니다.  
+  
   
 ![03](/img/UnityBasic/LineRenderer/03.PNG)  
 씬 창을 보게되면 분홍색 사각형 오브젝트가 생성이 되어있을 것입니다.  
 하지만 이동 툴로 이동을 하여도 해당 오브젝트는 이동을 하지 않습니다.  
+  
   
 ## Line Renderer Component  
   
 ![04](/img/UnityBasic/LineRenderer/04.PNG)  
 <LineRenderer> 컴포넌트를 살펴보겠습니다.  
   
+  
 ![05](/img/UnityBasic/LineRenderer/05.PNG)  
 컴포넌트 요소 중 Materials 항목 하위에 Element 0 항목 우측 원 아이콘을 선택하고 Default-Line 메테리얼을 선택합니다.  
 씬 창을 확인해 보면 오브젝트의 색상이 흰색으로 변경된 것을 확인할 수 있습니다.  
 Materials 프로퍼티는 라인을 렌더링 하는데에 활용되는 메테리얼을 설정할 수 있습니다.  
+   
    
 ![06](/img/UnityBasic/LineRenderer/06.PNG)   
 컴포넌트 요소 중 Corner Vertices 항목과 End Cap Vertices 항목의 값을 각각 5로 변경합니다.  
@@ -41,14 +46,17 @@ Corner Vertices 프로퍼티는 라인의 코너를 그릴 때 얼마나 많은 
 End Cap Vertices 프로퍼티는 라인의 끝을 그릴 때 얼마나 많은 꼭지점을 사용하는지 설정합니다.  
 각 값이 클수록 부드럽게 표현됩니다.  
   
+  
 ![07](/img/UnityBasic/LineRenderer/07.PNG)   
 컴포넌트 요소 중 Width 값을 절반으로 줄여봅니다.  
 해당 프로퍼티는 라인의 두께를 설정합니다.  
+   
    
 ![09](/img/UnityBasic/LineRenderer/09.PNG)   
 컴포넌트 요소 중 Positions 항목의 좌측 드롭다운 버튼을 눌러 펼쳐봅니다.  
 해당 값들을 위와 같이 변경합니다.  
 Positions 프로퍼티는 라인을 연결할 각 점들을 Vector3 배열로 표현합니다.  
+    
     
 ![08](/img/UnityBasic/LineRenderer/08.PNG)   
 각 설정들을 완료하고 나면 다음과 같은 모양의 Line Renderer가 생성됩니다.  
