@@ -32,7 +32,7 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
   
 ## Line Renderer Component  
   
-<LineRenderer> `컴포넌트`를 살펴보겠습니다.  
+`<LineRenderer>` `컴포넌트`를 살펴보겠습니다.  
 <p align="center"><img src="/img/UnityBasic/LineRenderer/04.PNG"><br/>
 <04. 라인렌더러 컴포넌트></p>  
   
