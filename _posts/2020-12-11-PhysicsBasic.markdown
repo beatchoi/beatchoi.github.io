@@ -4,7 +4,7 @@ title:  "유니티에서의 물리엔진 - Physics in Unity"
 date:   2020-12-11 14:00:07
 categories: Unity3D Basics
 description: "유니티 물리 기초"
-image: '/img/UnityBasic/LineRenderer/08.PNG'
+image: '/img/UnityBasic/PhysicsBasic/07.PNG'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
@@ -34,5 +34,5 @@ Plane 오브젝트의 위치와 크기를 다음과 같이 변경합니다.
   
 유니티 에디터 상단에 `Play`버튼을 눌러 `Sphere`의 움직임을 살펴봅니다.
 <p align="center"><img src="/img/UnityBasic/PhysicsBasic/07.PNG"><br/>
-<01. 플레이 버튼 클릭></p>  
+<05. 플레이 버튼 클릭></p>  
   
