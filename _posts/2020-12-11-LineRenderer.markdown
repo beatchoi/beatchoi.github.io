@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "라인 렌더러- Line Renderer"
+title:  "라인 렌더러 - Line Renderer"
 date:   2020-12-11 14:00:07
 categories: Unity3D Basics
 description: "유니티 라인 렌더러 기초"
