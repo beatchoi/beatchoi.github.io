@@ -22,8 +22,8 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
 <01. 빈게임 오브젝트 생성 및 이름 변경></p>  
   
 빈 게임 오브젝트에 `<LineRenderer>` 컴포넌트를 추가합니다.  
-![02](/img/UnityBasic/LineRenderer/02.PNG)  
-<02. 라인 렌더러 컴포넌트 추가>  
+<p align="center"><img src="/img/UnityBasic/LineRenderer/02.PNG"><br/>
+<02. 라인 렌더러 컴포넌트 추가></p>
   
 씬 창을 보게되면 분홍색 사각형 오브젝트가 생성이 되어있을 것입니다.  
 하지만 이동 툴로 이동을 하여도 해당 오브젝트는 이동을 하지 않습니다.   
