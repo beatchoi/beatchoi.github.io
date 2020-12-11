@@ -15,3 +15,4 @@ show_sidebar: false
 [라인 렌더러 `<Line Renderer>` - 20-12-11](https://beatchoi.github.io/unity3d/basics/2020/12/11/LineRenderer/)<br/>
   
 ## 물리 :: Physics<br/>
+[물리 기초 - 20.12.11](https://beatchoi.github.io/unity3d/basics/2020/12/11/PhysicsBasic/)<br/>
