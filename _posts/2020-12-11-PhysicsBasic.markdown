@@ -37,7 +37,7 @@ Plane 오브젝트의 위치와 크기를 다음과 같이 변경합니다.
 <05. 플레이 버튼 클릭></p>  
   
 시연 영상
-<p align="center"><img src="/img/UnityBasic/PhysicsBasic/12.GIF"><br/>
+<p align="center"><img src="/img/UnityBasic/PhysicsBasic/12.gif"><br/>
 <06. 테스트 영상></p>  
 ## 물리 엔진 활용을 위한 컴포넌트  
   
@@ -73,7 +73,7 @@ Sphere 오브젝트를 선택하고 우측 인스펙터 창을 확인해봅니�
 `Drag`항목은 마찰력, 공기저항 등 해당 오브젝트에 가해지는 저항값을 지정할 수 있습니다.  
    
     
-  <p align="center"><img src="/img/UnityBasic/PhysicsBasic/13.GIF"><br/>
+  <p align="center"><img src="/img/UnityBasic/PhysicsBasic/13.gif"><br/>
 <09.1 Drag - 3 이후 테스트></p>
    
 이 외 기타 항목들에 대한 자세한 내용들은 하단 링크를 통해 알 수 있습니다.  
