@@ -4,7 +4,7 @@ title:  "ARFoundation - Settings"
 date:   2020-12-14 14:00:07
 categories: Unity3D Basics
 description: "ARFoundation - 프로젝트 설정하기"
-image: '/img/UnityAR/ARFoundation/01/ARFoundation.jpg'
+image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
