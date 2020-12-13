@@ -26,10 +26,8 @@ show_sidebar: true
 
 * Unity3D Basics
 * Unity3D Fundamentals
-* Unity3D GoogleVR
-* Unity3D Vuforia
-* Unity3D PicoVR
-* Unity3D Vive
+* Unity3D & VR - GoogleVR, Oculus Quest, VIVE, ETC
+* Unity3D & AR
 * Blog
 * Post
 
