@@ -25,7 +25,7 @@ ARFoundation을 활용하여 증강현실 콘텐츠를 만들 수 있는 준비�
   
 `Other Settings`항목에서 `Graphic API`순서를 아래와 같이 변경합니다. `OpenGLES3`이 `Vulcan`의 상단으로 갈 수 있도록 합니다.  
 <p align="center"><img src="/img/UnityAR/ARFoundation/01/01.PNG"><br/>
-<03. Android API Level 변경></p>
+<03. Graphic API Level 변경></p>
   
 #### 패키지 설치 :: Package Manager
 상단 메뉴에서 `Window`탭의 `Package Manager`를 선택합니다.  
