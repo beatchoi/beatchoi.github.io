@@ -9,12 +9,8 @@
       link: /page-2/
     - name: Unity3D & VR
       link: /GoogleVR/
-    - name: Unity3d Vuforia
+    - name: Unity3D + AR
       link: /page-4/
-    - name: Unity3D PicoVR
-      link: /page-5/
-    - name: Unity3D Vive
-      link: /06_HTCVIVE/
     - name: Sponsors Page
       link: /sponsors/
 - name: Products
