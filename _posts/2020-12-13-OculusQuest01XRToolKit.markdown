@@ -4,7 +4,7 @@ title:  "Oculus Quest2 - XR Toolkit"
 date:   2020-12-11 14:00:07
 categories: Unity3D Basics
 description: "오큘러스 퀘스트2 - XR Toolkit 적용하기"
-image: '/img/UnityBasic/PhysicsBasic/12.gif'
+image: 'img src="/img/UnityVR/OculusQuest/01XRToolkit/OculusQuest.PNG'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
