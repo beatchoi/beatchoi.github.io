@@ -7,7 +7,7 @@
       link: /page-1/
     - name: Unity3D Fundamentals
       link: /page-2/
-    - name: Unity3D GoogleVR
+    - name: Unity3D & VR
       link: /GoogleVR/
     - name: Unity3d Vuforia
       link: /page-4/
@@ -15,10 +15,6 @@
       link: /page-5/
     - name: Unity3D Vive
       link: /06_HTCVIVE/
-    - name: Page With Contents
-      link: /page-with-contents/
-    - name: Landing Page With Callouts
-      link: /landing/
     - name: Sponsors Page
       link: /sponsors/
 - name: Products
