@@ -26,8 +26,8 @@ show_sidebar: true
 
 * Unity3D Basics
 * Unity3D Fundamentals
-* Unity3D & VR - GoogleVR, Oculus Quest, VIVE, ETC
-* Unity3D & AR
+* Unity3D & VR - `GoogleVR`, `Oculus Quest`, `VIVE`, `ETC`
+* Unity3D & AR - `ARFoundation`
 * Blog
 * Post
 
