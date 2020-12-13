@@ -65,6 +65,10 @@ XR Toolkit을 활용하여 가상현실 콘텐츠 개발환경 세팅을 해봅�
 <p align="center"><img src="/img/UnityVR/OculusQuest/01XRToolkit/15.PNG"><br/>
 <11. 프리뷰 패키지 설정></p>
   
-## 정리
-
+## 테스트 해보기
+Oculus Quest 기기와 PC를 연결합니다. 
+PC의 오큘러스 어플리케이션을 실행하여 `설정` -> `일반`탭에서 `알 수 없는 출처`항목을 활성화 시킵니다.  
+<p align="center"><img src="/img/UnityVR/OculusQuest/01XRToolkit/16.PNG"><br/>
+<12. 알 수 없는 항목 활성화></p>
   
+유니티 에디터 상단의 플레이 버튼을 누르면 오큘러스 기기에 빌드하지 않고 테스트를 할 수 있습니다.
