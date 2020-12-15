@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유니티에서의 물리엔진 이벤트 함수 - Event Functions"
-date:   2020-12-11 14:00:07
+date:   2020-12-15 14:00:07
 categories: Unity3D Basics
 description: "유니티 물리 이벤트 함수"
 image: '/img/UnityBasic/PhysicsBasic/12.gif'
