@@ -4,7 +4,7 @@ title:  "유니티에서의 물리엔진 이벤트 함수 - OnTrigger"
 date:   2020-12-15 14:00:07
 categories: Unity3D Basics
 description: "유니티 물리 이벤트 함수 Trigger"
-image: '/img/UnityBasic/PhysicsBasic/12.gif'
+image: '/img/UnityBasic/PhysicsEvent/05.gif'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
