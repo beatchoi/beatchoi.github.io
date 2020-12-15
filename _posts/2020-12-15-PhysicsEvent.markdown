@@ -59,7 +59,7 @@ public class Physics : MonoBehaviour
 ## 테스트
 에디터 상단 플레이버튼을 눌러서 확인을 해봅니다.  
 `Console`창과 `Scene`창을 동시에 확인해 보고, 오브젝트가 충돌할때 로그를 확인해 봅니다.  
-<p align="center"><img src="/img/UnityBasic/PhysicsEvent/03.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/PhysicsEvent/03.gif"><br/>
 <03. Console 창 결과 값 확인></p>  
   
 
