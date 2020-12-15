@@ -13,7 +13,7 @@ show_sidebar: false
   
 ## 컴포넌트 :: Component<br/>
 [라인 렌더러 :: 라인 렌더러 알아보기 - 20-12-11](https://beatchoi.github.io/unity3d/basics/2020/12/11/LineRenderer/)<br/>
-[라인 렌더러 :: 클릭으로 선 그리기   - 20-12-14](https://beatchoi.github.io/unity3d/basics/2020/12/14/LineRenderer2/)</br>  
+[라인 렌더러 :: 클릭으로 선 그리기   - 20-12-14](https://beatchoi.github.io/unity3d/basics/2020/12/14/LineRenderer2/)</br>
   
 ## 물리 :: Physics<br/>
 [물리 기초 :: 강체와 충돌체 알기     - 20.12.11](https://beatchoi.github.io/unity3d/basics/2020/12/11/PhysicsBasic/)<br/>
