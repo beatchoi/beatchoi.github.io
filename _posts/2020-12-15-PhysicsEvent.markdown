@@ -13,7 +13,7 @@ canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-
 유니티에서 `물리엔진`을 구동하는 이벤트 함수를 알아봅니다.  
   
 ## 유니티3D 에디터에서  
-
+#### Collision Event Function
 프로젝트창에서 `Physics`스크립트를 생성합니다.
 <p align="center"><img src="/img/UnityBasic/PhysicsEvent/01.PNG"><br/>
 <01. Physics 스크립트 생성></p>  
@@ -62,5 +62,4 @@ public class Physics : MonoBehaviour
 <p align="center"><img src="/img/UnityBasic/PhysicsEvent/03.gif"><br/>
 <03. Console 창 결과 값 확인></p>  
   
-
-##
+위에서 확인하셨듯이 `OnCollision`이벤트 함수들은 물체가 서로 충돌하는 순간이나 충돌하는 중 또는 충돌 후 라는 이벤트를 감지하고 호출하는 기능을 가지고 있습니다.
