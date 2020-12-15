@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "유니티에서의 물리엔진 이벤트 함수 - Event Functions"
+title:  "유니티에서의 물리엔진 이벤트 함수 - OnCollision"
 date:   2020-12-15 14:00:07
 categories: Unity3D Basics
-description: "유니티 물리 이벤트 함수"
+description: "유니티 물리 이벤트 함수 Collision"
 image: '/img/UnityBasic/PhysicsBasic/12.gif'
 published: true
 canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
 ---
 
 ## 유니티에서의 물리엔진의 이벤트 함수 알아보기
-유니티에서 `물리엔진`을 구동하는 이벤트 함수를 알아봅니다.  
+유니티에서 `물리엔진`을 구동하는 이벤트 함수인 `OnCollision`을 알아봅니다.  
   
 ## 유니티3D 에디터에서  
 #### Collision Event Function
