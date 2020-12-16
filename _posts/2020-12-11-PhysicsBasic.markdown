@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 물리 기초"
 image: '/img/UnityBasic/PhysicsBasic/12.gif'
 published: true
-canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+canonical_url: http://whtls.com/unity3d/basics/2020/12/11/PhysicsBasic/
 ---
 
 ## 유니티에서의 물리엔진 알아보기
