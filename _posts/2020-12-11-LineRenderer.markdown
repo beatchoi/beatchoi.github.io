@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 라인 렌더러 기초"
 image: '/img/UnityBasic/LineRenderer/08.PNG'
 published: true
-canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+canonical_url: http://whtls.com/unity3d/basics/2020/12/11/LineRenderer/
 ---
 
 ## 라인 렌더러 알아보기
