@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "ARFoundation - 프로젝트 설정하기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
-canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+canonical_url: http://whtls.com/unity3d/basics/2020/12/14/ARFoundation01/
 ---
 
 ## ARFoundation을 활용한 증강현실 프로젝트 설정하기  
