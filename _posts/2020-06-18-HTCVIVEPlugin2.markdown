@@ -6,7 +6,7 @@ categories: Unity3D Vive
 description: "HTC Vive 컨트롤러 바인딩"
 image: '/img/06_HTCVIVE/02/05.JPG'
 published: true
-canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+canonical_url: http://whtls.com/unity3d/vive/2020/06/18/HTCVIVEPlugin2/
 ---
 
 ## [CameraRig] 프리펩 알아보기
