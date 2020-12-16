@@ -6,7 +6,7 @@ categories: Unity3D Vive
 description: "GoogleVR SDK 다운로드 "
 image: 'https://developers.google.com/vr/images/Cardboard_viewer_cropped.png'
 published: true
-canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+canonical_url: http://whtls.com/unity3d/vive/2020/06/19/GoogleVRDownload/
 ---
 
 기본적인 모바일 SDK인 Google VR SDK를 다운로드 해봅니다. 현재는 오픈소스로 공개되어있는 SDK로 간편하고 쉽게 유니티를 활용한 가상현실 콘텐츠를 만들어 볼 수 있습니다.
