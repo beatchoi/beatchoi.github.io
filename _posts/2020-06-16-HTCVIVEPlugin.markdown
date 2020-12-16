@@ -6,7 +6,7 @@ categories: Unity3D Vive
 description: "HTC Vive 프로젝트 환경설정 세팅"
 image: 'https://www.pikpng.com/pngl/b/135-1352255_htc-vive-pro-htc-vive-pro-full-kit.png'
 published: true
-canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+canonical_url: http://whtls.com/unity3d/vive/2020/06/17/HTCVIVEPlugin/
 ---
 
 ## HTC VIVE 설치
