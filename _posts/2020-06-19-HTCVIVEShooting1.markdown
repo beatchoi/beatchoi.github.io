@@ -6,7 +6,7 @@ categories: Unity3D Vive
 description: "바이브 컨트롤러로 기본적인 발사 "
 image: '/img/06_HTCVIVE/shooting/06.PNG'
 published: true
-canonical_url: https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html
+canonical_url: http://whtls.com/unity3d/vive/2020/06/18/HTCVIVEShooting1/
 ---
 
 바이브 컨트롤러의 트리거를 당기면 총알이 발사되게 해보겠습니다. 컨트롤러의 트리거를 당기고 있으면 연속으로 발사되며 총알의 발사 간격도 조절해 보겠습니다.
