@@ -13,7 +13,7 @@ canonical_url: http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwork/
 유니티에서 `MirrorNetwork`를 활용하여 `네트워크`를 구성하는 방법을 알아봅니다.  
   
 ## 유니티3D 에디터에서  
-####에셋 다운로드  
+#### 에셋 다운로드  
 에셋스토어에서 `Mirror`를 검색하여 미러네트워크 에셋을 추가합니다.  
 <p align="center"><img src="/img/UnityFundamental/MirrorNetwork/01.PNG"><br/>
 <01. 에셋스토어에서 Mirror 에셋 다운로드></p>  
@@ -22,7 +22,7 @@ canonical_url: http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwork/
 <p align="center"><img src="/img/UnityFundamental/MirrorNetwork/02.PNG"><br/>
 <02. Mirror 에셋 임포트></p>  
 
-####네트워크 기본 구현 :: 서버 매니저  
+#### 네트워크 기본 구현 :: 서버 매니저  
 
 계층구조창에서 `NetworkManager`라는 이름의 빈 게임 오브젝트를 생성합니다.  
 <p align="center"><img src="/img/UnityFundamental/MirrorNetwork/03.PNG"><br/>
@@ -39,7 +39,7 @@ canonical_url: http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwork/
 `NetworkManager` 컴포넌트는 서버와 클라이언트 사이에 기본적인 연결을 구현해주는 컴포넌트 입니다. 네트워크 주소, 플레이어 생성 등 기본적이지만 중요한 기능을 합니다.  
 `NetworkManagerHUD`는 사용자가 서버와 클라이언트에 접속하기 쉽도록 UI를 생성해주는 역할을 합니다. 추후 네트워크 테스트를 할 때 화면 좌측 상단에 생기는 UI를 생성합니다.  
   
-####네트워크 기본 구현 :: 클라이언트 플레이어  
+#### 네트워크 기본 구현 :: 클라이언트 플레이어  
   
 계층구조창에서 `Cube` 기본 오브젝트를 생성합니다.  
 <p align="center"><img src="/img/UnityFundamental/MirrorNetwork/06.PNG"><br/>
