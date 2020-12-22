@@ -19,7 +19,7 @@ canonical_url: http://whtls.com/unity3d/basics/2020/12/11/PhysicsBasic/
 <p align="center"><img src="/img/UnityBasic/PhysicsBasic/01.PNG"><br/>
 <01. Sphere 오브젝트 생성></p>  
   
-Sphere 오브젝트의 인스펙처 창에서 `Rigidbody`컴포넌트를 생성합니다.
+Sphere 오브젝트의 인스펙터 창에서 `Rigidbody`컴포넌트를 생성합니다.
 <p align="center"><img src="/img/UnityBasic/PhysicsBasic/02.PNG"><br/>
 <02. Rigidbody 컴포넌트 추가></p>  
   
