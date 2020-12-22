@@ -1,15 +1,16 @@
 ---
 layout: post
-title:  "터치 기초"
+title:  "유니티 입력 기초"
 date:   2020-04-21 10:50:07
 categories: Unity3D Basics
-description: "유니티 터치 기초"
+description: "유니티에서 키 입력을 받아봅니다"
 image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/04/21/touch01/
 ---
 
-유니티에서 터치를 구현해봅니다.
+## 마우스 및 터치 입력
+유니티에서 마우스 입력 및 터치 입력을 구현해봅니다.
 
 ## 스크립트 작성
 ```ruby
@@ -34,7 +35,7 @@ GetMouseButtonDown은 마우스버튼 또는 터치를 하는 순간 한번 참�
 GetMouseButtonUp은 마우스버튼 또는 터치를 하고 떼는 순간 한번 참의 값을 호출합니다.
 
 ## 유니티3D 에디터에서
-메인 카메라에 해당 스크립트를 연결시킵니다.
+메인 카메라에 해당 스크립트를 인스턴스화합니다.  
 
 ## 테스트
 에디터 상단 플레이 버튼을 누릅니다.
