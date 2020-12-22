@@ -30,10 +30,10 @@ void Update()
         }
     }
 ```
-GetMouseButton은 마우스버튼 또는 터치를 하는 동안 계속 참의 값을 호출합니다.
-GetMouseButtonDown은 마우스버튼 또는 터치를 하는 순간 한번 참의 값을 호출합니다.
-GetMouseButtonUp은 마우스버튼 또는 터치를 하고 떼는 순간 한번 참의 값을 호출합니다.
-
+₩GetMouseButton₩은 마우스버튼 또는 터치를 하는 동안 계속 참의 값을 호출합니다.  
+GetMouseButtonDown은 마우스버튼 또는 터치를 하는 순간 한번 참의 값을 호출합니다.  
+GetMouseButtonUp은 마우스버튼 또는 터치를 하고 떼는 순간 한번 참의 값을 호출합니다.  
+  
 ## 유니티3D 에디터에서
 메인 카메라에 해당 스크립트를 인스턴스화합니다.  
 
@@ -45,4 +45,5 @@ GetMouseButtonUp은 마우스버튼 또는 터치를 하고 떼는 순간 한번
 게임 창에서 마우스 오른쪽 버튼을 누르는 순간 콘솔창에 "mouseButtonDown" 이라고 표시됩니다.
 
 게임 창에서 마우스 가운데 버튼을 누르고 떼는 순간 콘솔창에 "mouseButtonUp" 이라고 표시됩니다.
+
 
