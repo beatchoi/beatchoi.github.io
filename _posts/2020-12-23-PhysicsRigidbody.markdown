@@ -49,7 +49,7 @@ public class Velocity : MonoBehaviour
 #### 오브젝트 설정  
   
 에디터로 돌아와서 `Physics`스크립트를 `Sphere`오브젝트에 인스턴스화를 시킵니다.  
-<p align="center"><img src="/img/UnityBasic/PhysicsRigidbody/02.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/PhysicsEvent/02.PNG"><br/>
 <02. Physics 스크립트 인스턴스화></p>  
   
 `Sphere` 오브젝트의 인스펙터 창에서 `Rigidbody`컴포넌트를 생성합니다.
