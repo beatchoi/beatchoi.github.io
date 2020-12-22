@@ -65,3 +65,25 @@ canonical_url: http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwork/
 <11. player prefab 추가></p>  
   
 ## 테스트
+빌드세팅에서 빌드 버튼을 눌러 PC버전으로 빌드합니다.  
+EXE 파일을 실행시켜줍니다.  
+<p align="center"><img src="/img/UnityFundamental/MirrorNetwork/12.PNG"><br/>
+<12. PC 플랫폼 빌드></p>  
+  
+실행시킨 프로그램에서 좌측 상단 UI를 확인하고 `Host(Client + Server)`버튼을 누릅니다.  
+해당 버튼을 누른 프로그램이 서버 호스트가 됩니다.  
+<p align="center"><img src="/img/UnityFundamental/MirrorNetwork/14.PNG"> <img src="/img/UnityFundamental/MirrorNetwork/15.PNG"><br/>
+<13. Host></p>  
+  
+유니티 에디터로 돌아와서 상단 플레이 버튼을 눌러 콘텐츠를 실행시킵니다.  
+마찬가지로 게임창 좌측 상단에 UI를 확인하고 이번엔 `Client`버튼을 누릅니다.  
+<p align="center"><img src="/img/UnityFundamental/MirrorNetwork/16.PNG"><br/> <img src="/img/UnityFundamental/MirrorNetwork/17.PNG"><br/>
+<14. Client></p> 
+  
+계층구조창의 `Cube`오브젝트 중 두번째 `Cube`를 선택하고 이동시켜 봅니다.  
+그러면 빌드된 호스트 화면에서 `Cube`오브젝트의 위치값이 연동되어 보여지는 것을 확인할 수 있습니다.  
+<p align="center"><img src="/img/UnityFundamental/MirrorNetwork/20.PNG"><br/>
+<15. Client에서 위치 이동></p>  
+  
+<p align="center"><img src="/img/UnityFundamental/MirrorNetwork/21.PNG"><br/>
+<16.Host에서 위치 연동></p>  
