@@ -4,7 +4,7 @@ title:  "유니티에서 네트워크 설정하기 - MirrorNetwork"
 date:   2020-12-21 14:00:07
 categories: Unity3D Basics
 description: "유니티에서 멀티플레이어 콘텐츠 만드는 방법"
-image: '/img/UnityBasic/PhysicsEvent/05.gif'
+image: '/img/UnityFundamental/MirrorNetwork/01.PNG'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwork/
 ---
