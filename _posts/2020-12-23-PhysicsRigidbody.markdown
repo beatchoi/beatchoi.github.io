@@ -4,7 +4,7 @@ title:  "유니티에서의 물리엔진 이동 메소드 - Rigidbody"
 date:   2020-12-23 14:00:07
 categories: Unity3D Basics
 description: "Rigidbody를 활용한 이동"
-image: '/img/UnityBasic/PhysicsEvent/05.gif'
+image: '/img/UnityBasic/PhysicsRigidbody/04.gif'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/12/23/PhysicsRigidbody/
 ---
