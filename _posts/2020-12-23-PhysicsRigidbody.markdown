@@ -57,7 +57,7 @@ public class Velocity : MonoBehaviour
 <03. Rigidbody 컴포넌트 추가></p>
   
 `Sphere` 오브젝트에 인스턴스화 되어있는 `Physics`스크립트의 `Speed`값을 `10`으로 변경해줍니다.  
-<p align="center"><img src="/img/UnityBasic/PhysicsRigidbody/02.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/PhysicsRigidbody/05.PNG"><br/>
 <04. Speed 값 변경></p>
   
 ## 테스트
