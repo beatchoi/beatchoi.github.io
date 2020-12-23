@@ -19,3 +19,4 @@ show_sidebar: false
 [물리 기초 :: 강체와 충돌체 알기     - 20.12.11](https://beatchoi.github.io/unity3d/basics/2020/12/11/PhysicsBasic/)<br/>
 [물리 기초 :: 이벤트 함수 다뤄보기1 OnCollision  - 20.12.15](https://beatchoi.github.io/unity3d/basics/2020/12/15/PhysicsEvent/)<br/>
 [물리 기초 :: 이벤트 함수 다뤄보기2 OnTrigger  - 20.12.15](https://beatchoi.github.io/unity3d/basics/2020/12/15/PhysicsEvent2/)<br/>
+[물리 기초 :: 물체의 이동 알아보기 Velocity & Addforce()  - 20.12.23](https://beatchoi.github.io/unity3d/basics/2020/12/23/PhysicsRigidbody/)<br/>
