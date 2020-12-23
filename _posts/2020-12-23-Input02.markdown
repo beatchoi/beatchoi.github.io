@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "유니티에서의 키 입력 받기 - Getkey"
+date:   2020-12-23 14:00:07
+categories: Unity3D Basics
+description: "GetKey를 이용한 키 입력"
+image: '/img/UnityBasic/PhysicsRigidbody/04.gif'
+published: true
+canonical_url: http://whtls.com/unity3d/basics/2020/12/23/Input02/
+---
+
+## 유니티에서의 키 입력
+유니티에서 `Getkey`메소드를 활용한 키 입력을 알아봅니다.   
+  
+## 유니티3D 에디터에서  
+#### 스크립트 작성
+프로젝트창에서 `GetInput`스크립트를 생성합니다.
+  
+`GetInput` 스크립트를 열어서 다음과 같이 작성합니다.  
+
+```ruby
+ void Update()
+    {
+        if (Input.GetKey("up"))
+            print("up arrow key is held down");
+
+        if (Input.GetKeyDown("down"))
+            print("down arrow key is down");
+
+        if (Input.GetKeyUp("right"))
+            print("right arrow key is up");
+
+        if(Input.GetKey(KeyCode.LeftArrow))
+            print("left arrow key is held down");
+    }
+```
+  
+* 기본적인 구조는 `GetMouseButton`, `GetMouseButtonDown`, `GetMouseButtonUp`의 원리와 같습니다.    
+* `GetKey` 메소드와 `" "`안에 문자열 값으로 키 값을 제공하면 해당 키를 누를 때 입력 값을 가져올 수 있습니다.  
+* `GetKey` 메소드에 `Keycode.키값` 을 이용해서 키값을 가져오는 방법도 있습니다.  
+(Keycode의 키값은 https://docs.unity3d.com/kr/530/ScriptReference/KeyCode.html 에서 볼 수 있습니다)  
+
+
+## 테스트  
+  
+`MainCamera`오브젝트에 `GetInput`스크립트를 인스턴스화 시켜서 테스트를 해봅니다.  
+<p align="center"><img src="/img/UnityBasic/Input/02.PNG"><br/>
+<01. GetInput 스크립트 인스턴스화></p>  
+  
+결과물  
+<p align="center"><img src="/img/UnityBasic/Input/01.PNG"><br/>
+<02. Console창 확인></p>  
