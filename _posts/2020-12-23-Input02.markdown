@@ -4,7 +4,7 @@ title:  "유니티에서의 키 입력 받기 - Getkey"
 date:   2020-12-23 14:00:07
 categories: Unity3D Basics
 description: "GetKey를 이용한 키 입력"
-image: '/img/UnityBasic/PhysicsRigidbody/04.gif'
+image: '/img/Unity.png'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/12/23/Input02/
 ---
