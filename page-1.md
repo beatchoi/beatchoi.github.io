@@ -9,7 +9,8 @@ show_sidebar: false
   
 ## 문법 :: Code<br/>
 [정수, 문자열 형변환](https://beatchoi.github.io/unity3d/basics/2020/04/23/type-conversion/)<br/>
-[유니티에서 입력받기 - 01 :: Unity Input - 20-04-21](https://beatchoi.github.io/unity3d/basics/2020/04/21/touch01/)<br/>
+[유니티에서 입력받기 - 01 :: GeMouseButton - 20-04-21](https://beatchoi.github.io/unity3d/basics/2020/04/21/touch01/)<br/>
+[유니티에서 입력받기 - 02 :: GetKey - 20-12-23](https://beatchoi.github.io/unity3d/basics/2020/12/23/input02/)<br/>
   
 ## 컴포넌트 :: Component<br/>
 [라인 렌더러 :: 라인 렌더러 알아보기 - 20-12-11](https://beatchoi.github.io/unity3d/basics/2020/12/11/LineRenderer/)<br/>
