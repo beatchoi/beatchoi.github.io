@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Oculus Quest2 - Controller Input"
-date:   2020-12-11 14:00:07
+date:   2020-12-30 14:00:07
 categories: Unity3D Basics
 description: "오큘러스 퀘스트2 - 컨트롤러 입력 값 설정하기"
 image: 'img/UnityVR/OculusQuest/01XRToolkit/OculusQuest.png'
