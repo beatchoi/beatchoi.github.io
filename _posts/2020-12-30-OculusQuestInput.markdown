@@ -93,7 +93,7 @@ public class OculusInput : MonoBehaviour
 #### 활용하기 위해서
 `Oculus Input`스크립트를 `XRRig`오브젝트에 인스턴스화 시킵니다.  
 `Oculus Input`스크립트가 인스턴스화가 되면 `Controller`변수 공란에 XRRig -> Camera Offset -> LeftHandController 를 연결시킵니다.  
-<p align="center"><img src="/img/UnityVR/OculusQuest/Input/01.PNG"><br/>
+<p align="center"><img src="/img/UnityVR/OculusQuest/Input/01.png"><br/>
 <01. 스크립트 연결></p>
   
 왼쪽 컨트롤러 오브젝트를 `Controller`공란에 넣었기 때문에 왼쪽 컨트롤러의 키 입력을 받을 것입니다.  
