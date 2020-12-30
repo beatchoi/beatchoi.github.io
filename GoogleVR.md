@@ -9,6 +9,7 @@ show_sidebar: false
 
 ## Oculus Quest Developement :: 오큘러스 퀘스트 개발
 [1. Oculus Quest2 & Unity XR Toolkit 기본 - 2020-12-13](http://whtls.com/unity3d/basics/2020/12/11/OculusQuest01XRToolKit/)  
+[2. Oculus Quest2 & Key Input - 2020-12-30](http://whtls.com/unity3d/basics/2020/12/30/OculusQuestInput/)  
 
 ## VIVE Developement :: 바이브 개발  
 #### 바이브 환경설정  
