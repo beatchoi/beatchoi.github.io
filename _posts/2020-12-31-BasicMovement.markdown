@@ -52,7 +52,7 @@ public class Move : MonoBehaviour
 ## 테스트
 에디터 상단 플레이버튼을 눌러서 확인을 해봅니다.  
 Sphere 오브젝트가 이동하는 것을 확인합니다.  
-<p align="center"><img src="/img/UnityBasic/Move/03.gif"><br/>
+<p align="center"><img src="/img/UnityBasic/Move/04.gif"><br/>
 <03. Sphere 이동 확인></p>  
   
 위에서 확인하셨듯이 `Translate`함수를 활용하면 오브젝트를 원하는 `방향`으로 이동시킬 수 있습니다.  
