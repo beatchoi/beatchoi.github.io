@@ -88,7 +88,8 @@ public class Move : MonoBehaviour
   
 * `MoveTowards`함수는 Vector3에 속해있는 정적함수입니다.  
 * `MoveTowards`함수의 인자들은 각각 현재위치, 목표위치, 거리차(maxDistanceDelta) 입니다.  
-* 다시 말하면 `현재위치`에서 `목표위치`가지 `maxDistanceDelta`의 거리 만큼 이동한 위치값을 나타냅니다.  
+* 다시 말하면 `현재위치`에서 `목표위치`가지 `maxDistanceDelta`의 거리 만큼 이동한 위치값을 나타냅니다. 
+* 따라서 new `Vector3(x, y, z)`의 x y z 에는 여러분이 원하는 적정 목표 위치값을 넣으시면 됩니다.  
 
 #### 오브젝트 설정  
   
