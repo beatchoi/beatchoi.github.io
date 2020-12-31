@@ -4,7 +4,7 @@ title:  "라인 렌더러 글씨 그리기 - Line Renderer Draw Line"
 date:   2020-12-14 14:00:07
 categories: Unity3D Basics
 description: "유니티 라인 렌더러로 글씨 그려보기"
-image: '/img/UnityBasic/LineRenderer/08.PNG'
+image: '/img/UnityBasic/LineRenderer2/05.gif'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/12/14/LineRenderer2/
 ---
