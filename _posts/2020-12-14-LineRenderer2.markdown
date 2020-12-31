@@ -126,4 +126,6 @@ void connectLine(Vector3 mousePos)
 <04. Drawing 스크립트 인스턴스화></p>  
   
 ## 테스팅  
-
+위 상단 플레이 버튼을 누르고 게임창에서 마우스로 클릭, 드래그 해서 선을 그려봅니다.  
+<p align="center"><img src="/img/UnityBasic/LineRenderer2/05.gif"><br/>
+<05. Game 창에서의 테스트></p>  
