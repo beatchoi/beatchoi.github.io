@@ -45,8 +45,8 @@ public class Move : MonoBehaviour
 #### 오브젝트 설정  
   
 에디터로 돌아와서 `Move`스크립트를 `Sphere`오브젝트에 인스턴스화를 시킵니다.  
-스크립트에서 선언한 `Speed`항목을 `1`로 설정합니다.  
-<p align="center"><img src="/img/UnityBasic/Move/02.PNG"><br/>
+스크립트에서 선언한 `Speed`항목을 `0.1`로 설정합니다.  
+<p align="center"><img src="/img/UnityBasic/Move/03.PNG"><br/>
 <02. Move 스크립트 인스턴스화></p>  
   
 ## 테스트
@@ -93,14 +93,14 @@ public class Move : MonoBehaviour
 #### 오브젝트 설정  
   
 에디터로 돌아와서 `Move`스크립트를 `Sphere`오브젝트에 인스턴스화를 시킵니다.  
-스크립트에서 선언한 `Speed`항목을 `1`로 설정합니다.  
+스크립트에서 선언한 `Speed`항목을 `10`로 설정합니다.  
 <p align="center"><img src="/img/UnityBasic/Move/02.PNG"><br/>
 <02. Move 스크립트 인스턴스화></p>  
   
 ## 테스트
 에디터 상단 플레이버튼을 눌러서 확인을 해봅니다.  
 Sphere 오브젝트가 이동하는 것을 확인합니다.  
-<p align="center"><img src="/img/UnityBasic/Move/04.gif"><br/>
+<p align="center"><img src="/img/UnityBasic/Move/05.gif"><br/>
 <03. Sphere 이동 확인></p>  
   
 위에서 확인하셨듯이 `MoveTowards`메소드를 활용하면 오브젝트를 원하는 `위치`로 이동시킬 수 있습니다.  
