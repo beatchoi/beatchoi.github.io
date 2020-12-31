@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "유니티에서의 이동 - Translate, Movetowards"
-date:   2020-12-15 14:00:07
+date:   2020-12-31 14:00:07
 categories: Unity3D Basics
 description: "유니티 기본 이동 함수"
-image: '/img/UnityBasic/PhysicsEvent/05.gif'
+image: '/img/UnityBasic/Move/05.gif'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/12/31/BasicMovement/
 ---
