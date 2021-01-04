@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "캐릭터의 이동 - Character Controller"
-date:   2020-12-31 14:00:07
+date:   2021-01-04 14:00:07
 categories: Unity3D Basics
 description: "Character Controller 컴포넌트의 활용"
-image: '/img/UnityBasic/Move/05.gif'
+image: '/img/UnityBasic/CharacterController/06.gif'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2021/01/04/CharacterController/
 ---
