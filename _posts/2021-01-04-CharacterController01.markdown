@@ -9,7 +9,7 @@ published: true
 canonical_url: http://whtls.com/unity3d/basics/2021/01/04/CharacterController/
 ---
 
-## 캐릭터 컨트롤러의 활용 :: Characger Controller
+## 캐릭터 컨트롤러의 활용 :: Character Controller
 Character Controller라는 컴포넌트를 활용하여 오브젝트를 이동시키는 방법을 알아봅니다.  
 대체로 게임에서 캐릭터가 이동할때 필요한 기능을 구현해봅니다.  
   
