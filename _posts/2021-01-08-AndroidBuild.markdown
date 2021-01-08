@@ -48,7 +48,7 @@ com.소속.패키지이름 의 형식입니다.  `com.`은 유지하고 뒤의 �
 <06. Player Settings></p>  
 
 `Build Settings`창에 돌아와서 우측 하단 `Build`버튼을 누르면 빌드가 진행됩니다.  
-<p align="center"><img src="/img/UnityBasic/AndroidBuild/07.png"><br/>
+<p align="center"><img src="/img/UnityBasic/AndroidBuild/05.png"><br/>
 <07. 빌드 진행></p>  
 
 ## Android 기기 에서
