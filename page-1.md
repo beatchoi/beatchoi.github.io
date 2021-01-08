@@ -6,6 +6,9 @@ show_sidebar: false
 ---
 ## 환경설정 :: Settings<br/>
 [유니티의 설치](https://beatchoi.github.io/unity3d/basics/2020/04/17/unity_00Installation/)<br/>
+
+## 플랫폼으로의 빌드 :: Build<br/>
+[안드로이드 빌드 <기본>](https://beatchoi.github.io/unity3d/basics/2021/01/08/AndroidBuild/)<br/>
   
 ## 문법 :: Code<br/>
 [정수, 문자열 형변환](https://beatchoi.github.io/unity3d/basics/2020/04/23/type-conversion/)<br/>
