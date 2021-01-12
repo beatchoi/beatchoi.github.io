@@ -1,0 +1,112 @@
+---
+layout: post
+title:  "Oculus Quest 1인칭 캐릭터 움직임 - VR Head bob 구현하기"
+date:   2021-01-12 14:00:07
+categories: Unity3D Basics
+description: "VR 플레이어의 자연스러운 움직임 구현"
+image: '/img/UnityBasic/CharacterController/06.gif'
+published: true
+canonical_url: http://whtls.com/unity3d/basics/2021/01/12/headbob/
+---
+
+## VR 플레이어의 움직임 :: Head Bob
+VR 콘텐츠에서 플레이어가 이동을 할때 자연스럽게 표현하기 위한 머리 움직임을 구현해봅니다.  
+본 이펙트를 구현하면 귀신이 이동하는것 같이 스르르 움직이는 것이 아니 위 아래로 덜커덕 거리는 효과를 구현할 수 있습니다.  
+Oculus Quest VR 환경에서의 Head bob 을 구현하고 이때 유의해야 할 점을 알아봅니다.  
+  
+## 유니티3D 에디터에서  
+#### 기본 세팅
+- XRToolkit 활용을 기본으로 합니다.-
+계층구조창에서 `XR Rig`오브젝트를 생성합니다.  
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/01.PNG"><br/>
+<01. XRToolkit의 XR Rig 오브젝트 생성></p>  
+
+`XR Rig`오브젝트의 하위 오브젝트인 `Camera Offset`을 선택합니다.  
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/02.PNG"><br/>
+<02. Camera Offset 선택></p>  
+
+`Camera Offset`의 인스펙터 창에서 `Animation`이라는 컴포넌트를 추가합니다.  
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/03.PNG"><br/>
+<03. Animation 컴포넌트 추가></p>  
+
+`Window`탭에서 `Animation`창을 열고 `Create` 버튼을 눌러 애니메이션 클립을 생성합니다.  
+애니메이션 클립 이름은 `headbob`으로 생성합니다.  
+이때 계층구조창에서는 `Camera Offset`오브젝트가 선택되어야 합니다.  
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/04.PNG"><br/>
+<04. 애니메이션 클립 생성></p>  
+
+애니메이션 창의 좌측 `Add Property`버튼을 선택하고 `Transform`항목의 `Position`항목을 선택합니다.  
+우측 + 버튼을 누르면 됩니다.  
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/05.PNG"><br/>
+<05. Position Property 생성></p>  
+
+애니메이션 창의 커서 바르 25 프레임정도에 두고 좌측 position.y 값을 0.05로 설정합니다.  
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/06.PNG"><br/>
+<06. Position key 편집></p>  
+
+`headbob`애니메이션 클립을 `Animation` 컴포넌트에 다음과 같이 연결시킵니다.  
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/07.PNG"><br/>
+<07. 애니메이션 클립 연결></p>  
+
+
+## 스크립트 편집
+  
+- 이전 강좌들의 `OculusInput.cs`스크립트를 참조합니다 -
+  
+`OculusInput` 스크립트, 또는 이동 입력을 관장하는 스크립트를 열어줍니다.  
+다음의 변수들과 함수들을 작성 또는 추가합니다.  
+
+```ruby
+    public Animation anim;
+    
+    private bool isWalking;
+    private Vector3 lastPosition;
+
+    private void CheckPosition()
+    {
+        if (lastPosition != gameObject.transform.position)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
+        lastPosition = gameObject.transform.position;
+    }
+    
+    void CameraAnimation()
+    {
+        if(character.isGrounded == true)
+        {
+            if(isWalking == true)
+            {
+                anim.Play("headbob");
+            }
+        }
+    }
+    
+    private void Update()
+    {
+        CameraAnimation();
+        CheckPosition();
+    }
+```
+
+* CheckPosition 함수는 플레이어의 이전 위치값과 현재의 위치값을 비교하여 플레이어가 이동을 하고 있는지 체크합니다.  
+* CameraAnimation 함수는 플레이어가 바닥에 닿아있고 이동중이라면 `headbob`이라는 애니메이션을 재생합니다.  
+* Update 함수에 두 함수 모두 호출합니다.  
+
+## 다시 유니티 에디터에서
+유니티 에디터로 돌아와서 `XR Rig`오브젝트의 `OculusInput` 스크립트 컴포넌트의 `Anim`변수항목에 `Camera Offset`오브젝트를 연결합니다.
+<p align="center"><img src="/img/UnityBasic/OculusQuest/headbob/08.PNG"><br/>
+<08. 애니메이션 컴포넌트 연결></p>  
+
+## 플레이 테스트 및 설명
+이전 강좌에서 설명드린대로 VR 환경에서는 일반 1인칭 콘텐츠와는 다르게 회전의 주체와 이동의 주체가 다릅니다.  
+플레이어가 가상현실 속에서 둘러보게되면 `XR Rig` 오브젝트의 `Main Camera`오브젝트가 회전을 하겠지만,  
+플레이어가 이동을 하게되면 `Character Controller`컴포넌트를 가지고 있는 `XR Rig` 오브젝트가 이동을 합니다.  
+이는 가상현실 콘텐츠 구성의 특징상 회전하는 주체가 이동으 동시에 할 수 없기 때문인데요.  
+따라서 `headbob` 애니메이션을 주어야 하는 오브젝트를 `Main Camera`가 아닌 `Camera Offset`으로 지정을 한 것입니다.  
+이동을 하는 동안 `Camera Offset` 오브젝트를 위 아래로 살짝 반복 이동을 시키게 되면 자연스러운 걸음을 구현할 수 있습니다.  
+
