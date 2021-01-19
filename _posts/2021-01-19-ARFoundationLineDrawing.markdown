@@ -18,7 +18,7 @@ ARFoundation 환경설정 및 라인 렌더러 포스팅을 참고하면 좋습�
   
 #### 플랫폼 세팅
 프로젝트를 생성하고 `Build Settings`창에서 플랫폼을 `IOS`로 변경합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/02/01.PNG"> <img src="/img/UnityVR/OculusQuest/01XRToolkit/02.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/02/01.png"> <br/>
 <01. 개발 플렛폼 변경></p>
   
 #### 패키지 설치 :: Package Manager
@@ -60,7 +60,7 @@ ARFoundation 환경설정 및 라인 렌더러 포스팅을 참고하면 좋습�
 <09. Main Camera 오브젝트 제거></p>
 
 계층구조창에서 빈 게임 오브젝트를 생성하고 이름을 `Drawing`으로 변경합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/02/02.PNG"> <br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/02/02.png"> <br/>
 <10. `Drawing` 오브젝트 생성></p>
 
 #### 스크립트 생성
@@ -134,17 +134,17 @@ public class Drawing : MonoBehaviour
 ```
   
 `Drawing`스크립트를 `Drawing` 오브젝트에 인스턴스화 시킵니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/02/03.PNG"> <br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/02/03.png"> <br/>
 <11. `Drawing` 스크립트 인스턴스화></p>
 
 프로젝트 창에서 `Material`파일을 생성하여 이름을 `LineMat`으로 지정합니다.  
 해당 메터리얼 파일의 셰이더를 `Unlit/Color`로 변경하고 `Main Color`항목을 흰색으로 설정합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/02/04.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/02/04.png"><br/>
 <12. `LineMat` 메터리얼 생성></p>
 
 계층구조창의 `Drawing` 오브젝트를 선택하고 `Drawing`컴포넌트의 `Cam` , `Default Material`항목을 각각 `AR Camera` , `LineMat`으로 지정합니다.  
 `AR Camera` 오브젝트는 `AR Session Origin`오브젝트 하위에 존재하고 있습니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/02/05.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/02/05.png"><br/>
 <13. 객체 연결></p>
 
 ## 빌드 해보기
