@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "ARFoundation 으로 선 그리기 콘텐츠 만들어보기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/19/ARFoundationLine01/
+canonical_url: http://whtls.com/unity3d/basics/2021/12/19/ARFoundationLine01/
 ---
 
 ## ARFoundation을 활용하여 증강현실 선 그리기 콘텐츠를 개발합니다.  
