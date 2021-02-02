@@ -59,7 +59,7 @@ XCode 프로젝트가 실행되면 좌측 탭에서 `Unity-iPhone` 항목을 선
 <p align="center"><img src="/img/UnityAR/ARFoundation/build/09.png"> <br/>
 <09. 빌드></p>
   
-##마무리
+## 마무리
 ARFoundation 세팅을 한 프로젝트를 iOS 플랫폼으로 빌드를 하기 위한 과정을 알아보았습니다.  
 이미 유니티에서 iOS 빌드를 진행한 경험이 있다면 크게 어려운 부분은 없습니다만  
 ARFoundation 및 ARKit를 적용시키기 위해서 `Player Settings`창에서 몇가지 항목들을 체크해야합니다.  
