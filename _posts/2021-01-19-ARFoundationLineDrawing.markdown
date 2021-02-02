@@ -18,7 +18,7 @@ ARFoundation 환경설정 및 라인 렌더러 포스팅을 참고하면 좋습�
   
 #### 플랫폼 세팅
 프로젝트를 생성하고 `Build Settings`창에서 플랫폼을 `IOS`로 변경합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/02/01.png"> <br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/build/01.png"> <br/>
 <01. 개발 플렛폼 변경></p>
   
 #### 패키지 설치 :: Package Manager
