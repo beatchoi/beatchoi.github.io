@@ -28,40 +28,33 @@ ARFoundation 콘텐츠를 IOS 환경으로 빌드하는 방법을 알아봅니�
 <p align="center"><img src="/img/UnityAR/ARFoundation/build/02.png"> <br/>
 <02. 플레이어세팅 창 - Bundle Identifier></p>
 
-`Other Settings`항목에 `Requires ARKit Support`항목을 찾습니다.  
+`Other Settings`항목에 `Target minimum iOS Version`항목을 11로 변경합니다.  
+아래에 있는 `Requires ARKit Support`항목을 찾습니다.  
 해당 항목에 체크해줍니다.  
 <p align="center"><img src="/img/UnityAR/ARFoundation/build/03.png"> <br/>
 <03. 플레이어세팅 창 - Requires ARKit Support></p>
-  
-`Requires ARKit Support`항목 상단에 있는 `Target minimum iOS Version`항목을 11로 변경합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/build/04.png"> <br/>
-<04. 플레이어세팅 창 - Target minimum iOS Version></p>
-  
+
 `Architecture`항목을 ARM64로 변경합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/build/05.png"> <br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/build/04.png"> <br/>
 <05. 플레이어세팅 창 - Architecture></p>
   
 ## 빌드 해보기
 `Build Settings`창 우착 하단 `Build`버튼을 눌러 빌드를 진행합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/build/06.png"> <br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/build/05.png"> <br/>
 <06. 빌드세팅 창 - 프로젝트 빌드></p>
   
 생성된 빌드폴더를 열어보면 `Unity-iPhone.xcodeproj`파일이 있습니다.  
 해당 파일을 더블클릭하여 열어줍니다. 해당 파일을 열기 위해서는 먼저 `XCode` 앱이 설치되어있어야 합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/build/07.png"> <br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/build/06.png"> <br/>
 <07. Unity-iPhone.xcodeproj></p>
 
 XCode 프로젝트가 실행되면 좌측 탭에서 `Unity-iPhone` 항목을 선택합니다.  
 중앙 화면에 여러 메뉴 항목들 중 `Signing & Capabilities` 항목을 클릭하고 Provisional Profile을 선택합니다.  
-(미리 Provisional Profile을 생성해 놓아야 합니다)  
-`Other Settings`항목에 다음과 같은 `Requires ARKit Support`항목을 찾습니다.  
-해당 항목에 체크해줍니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/build/08.png"> <br/>
+(미리 Provisional Profile을 생성해 놓아야 합니다)   
+<p align="center"><img src="/img/UnityAR/ARFoundation/build/07.png"> <br/>
 <08. XCode Project Build></p>
   
 맥PC에 iOS 디바이스를 연결하고 상단 플레이버튼을 눌러 빌드를 진행합니다.  
-붉은색 느낌표가 뜨지않고 완료된다면 빌드가 성공적으로 진행된 것이니 모바일 디바이스를 확인합니다.  
-`Other Settings`항목에 다음과 같은 `Requires ARKit Support`항목을 찾습니다.  
-해당 항목에 체크해줍니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/build/09.png"> <br/>
+붉은색 느낌표가 뜨지않고 완료된다면 빌드가 성공적으로 진행된 것이니 모바일 디바이스를 확인합니다.   
+<p align="center"><img src="/img/UnityAR/ARFoundation/build/08.png"> <br/>
 <09. 빌드></p>
