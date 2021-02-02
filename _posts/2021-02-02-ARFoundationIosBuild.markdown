@@ -58,3 +58,9 @@ XCode 프로젝트가 실행되면 좌측 탭에서 `Unity-iPhone` 항목을 선
 붉은색 느낌표가 뜨지않고 완료된다면 빌드가 성공적으로 진행된 것이니 모바일 디바이스를 확인합니다.   
 <p align="center"><img src="/img/UnityAR/ARFoundation/build/09.png"> <br/>
 <09. 빌드></p>
+  
+##마무리
+ARFoundation 세팅을 한 프로젝트를 iOS 플랫폼으로 빌드를 하기 위한 과정을 알아보았습니다.  
+이미 유니티에서 iOS 빌드를 진행한 경험이 있다면 크게 어려운 부분은 없습니다만  
+ARFoundation 및 ARKit를 적용시키기 위해서 `Player Settings`창에서 몇가지 항목들을 체크해야합니다.  
+해당 부분들을 놓치게 된다면 빌드를 진행했을 때 카메라가 공간을 인지하지 못하게 됩니다.  
