@@ -9,7 +9,7 @@ published: true
 canonical_url: http://whtls.com/unity3d/basics/2021/02/02/ARFoundationIosBuild/
 ---
 
-## ARFoundation을    
+## ARFoundation을 IOS 모바일 플랫폼으로 빌드합니다.   
   
 ## 유니티3D 에디터에서  
   
