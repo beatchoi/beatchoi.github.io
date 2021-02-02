@@ -148,4 +148,9 @@ public class Drawing : MonoBehaviour
 <13. 객체 연결></p>
 
 ## 빌드 해보기
+아래 링크를 참조하여 빌드를 진행합니다.  
+[2. ARFoundation iOS Build](http://whtls.com/unity3d/basics/2021/01/19/ARFoundationIosBuild/) 
 
+결과물은 아래와 같습니다.  
+<p align="center"><img src="/img/UnityAR/ARFoundation/02/06.gif"><br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/02/07.gif"><br/>
