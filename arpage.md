@@ -9,6 +9,6 @@ show_sidebar: false
 [1. ARFoundation 환경설정](https://beatchoi.github.io/unity3d/basics/2020/12/14/ARFoundation01/)  
 [2. ARFoundation iOS Build](https://beatchoi.github.io/unity3d/basics/2021/01/19/ARFoundationIosBuild/) 
 ##### Line Drawing 콘텐츠 만들어보기 IOS
-[1. ARFoundation Touch Object Placement](https://beatchoi.github.io/unity3d/basics/2021/04/23/ARFoundationTouchCreateObject/)  
+[1. ARFoundation Touch Object Placement](https://beatchoi.github.io/arpage/2021/04/23/ARFoundationTouchCreateObject/)  
 [2. ARFoundation Line Drawing](https://beatchoi.github.io/unity3d/basics/2021/01/19/ARFoundationLineDrawing/)  
 
