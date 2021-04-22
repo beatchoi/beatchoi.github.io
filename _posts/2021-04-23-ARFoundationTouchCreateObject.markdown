@@ -2,7 +2,7 @@
 layout: post
 title:  "ARFoundation Object Creation"
 date:   2021-04-23 14:00:07
-categories: Unity3D + AR
+categories: ARPage
 description: "ARFoundation을 활용하여 지면인식 후 오브젝트 생성하기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
