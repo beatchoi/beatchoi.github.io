@@ -6,7 +6,7 @@ categories: ARPage
 description: " Zxing 과 ARFoundation을 활용한 QRCode Reader 만들기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
-canonical_url: http://beatchoi.github.io/unity3d/basics/2021/02/02/ARFoundationIosBuild/
+canonical_url: https://beatchoi.github.io/arpage/2021/04/23/ARFoundationQRCodeReader/
 ---
 
 #### 프로젝트 생성 및 세팅
