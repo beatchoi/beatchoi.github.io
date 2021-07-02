@@ -25,8 +25,10 @@ canonical_url: https://beatchoi.github.io/arpage/2021/04/23/ARFoundationQRCodeRe
 <p align="center"><img src="/img/UnityAR/ARFoundation/03QRCodeReader/3.ARFoundationSceneSetting.PNG"><br/>
 <03. ARFoundation 씬 세팅></p>  
   
- 프로젝트 창에서 폴더를 새로 생성하고 폴더의 이름을 "Plugins"로 설정합니다.  
- "Plugins" 폴더 안에 다음 플러그인을 넣어줍니다.  
+프로젝트 창에서 폴더를 새로 생성하고 폴더의 이름을 "Plugins"로 설정합니다.  
+"Plugins" 폴더 안에 다음 플러그인을 넣어줍니다.  
+    
+[zxing.unity.dll ](https://github.com/beatchoi/beatchoi.github.io/raw/master/Files/zxing.unity.dll)
   
 <p align="center"><img src="/img/UnityAR/ARFoundation/03QRCodeReader/12.Zxingdll.PNG"><br/>
 <04. Zxing 플러그인 임포트></p>  
