@@ -125,4 +125,7 @@ Txt 항목에는 위에서 생성한 Canvas 오브젝트의 자식오브젝트�
 <p align="center"><img src="/img/UnityAR/ARFoundation/03QRCodeReader/6.BuildSetting2.PNG"><br/>
 <11. 빌드 세팅></p> 
   
+#### 테스트
   
+빌드를 한 뒤 안드로이드 디바이스에 설치하여 해당 어플리케이션을 실행시킵니다.  
+카메라가 켜지면 QR코드를 인식시켜보고 가운데 텍스트에 QR의 데이터가 출력되는지 확인합니다.  
