@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "ARFoundation Ground Indicator"
-date:   2021-04-23 14:00:17
+title:  "ARFoundation QRCode Reader"
+date:   2021-07-21 16:21:17
 categories: ARPage
-description: "ARFoundation을 활용하여 지면인식 표시 생성하기"
+description: " Zxing 과 ARFoundation을 활용한 QRCode Reader 만들기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2021/02/02/ARFoundationIosBuild/
