@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ARFoundation QRCode Reader"
-date:   2021-07-21 16:21:17
+date:   2021-07-02 16:21:17
 categories: ARPage
 description: " Zxing 과 ARFoundation을 활용한 QRCode Reader 만들기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
