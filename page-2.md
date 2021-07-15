@@ -9,4 +9,4 @@ show_sidebar: false
 
 ## 네트워크
 [MirrorNetwork :: 시작하기](https://beatchoi.github.io/unity3d/basics/2020/12/21/MirrorNetwtwork/)  
-[MirrorNetwork 21-07-15:: 플레이어의 캐릭터 조종하기 및 싱크맞추기](https://beatchoi.github.io/unity3d/basics/2021/07/15/MirrorNetwtworkCharacterMoveSync/)
+[MirrorNetwork :: 플레이어의 캐릭터 조종하기 및 싱크맞추기- 2021-07-15](https://beatchoi.github.io/unity3d/basics/2021/07/15/MirrorNetwtworkCharacterMoveSync/)
