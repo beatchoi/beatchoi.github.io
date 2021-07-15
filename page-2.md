@@ -8,4 +8,5 @@ show_sidebar: false
 [1. 웹캠 인풋 받아오기](https://beatchoi.github.io/unity3d/basics/2020/04/17/webcam-texture/)
 
 ## 네트워크
-[MirrorNetwork 시작하기](http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwtwork/)
+[MirrorNetwork 시작하기](https://beatchoi.github.io/unity3d/basics/2020/12/21/MirrorNetwtwork/)
+[MirrorNetwork :: 플레이어의 캐릭터 조종하기 및 싱크맞추기](https://beatchoi.github.io/unity3d/basics/2021/07/15/MirrorNetwtworkCharacterMoveSync/)
