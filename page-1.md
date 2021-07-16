@@ -17,11 +17,11 @@ show_sidebar: false
 [유니티에서 이동하기 :: Translate, MoveTowards - 20-12-31](https://beatchoi.github.io/unity3d/basics/2020/12/31/BasicMovement/)<br/>
   
 ## 컴포넌트 :: Component<br/>
-[Line Renderer :: 라인 렌더러]
+[Line Renderer :: 라인 렌더러  
 [라인 렌더러 :: 라인 렌더러 알아보기 - 20-12-11](https://beatchoi.github.io/unity3d/basics/2020/12/11/LineRenderer/)<br/>
 [라인 렌더러 :: 클릭으로 선 그리기   - 20-12-14](https://beatchoi.github.io/unity3d/basics/2020/12/14/LineRenderer2/)<br/>  
-
-[Character Controller :: 캐릭터 컨트롤러]
+  
+[Character Controller :: 캐릭터 컨트롤러]  
 [캐릭터 컨트롤러 :: 이동시키기         - 21-01-04](https://beatchoi.github.io/unity3d/basics/2021/01/04/CharacterController01/)<br/>
 [캐릭터 컨트롤러 :: 이동시키기 - 1인칭 - 21-07-09](https://beatchoi.github.io/unity3d/basics/2021/07/09/CharacterController02/)  
   
