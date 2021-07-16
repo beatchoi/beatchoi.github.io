@@ -22,7 +22,7 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/Mixamo
   
 그리고 뒤로 걸어가는 애니메이션을 다운로드 받습니다.  
 검색은 `back walk`로 합니다.  
-<p align="center"><img src="/img/UnityFundamental/MixamoUnity3/2.gif"><br/>
+<p align="center"><img src="/img/UnityFundamental/MixamoUnity3/2.PNG"><br/>
 <02. Walk back 애니메이션 다운로드></p>  
   
 ## 유니티 에디터에서
