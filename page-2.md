@@ -4,7 +4,8 @@ subtitle: Fundamentals for Unity3D
 layout: page
 show_sidebar: false
 ---
-##Mixamo Animation  
+  
+## Mixamo Animation  
 [1. Mixamo Character & Animation 불러오기- 2021-07-16](https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity/)  
 
 ## 외부 카메라  
