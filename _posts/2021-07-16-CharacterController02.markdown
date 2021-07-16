@@ -9,7 +9,7 @@ published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2021/07/16/CharacterController2/
 ---
 ## 캐릭터의 이동 및 회전 :: Character Controller  
-이전 포스트의 Character Controller 컴포넌트를 활용하여 캐릭터를 이동 스크립트를 간편하게 작서해봅니다.  
+이전 포스트의 Character Controller 컴포넌트를 활용하여 캐릭터를 이동 스크립트를 간편하게 작성해봅니다.  
   
 ## 유니티3D 에디터에서  
 #### 스크립트 생성  
