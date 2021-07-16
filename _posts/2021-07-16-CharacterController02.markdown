@@ -4,7 +4,7 @@ title:  "캐릭터의 이동<간편> - Character Controller"
 date:   2021-07-16 19:00:07
 categories: Unity3D Basics
 description: "Character Controller 컴포넌트의 활용하는 간편 스크립트"
-image: '/img/UnityBasic/CharacterController/06.gif'
+image: '/img/UnityBasic/CharacterController/change.gif'
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2021/07/16/CharacterController2/
 ---
