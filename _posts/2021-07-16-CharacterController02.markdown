@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 ## 테스트
 에디터 상단 플레이버튼을 눌러서 확인을 해봅니다.  
 `Game`창에서 키보드의 앞 뒤 좌 우 화살표 키 또는 W A S D 를 눌러 캐릭터가 이동을 하는지 확인합니다.  
-<p align="center"><img src="/img/UnityBasic/CharacterController/06.gif"><br/>
+<p align="center"><img src="/img/UnityBasic/CharacterController/change.gif"><br/>
 <05. 캐릭터 오브젝트의 이동 확인></p>  
   
 
