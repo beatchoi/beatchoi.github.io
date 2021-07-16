@@ -4,9 +4,9 @@ title:  "믹사모 캐릭터 애니메이션 활용 - Mixamo Character & Animati
 date:   2021-07-16 14:00:07
 categories: Unity3D Fundamentals
 description: "믹사모 캐릭터 및 애니메이션의 활용"
-image: '/img/UnityBasic/CharacterController/06.gif'
+image: '/img/UnityFundamental/MixamoUnity/18.gif'
 published: true
-canonical_url: http://beatchoi.github.io/unity3d/basics/2021/07/09/CharacterController2/
+canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity/
 ---
 ## 믹사모 캐릭터 및 애니메이션의 활용 :: Mixamo Character & Animation  
   
