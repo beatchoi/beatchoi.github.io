@@ -23,6 +23,7 @@ show_sidebar: false
   
 #### [Character Controller :: 캐릭터 컨트롤러]  
 [캐릭터 컨트롤러 :: 이동시키기         - 21-01-04](https://beatchoi.github.io/unity3d/basics/2021/01/04/CharacterController01/)<br/>
+[캐릭터 컨트롤러 :: 이동시키기 - 간편  - 21-07-16](https://beatchoi.github.io/unity3d/basics/2021/07/16/CharacterController02/)
 [캐릭터 컨트롤러 :: 이동시키기 - 1인칭 - 21-07-09](https://beatchoi.github.io/unity3d/basics/2021/07/09/CharacterController02/)  
   
 ## 물리 :: Physics<br/>
