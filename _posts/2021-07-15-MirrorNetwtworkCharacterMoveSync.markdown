@@ -121,3 +121,5 @@ EXE 파일을 실행시켜줍니다.
 동시에 이동하면 안됩니다.  
 호스트 창에서 클라이언트 캐릭터가 이동을 했는지 확인합니다.  
 호스트 창에서 클라이언트가 이동한 싱크가 맞느면 성공입니다.  
+<p align="center"><img src="/img/UnityFundamental/MirrorNetwork2/fin.gif">
+<14. 좌.클라이언트 우.서버></p> 
