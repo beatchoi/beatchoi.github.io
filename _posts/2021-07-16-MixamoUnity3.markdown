@@ -4,7 +4,7 @@ title:  "믹사모 캐릭터 애니메이션 활용 3 - Mixamo Character & Anima
 date:   2021-07-16 18:00:07
 categories: Unity3D Fundamentals
 description: "애니메이션 컨트롤러를 활용한 애니메이션 제어"
-image: '/img/UnityFundamental/MixamoUnity/18.gif'
+image: '/img/UnityFundamental/MixamoUnity3/20.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity2/
 ---
