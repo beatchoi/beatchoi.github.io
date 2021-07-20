@@ -8,6 +8,10 @@ image: '/img/UnityFundamental/MixamoUnity/18.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity2/
 ---
+  
+{% include adsense.html %}  
+  
+  
 ## 믹사모 캐릭터 및 애니메이션의 활용 2 :: Mixamo Character & Animation 2  
   
 저번 포스팅에서 불러온 모델링 파일을 활용하여 애니메이션을 구현해봅니다.  
@@ -58,4 +62,7 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/Mixamo
 <p align="center"><img src="/img/UnityFundamental/MixamoUnity/18.gif"><br/>  
 <08. 걷기 애니메이션></p>   
   
-
+  
+  {% include adsense.html %}
+  
+  
