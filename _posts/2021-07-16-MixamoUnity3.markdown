@@ -7,7 +7,10 @@ description: "애니메이션 컨트롤러를 활용한 애니메이션 제어"
 image: '/img/UnityFundamental/MixamoUnity3/20.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity2/
----
+---  
+  
+{% include adsense.html %}  
+  
 ## 믹사모 캐릭터 및 애니메이션의 활용 3 :: Mixamo Character & Animation 3  
   
 저번 포스팅에 이어 애니메이션을 추가해보고 추가한 애니메이션들을 제어해봅니다.  
@@ -36,6 +39,8 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/Mixamo
 해당 폴더 안에 다운로드 받은 애니메이션 모델링 파일들과 이전에 받은 걷기 애니메이션 모델링 파일을 넣습니다.  
 <p align="center"><img src="/img/UnityFundamental/MixamoUnity3/4.PNG"><br/>
 <04. 파일 정리></p>  
+  
+{% include adsense.html %}  
   
 #### Animator Controller 수정  
   
@@ -131,6 +136,8 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/Mixamo
 <p align="center"><img src="/img/UnityFundamental/MixamoUnity3/19.gif"><br/>  
 <16. 캐릭터 이동 테스트></p>  
   
+  {% include adsense.html %}  
+  
 #### 스크립트 수정  
   
 `PlayerController.cs` 스크립트를 열어 아래와 같이 수정합니다.  
@@ -208,4 +215,4 @@ public class PlayerController : MonoBehaviour
 다만 양옆으로 이동할때에 따른 애니메이션은 우리가 설정하지 않았기 때문에 구현이 되어있지 않습니다.  
 여유가 되신다면 양옆으로 이동할 때의 애니메이션도 구현해보시길 바랍니다.  
   
-  
+  {% include adsense.html %}
