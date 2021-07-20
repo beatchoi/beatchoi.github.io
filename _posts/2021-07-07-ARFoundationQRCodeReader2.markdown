@@ -9,7 +9,7 @@ published: true
 canonical_url: https://beatchoi.github.io/arpage/2021/07/07/ARFoundationQRCodeReader2/
 ---
 
-
+  {% include adsense.html %}
   
 #### 스크립트 생성
 
@@ -155,6 +155,9 @@ SetObject 함수와 해당 함수의 호출부만 추가하면 됩니다.
 }
 ```
   
+  {% include adsense.html %}
+  
+  
 #### 에디터에서
 
 계층구조창에서 3D 오브젝트 하나를 생성합니다. 간단하게 Cube 오브젝트로 실행하겠습니다.  
@@ -194,3 +197,8 @@ Txt 항목에는 Txt 오브젝트를 연결합니다.
 빌드를 한 뒤 안드로이드 디바이스에 설치하여 해당 어플리케이션을 실행시킵니다.  
 카메라가 켜지면 QR코드를 인식시켜보고 가운데 텍스트에 QR의 데이터가 출력되는지 확인합니다.  
 그후 지면을 인식시켜 Indicator 가 나오는지 확인하고 스크린을 터치하면 해당 위치에 Cube 오브젝트가 생성됩니다.  
+
+  
+  {% include adsense.html %}
+  
+  
