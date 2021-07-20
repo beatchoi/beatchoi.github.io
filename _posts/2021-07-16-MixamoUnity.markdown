@@ -8,6 +8,10 @@ image: '/img/UnityFundamental/MixamoUnity/18.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity/
 ---
+  
+{% include adsense.html %}  
+  
+  
 ## 믹사모 캐릭터 및 애니메이션의 활용 :: Mixamo Character & Animation  
   
 어도비 믹사모 캐릭터와 애니메이션을 활용하여 유니티에서 캐릭터의 움직임을 적용해 봅시다.  
@@ -60,6 +64,10 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/Mixamo
 <p align="center"><img src="/img/UnityFundamental/MixamoUnity/9.PNG"><br/>  
 <10. 애니메이션 다운로드></p>
   
+  
+  {% include adsense.html %}
+  
+  
 ##유니티에서  
   
 다운로드가 완료되면 유니티 프로젝트를 생성하고 `Project`창에 다운로드받은 애니메이션 파일을 임포트합니다.  
@@ -92,3 +100,9 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/Mixamo
 다음과 같이 텍스쳐가 캐릭터에 입혀진 것을 확인할 수 있습니다.  
 <p align="center"><img src="/img/UnityFundamental/MixamoUnity/16.PNG"><br/>
 <15. 캐릭터 텍스쳐></p>
+  
+  
+  {% include adsense.html %}
+  
+  
+  
