@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ARFoundation Line Drawing - 01"
+title:  "ARFoundation Line Drawing - 01 :: 선 그리기 콘텐츠 만들어보기"
 date:   2021-01-19 14:00:07
 categories: Unity3D Basics
 description: "ARFoundation 으로 선 그리기 콘텐츠 만들어보기"
