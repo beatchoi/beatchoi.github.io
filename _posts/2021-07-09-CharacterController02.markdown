@@ -8,6 +8,10 @@ image: '/img/UnityBasic/CharacterController/06.gif'
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2021/07/09/CharacterController2/
 ---
+
+  {% include adsense.html %}
+  
+  
 ## 1인칭 캐릭터의 이동 및 회전 :: Character Controller  
 이전 포스트의 Character Controller 컴포넌트를 활용하여 1인칭 캐릭터를 생성해봅니다.  
 캐릭터의 이동 및 회전 코드를 조금 더 효율적으로 작성해봅니다.  
@@ -119,5 +123,6 @@ public class PlayerController : MonoBehaviour
   
 키보드의 Space를 눌러 캐릭터가 점프를 하는지 확인합니다.  
   
-
-
+  
+  {% include adsense.html %}
+   
