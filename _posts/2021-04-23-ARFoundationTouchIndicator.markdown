@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "ARFoundation Ground Indicator"
+title:  "ARFoundation Ground Indicator :: 지면 인식 표시 객체 생성하기"
 date:   2021-04-23 14:00:17
 categories: ARPage
 description: "ARFoundation을 활용하여 지면인식 표시 생성하기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2021/02/02/ARFoundationIosBuild/
+canonical_url: https://beatchoi.github.io/arpage/2021/04/23/ARFoundationTouchIndicator/
 ---
   
   {% include adsense.html %}
