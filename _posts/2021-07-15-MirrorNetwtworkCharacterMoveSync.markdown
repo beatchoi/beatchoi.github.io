@@ -8,7 +8,11 @@ image: '/img/UnityFundamental/MirrorNetwork/01.PNG'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwork/
 ---
-
+  
+  
+  {% include adsense.html %}
+  
+  
 ## MirrorNetwork를 활용한 캐릭터 구현
 유니티에서 `MirrorNetwork`를 활용하여 플레이어의 `캐릭터`를 구현하고 주의해야할 점을 알아봅니다.   
   
@@ -123,3 +127,9 @@ EXE 파일을 실행시켜줍니다.
 호스트 창에서 클라이언트가 이동한 싱크가 맞느면 성공입니다.  
 <p align="center"><img src="/img/UnityFundamental/MirrorNetwork2/fin.gif">
 <14. 좌.클라이언트 우.서버></p> 
+  
+  
+  {% include adsense.html %}
+  
+  
+  
