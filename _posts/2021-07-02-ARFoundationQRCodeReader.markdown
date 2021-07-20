@@ -8,7 +8,10 @@ image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
 canonical_url: https://beatchoi.github.io/arpage/2021/04/23/ARFoundationQRCodeReader/
 ---
-
+  
+  {% include adsense.html %}
+  
+  
 #### 프로젝트 생성 및 세팅
 새로운 프로젝트를 생성하고 ARFoundation을 임포트 합니다.  
   
@@ -38,6 +41,10 @@ Player Setting 창에서 Allow 'Unsafe' Code 항목을 체크합니다.
 <p align="center"><img src="/img/UnityAR/ARFoundation/03QRCodeReader/4.AllowUnsafeCode.PNG"><br/>
 <05. Unsafe 코드 활성화></p>  
 
+  
+  {% include adsense.html %}
+  
+  
 #### 스크립트 생성
 ReadQRCode.cs 스크립트를 생성하고 다음과 같이 작성합니다.
     
@@ -129,3 +136,7 @@ Txt 항목에는 위에서 생성한 Canvas 오브젝트의 자식오브젝트�
   
 빌드를 한 뒤 안드로이드 디바이스에 설치하여 해당 어플리케이션을 실행시킵니다.  
 카메라가 켜지면 QR코드를 인식시켜보고 가운데 텍스트에 QR의 데이터가 출력되는지 확인합니다.  
+  
+  {% include adsense.html %}
+  
+  
