@@ -8,7 +8,10 @@ image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2021/02/02/ARFoundationIosBuild/
 ---
-
+  
+  {% include adsense.html %}
+  
+  
 #### 스크립트 생성
 `ARPlaneIndication`이라는 이름의 스크립트를 생성해서 다음과 같이 작성합니다.  
 
@@ -65,3 +68,8 @@ public class ARPlaneIndication : MonoBehaviour
 
 
 ```
+  
+  
+{% include adsense.html %}
+  
+  
