@@ -8,6 +8,11 @@ image: '/img/UnityBasic/CharacterController/change.gif'
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2021/07/16/CharacterController2/
 ---
+  
+  
+  {% include adsense.html %}
+  
+  
 ## 캐릭터의 이동 및 회전 :: Character Controller  
 이전 포스트의 Character Controller 컴포넌트를 활용하여 캐릭터를 이동 스크립트를 간편하게 작성해봅니다.  
   
@@ -79,6 +84,10 @@ public class PlayerController : MonoBehaviour
 `Game`창에서 키보드의 앞 뒤 좌 우 화살표 키 또는 W A S D 를 눌러 캐릭터가 이동을 하는지 확인합니다.  
 <p align="center"><img src="/img/UnityBasic/CharacterController/change.gif"><br/>
 <05. 캐릭터 오브젝트의 이동 확인></p>  
+  
+  
+  {% include adsense.html %}
+  
   
 
 
