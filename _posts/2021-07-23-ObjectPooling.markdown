@@ -4,7 +4,7 @@ title:  "콘텐츠 개발 기법 - 오브젝트 풀링(Object Pooling)"
 date:   2021-07-16 19:00:07
 categories: Unity3D Basics
 description: "오브젝트 풀링(Object Pooling)기법을 구현해봅니다."
-image: '/img/UnityBasic/CharacterController/change.gif'
+image: '/img/UnityFundamental/ObjectPooling/6.gif'
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2021/07/16/CharacterController2/
 ---
@@ -204,13 +204,13 @@ public class Test : MonoBehaviour
 계층구조창에서 `Cube`오브젝트를 생성합니다.  
 생성한 오브젝트에 `ObjectChar.cs` 스크립트를 인스턴스화 시킵니다.  
 그리고 `Project`창으로 드래그 앤 드롭을 하여 `프리펩화` 시켜줍니다.  
-<p align="center"><img src="/img/UnityFundamentals/ObjectPooling/1.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/ObjectPooling/1.PNG"><br/>
 <01. 오브젝트 생성></p>  
   
 계층구조 창에서 `빈 게임 오브젝트`를 생성합니다.  
 해당 오브젝트의 이름을 `[ObjectPool]`로 변경합니다.  
 `[ObjectPool]`오브젝트에 `ObjectPool.cs`스크립트를 인스턴스화 시킵니다.  
-<p align="center"><img src="/img/UnityFundamentals/ObjectPooling/2.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/ObjectPooling/2.PNG"><br/>
 <02. 오브젝트 풀 생성></p>    
   
 `[ObjectPool]`오브젝트를 선택하고 우측 인스펙터 창에서 `Object Pool` 컴포넌트의 `Objects` 항목을 확인합니다.  
@@ -219,13 +219,13 @@ public class Test : MonoBehaviour
   * Num :  풀에 생성할 오브젝트의 개수, 300 으로 설정합니다.  
   * Queue Name : 오브젝트 풀의 이름입니다. 풀링할 오브젝트의 이름을 동일하게 넣어줍니다.  
   * Prefab :  풀링할 프리펩 파일을 연결시킵니다.  
-<p align="center"><img src="/img/UnityFundamentals/ObjectPooling/3.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/ObjectPooling/3.PNG"><br/>
 <03. 오브젝트 연결></p>   
   
 계층구조창에서 빈 게임 오브젝트를 생성하여 `[Tester]`로 이름을 변경합니다.  
 `[Tester]`오브젝트에 `Test.cs`스크립트를 인스턴스화 시킵니다.  
 `Test.cs` 컴포넌트를 비활성화 시켜줍니다.  
-<p align="center"><img src="/img/UnityFundamentals/ObjectPooling/4.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/ObjectPooling/4.PNG"><br/>
 <04. 테스트 오브젝트 생성></p> 
   
 ## 테스트
@@ -237,7 +237,7 @@ public class Test : MonoBehaviour
 `[Tester]`오브젝트의 `Test`컴포넌트를 비 활성화시키면 테스트가 종료됩니다.  
 그리고 다시 오브젝트 풀을 확인해보면 아까 활용된 오브젝트들이 제거되지 않고 다시 정리된 것을 확인할 수 있습니다.  
   
-<p align="center"><img src="/img/UnityFundamentals/ObjectPooling/5.gif"><br/>
+<p align="center"><img src="/img/UnityFundamental/ObjectPooling/5.gif"><br/>
 <05. 오브젝트 풀 테스트></p>  
   
   
