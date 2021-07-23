@@ -16,6 +16,8 @@ show_sidebar: false
 [유니티에서 입력받기 - 02 :: GetKey - 20-12-23](https://beatchoi.github.io/unity3d/basics/2020/12/23/Input02/)<br/>
 [유니티에서 이동하기 :: Translate, MoveTowards - 20-12-31](https://beatchoi.github.io/unity3d/basics/2020/12/31/BasicMovement/)<br/>
   
+[싱글톤 패턴, 다른 객체에서 참조하기 :: Singleton Pattern - 21-07-23](https://beatchoi.github.io/2021/07/23/SingletonAndStatic/)<br/>  
+  
 ## 컴포넌트 :: Component<br/>
 #### [Line Renderer :: 라인 렌더러  
 [라인 렌더러 :: 라인 렌더러 알아보기 - 20-12-11](https://beatchoi.github.io/unity3d/basics/2020/12/11/LineRenderer/)<br/>
