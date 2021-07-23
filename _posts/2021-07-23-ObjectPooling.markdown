@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "오브젝트 풀링(Object Pooling)기법을 구현해봅니다."
 image: '/img/UnityFundamental/ObjectPooling/6.gif'
 published: true
-canonical_url: http://beatchoi.github.io/unity3d/basics/2021/07/16/CharacterController2/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2021/07/16/ObjectPooling/
 ---
   
   
