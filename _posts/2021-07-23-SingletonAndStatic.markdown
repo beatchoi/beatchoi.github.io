@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유니티 코딩 기법 - 싱글톤"
-date:   2021-07-16 21:00:07
+date:   2021-07-23 14:00:07
 categories: Unity3D Basics
 description: "싱글톤 패턴(Singleton Pattern)을 알아봅니다."
 image: 'https://refactoring.guru/images/patterns/content/singleton/singleton.png?id=108a0b9b5ea5c4426e0a'
