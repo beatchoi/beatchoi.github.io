@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "유니티 코딩 기법 - 싱글톤과 정적변수 및 함수"
+title:  "유니티 코딩 기법 - 싱글톤"
 date:   2021-07-16 21:00:07
 categories: Unity3D Basics
-description: "오브젝트 풀링(Object Pooling)기법을 구현해봅니다."
+description: "싱글톤 패턴(Singleton Pattern)을 알아봅니다."
 image: '/img/UnityFundamental/ObjectPooling/6.gif'
 published: true
-canonical_url: https://beatchoi.github.io/unity3d/basics/2021/07/16/ObjectPooling/
+canonical_url: https://beatchoi.github.io/2021/07/23/SingletonAndStatic/
 ---
   
   
