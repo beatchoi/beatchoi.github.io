@@ -5,7 +5,7 @@ layout: page
 show_sidebar: false
 ---
   
-[오브젝트 풀링 :: Object Pooling - 2021-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/16/ObjectPooling/)    
+[오브젝트 풀링 :: Object Pooling - 2021-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/ObjectPooling/)    
   
 ## Mixamo Animation  
 [1. Mixamo Character & Animation 불러오기- 2021-07-16](https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity/)  
