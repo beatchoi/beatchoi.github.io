@@ -35,4 +35,4 @@ show_sidebar: false
 [물리 기초 :: 물체의 이동 알아보기 Velocity & Addforce()  - 20.12.23](https://beatchoi.github.io/unity3d/basics/2020/12/23/PhysicsRigidbody/)<br/>
   
 ## AI :: Naviagation Mesh<br/>
-[네비게이션 메시 :: AI 길찾기 - Navigation Mesh 알기     - 21.07.28](https://beatchoi.github.io/2021/07/28/navigationmesh/)<br/>
+[네비게이션 메시 :: AI 길찾기 - Navigation Mesh 알기     - 21.07.28](https://beatchoi.github.io/unity3d/basics/2021/07/28/navigationmesh/)<br/>
