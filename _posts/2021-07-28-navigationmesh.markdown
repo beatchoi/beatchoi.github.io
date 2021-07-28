@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "네비게이션 메시(Navigation Mesh)를 알아봅니다."
 image: ''
 published: true
-canonical_url: https://beatchoi.github.io/2021/07/28/navigationmesh/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2021/07/28/navigationmesh/
 ---
   
   
