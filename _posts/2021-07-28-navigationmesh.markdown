@@ -4,7 +4,7 @@ title:  "자동으로 길찾기 - 네비게이션 메시(Navigation Mesh)"
 date:   2021-07-28 12:00:07
 categories: Unity3D Basics
 description: "네비게이션 메시(Navigation Mesh)를 알아봅니다."
-image: 'img src="/img/UnityBasic/NavigationMesh/11.gif"'
+image: '/img/UnityBasic/NavigationMesh/11.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/basics/2021/07/28/navigationmesh/
 ---
