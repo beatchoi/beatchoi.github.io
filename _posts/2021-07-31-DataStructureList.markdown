@@ -123,7 +123,12 @@ public class DataStructure_List : MonoBehaviour
 위 스크립트의 `AddData`, `CheckData`, `DeleteData` 함수들은 호출이 되어있지 않은 상태입니다.  
 해당 함수들 안에 List에 관련된 메소드들은 여러분들이 각자 한번씩 호출해 보면서 활용 방법을 익혀봅니다.  
   
-
+<p align="center"><img src="/img/UnityBasic/DataStructure/2.PNG"><br/>
+<02. 기본 Start()함수 호출할 때></p>
+  
+<p align="center"><img src="/img/UnityBasic/DataStructure/3.PNG"><br/>
+<03. Start()함수에 AddData() 함수를 추가로 호출했을 때></p>
+  
 #### 설명
 리스트는 가장 기본적이면서 데이터 관리가 편리한 자료구조입니다. 데이터를 쉽게 추가, 제거할 수 있고 접근할 수 있습니다.  
 가장 보편적으로 많이 쓰이기 때문에 다른 스크립트를 보았을 때 이해할 수 있도록 본 포스팅을 통해 유니티 C#에서의 리스트 활용을 익혀두는 것을 추천드립니다.  
