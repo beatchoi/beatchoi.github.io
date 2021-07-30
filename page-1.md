@@ -18,6 +18,9 @@ show_sidebar: false
   
 [싱글톤 패턴, 다른 객체에서 참조하기 :: Singleton Pattern - 21-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/SingletonAndStatic/)<br/>  
   
+## 자료구조 :: DataStructure  
+[리스트 :: List](https://beatchoi.github.io/unity3d/basics/2021/07/31/DataStructureList/)
+  
 ## 컴포넌트 :: Component<br/>
 #### [Line Renderer :: 라인 렌더러  
 [라인 렌더러 :: 라인 렌더러 알아보기 - 20-12-11](https://beatchoi.github.io/unity3d/basics/2020/12/11/LineRenderer/)<br/>
