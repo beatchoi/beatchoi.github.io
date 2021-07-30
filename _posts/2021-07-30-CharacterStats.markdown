@@ -3,7 +3,7 @@ layout: post
 title:  "캐릭터 구성하기 - 캐릭터 스탯 관리하기"
 date:   2021-07-30 12:00:07
 categories: Unity3D Fundamentals
-description: "캐릭터 스탯 클래스를 작성하여 캐릭터의 공격을 ."
+description: "캐릭터 스탯 클래스를 작성하여 캐릭터의 공격을 구현해봅니다."
 image: 'img src="/img/UnityFundamental/CharacterClass/3.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/CharacterStats/
