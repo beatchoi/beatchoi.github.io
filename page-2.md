@@ -11,6 +11,7 @@ show_sidebar: false
   
 ## 개발 기법    
 [오브젝트 풀링 :: Object Pooling - 2021-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/ObjectPooling)    
+[몬스터 시야 설정 :: Field of View - 2021-07-30](https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/FieldOfView)    
   
 ## Mixamo Animation  
 [1. Mixamo Character & Animation 불러오기- 2021-07-16](https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity/)  
