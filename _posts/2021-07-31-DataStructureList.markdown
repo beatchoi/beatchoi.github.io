@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유니티 자료 구조 - 리스트"
-date:   2021-07-23 14:00:07
+date:   2021-07-31 12:00:07
 categories: Unity3D Basics
 description: "자료 구조 - 리스트를 유니티에서 활용해 봅니다."
 image: 'https://media.vlpt.us/images/choijw1116/post/2fc2085a-5df7-453b-aace-4386f1131fb0/data-structure.jpeg'
