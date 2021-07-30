@@ -57,7 +57,7 @@ public class Stat
   
   
   
-그 다음 `CharacterClass.cs` 스크립트를 생성하고 다음과 같이 작성합니다.  
+그 다음 `CharStats.cs` 스크립트를 생성하고 다음과 같이 작성합니다.  
   
 ```ruby
 using System.Collections;
@@ -93,7 +93,7 @@ public class CharStats : MonoBehaviour
   
   
   
-그 다음 `CharacterCombat.cs` 스크립트를 생성하고 다음과 같이 작성합니다.  
+그 다음 `CharCombat.cs` 스크립트를 생성하고 다음과 같이 작성합니다.  
   
 ```ruby
 using System.Collections;
