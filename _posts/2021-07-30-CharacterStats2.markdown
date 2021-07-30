@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "캐릭터 구성하기 - 가상 함수 활용하기"
-date:   2021-07-30 1400:07
+date:   2021-07-30 14:00:07
 categories: Unity3D Fundamentals
 description: "캐릭터 클래스에 가상함수를 활용하여 죽음 구현하기."
-image: '/img/UnityFundamental/CharacterClass/3.gif'
+image: '/img/UnityFundamental/CharacterClass/6.gif'
 published: true
-canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/CharacterStats/
+canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/CharacterStats2/
 ---
   
   
