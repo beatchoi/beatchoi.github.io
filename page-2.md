@@ -8,7 +8,7 @@ show_sidebar: false
 ## 캐릭터 구현해보기 
 [캐릭터 구성하기 :: 스탯 클래스를 작성하여 공격 구현](https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/CharacterStats/)  
   
-  
+## 개발 기법    
 [오브젝트 풀링 :: Object Pooling - 2021-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/ObjectPooling)    
   
 ## Mixamo Animation  
