@@ -114,6 +114,10 @@ public class DataStructure_List : MonoBehaviour
 `MonsterList` 오브젝트를 생성하고 `DataStructure_List` 컴포넌트의 `Monster_Cube`, `Monster_Sphere`, `Monster_Capsule` 항목에 각각  
 `Cube`, `Sphere`, `Capsule`을 넣어줍니다.  
   
+<p align="center"><img src="/img/UnityBasic/DataStructure/1.PNG"><br/>
+<01. 인스펙터 확인></p>
+  
+  
 상단 플레이 버튼을 눌러 `Monster List` 항목에 각각 값들이 지정되는지 확인합니다.  
    
 위 스크립트의 `AddData`, `CheckData`, `DeleteData` 함수들은 호출이 되어있지 않은 상태입니다.  
