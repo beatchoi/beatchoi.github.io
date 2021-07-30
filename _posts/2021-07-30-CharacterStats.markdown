@@ -4,7 +4,7 @@ title:  "캐릭터 구성하기 - 캐릭터 스탯 관리하기"
 date:   2021-07-30 12:00:07
 categories: Unity3D Fundamentals
 description: "캐릭터 스탯 클래스를 작성하여 캐릭터의 공격을 ."
-image: '/img/UnityBasic/NavigationMesh/11.gif'
+image: 'img src="/img/UnityFundamental/CharacterClass/3.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/CharacterStats/
 ---
@@ -224,7 +224,7 @@ public class Monster : MonoBehaviour
 다음은 인스펙터 창 상에서의 값 변화 입니다.  
 curHealth의 값이 상대방의 공격력 만큼 줄어드는 것을 확인할 수 있습니다.  
 공격속도 및 딜레이 값도 변경을 하여 값의 변경을 확인해봅시다.  
-<p align="center"><img src="/img/UnityFundamental/CharacterClass/4.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/CharacterClass/4.gif"><br/>
 <04. 캐릭터의 스탯 변화></p>  
   
  
