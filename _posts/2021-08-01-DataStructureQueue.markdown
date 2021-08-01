@@ -94,13 +94,13 @@ public class DataStructure_Queue : MonoBehaviour
 `MonsterQueue` 오브젝트를 생성하고 `DataStructure_Queue` 컴포넌트의 `Monster_Cube`, `Monster_Sphere`, `Monster_Capsule` 항목에 각각  
 `Cube`, `Sphere`, `Capsule`을 넣어줍니다.  
   
-<p align="center"><img src="/img/UnityBasic/DataStructure/1.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/DataStructure/4.PNG"><br/>
 <01. 인스펙터 확인></p>
   
 상단 플레이 버튼을 누르고 `Console` 창에 프린트되는 메시지를 확인합니다.  
   
-<p align="center"><img src="/img/UnityBasic/DataStructure/2.PNG"><br/>
-<02. 기본 Start()함수 호출할 때></p>
+<p align="center"><img src="/img/UnityBasic/DataStructure/5.PNG"><br/>
+<02. 콘솔 확인></p>
   
 확인을 해보면 데이터의 추가 순서는 `Cube`, `Sphere`, `Capsule`입니다.  
 Dequeue를 하면서 찍은 로그를 확인해보면 Dequeue가 된 순서 역시 `Cube`, `Sphere`, `Capsule`입니다.  
