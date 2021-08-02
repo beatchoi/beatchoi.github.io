@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "자료 구조 - 큐를 유니티에서 활용해 봅니다."
 image: 'https://media.vlpt.us/images/choijw1116/post/2fc2085a-5df7-453b-aace-4386f1131fb0/data-structure.jpeg'
 published: true
-canonical_url: 
+canonical_url: https://beatchoi.github.io/unity3d/basics/2021/08/01/DataStructureQueue/
 ---
   
   
