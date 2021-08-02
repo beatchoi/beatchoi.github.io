@@ -16,7 +16,7 @@ show_sidebar: false
 [유니티에서 입력받기 - 02 :: GetKey - 20-12-23](https://beatchoi.github.io/unity3d/basics/2020/12/23/Input02/)<br/>
 [유니티에서 이동하기 :: Translate, MoveTowards - 20-12-31](https://beatchoi.github.io/unity3d/basics/2020/12/31/BasicMovement/)<br/>
   
-[싱글톤 패턴, 다른 객체에서 참조하기 :: Singleton Pattern - 21-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/SingletonAndStatic/)<br/>  
+[싱글톤 패턴, 다른 객체에서 참조하기 :: Singleton Pattern - 21-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/SingletonAndStatic/)<br/>
 [get, set 프로퍼티로 이벤트 호출하기 :: Getter Setter Property - 21-08-02](https://beatchoi.github.io/unity3d/basics/2021/08/02/GetterSetterProperty/)
   
 ## 자료구조 :: DataStructure  
