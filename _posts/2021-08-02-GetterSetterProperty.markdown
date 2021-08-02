@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "Getter, Setter, Property를 이용해 이벤트 호출"
 image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpoweredtemplate.com%2Fko%2Fphotos%2Foop-object-oriented-programming-acronym-technology-concept-ba-75383%2F&psig=AOvVaw0sXmNbr_PPprl3Gr_8P61M&ust=1627972587348000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIi54tjckfICFQAAAAAdAAAAABAD'
 published: true
-canonical_url: 
+canonical_url: https://beatchoi.github.io/unity3d/basics/2021/08/02/GetterSetterProperty/
 ---
   
   
