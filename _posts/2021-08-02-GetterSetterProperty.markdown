@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "이벤트 호출을 위한 게터, 세터, 프로퍼티- 기본구조 알기"
-date:   2021-08-01 12:00:07
+date:   2021-08-02 12:00:07
 categories: Unity3D Basics
 description: "Getter, Setter, Property를 이용해 이벤트 호출"
 image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpoweredtemplate.com%2Fko%2Fphotos%2Foop-object-oriented-programming-acronym-technology-concept-ba-75383%2F&psig=AOvVaw0sXmNbr_PPprl3Gr_8P61M&ust=1627972587348000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIi54tjckfICFQAAAAAdAAAAABAD'
