@@ -99,10 +99,10 @@ public class DataStructure_Dictionary : MonoBehaviour
   
 `CallData`에서 호출된 `Debug.Log` 세줄과  
 `FindData`에서 호출된 `Debug.Log` 네줄이 나타나면 성공입니다.  
-`FindData`에서 
   
 #### 설명
-  
+딕셔너리는 데이터에 `key`라는 이름표를 붙여 `key`를 통해 데이터에 접근할 수 있도록 하는 자료구조입니다.  
+자료에 접근하는 시간이 짧아 시간복잡도가 1로 효율적이며 특히 게임이나 다양한 데이터를 관리해야하는 콘텐츠의 개발에서 잘 쓰일 수 있습니다.  
   
   
   {% include adsense.html %}
