@@ -13,6 +13,10 @@ show_sidebar: false
 [2. ARFoundation Indicator :: 지면 인식 표시 객체 생성하기](https://beatchoi.github.io/arpage/2021/04/23/ARFoundationTouchIndicator/)  
 [3. ARFoundation Line Drawing :: 선 그리기 콘텐츠 만들어보기](https://beatchoi.github.io/unity3d/basics/2021/01/19/ARFoundationLineDrawing/)  
   
+#### PhotoBooth 콘텐츠 만들어보기 IOS  
+[1. ARFoundation Occlusion :: 가림현상 구현하기](https://beatchoi.github.io/arpage/2021/08/04/ARFoundationOcclusion/)
+
+  
 ##### QRCodeReader를 구현하고 콘텐츠 만들어보기 Android
 [1. Zxing 과 ARFoundation을 활용한 QRCode Reader 만들기 2021 - 07 - 02](https://beatchoi.github.io/arpage/2021/07/02/ARFoundationQRCodeReader/)  
 [2. Zxing 과 ARFoundation을 활용한 QRCode Reader 로 오브젝트 생성하기 2021 - 07 - 07](https://beatchoi.github.io/arpage/2021/07/07/ARFoundationQRCodeReader2/)
