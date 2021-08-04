@@ -4,7 +4,7 @@ title:  "ARFoundation Occlusion - ARFoundation 가림현상 구현하기"
 date:   2021-08-04 10:00:07
 categories: ARPage
 description: "ARFoundation을 활용하여 IOS에서 가림현상 구현하기"
-image: ''
+image: '/img/UnityAR/ARFoundation/04Occlusion/8.PNG'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/arpage/2021/08/04/ARFoundationOcclusion/
 ---
