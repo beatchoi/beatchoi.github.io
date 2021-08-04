@@ -62,7 +62,8 @@ IOS 빌드를 진행합니다.
 아이폰이나 패드에서 콘텐츠를 실행시키고 정면에 `Cube`오브젝트가 생성되는지 확인합니다.  
 `Cube`앞에 손을 놓아보고 손이 `Cube`를 가릴 수 있는지 확인합니다.  
   
-
+<p align="center"><img src="/img/UnityAR/ARFoundation/04Occlusion/8.PNG"><br/>
+<08. 테스팅 오브젝트></p>
   
   {% include adsense.html %}
   
