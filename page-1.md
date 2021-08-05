@@ -23,7 +23,7 @@ show_sidebar: false
   
 ## 자료구조 :: DataStructure  
 [리스트 :: List - 21-07-31](https://beatchoi.github.io/unity3d/basics/2021/07/31/DataStructureList/)  
-[큐    :: Queue - 21-08-01](https://beatchoi.github.io/unity3d/basics/2021/08/01/DataStructureQueue/)
+[큐    :: Queue - 21-08-01](https://beatchoi.github.io/unity3d/basics/2021/08/01/DataStructureQueue/)  
 [딕셔너리:: Dictionary - 21-08-02](https://beatchoi.github.io/unity3d/basics/2021/08/02/DataStructureDictionary/)  
   
 ## 컴포넌트 :: Component<br/>
