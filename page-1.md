@@ -44,3 +44,4 @@ show_sidebar: false
   
 ## AI :: Naviagation Mesh<br/>
 [네비게이션 메시 :: AI 길찾기 - Navigation Mesh 알기     - 21.07.28](https://beatchoi.github.io/unity3d/basics/2021/07/28/navigationmesh/)<br/>
+[네비게이션 메시 :: 랜덤 위치 생성 - 21.08.13](https://beatchoi.github.io/unity3d/basics/2021/08/13/navigationmesh2/)<br/>
