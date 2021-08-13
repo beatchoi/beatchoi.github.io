@@ -4,7 +4,7 @@ title:  "목적지 랜덤 생성 - 네비게이션 메시(Navigation Mesh)"
 date:   2021-08-13 12:00:07
 categories: Unity3D Basics
 description: "네비게이션 메시(Navigation Mesh)를 활용하여 무작위 목적지를 생성해 봅니다."
-image: '/img/UnityBasic/NavigationMesh/11.gif'
+image: '/img/UnityBasic/NavigationMesh/14.gif'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/basics/2021/08/13/navigationmesh2/
 ---
