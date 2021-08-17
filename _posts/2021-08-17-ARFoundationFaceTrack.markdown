@@ -64,7 +64,7 @@ ARFoundation의 `Face Tracking`기능을 활용하는 방법을 알아봅니다.
   
 이전 포스팅에서 진행했던 것과 마찬가지로 빌드 세팅을 진행한 후 모바일 디바이스에서 확인해 봅니다.  
 
-<p align="center"><img src="/img/UnityAR/ARFoundation/FaceTracking/7.jpg"> 
+<p align="center"><img src="/img/UnityAR/ARFoundation/FaceTracking/7.jpg" style="width:90px; height:160px;"> 
 <p align="center"><img src="/img/UnityAR/ARFoundation/FaceTracking/8.jpg"><br/>
 <07. 테스트></p> 
   
