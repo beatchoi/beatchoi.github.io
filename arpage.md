@@ -20,3 +20,6 @@ show_sidebar: false
 ##### QRCodeReader를 구현하고 콘텐츠 만들어보기 Android
 [1. Zxing 과 ARFoundation을 활용한 QRCode Reader 만들기 2021 - 07 - 02](https://beatchoi.github.io/arpage/2021/07/02/ARFoundationQRCodeReader/)  
 [2. Zxing 과 ARFoundation을 활용한 QRCode Reader 로 오브젝트 생성하기 2021 - 07 - 07](https://beatchoi.github.io/arpage/2021/07/07/ARFoundationQRCodeReader2/)
+  
+#### FaceTracking 기능을 활용하여 페이스 필터 만들어보기  
+[1. Face Tracking 기능 ](https://beatchoi.github.io/arpage/2021/08/17/ARFoundationFaceTrack/)
