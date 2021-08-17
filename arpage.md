@@ -22,4 +22,4 @@ show_sidebar: false
 [2. Zxing 과 ARFoundation을 활용한 QRCode Reader 로 오브젝트 생성하기 2021 - 07 - 07](https://beatchoi.github.io/arpage/2021/07/07/ARFoundationQRCodeReader2/)
   
 #### FaceTracking 기능을 활용하여 페이스 필터 만들어보기  
-[1. Face Tracking 기능 구현하기](https://beatchoi.github.io/arpage/2021/08/17/ARFoundationFaceTrack/)
+[1. Face Tracking 기능 구현하기 2021 - 08 - 17](https://beatchoi.github.io/arpage/2021/08/17/ARFoundationFaceTrack/)
