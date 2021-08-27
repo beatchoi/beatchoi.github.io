@@ -5,7 +5,7 @@ layout: page
 show_sidebar: false
 ---
   
-#### 황순원문학촌 소나기마을 AR콘텐츠를 위한 QR코드\
+#### 황순원문학촌 소나기마을 AR콘텐츠를 위한 QR코드
   
 <p align="center"><img src="/img/SonagiAR/scene1.png"><br/>
 <01. 개울가></p>
