@@ -8,7 +8,7 @@ image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2022/04/14/ARFoundationSetting/
 ---
-###### Unity3D 2021.3 및 안드로이드 버전 12 가능 <2022-04-14>
+## Unity3D 2021.3 및 안드로이드 버전 12 가능 <2022-04-14>
 
 ## ARFoundation을 활용한 증강현실 프로젝트 설정하기  
 ARFoundation을 활용하여 증강현실 콘텐츠를 만들 수 있는 준비를 해봅니다.
