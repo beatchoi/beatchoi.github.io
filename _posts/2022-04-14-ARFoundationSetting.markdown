@@ -17,7 +17,7 @@ ARFoundation을 활용하여 증강현실 콘텐츠를 만들 수 있는 준비�
   
 #### 패키지 설치 :: Package Manager
 상단 메뉴에서 `Window`탭의 `Package Manager`를 선택합니다.  
-<p align="center"><img src="/img/UnityAR/ARFoundation/01New/01.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/ARFoundation/01New/1.PNG"><br/>
 <01. 패키지 매니저 - 01></p>
   
 패키지 매니저 창에서 `Packages`항목을 아래와 같이 `Unity Registry`로 변경합니다.  
