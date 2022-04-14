@@ -6,7 +6,7 @@ categories: ARPage
 description: "ARFoundation - 프로젝트 설정하기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
-canonical_url: https://beatchoi.github.io/ARPage/2022/04/14/ARFoundationSetting/
+canonical_url: https://beatchoi.github.io/arpage/2022/04/14/ARFoundationSetting/
 ---
 ## Unity3D 2021.3 및 안드로이드 버전 12 가능 <2022-04-14>
   
