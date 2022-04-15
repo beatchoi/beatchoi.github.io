@@ -1,4 +1,17 @@
-```
+---
+layout: post
+title:  "ARFoundation - Multiple Image Tracking"
+date:   2022-04-15 12:10:07
+categories: ARPage
+description: "ARFoundation - Multiple Image Tracking"
+image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
+published: true
+canonical_url: https://beatchoi.github.io/arpage/2022/04/15/ARFoundationMultipleImageTracking/
+---
+  
+  {% include adsense.html %}    
+
+```ruby
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
