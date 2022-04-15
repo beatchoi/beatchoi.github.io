@@ -12,7 +12,7 @@ canonical_url: https://beatchoi.github.io/arpage/2022/04/15/ARFoundationImageTra
   {% include adsense.html %}    
   
 ## ARFoundation을 활용한 이미지 트래킹 콘텐츠 개발하기 
-ARFoundation을 활용하여 이미지를 인식하고 인식한 이미지에 가상의 오보젝트르 증강시켜 봅니다.  
+ARFoundation을 활용하여 이미지를 인식하고 인식한 이미지에 가상의 오보젝트를 증강시켜 봅니다.  
   
 ## 유니티3D 에디터에서  
   
