@@ -67,6 +67,9 @@ defaults:
 
 markdown: kramdown
 highlighter: rouge
+syntax_highlighter_opts:
+        block:
+            line_numbers: true
 
 footer_menu: example_footer_menu
 
