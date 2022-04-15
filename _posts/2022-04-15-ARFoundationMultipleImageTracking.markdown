@@ -21,7 +21,7 @@ canonical_url: https://beatchoi.github.io/arpage/2022/04/15/ARFoundationMultiple
 [1. 단일 이미지 트래킹 구현하기 2022 - 04 - 15](https://beatchoi.github.io/arpage/2022/04/15/ARFoundationImageTracking/)  
   
   
-동일 프로젝트에서 스크립트를 생성합니다. 아래오 같이 작성합니다.  
+동일 프로젝트에서 스크립트를 생성합니다. 아래와 같이 작성합니다.  
   
 ```ruby
 using System.Collections;
@@ -110,6 +110,29 @@ public class MultipleImageTracking : MonoBehaviour
           그 외 경우 `(Limited, None)` 오브젝트를 SetActive(false)  
 
         
-        
+위 스크립트를 `AR Session Origin` 항목에 인스턴스화 시킵니다.  
+  
+  
+2장 이상의 여러 이미지를 인식시켜야 하기 때문에 인식할 타겟 이미지를 선택합니다.    
+`Project`창으로 옮겨서 이미지 파일을 프로젝트에 추가합니다.    
+  
+  
+`Project`창의 `ReferenceImageLibrary`파일을 선택하고 우측 인스펙터 창에서 `Add Image`버튼을 눌러 이미지 항목을 추가합니다.  
+첫 이미지와 마찬가지로 사진 파일을 `Texture 2D`항목에 끌어다 놓고 `Specify Size`항목의 `Physical Size`를 1로 변경합니다.  
+총 이미지가 두개가 됩니다.    
+  
+  
+두번째 이미지가 인식되 때 생성될 3D 오브젝트 프리펩(Sphere)을 생성합니다.  
+  
+  
+다중 이미지 인식구현에서 중요한 부분은 인식될 이미지의 이름과 생성될 오브젝트 프리펩의 이름이 동일해야 한다는 것입니다.  
+아래와 같이 이미지 이름과 프리펩 이름으 바꿔줍니다. image01 이미지가 인식되면 image01 프리펩 오브젝트가 생성됩니다.  
+  
+  
+`AR Session Origin`오브젝트를 선택하여 위에서 인스턴스화 시킨 스크립트 컴포넌트를 확인합니다.  
+해당 스크립트의 `Objs`항목을 열어 리스트를 2개 추가합니다. 각 항목에 아래와 같이 image01, image02 프리펩으 연결합니다.  
+  
+  
+  
         
         
