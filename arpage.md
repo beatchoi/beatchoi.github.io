@@ -24,7 +24,7 @@ show_sidebar: false
   
   
 #### Image Tracking 기술을 활용하여 콘텐츠 만들어보기  
-[1. 단일 이미지 트래킹 구현하기 2022 - 04 - 15](https://beatchoi.github.io/arpage/2022/04/15/ARFoundationImageTracking/)
+[1. 단일 이미지 트래킹 구현하기 2022 - 04 - 15](https://beatchoi.github.io/arpage/2022/04/15/ARFoundationImageTracking/)  
 [2. 여러 이미지 트래킹 구현하기 2022 - 04 - 15](https://beatchoi.github.io/arpage/2022/04/15/ARFoundationMultipleImageTracking/)
   
 #### FaceTracking 기능을 활용하여 페이스 필터 만들어보기  
