@@ -108,8 +108,8 @@ public class MultipleImageTracking : MonoBehaviour
 52 - 66 : 각 `Added(첫인식)`, `Updated(변경)` 상태에 실행되는 함수 `UpdateImage`선언 및 구현  
           인식된 이미지의 이름과 동일한 인덱스를 가진 `spawnObjs`딕셔너리 자료구조 요소에 접근하여 `TrackingState`가 `Tracking`일 때 위치와 회전값을 조정  
           그 외 경우 `(Limited, None)` 오브젝트를 SetActive(false)  
-
-        
+  
+----------------------------------------------------  
 위 스크립트를 `AR Session Origin` 항목에 인스턴스화 시킵니다.  
   
   
