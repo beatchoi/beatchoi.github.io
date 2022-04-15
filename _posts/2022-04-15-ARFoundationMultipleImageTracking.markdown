@@ -99,7 +99,15 @@ public class MultipleImageTracking : MonoBehaviour
 [딕셔너리:: Dictionary - 21-08-02](https://beatchoi.github.io/unity3d/basics/2021/08/02/DataStructureDictionary/)참조  
 16  : Objs 배열에 저장한 프리펩을 딕셔너리 형태의 데이터로 변환, foreach 반복문으로 활용  
 26, 31 : OnEnable 및 OnDisable 이 호출될 때 이벤트의 추가 및 제거  
-
+  
+34 - 50 : 이미지가 `Added(첫인식)`, `Updated(변경)`, `removed(제거)` 되었을 때 실행되는 이벤트 함수 `OnTrackedImagesChanged`  
+          `Added`는 이미지가 처음 인식되었을 때 한번 호출됨  
+          `Updated`는 인식된 이미직 변경될 때 할당된 오브젝트를 생성하거나 제거함, TrackingState를 체크하는 단계    
+          `removed`시에는 생성되어있는 오브젝트 제거  
+          
+52 - 66 : 각 `Added(첫인식)`, `Updated(변경)` 상태에 실행되는 함수 `UpdateImage`선언 및 구현  
+          인식된 이미지의 이름과 동일한 인덱스를 가진 `spawnObjs`딕셔너리 자료구조 요소에 접근하여 `TrackingState`가 `Tracking`일 때 위치와 회전값을 조정  
+          그 외 경우 `(Limited, None)` 오브젝트를 SetActive(false)  
 
         
         
