@@ -80,4 +80,9 @@ public class MultipleImageTracking : MonoBehaviour
     }
 }
 ```
-5, 6: ARFoundation
+5, 6: ARFoundation 네임스페이스 추가
+
+        
+        
+        
+        
