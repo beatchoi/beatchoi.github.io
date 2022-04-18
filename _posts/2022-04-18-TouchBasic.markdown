@@ -60,7 +60,8 @@ public class Touch01 : MonoBehaviour
         }
     }
 }
-```
+```  
+  
 4 : Text 를 선언하기 위해 UI 네임스페이스를 정의합니다.  
 8 : 터치 현황을 알기위한 Text 변수를 선언합니다.  
 13 : `Input.touchCount`는 현재 터치되고있는 매개체의 숫자입니다. 0보다 크다면 터치가 진행되었다고 판단합니다.  
