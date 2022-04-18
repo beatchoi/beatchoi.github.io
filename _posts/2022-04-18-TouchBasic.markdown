@@ -77,18 +77,23 @@ public class Touch01 : MonoBehaviour
 ## 유니티3D 에디터에서
 `Game`창에서 `Free Aspect`항목을 눌러 해상도를 설정합니다.  
 `1920x1080 Portrait`로 바꿔줍니다.  
-  
+<p align="center"><img src="/img/UnityBasic/TouchBasic/1.PNG"><br/>
+<01. 해상도 변경></p>  
   
 `Hierarchy`창에서 마우스 우클릭, `UI` -> `Text`를 눌러 `Text`오브젝트를 생성합니다.  
 `Text`오브젝트의 `Scale`값을 5,5,5로 바꿔줍니다.  
-  
+<p align="center"><img src="/img/UnityBasic/TouchBasic/2.PNG"><br/>
+<02. Text 오브젝트 생성></p>    
   
 `Text`오브젝트가 화면 가운데로 오도록 위치를 조정합니다.  
-  
+<p align="center"><img src="/img/UnityBasic/TouchBasic/3.PNG"><br/>
+<03. Text 오브젝트 수정></p>  
   
 `빈 게임오브젝트`를 하나 생성하고 이름을 Touch 로 변경합니다.  
 해당 오브젝트에 Touch01 스크립트를 인스턴스화 시켜주고 `Txt`공란에 `Text`오브젝트를 연결시킵니다.  
-
+<p align="center"><img src="/img/UnityBasic/TouchBasic/4.PNG"><br/>
+<04. 스크립트 인스턴스화></p>  
+    
 ## 테스트
 asdfsdf
 
