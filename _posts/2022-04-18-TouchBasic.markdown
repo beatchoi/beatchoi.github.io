@@ -84,7 +84,7 @@ public class Touch01 : MonoBehaviour
 `Hierarchy`창에서 마우스 우클릭, `UI` -> `Text`를 눌러 `Text`오브젝트를 생성합니다.  
 `Text`오브젝트의 `Scale`값을 5,5,5로 바꿔줍니다.  
 <p align="center"><img src="/img/UnityBasic/TouchBasic/2.PNG"><br/>
-<02. Text 오브젝트 생성></p>    
+<02. Text 오브젝트 생성></p>    <br/>
   
   
 `Text`오브젝트가 화면 가운데로 오도록 위치를 조정합니다.  
