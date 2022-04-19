@@ -106,7 +106,9 @@ public class Touch03 : MonoBehaviour
   
 ## 테스트
 먼저 `Capsule`오브젝트를 터치하고, 그 다음 `Plane`오브젝트를 터치하여 캐릭터가 이동하는지 확인합니다.  
-
+<p align="center"><img src="/img/UnityBasic/TouchMove/6.gif"><br/>
+<06. 테스트></p><br/>  
+  
   
   {% include adsense.html %}    
   
