@@ -9,7 +9,7 @@ published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2022/04/19/TouchDrag/
 ---
   
-    {% include adsense.html %}    
+  {% include adsense.html %}    
   
   
 ## 모바일 터치 입력
@@ -99,5 +99,5 @@ public class Touch02 : MonoBehaviour
 모바일 디바이스에 빌드를 하여 테스트를 해 봅니다.  
   
    
-      {% include adsense.html %}    
+  {% include adsense.html %}    
         
