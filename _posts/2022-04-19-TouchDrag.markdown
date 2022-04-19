@@ -84,10 +84,16 @@ public class Touch02 : MonoBehaviour
 이전 포스팅에서 이어서 진행합니다.  
 
 계층 구조창에서 `Cube`오브젝트를 생성하여 화면 중앙에 보일 수 있도록 위치를 조정합니다.  
+<p align="center"><img src="/img/UnityBasic/TouchDrag/1.PNG"><br/>
+<01. 오브젝트 생성 1></p><br/>   
   
+<p align="center"><img src="/img/UnityBasic/TouchDrag/2.PNG"><br/>
+<02. 오브젝트 생성 2></p><br/>   
   
 `Touch`오브젝트에 위에서 작성한 `Touch02` 오브젝트를 인스턴스화 시켜줍니다.  
-  
+<p align="center"><img src="/img/UnityBasic/TouchDrag/3.PNG"><br/>
+<03. 스크립트 인스턴스화></p><br/>   
+    
   
 ## 테스트
 모바일 디바이스에 빌드를 하여 테스트를 해 봅니다.  
