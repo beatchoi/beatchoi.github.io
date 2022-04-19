@@ -100,7 +100,8 @@ public class Touch01 : MonoBehaviour
 <04. 스크립트 인스턴스화></p><br/>  
     
 ## 테스트
-asdfsdf
+<p align="center"><img src="/img/UnityBasic/TouchBasic/5.gif"><br/>
+<05. 테스트></p><br/>  
 
   
   {% include adsense.html %}    
