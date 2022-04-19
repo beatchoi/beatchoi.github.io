@@ -98,6 +98,8 @@ public class Touch02 : MonoBehaviour
 ## 테스트
 모바일 디바이스에 빌드를 하여 테스트를 해 봅니다.  
   
+<p align="center"><img src="/img/UnityBasic/TouchDrag/4.gif"><br/>
+<04. 테스트></p><br/>    
    
   {% include adsense.html %}    
         
