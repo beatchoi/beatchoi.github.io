@@ -2,7 +2,7 @@
 layout: post
 title:  "유니티 터치 드래그"
 date:   2022-04-19 13:50:07
-categories: Unity3D Drag
+categories: Unity3D Basic
 description: "유니티에서 터치 입력을 받아 오브젝트를 이동시켜 봅니다"
 image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
 published: true
