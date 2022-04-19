@@ -8,7 +8,10 @@ image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2022/04/18/TouchBasic/
 ---
-
+  
+    {% include adsense.html %}    
+  
+  
 ## 모바일 터치 입력
 스마트폰이나 터치 디바이스 등 스크린 터치가 가능한 디바이스에서 실행 가능한 터치를 구현합니다.  
 `Input.Touch`를 활용하면 유니티 게임 창에서 마우스를 활용한 클릭은 구현되지 않습니다.  
@@ -100,5 +103,8 @@ public class Touch01 : MonoBehaviour
 ## 테스트
 asdfsdf
 
-
+  
+    {% include adsense.html %}    
+  
+  
 
