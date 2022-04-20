@@ -47,6 +47,7 @@ show_sidebar: false
 [물리 기초 :: 이벤트 함수 다뤄보기1 OnCollision  - 20.12.15](https://beatchoi.github.io/unity3d/basics/2020/12/15/PhysicsEvent/)<br/>
 [물리 기초 :: 이벤트 함수 다뤄보기2 OnTrigger  - 20.12.15](https://beatchoi.github.io/unity3d/basics/2020/12/15/PhysicsEvent2/)<br/>
 [물리 기초 :: 물체의 이동 알아보기 Velocity & Addforce()  - 20.12.23](https://beatchoi.github.io/unity3d/basics/2020/12/23/PhysicsRigidbody/)<br/>
+[물리 기초 :: 레이캐스트 알아보기 Raycast  - 22.04.21](https://beatchoi.github.io/2022/04/20/PhysicsRaycast/)<br/>  
   
 ## AI :: Naviagation Mesh<br/>
 [네비게이션 메시 :: AI 길찾기 - Navigation Mesh 알기     - 21.07.28](https://beatchoi.github.io/unity3d/basics/2021/07/28/navigationmesh/)<br/>
