@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 물리 레이캐스트 - Raycast"
 image: '/img/UnityBasic/PhysicsRaycast/3.PNG'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/15/PhysicsEvent/
+canonical_url: https://beatchoi.github.io/2022/04/20/PhysicsRaycast/
 ---
 
 ## 유니티에서의 레이캐스트 구현하기
