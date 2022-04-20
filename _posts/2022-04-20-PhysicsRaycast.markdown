@@ -4,7 +4,7 @@ title:  "유니티에서의 물리엔진 Raycast"
 date:   2022-04-20 14:00:07
 categories: Unity3D Basics
 description: "유니티 물리 레이캐스트 - Raycast"
-image: '/img/UnityBasic/PhysicsBasic/12.gif'
+image: '/img/UnityBasic/PhysicsRaycast/3.PNG'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2020/12/15/PhysicsEvent/
 ---
