@@ -1,1 +1,60 @@
+---
+layout: post
+title:  "유니티에서의 코루틴"
+date:   2022-04-24 14:00:07
+categories: Unity3D Basics
+description: "코루틴 - Coroutine"
+image: '/img/UnityBasic/PhysicsRaycast/3.PNG'
+published: true
+canonical_url: https://beatchoi.github.io/2022/04/24/Coroutine01/
+---
 
+## 유니티에서의 코루틴
+단일 스레드를 활용하여 `Update`을 기반으로 프레임 단위의 실행을 하는 유니티에서 멀티태스킹의 효과를 내기위해 활용합니다.  
+`Update`와는 별개로 다른 작업을 기다리거나 시스템을 양보하는 방식으로 구현됩니다.  
+  
+## 스크립트 작성 :: 코루틴의 선언 및 호출
+간단한 코루틴의 구조를 알아봅니다.  
+```ruby
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Coroutine : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        StartCoroutine(CoSample()); 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    IEnumerator CoSample()
+    {
+        Debug.Log("1");
+        yield return new WaitForSeconds(3);
+        Debug.Log("2");
+    }
+}
+```
+19 : 코루틴은 IEnumerator(열거자)를 반환값으로 가지며 이는 아래 설명할 `yield`문을 만날 시 해당 위치를 저장하는 역할을 하고 그 다음 호출시 해당 위치를 호출합니다.  
+21 : 로그창에 1 찍음.  
+22 : `yield`문으로 이 경우엔 `WaitForSeconds(float)`즉 `float`의 시간만큼 대기하는 역할을 합니다. 위에서 설명한 대로 3초 대기 후 해당위치에서 다시 코루틴이 호출됩니다.  
+23 : 3초 후 2를 찍음.  
+10 : `StartCoroutine`메소드로 코루틴을 호출합니다. 코루틴의 실행이 완료될 때 까지 반복적으로 호출이 됩니다.  
+  
+## 유니티3D 에서
+해당 스크립트를 계층구조창의 오브젝트에 인스턴스화 시키고 상단 플레이 버튼을 눌러 콘솔창을 확인합니다.  
+  
+로그에 1이 찍히고 난 뒤 3초 후 2가 찍히는 것을 확인할 수 있습니다.  
+
+## 중간 정리
+코루틴은 열거자인 `IEnumerator`를 반환하는 함수로 선언이 되고 해당 코루틴은 `StartCoroutine`을 통해 호출이 됩니다.  
+코루틴이 호출이 되어 실행 중 `yield`문을 만나게 되면 해당 위치를 저장하고 시스템을 양보합니다.  
+양보가 끝나면 해당 코루틴이 다시 호출되는데 이 때 `yield`문이 호출된 위치에서 다시 시작하게 됩니다.  
+   
