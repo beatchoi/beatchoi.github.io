@@ -3,7 +3,7 @@ layout: post
 title:  "유니티에서의 코루틴"
 date:   2022-04-24 14:00:07
 categories: Unity3D Basics
-description: "코루틴 - Coroutine"
+description: "코루틴의 선언 및 호출"
 image: '/img/UnityBasic/PhysicsRaycast/3.PNG'
 published: true
 canonical_url: https://beatchoi.github.io/2022/04/24/Coroutine01/
