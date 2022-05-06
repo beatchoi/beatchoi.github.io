@@ -116,13 +116,13 @@ public class GPSLocation : MonoBehaviour
 계층구조창에서 UI Canvas와 Text를 생성하고 다음과 같이 배치합니다.  
 GPS 위치 데이터를 받아서 표시할 항목은 좌측 Text 에서 보여집니다.  
   
-<p align="center"><img src="/img/UnityFundamental/GPSInput/1.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/GPSInput/1.png"><br/>
 <01. UI Text 배치></p><br/>  
   
 계층구조창에서 빈 게임 오브젝트를 생성하고 이름을 `GPSLocation`으로 변경합니다.  
 해당 오브젝트에 `GPSLocation.cs`스크립트를 연결하여 인스턴스화 시켜줍니다.  
 인스턴스화된 GPSLocation 컴포넌트에 변수항목들을 연결해줍니다.  
-<p align="center"><img src="/img/UnityFundamental/GPSInput/2.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/GPSInput/2.png"><br/>
 <02. Inspector></p><br/>  
     
 ## 빌드
