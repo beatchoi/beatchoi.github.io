@@ -52,3 +52,6 @@ show_sidebar: false
 ## AI :: Naviagation Mesh<br/>
 [네비게이션 메시 :: AI 길찾기 - Navigation Mesh 알기     - 21.07.28](https://beatchoi.github.io/unity3d/basics/2021/07/28/navigationmesh/)<br/>
 [네비게이션 메시 :: 랜덤 위치 생성 - 21.08.13](https://beatchoi.github.io/unity3d/basics/2021/08/13/navigationmesh2/)<br/>
+  
+## GPS :: Location Data<br/>
+[GPS Location 정보 받기 :: 위도 경도 정보 받기 - 22.05.12](https://beatchoi.github.io/unity3d/fundamentals/2022/05/06/GPSInput/)<br/>
