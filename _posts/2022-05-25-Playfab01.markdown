@@ -4,7 +4,7 @@ title:  "유니티에서 Azure PlayFab 활용하기 - PlayFab 프로젝트 세�
 date:   2022-05-25 14:00:07
 categories: Unity3D Fundamentals
 description: "Azure PlayFab 프로젝트 세팅하기"
-image: '/img/UnityFundamental/Playfab01/0.PNG'
+image: '/img/UnityFundamental/Playfab01/0.jpg'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab01/
 ---
