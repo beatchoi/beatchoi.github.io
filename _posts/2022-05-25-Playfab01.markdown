@@ -25,41 +25,94 @@ Playfab Unity SDK 깃허브 페이지에 접근합니다.
   
 해당 깃의 ReadMe 페이지에서 UnitySDK 및 PlayFab Unity Editor Extensions를 클릭하여 다운로드합니다.  
 
-<p align="center"><img src="/img/UnityFundamental/Playfab01/1.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/Playfab01/1.png"><br/>
 <01. Playfab Unity SDK Github Page ></p>  
   
 ## Unity3D Project
 유니티 프로젝트를 생성합니다.  
 생성한 프로젝트에서 다운로드 받은 두개의 패키지 파일을 임포트합니다.  
   
-<p align="center"><img src="/img/UnityFundamental/Playfab01/2.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/Playfab01/2.png"><br/>
 <02. 패키지가 임포트된 프로젝트 창 ></p>  
   
 유니티 에디터의 상단 탭에서 Window -> PlayFab -> Editor Extension 을 선택합니다.  
   
-<p align="center"><img src="/img/UnityFundamental/Playfab01/3.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/Playfab01/3.png"><br/>
 <03. Playfab Editor Extension ></p>  
   
 생성되는 PlayFab EdEx 창에서 Create Account 항목을 선택하여 아이디를 생성합니다.  
 인증메일이 해당 이메일로 전송되기 때문에 사용 가능한 이메일을 넣습니다.  
   
-<p align="center"><img src="/img/UnityFundamental/Playfab01/4.PNG"><br/>
+<p align="center"><img src="/img/UnityFundamental/Playfab01/4.png"><br/>
 <04. PlayFab 계정 생성 ></p>  
   
-## PlayFab 
-  
-  
-```ruby
+## PlayFab Developer Portal
 
-```
+  [https://developer.playfab.com](https://developer.playfab.com)  
+  
+위 링크로 들어가서 로그인을 합니다.  
+그럼 다음과 같이 이메일로 인증 메일을 보냈다는 안내 페이지로 이동하고  
+이메일에서 인증을 하면 로그인을 할 수 있게 됩니다.  
+
+<p align="center"><img src="/img/UnityFundamental/Playfab01/5.png"><br/>
+<05. PlayFab 로그인 ></p>    
+  
+로그인을 하고 들어가면 다음과 같은 화면이 맞이합니다.  
+My Game Studio 는 현재 본인의 소속이라고 생각하시면 됩니다. 추후 수정 가능합니다.  
+하단 My Game 항목은 백엔드를 연결할 게임입니다. 역시 추후 수정하거나 추가할 수 있습니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/6.png"><br/>
+<06. PlayFab 첫 화면 ></p>    
+  
+스튜디오 이름을 변경해봅니다.  
+My Game Studio 항목 Upgrade Account 버튼 우측 점 세개 버튼을 선택하고  
+`Studio Settings`항목을 선택합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/7.png"><br/>
+<07. PlayFab Studio Setting ></p>    
+  
+`Studio Name`항목을 원하는 이름으로 변경하고 하단의 `Save Studio`버튼을 클릭하여 저장합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/8.png"><br/>
+<08. PlayFab Studio Setting ></p>    
+  
+다시 돌아온 화면에서 이번엔 My Game 항목의 톱니바퀴를 선택하고
+`Edit Title Info`항목을 선택합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/9.png"><br/>
+<09. PlayFab Title Setting ></p>  
+  
+`Name`항목을 설정하고 하단 `Save Title`버튼을 눌러 저장합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/10.png"><br/>
+<10. PlayFab Title Setting ></p>  
+  
+변경된 첫 화면  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/11.png"><br/>
+<11. PlayFab 첫 화면 ></p>    
+  
+## Unity Project
+  
+다시 유니티 프로젝트로 돌아옵니다.  
+PlayFab EdEx 창에서 로그인을 해줍니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/12.png"><br/>
+<12. PlayFab EdEx 로그인 ></p>  
+  
+로그인한 PlayFab EdEx 창의 상단 `Settings` 탭을 누르고 살짝 아래 `Project` 탭을 선택합니다.  
+`STUDIO` 항목의 `_OVERRIDE_` 부분을 클릭하고 설정한 스튜디오를 선택합니다.  
+방금 PlayFab Developer Portal에서 설정한 스튜디오와 타이틀이 싱크가 되는지 확인합니다.  
+하단 `TITLE ID` 항목에 방금 수정한 타이틀의 이름과 번호가 일치하는지 확인합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/13.png"><br/>
+<13. PlayFab EdEx Project Sync ></p>  
 
   
-  
-## 테스트
+## 마무리
 
-호스트 창에서 클라이언트가 이동한 싱크가 맞느면 성공입니다.  
-<p align="center"><img src="/img/UnityFundamental/MirrorNetwork2/fin.gif">
-<14. 좌.클라이언트 우.서버></p> 
+여기까지 완료되었으면 기본적인 세팅은 끝났습니다.  
+다음 포스팅에서 회원가입(Sign Up) 및 로그인(Log In) 기능을 구현해 보도록 합니다.  
   
   
   {% include adsense.html %}
