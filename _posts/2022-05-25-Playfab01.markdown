@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "유니티에서 Azure Playfab 활용하기 - Playfab 프로젝트 세팅"
+date:   2022-05-25 14:00:07
+categories: Unity3D Fundamentals
+description: "Azure Playfab 프로젝트 세팅하기"
+image: '/img/UnityFundamental/Playfab01/0.PNG'
+published: true
+canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab01/
+---
+  
+  
+  {% include adsense.html %}
+  
+  
+## Azure Playfab  
+단일 플랫폼에서 멀티플레이어 
+  
+## 유니티3D 에디터에서  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/1.PNG"><br/>
+<01. ></p>  
+
+
+
+```ruby
+
+```
+
+  
+  
+## 테스트
+
+호스트 창에서 클라이언트가 이동한 싱크가 맞느면 성공입니다.  
+<p align="center"><img src="/img/UnityFundamental/MirrorNetwork2/fin.gif">
+<14. 좌.클라이언트 우.서버></p> 
+  
+  
+  {% include adsense.html %}
+  
+  
+  
