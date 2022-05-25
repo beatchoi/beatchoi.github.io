@@ -97,13 +97,64 @@ public class CreateAccountManager : MonoBehaviour
   `Input Field`의 OnValueChanged 함수에 연결시킵니다.  
   
 #### Scene
-계층 
-
+계층구조창에서 빈 게임 오브젝트를 생성하고 이름을 `AccountManager`로 변경합니다.  
+해당 오브젝트에 `CreateAccountManager.cs`스크립트를 인스턴스화 시킵니다.  
   
-## 마무리
+<p align="center"><img src="/img/UnityFundamental/Playfab02/2.png"><br/>
+<02. AccountManager 오브젝트 생성 ></p>  
+  
+UI `Input Field`오브젝트를 선택하고 `Input Field`컴포넌트의 `On Value Changed (string)`항목을 찾아봅니다.  
+함수란을 추가하고 오브젝트란에 `AccountManager`오브젝트를 연결하고 그림과 같이 해당하는 함수를 연결합니다.  
+여기서 주의해야할 것은 상단의 `UpdateUsername` 함수와 하단 `UpdateUsername(string)` 두개중 상단의 것을 써야  
+`Input Field`에 값이 변할 때 자동으로 함수가 호출됩니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/3.png"><br/>
+<03. Username Input Field></p>  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/4.png"><br/>
+<04. Password Input Field ></p>  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/5.png"><br/>
+<05. Email Input Field ></p>  
+  
+CreateAccount 버튼의 `Button`컴포넌트의 `On Click ()` 이벤트 항목을 찾습니다.  
+함수란에 AccountManager 오브젝트를 연결하고 그림과 같이 해당하는 `CreateAccount` 함수를 연결합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/6.png"><br/>
+<06. Create Account Button ></p>    
+    
+## 테스트
+  
+상단 플레이 버튼을 누르고 Game 창에서 Account를 생성해 봅니다.  
+Username(아이디)에는 공백이 없도록, 비밀번호는 대소문자 및 숫자와 특수문자를 포함하여 작성해봅니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/7.png"><br/>
+<07. Create Account  ></p>    
+  
+만약 정상적으로 생성이 된다면 Create Account 버튼을 누르고 `Console`창을 보았을 때 다음과 같은 메시지가 생성됩니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/8.png"><br/>
+<08. 콘솔 메시지 ></p>    
+  
+확실하게 체크를 하기 위해서는 PlaFab Developer 콘솔에서 확인할 수 있습니다.  
+하단 게임 타이틀을 클릭하여 들어갑니다. 
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab01/11.png"><br/>
+<09. PlayFab Developer 로그인 ></p>  
+  
+좌측 메뉴의 `Players`항목을 클릭하고 화면 중앙 우측 푸른색 `Search` 버튼을 누릅니다.   
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/9.png"><br/>
+<10. Player 항목 ></p>    
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/10.png"><br/>
+<11. Player Search ></p>    
+  
+찾아서 나온 계정을 클릭하여 들어가면 다음과 같이 세부사항을 확인할 수 있습니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/11.png"><br/>
+<12. Player 정보 ></p>    
 
-여기까지 완료되었으면 기본적인 세팅은 끝났습니다.  
-다음 포스팅에서 회원가입(Sign Up) 및 로그인(Log In) 기능을 구현해 보도록 합니다.  
   
   
   {% include adsense.html %}
