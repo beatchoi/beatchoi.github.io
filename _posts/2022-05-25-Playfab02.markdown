@@ -1,1 +1,112 @@
+---
+layout: post
+title:  "유니티에서 Azure PlayFab 활용하기 - PlayFab 가입 및 로그인"
+date:   2022-05-25 16:00:07
+categories: Unity3D Fundamentals
+description: "Azure PlayFab 회원가입 및 로그인 구현"
+image: '/img/UnityFundamental/Playfab01/0.jpg'
+published: true
+canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab02/
+---
+  
+  
+  {% include adsense.html %}
+  
+  
+## Azure Playfab  
+이번 포스팅에서는 회원가입 및 로그인을 구현합니다.  
+    
+## Unity3D   
+#### Scene
+PlayFab SDK 를 세팅한 프로젝트에서 진행합니다.  
+회원가입 UI를 다음과 같이 세팅합니다.  
+중요한 것은 Username(ID), Password, Email 항목을 입력하는 부분은 `Input Field`로,  
+Create Account(아이디 생성) 항목은 `Button`으로 구현합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab02/1.png"><br/>
+<01. 회원가입 UI 구현 ></p>  
+  
+#### Script
+  
+`CreateAccountManager.cs` 스크립트를 생성하고 다음과 같이 작성합니다.  
+  
+```ruby
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+using PlayFab;
+using PlayFab.ClientModels;
 
+public class CreateAccountManager : MonoBehaviour
+{
+    string playfabID;
+    string username, password, emailaddress;
+
+    public void CreateAccount(string username, string emailaddress, string password)
+    {
+        PlayFabClientAPI.RegisterPlayFabUser(
+            new RegisterPlayFabUserRequest()
+            {
+                Email = emailaddress,
+                Password = password,
+                Username = username,
+                RequireBothUsernameAndEmail = true
+            },
+            response =>
+            {
+                Debug.Log($"Successful Account Creation: {username}, {emailaddress}");
+                playfabID = response.PlayFabId;
+            },
+            error =>
+            {
+                Debug.Log($"Unsuccessful Account Creation: {username}, {emailaddress} \n {error.ErrorMessage}");
+            }
+        );
+    }
+
+    public void UpdateUsername(string _username)
+    {
+        username = _username;
+    }
+
+
+    public void UpdatePassword(string _password)
+    {
+        password = _password;
+    }
+
+
+    public void UpdateEmailAddress(string _emailaddress)
+    {
+        emailaddress = _emailaddress;
+    }
+
+    public void CreateAccount()
+    {
+        CreateAccount(username, emailaddress, password);
+    }
+}
+```  
+* CreateAccount(string username, string emailaddress, string password)
+  `PlayFabClientAPI.RegisterPlayFabUser` 함수를 활용하여 이메일, 비밀번호, 아이디를 생성, PlayFab 서버로 전송합니다.  
+  생성에 성공하면 `response`, 실패하면 `error` 항목에 있는 명령어가 호출됩니다.  
+  
+* UpdateUsername, UpdatePassword, UpdateEmailAdreess, CreateAccount
+  `Input Field`의 값을 불러오는 역할을 합니다. 
+  `Input Field`의 OnValueChanged 함수에 연결시킵니다.  
+  
+#### Scene
+계층 
+
+  
+## 마무리
+
+여기까지 완료되었으면 기본적인 세팅은 끝났습니다.  
+다음 포스팅에서 회원가입(Sign Up) 및 로그인(Log In) 기능을 구현해 보도록 합니다.  
+  
+  
+  {% include adsense.html %}
+  
+  
+  
