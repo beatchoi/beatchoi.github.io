@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "유니티에서 Azure Playfab 활용하기 - Playfab 프로젝트 세팅"
+title:  "유니티에서 Azure PlayFab 활용하기 - PlayFab 프로젝트 세팅"
 date:   2022-05-25 14:00:07
 categories: Unity3D Fundamentals
-description: "Azure Playfab 프로젝트 세팅하기"
+description: "Azure PlayFab 프로젝트 세팅하기"
 image: '/img/UnityFundamental/Playfab01/0.PNG'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab01/
@@ -98,7 +98,7 @@ My Game Studio 항목 Upgrade Account 버튼 우측 점 세개 버튼을 선택�
 PlayFab EdEx 창에서 로그인을 해줍니다.  
   
 <p align="center"><img src="/img/UnityFundamental/Playfab01/12.png"><br/>
-<12. PlayFab EdEx 로그인 ></p>  
+<12. PlayFab EdEx 로그인 후 화면 ></p>  
   
 로그인한 PlayFab EdEx 창의 상단 `Settings` 탭을 누르고 살짝 아래 `Project` 탭을 선택합니다.  
 `STUDIO` 항목의 `_OVERRIDE_` 부분을 클릭하고 설정한 스튜디오를 선택합니다.  
