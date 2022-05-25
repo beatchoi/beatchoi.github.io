@@ -22,5 +22,10 @@ show_sidebar: false
 [1. 웹캠 인풋 받아오기](https://beatchoi.github.io/unity3d/basics/2020/04/17/webcam-texture/)  
   
 ## 네트워크
+#### Mirror Network
 [MirrorNetwork :: 시작하기](https://beatchoi.github.io/unity3d/basics/2020/12/21/MirrorNetwtwork/)  
-[MirrorNetwork :: 플레이어의 캐릭터 조종하기 및 싱크맞추기- 2021-07-15](https://beatchoi.github.io/unity3d/basics/2021/07/15/MirrorNetwtworkCharacterMoveSync/)
+[MirrorNetwork :: 플레이어의 캐릭터 조종하기 및 싱크맞추기- 2021-07-15](https://beatchoi.github.io/unity3d/basics/2021/07/15/MirrorNetwtworkCharacterMoveSync/)  
+  
+#### Azure PlayFab
+[Azure PlayFab & Unity3D :: 시작하기](https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab01/)
+  
