@@ -27,6 +27,6 @@ show_sidebar: false
 [MirrorNetwork :: 플레이어의 캐릭터 조종하기 및 싱크맞추기- 2021-07-15](https://beatchoi.github.io/unity3d/basics/2021/07/15/MirrorNetwtworkCharacterMoveSync/)  
   
 #### Azure PlayFab
-[Azure PlayFab & Unity3D :: 시작하기- 2022-05-25](https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab01/). 
+[Azure PlayFab & Unity3D :: 시작하기- 2022-05-25](https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab01/)  
 [Azure PlayFab & Unity3D :: 계정생성- 2022-05-25](https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab02/)
   
