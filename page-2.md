@@ -28,4 +28,5 @@ show_sidebar: false
   
 #### Azure PlayFab
 [Azure PlayFab & Unity3D :: 시작하기- 2022-05-25](https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab01/)
+[Azure PlayFab & Unity3D :: 계정생성- 2022-05-25](https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab02/)
   
