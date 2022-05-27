@@ -17,9 +17,87 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/05/26/Playfa
 이번 포스팅에서는 로그인을 구현합니다.  
     
 ## Unity3D   
+#### Scene  
+이전 포스팅에서 진행한 회원가입 프로젝트에서 이어서 진행합니다.  
+  
+회원가입 씬 UI 처럼 로그인 UI를 다음과 같이 생성합니다.  
+아이디를 활용한 로그인이기 때문에 아이디와 비밀번호 입력란을 생성합니다.  
+그리고 `로그인` 버튼과 `회원가입으로 이동` 버튼을 생성합니다.  
+이전 회원가입 UI 오브젝트들을 하나의 게임오브젝트로 묶고, 로그인 UI 오브젝트들을 또 하나의 게임오브젝트로 묶습니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab03/1.png"><br/>
+<01. 로그인 UI 구현 ></p>  
+  
+#### Script
+  
+`CreateAccountManager.cs` 스크립트를 다음과 같이 수정합니다.   
+  
+```ruby
+.
+.
+.
+    public void SignIn()
+    {
+        SignIn(username, password);
+    }
+  
+    public void SignIn(string username, string password)
+    {
+        PlayFabClientAPI.LoginWithPlayFab(new LoginWithPlayFabRequest()
+        {
+            Username = username,
+            Password = password 
+        },
+        response =>
+        {
+            Debug.Log($"Successful Account Login: {username}");
+            playfabID = response.PlayFabId;
+        },
+        error =>
+        {
+            Debug.Log($"Unsuccessful Account Creation: {username} \n {error.ErrorMessage}");
+        });
+    }
+.
+.
+.
+```  
+  
+* SignIn(string username, string password)
+  `PlayFabClientAPI.LoginWithPlayFab` 함수를 활용하여 아이디와 비밀번호를 활용하여 로그인합니다.  
+  로그인에 성공하면 `response`, 실패하면 `error` 항목에 있는 명령어가 호출됩니다.  
+  
 #### Scene
- 
-
+  
+이전 회원가입 포스팅에서 진행한 것 처럼 `Username` 및 `Password` `Input Field`의 `On Value Changed (string)`에  
+함수란을 추가하고 오브젝트란에 `AccountManager`오브젝트를 연결하고 해당하는 함수를 연결합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab03/2.png"><br/>
+<02. 아이디 Input Field ></p>  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab03/3.png"><br/>
+<03. 비밀번호 Input Field ></p>    
+  
+로그인 버튼의 `On Click()`함수에는 위에서 작성한 `SignIn`함수를 연결합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab03/4.png"><br/>
+<04. 로그인 버튼 ></p>    
+  
+회원가입으로 이동 버튼에는 두개의 `On Click()`함수르 생성하고 각각에 `회원가입 오브젝트 묶음`, `로그인 오브젝트 묶음`을 연결해줍니다.  
+그리고 `No Function`항목을 클릭하여 `GameObject -> Set Active (bool)` 항목을 선택해줍니다.  
+회원가입 오브젝트 묶음에 해당하는 함수의 체크박스에는 체크를 해주고  
+로그인 오브젝트 묶음에 해당하는 함수의 체크박스에는 체크해제를 합니다.  
+다음과 같이 세팅을 하고 버튼을 클릭하면 체크박스가 된 오브젝트는 켜지게되고, 해제가 된 오브젝트는 꺼지게 됩니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab03/5.png"><br/>
+<05. 회원가입으로 이동 버튼 ></p>   
+  
+##테스트
+  
+아이디와 비밀번호를 작성하고 로그인 버튼을 클릭하여 콘솔창에 다음과 같이 로그가 찍히면 성공입니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab03/6.png"><br/>
+<06. 로그인 성공 ></p>   
   
   
   {% include adsense.html %}
