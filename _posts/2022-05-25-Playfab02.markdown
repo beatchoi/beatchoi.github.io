@@ -3,7 +3,7 @@ layout: post
 title:  "유니티에서 Azure PlayFab 활용하기 - PlayFab 가입 및 로그인"
 date:   2022-05-25 16:00:07
 categories: Unity3D Fundamentals
-description: "Azure PlayFab 회원가입 및 로그인 구현"
+description: "Azure PlayFab 회원가입 구현"
 image: '/img/UnityFundamental/Playfab01/0.jpg'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfab02/
@@ -14,7 +14,7 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/05/25/Playfa
   
   
 ## Azure Playfab  
-이번 포스팅에서는 회원가입 및 로그인을 구현합니다.  
+이번 포스팅에서는 회원가입 을 구현합니다.  
     
 ## Unity3D   
 #### Scene
