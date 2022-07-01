@@ -4,7 +4,7 @@ title:  "유니티에서 Addressable 활용하기 - Azure Blob 에서 에셋 받
 date:   2022-06-30 12:00:07
 categories: Unity3D Fundamentals
 description: "Addressable을 활용하여 에셋 다운받기"
-image: '/img/UnityFundamental/Addressable01/00.png
+image: '/img/UnityFundamental/Addressable01/00.png'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/06/30/Addressable01/
 ---
