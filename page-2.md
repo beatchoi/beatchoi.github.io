@@ -32,4 +32,4 @@ show_sidebar: false
 [Azure PlayFab & Unity3D :: 로그인- 2022-05-26](https://beatchoi.github.io/unity3d/fundamentals/2022/05/26/Playfab03/)  
   
 #### Addressable Asset System & Azure Blob  
-[Azure Blob에서 Addressable Asset System 으로 에셋 로드하기 - 2022-06-30](https://beatchoi.github.io/2022/06/30/2022-06-30-Addressable01/)  
+[Azure Blob에서 Addressable Asset System 으로 에셋 로드하기 - 2022-06-30](https://beatchoi.github.io/unity3d/fundamentals/2022/06/30/Addressable01/)  
