@@ -1,0 +1,690 @@
+---
+layout: post
+title:  "유니티에서 Azure PlayFab 활용하기 - PlayFab Multiplay"
+date:   2022-05-26 12:00:07
+categories: Unity3D Fundamentals
+description: "Azure PlayFab 멀티플레이 구현"
+image: '/img/UnityFundamental/Playfab01/0.jpg'
+published: true
+canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/07/04/Playfab04/
+---
+  
+  
+  {% include adsense.html %}
+  
+  
+## Azure Playfab  
+이번 포스팅에서는 중앙서버를 활용한 멀티플레이를 구현해 봅니다.  
+이전 네트워크 포스팅 중 Mirror Network를 활용합니다.  
+    
+## Setting    
+이전 포스팅을 참고하여 `Playfab for Unity`SDK를 새로 생성한 프로젝트에 적용시킵니다.  
+  
+  
+로컬 네트워크 상에서의 멀티플레이가 아닌 Azure Playfab을 중앙서버로 두는 멀티플레이를 구현하기 위해 몇가지 설정을 해줍니다.  
+먼저  
+[GSDK for Unity](https://github.com/PlayFab/gsdk/tree/main/UnityGsdk)  
+위 깃허브 링크에서 GSDK를 다운로드 해줍니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/01.PNG"><br/>
+<01. GSDK 다운로드 ></p>  
+  
+다운로드 받은 파일의 압축을 풀고 `UnityGsdk` -> `Assets` -> `PlayFabSdk`에 있는 `MultiplayerAgent` 폴더를 통채로 유니티 프로젝트 창의 `PlayFabSDK` 폴더로 복사합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/02.PNG"><br/>
+<02. GSDK 임포트 ></p>    
+  
+`Player Settings`창에서 `Scripting Define Symbols`항목을 찾아 `ENABLE_PLAYFABSERVER_API`을 추가해줍니다.    
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/03.PNG"><br/>
+<03. ENABLE_PLAYFABSERVER_API ></p>  
+  
+
+## Unity3D    
+#### Script
+  
+`Configuration.cs` 스크립트를 생성하고 다음과 같이 작성합니다.    
+  
+```ruby
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Configuration : MonoBehaviour
+{
+	public BuildType buildType;
+	public string buildId = "";
+	public string ipAddress = "";
+	public ushort port = 0;
+	public bool playFabDebugging = false;
+}
+
+public enum BuildType
+{
+	REMOTE_CLIENT,
+	REMOTE_SERVER
+}
+```  
+  
+* 해당프로젝트가 서버인 경우, 클라이언트인 경우 각각을 구분짓기 위한 스크립트 입니다.  
+  
+  
+`UnityNetworkServer.cs`스크립트를 생성하고 다음을 붙여넣습니다.  
+  
+```ruby
+namespace PlayFab.Networking
+{
+    using System;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using Mirror;
+    using UnityEngine.Events;
+
+    public class UnityNetworkServer : NetworkManager
+    {
+        public static UnityNetworkServer Instance { get; private set; }
+
+        public PlayerEvent OnPlayerAdded = new PlayerEvent();
+        public PlayerEvent OnPlayerRemoved = new PlayerEvent();
+
+
+        public List<UnityNetworkConnection> Connections {
+            get { return _connections; }
+            private set { _connections = value; }
+        }
+        private List<UnityNetworkConnection> _connections = new List<UnityNetworkConnection>();
+
+        public class PlayerEvent : UnityEvent<string> { }
+
+        // Use this for initialization
+        public override void Awake()
+        {
+            base.Awake();
+            Instance = this;
+            NetworkServer.RegisterHandler<ReceiveAuthenticateMessage>(OnReceiveAuthenticate);
+        }
+
+        public void StartListen()
+        {
+            NetworkServer.Listen(maxConnections);
+        }
+
+        public override void OnApplicationQuit()
+        {
+            base.OnApplicationQuit();
+            NetworkServer.Shutdown();
+        }
+
+        private void OnReceiveAuthenticate(NetworkConnection nconn, ReceiveAuthenticateMessage message)
+        {
+            var conn = _connections.Find(c => c.ConnectionId == nconn.connectionId);
+            if (conn != null)
+            {
+                conn.PlayFabId = message.PlayFabId;
+                conn.IsAuthenticated = true;
+                OnPlayerAdded.Invoke(message.PlayFabId);
+            }
+        }
+
+        public override void OnServerConnect(NetworkConnectionToClient conn)
+        {
+            base.OnServerConnect(conn);
+
+            Debug.LogWarning("Client Connected");
+            var uconn = _connections.Find(c => c.ConnectionId == conn.connectionId);
+            if (uconn == null)
+            {
+                _connections.Add(new UnityNetworkConnection()
+                {
+                    Connection = conn,
+                    ConnectionId = conn.connectionId,
+                    LobbyId = PlayFabMultiplayerAgentAPI.SessionConfig.SessionId
+                });
+            }
+        }
+
+        public override void OnServerError(NetworkConnectionToClient conn, Exception ex)
+        {
+            base.OnServerError(conn, ex);
+
+            Debug.Log(string.Format("Unity Network Connection Status: exception - {0}", ex.Message));
+        }
+
+        public override void OnServerDisconnect(NetworkConnectionToClient conn)
+        {
+            base.OnServerDisconnect(conn);
+
+            var uconn = _connections.Find(c => c.ConnectionId == conn.connectionId);
+            if (uconn != null)
+            {
+                if (!string.IsNullOrEmpty(uconn.PlayFabId))
+                {
+                    OnPlayerRemoved.Invoke(uconn.PlayFabId);
+                }
+                _connections.Remove(uconn);
+            }
+        }
+    }
+
+    [Serializable]
+    public class UnityNetworkConnection
+    {
+        public bool IsAuthenticated;
+        public string PlayFabId;
+        public string LobbyId;
+        public int ConnectionId;
+        public NetworkConnection Connection;
+    }
+
+    public class CustomGameServerMessageTypes
+    {
+        public const short ReceiveAuthenticate = 900;
+        public const short ShutdownMessage = 901;
+        public const short MaintenanceMessage = 902;
+    }
+
+    public struct ReceiveAuthenticateMessage : NetworkMessage
+    {
+        public string PlayFabId;
+    }
+
+    public struct ShutdownMessage : NetworkMessage { }
+
+    [Serializable]
+    public struct MaintenanceMessage : NetworkMessage
+    {
+        public DateTime ScheduledMaintenanceUTC;
+    }
+}  
+```  
+* Mirror Network의 Network Manager 역할을 하는 스크립트입니다.  
+  
+`AgentListener.cs` 및 `ClientStartUp.cs` 스크립트를 생성하고 각각 다음과 같이 수정합니다.  
+  
+```ruby
+using System.Collections;
+using UnityEngine;
+using PlayFab;
+using System;
+using PlayFab.Networking;
+using System.Collections.Generic;
+using PlayFab.MultiplayerAgent.Model;
+using Mirror;
+
+public class AgentListener : MonoBehaviour
+{
+
+	public Configuration configuration;
+
+	private List<ConnectedPlayer> _connectedPlayers;
+	public UnityNetworkServer UNetServer;
+
+
+	void Start()
+	{
+		if (configuration.buildType == BuildType.REMOTE_SERVER)
+		{
+			StartRemoteServer();
+		}
+	}
+
+
+	private void StartRemoteServer()
+	{
+		Debug.Log("[ServerStartUp].StartRemoteServer");
+		_connectedPlayers = new List<ConnectedPlayer>();
+		PlayFabMultiplayerAgentAPI.Start();
+		PlayFabMultiplayerAgentAPI.IsDebugging = configuration.playFabDebugging;
+		PlayFabMultiplayerAgentAPI.OnMaintenanceCallback += OnMaintenance;
+		PlayFabMultiplayerAgentAPI.OnShutDownCallback += OnShutdown;
+		PlayFabMultiplayerAgentAPI.OnServerActiveCallback += OnServerActive;
+		PlayFabMultiplayerAgentAPI.OnAgentErrorCallback += OnAgentError;
+
+		UNetServer.OnPlayerAdded.AddListener(OnPlayerAdded);
+		UNetServer.OnPlayerRemoved.AddListener(OnPlayerRemoved);
+
+		StartCoroutine(ReadyForPlayers());
+		StartCoroutine(ShutdownServerInXTime());
+	}
+
+	IEnumerator ShutdownServerInXTime()
+	{
+		yield return new WaitForSeconds(300f);
+		StartShutdownProcess();
+	}
+
+	IEnumerator ReadyForPlayers()
+	{
+		yield return new WaitForSeconds(.5f);
+		PlayFabMultiplayerAgentAPI.ReadyForPlayers();
+	}
+
+	private void OnServerActive()
+	{
+		UNetServer.StartServer();
+		Debug.Log("Server Started From Agent Activation");
+	}
+
+	private void OnPlayerRemoved(string playfabId)
+	{
+		ConnectedPlayer player = _connectedPlayers.Find(x => x.PlayerId.Equals(playfabId, StringComparison.OrdinalIgnoreCase));
+		_connectedPlayers.Remove(player);
+		PlayFabMultiplayerAgentAPI.UpdateConnectedPlayers(_connectedPlayers);
+		CheckPlayerCountToShutdown();
+	}
+
+	private void CheckPlayerCountToShutdown()
+	{
+		if (_connectedPlayers.Count <= 0)
+		{
+			StartShutdownProcess();
+		}
+	}
+
+	private void OnPlayerAdded(string playfabId)
+	{
+		_connectedPlayers.Add(new ConnectedPlayer(playfabId));
+		PlayFabMultiplayerAgentAPI.UpdateConnectedPlayers(_connectedPlayers);
+	}
+
+	private void OnAgentError(string error)
+	{
+		Debug.Log(error);
+	}
+
+	private void OnShutdown()
+	{
+		StartShutdownProcess();
+	}
+
+	private void StartShutdownProcess()
+	{
+		Debug.Log("Server is shutting down");
+		foreach (var conn in UNetServer.Connections)
+		{
+			conn.Connection.Send(new ShutdownMessage());
+		}
+		StartCoroutine(ShutdownServer());
+	}
+
+	IEnumerator ShutdownServer()
+	{
+		yield return new WaitForSeconds(5f);
+		Application.Quit();
+	}
+
+	private void OnMaintenance(DateTime? NextScheduledMaintenanceUtc)
+	{
+		Debug.LogFormat("Maintenance scheduled for: {0}", NextScheduledMaintenanceUtc.Value.ToLongDateString());
+		foreach (var conn in UNetServer.Connections)
+		{
+			conn.Connection.Send(new MaintenanceMessage()
+			{
+				ScheduledMaintenanceUTC = (DateTime)NextScheduledMaintenanceUtc
+			});
+		}
+	}
+}  
+```
+  
+```ruby
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using PlayFab;
+using System;
+using PlayFab.ClientModels;
+using PlayFab.MultiplayerModels;
+using Mirror;
+
+public class ClientStartUp : MonoBehaviour
+{
+	public static ClientStartUp Instance;
+	public Configuration configuration;
+	public AgentListener serverStartUp;
+	public NetworkManager networkManager;
+	public kcp2k.KcpTransport KCPTransport;
+	public TelepathyTransport telepathyTransport;
+	//public ApathyTransport apathyTransport;
+	string playfabID;
+
+	private void Awake()
+	{
+		Instance = this;
+	}
+
+		public void OnLoginUserButtonClick()
+	{
+		if (configuration.buildType == BuildType.REMOTE_CLIENT)
+		{
+			if (configuration.buildId == "")
+			{
+				throw new Exception("A remote client build must have a buildId. Add it to the Configuration. Get this from your Multiplayer Game Manager in the PlayFab web console.");
+			}
+			else
+			{
+				LoginRemoteUser();
+			}
+		}
+	}
+
+	public void SignInWithEmail(string emailaddress, string password)
+	{
+		PlayFabClientAPI.LoginWithEmailAddress(new LoginWithEmailAddressRequest()
+		{
+			Email = emailaddress,
+			Password = password
+		},
+		response =>
+		{
+			Debug.Log($"Successful Account Login: {emailaddress}");
+			playfabID = response.PlayFabId;
+			/*if(string.IsNullOrEmpty(CharacterSave.charactername)) //At first, choose a character from the character scene. If there's a character, it's a mega scene
+			{
+				UnityEngine.SceneManagement.SceneManager.LoadScene("ChooseCharacter");
+			}
+			else
+			{
+				UnityEngine.SceneManagement.SceneManager.LoadScene("MegaVRse_Multiplay");
+			}*/
+			UnityEngine.SceneManagement.SceneManager.LoadScene("MegaVRse_Multiplay");
+			OnPlayFabLoginSuccess(response);
+		},
+		error =>
+		{
+			Debug.Log($"Unsuccessful Account Creation: {emailaddress} \n {error.ErrorMessage}");
+		}
+		);
+	}
+
+	public void SignIn(string username, string password)
+	{
+		PlayFabClientAPI.LoginWithPlayFab(new LoginWithPlayFabRequest()
+		{
+			Username = username,
+			Password = password
+		},
+		response =>
+		{
+			Debug.Log($"Successful Account Login: {username}");
+			playfabID = response.PlayFabId;
+			UnityEngine.SceneManagement.SceneManager.LoadScene("MegaVRse_Multiplay");
+
+            OnPlayFabLoginSuccess(response);
+			
+		},
+		error =>
+		{
+			Debug.Log($"Unsuccessful Account Creation: {username} \n {error.ErrorMessage}");
+		});
+	}
+
+
+
+	public void LoginRemoteUser()
+	{
+		Debug.Log("[ClientStartUp].LoginRemoteUser");
+		
+		//We need to login a user to get at PlayFab API's. 
+		LoginWithCustomIDRequest request = new LoginWithCustomIDRequest()
+		{
+			TitleId = PlayFabSettings.TitleId,
+			CreateAccount = true,
+			CustomId = GUIDUtility.getUniqueID()
+		};
+
+		PlayFabClientAPI.LoginWithCustomID(request, OnPlayFabLoginSuccess, OnLoginError);
+	}
+
+	private void OnLoginError(PlayFabError response)
+	{
+		Debug.Log(response.ToString());
+	}
+
+	private void OnPlayFabLoginSuccess(LoginResult response)
+	{
+		Debug.Log(response.ToString());
+		if (configuration.ipAddress == "")
+		{   //We need to grab an IP and Port from a server based on the buildId. Copy this and add it to your Configuration.
+			RequestMultiplayerServer(); 
+		}
+		else
+		{
+			ConnectRemoteClient();
+		}
+	}
+
+	private void RequestMultiplayerServer()
+	{
+		Debug.Log("[ClientStartUp].RequestMultiplayerServer");
+		RequestMultiplayerServerRequest requestData = new RequestMultiplayerServerRequest();
+		requestData.BuildId = configuration.buildId;
+		requestData.SessionId = System.Guid.NewGuid().ToString();
+		requestData.PreferredRegions = new List<string> { "EastUs" };
+		Debug.Log(requestData.BuildId);
+		Debug.Log(requestData.SessionId);
+		Debug.Log(requestData.PreferredRegions[0]);
+		PlayFabMultiplayerAPI.RequestMultiplayerServer(requestData, OnRequestMultiplayerServer, OnRequestMultiplayerServerError);
+	}
+
+	private void OnRequestMultiplayerServer(RequestMultiplayerServerResponse response)
+	{
+		Debug.Log(response.ToString());
+		ConnectRemoteClient(response);
+	}
+
+	private void ConnectRemoteClient(RequestMultiplayerServerResponse response = null)
+	{
+		if(response == null) 
+		{
+			networkManager.networkAddress = configuration.ipAddress;
+			//KCPTransport.Port = configuration.port;
+			telepathyTransport.port = configuration.port;
+			//.port = configuration.port;
+			//apathyTransport.port = configuration.port;
+		}
+		else
+		{
+			Debug.Log("**** ADD THIS TO YOUR CONFIGURATION **** -- IP: " + response.IPV4Address + " Port: " + (ushort)response.Ports[0].Num);
+			networkManager.networkAddress = response.IPV4Address;
+			//KCPTransport.Port = (ushort)response.Ports[0].Num;
+			telepathyTransport.port = (ushort)response.Ports[0].Num;
+			//telepathyTransport.port = (ushort)response.Ports[0].Num;
+			//apathyTransport.port = (ushort)response.Ports[0].Num;
+		}
+
+		networkManager.StartClient();
+	}
+
+	private void OnRequestMultiplayerServerError(PlayFabError error)
+	{
+		Debug.Log(error.ErrorDetails);
+	}
+}                                    
+```
+  
+`GUIDUtility.cs` 및 `PlayerPrefsUtility.cs` 스크립트를 생성하고 각각 다음과 같이 작성합니다.  
+  
+```ruby
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
+
+public static class GUIDUtility
+{
+
+    public static string getUniqueID(bool generateNewIDState = false)
+    {
+        string uniqueID;
+
+        if (PlayerPrefsUtility.hasKey("guid") && !generateNewIDState)
+        {
+            uniqueID = PlayerPrefsUtility.getString("guid");
+        }
+        else
+        {
+			uniqueID = generateGUID();
+			PlayerPrefsUtility.setString("guid", uniqueID);
+        }
+
+        return uniqueID;
+    }
+
+	public static string generateGUID()
+	{
+		var random = new System.Random();
+		DateTime epochStart = new System.DateTime(1970, 1, 1, 8, 0, 0, System.DateTimeKind.Utc);
+		double timestamp = (System.DateTime.UtcNow - epochStart).TotalSeconds;
+
+		string uniqueID = String.Format("{0:X}", Convert.ToInt32(timestamp))                //Time
+						+ "-" + String.Format("{0:X}", random.Next(1000000000))                   //Random Number
+						+ "-" + String.Format("{0:X}", random.Next(1000000000))                 //Random Number
+						+"-" + String.Format("{0:X}", random.Next(1000000000))                  //Random Number
+						+"-" + String.Format("{0:X}", random.Next(1000000000));                  //Random Number
+
+		Debug.Log(uniqueID);
+
+		return uniqueID;
+	}
+
+}
+```
+  
+```ruby
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
+
+public static class PlayerPrefsUtility
+{
+
+    public static void setString(string key, string value)
+    {
+        PlayerPrefs.SetString(key, value);
+        PlayerPrefs.Save();
+    }
+
+    public static void setInt(string key, int value)
+    {
+        PlayerPrefs.SetInt(key, value);
+        PlayerPrefs.Save();
+    }
+
+    public static void setFloat(string key, float value)
+    {
+        PlayerPrefs.SetFloat(key, value);
+        PlayerPrefs.Save();
+    }
+
+    public static void setBool(string key, bool value)
+    {
+        int intValue = 0; //Default is FALSE
+        if (value) intValue = 1; //If value is TRUE, then it's a 1.
+        PlayerPrefs.SetInt(key, intValue);
+        PlayerPrefs.Save();
+    }
+
+
+    //The methods below are silly, but the above ones have a bit more validity, so I wanted to have everything wrapped at that point.
+    public static string getString(string key)
+    {
+        return PlayerPrefs.GetString(key);
+    }
+
+    public static float getFloat(string key)
+    {
+        return PlayerPrefs.GetFloat(key);
+    }
+
+    public static int getInt(string key)
+    {
+        return PlayerPrefs.GetInt(key);
+    }
+
+    public static bool getBool(string key)
+    {
+        int intValue = PlayerPrefs.GetInt(key);
+        if (intValue >= 1) return true; //If it's 1, then TRUE. The greater than is just a sanity check.
+        return false; //Default is FALSE which should be 0.
+    }
+
+    public static bool hasKey(string key)
+    {
+        return PlayerPrefs.HasKey(key);
+    }
+
+
+}  
+```  
+  
+#### Scene
+계층구조창에서 `Configuration`이라는 이름의 빈 게임 오브젝트를 생성합니다.  
+해당 오브젝트에 `Configuration.cs`스크립트를 연결시켜 인스턴스화 해줍니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/05.gif"><br/>
+<04. Configuration ></p>    
+  
+계층구조창에서 `UnityNetworkServer`라는 이름의 빈 게임 오브젝트를 생성합니다.  
+해당 오브젝트에 `UnityNetworkServer.cs`스크립트를 연결시켜 인스턴스화 해줍니다.   
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/04.gif"><br/>
+<05. UnityNetworkServer ></p>  
+  
+`UnityNetworkServer.cs`스크립트를 인스턴스 시키면 아래에 `KCP Transport`라는 컴포넌트도 같이 생성됩니다.  
+해당 트랜스포트는 `UDP` 네트워크의 일종입니다.  
+해당 컴포넌트를 제거하고 `Telepathy Transport`를 추가해줍니다. `Telepathy`는 `TCP/IP`의 일종입니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/09.gif"><br/>
+<06. Telepathy Transport ></p>  
+  
+    
+UnityNetworkServer 오브젝트의 하위에 `AgentListener`라는 이름의 빈게임 오브젝트를 생성합니다.
+해당 오브젝트에 `AgentListener.cs` 스크립트를 인스턴스화 해줍니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/06.gif"><br/>
+<07. AgentListener ></p>  
+  
+`AgentListener`오브젝트를 선택하고 우측 인스펙터 창의 `AgentListner.cs` 스크립트 컴포넌트를 확인합니다.  
+`Configuration`, `UNetServer`항목에 각각 계층구조창의 `Configuration`오브젝트 및 `UnityNetworkServer` 오브젝트를 연결합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/07.gif"><br/>
+<08. 컴포넌트 확인 ></p>  
+  
+`UnityNetworkServer`오브젝트 하위에 `ClientStartUp`이라는 이름의 빈 게임 오브젝트를 생성합니다.  
+해당 오브젝트에 `ClientStartUp.cs`스크립트를 인스턴스화 시켜줍니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/08.gif"><br/>
+<09. Client Start Up ></p>    
+  
+`ClientStartUp`오브젝트를 선택하고 우측 인스펙터창의 `ClientStartUp`컴포넌트를 확인합니다.  
+빈 항목들을 다음과 같이 채워넣습니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/10.gif"><br/>
+<10. Client Start Up Component ></p>    
+  
+마지막으로 Player 캐릭터 프리펩을 만들겠습니다.  
+계층구조창에서 `Cube`오브젝트를 생성하고 해당 오브젝트에 `Network Identiy`컴포넌트를 추가합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/13.gif"><br/>
+<10. Player Prefab ></p>    
+  
+Cube 오브젝트를 프리펩으로 만들고 해당 프리펩을 `UnityNetworkServer`오브젝트의 `Player Prefab`항목에 끌어놓습니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/14.gif"><br/>
+<04. Player 추가 ></p>    
+  
+   
+  
+##테스트
+  
+  
+  
+  
+  {% include adsense.html %}
+  
+  
+  
