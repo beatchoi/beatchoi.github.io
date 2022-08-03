@@ -670,15 +670,84 @@ UnityNetworkServer 오브젝트의 하위에 `AgentListener`라는 이름의 빈
 계층구조창에서 `Cube`오브젝트를 생성하고 해당 오브젝트에 `Network Identiy`컴포넌트를 추가합니다.  
   
 <p align="center"><img src="/img/UnityFundamental/Playfab04/13.gif"><br/>
-<10. Player Prefab ></p>    
+<11. Player Prefab ></p>    
   
 Cube 오브젝트를 프리펩으로 만들고 해당 프리펩을 `UnityNetworkServer`오브젝트의 `Player Prefab`항목에 끌어놓습니다.  
+계층구조창의 Cube 오브젝트는 제거합니다.  
   
 <p align="center"><img src="/img/UnityFundamental/Playfab04/14.gif"><br/>
-<04. Player 추가 ></p>    
+<12. Player 추가 ></p>    
   
-   
   
+#### Unity Server Build
+  
+Playfab Multiplayer 항목에 업로드할 `Server Build`를 진행합니다.  
+해당 프로젝트의 `Build Setting`창에서 `Platform`항목의 `Dedicated Server`플랫폼을 선택하고 변경합니다.  
+해당 플랫폼은 `Unity Hub`에서 미리 설치바랍니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/13.PNG"><br/>
+<13. Dedicated Server Build ></p>
+  	
+계층구조창에서 `Configuration`오브젝트를 선택하고 인스펙터창의 `Configuration`에서 `Build Type`이 `REMOTE_SERVER`인지 확인합니다.  
+나머지 칸은 비워둡니다.   
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/14.PNG"><br/>
+<14. Configuration ></p>
+  	
+확인되면 빌드를 진행합니다. 
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/15.gif"><br/>
+<15. Build ></p>
+  
+빌드가 완료되면 해당폴더 안에 모든 파일들을 압축시켜줍니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/16.gif"><br/>
+<16. Zip ></p>
+  	
+  
+#### Playfab Dashboard
+  
+Playfab Dashboard에 로그인을 합니다.  
+본인의 프로젝트에 들어가서 좌측 `Build`항목에 `Multiplayer`항목을 클릭합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/11.PNG"><br/>
+<17. Playfab Dashboard Multiplayer ></p> 
+  	
+`Multiplayer`항목을 활성화 시키기 위해서는 `Add Credit Card`버튼을 눌러 신용카드를 등록해야합니다.  
+한달에 750시간 미만으로 활용한다면 무료로 쓸 수 있습니다.  
+활성화를 완료하면 `Multiplayer`항목을 클릭했을 때 다음과 같은 메뉴가 나타나게 됩니다.
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/12.PNG"><br/>
+<18. Multiplayer 항목 활성화 ></p>  
+  
+좌측 `New build`버튼을 눌러 서버를 생성합니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/15.PNG"><br/>
+<19. Playfab Server Build_01 ></p>  
+	
+먼저 `Build Name`에 빌드 이름을 지어주고 `Virtual Machine` 항목을 `Dasv4 2Core`로 선택합니다.  
+그리고 아래로 내려와 `Asset`항목에 아까 유니티에서 빌드하고 압축했던 합축 파일을 업로드합니다.  
+그 하단에 `Start command`에는 `C:\Assets\서버빌드.exe` 경로를 작성해야 하는데 서버빌드.exe 는 아까 압축했던 파일 중 실행파일의 이름을 작성하면 됩니다.  
+보통 유니티 디폴트값으로 프로젝트이름.exe로 되어있습니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/17.gif"><br/>
+<20. Playfab Server Build_02 ></p>  
+  
+하단에 `Region`항목에 `+Add Region`버튼을 누르고 `Stanby Server` 및 `Max Server`항목을 각각 1로 지정합니다.  
+지역은 East US로 유지합니다.  
+완료되면 `Add build`버튼을 눌러줍니다.
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/18.gif"><br/>
+<21. Playfab Server Build_03 ></p>   
+  
+빌드가 업로드 중이라면 Playfab Dashboard에서 `Multiplayer` 항목을 클릭했을 때 다음과 같이 `Deploying` 상태일 것입니다.  
+성공적으로 업로드가 완료되면 `Deployed`로 변경됩니다.  
+  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/16.PNG"><br/>
+<22. Playfab Server Build_04 ></p>
+<p align="center"><img src="/img/UnityFundamental/Playfab04/17.PNG"><br/>
+<23. Playfab Server Build_05 ></p>
+	
 ##테스트
   
   
