@@ -4,7 +4,7 @@ title:  "LightshipAR SDK 활용하기 - LightshipAR 프로젝트 세팅"
 date:   2022-08-08 14:00:07
 categories: ARPage
 description: "LightshipAR 프로젝트 세팅"
-image: '/img/UnityAR/LightshipAR/01/00.PNG"'
+image: '/img/UnityAR/LightshipAR/01/00.PNG'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/08/08/Lightship1/
 ---
