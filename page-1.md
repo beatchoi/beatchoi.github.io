@@ -21,7 +21,7 @@ show_sidebar: false
 [유니티 터치 입력 드래그 - 22-04-19](https://beatchoi.github.io/unity3d/basics/2022/04/19/TouchDrag/)<br/>
 [유니티 터치 입력 객체 이동 - 22-04-19](https://beatchoi.github.io/unity3d/basics/2022/04/19/TouchMove/)<br/>
   
-[유니티 코루틴 01 - 22-04-24](https://beatchoi.github.io/unity3d/basics/2022/04/24/Coroutine01/)
+[유니티 코루틴( 01 - 22-04-24](https://beatchoi.github.io/unity3d/basics/2022/04/24/Coroutine01/)
   
 #### 중급  
 [싱글톤 패턴, 다른 객체에서 참조하기 :: Singleton Pattern - 21-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/SingletonAndStatic/)<br/>
