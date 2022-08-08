@@ -23,12 +23,12 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/08/08/Lights
 Niantic의 LightshipAR SDK 다운로드 페이지에 접근합니다.  
 가입을 진행하고 다음 페이지에서 `Download ARDK`를 클릭하여 다운로드 합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/1.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/1.PNG"><br/>
 <01. Download LightshipAR SDK ></p>  
     
 다운로드 받은 유니티 패키지 파일을 유니티 프로젝트에 풀어줍니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/2.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/2.PNG"><br/>
 <02. Import LightshipAR SDK ></p>  
   
 ## LightshipAR SDK 시작  
@@ -41,30 +41,30 @@ Niantic의 LightshipAR SDK 다운로드 페이지에 접근합니다.
 상단 `Untitled`항목을 클릭하여 프로젝트의 이름을 수정하고  
 하단 `+Create New Key`버튼을 클릭하여 라이선스 키를 생성합니다. 
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/3.gif"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/3.gif"><br/>
 <03. LightshipAR SDK Dashboard ></p>    
   
 `****`모양 옆의 복사 버튼을 눌러 라이선스 키를 복사합니다.  
    
-<p align="center"><img src="/img/UnityAR/LightshipAR/4.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/4.PNG"><br/>
 <04. Create License Key ></p>    
   
 유니티로 돌아가서 프로젝트 창에 `Resources/ARDK` 의 경로로 폴더를 생성합니다.  
 `Resources`폴더를 생성 후 그 안에 `ARDK`폴더를 생성하면 됩니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/5.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/5.PNG"><br/>
 <05. Resources/ARDK 폴더 생성 ></p>  
   
 해당 폴더 안에 `ArdkAuthConfig`라는 파일을 생성합니다.  
 프로젝트 창에서 마우스 우클릭, `Create -> ARDK -> ArdkAuthConfig`순으로 접근하면 됩니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/6.gif"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/6.gif"><br/>
 <06. ArdkAuthConfig 생성 ></p>      
   
 `ArdkAuthConfig` 파일을 선택하고 우측 인스펙터 창을 확인합니다.  
 `Api Key`항목에 전에 복사했던 라이선스 키를 붙여넣습니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/7.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/7.PNG"><br/>
 <07. 라이선스 키 추가 ></p>  
   
 #### 프로젝트 설정 - 안드로이드
@@ -72,19 +72,19 @@ Niantic의 LightshipAR SDK 다운로드 페이지에 접근합니다.
 
 먼저 빌드세팅의 플랫폼을 `Android`로 변경합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/8.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/8.PNG"><br/>
 <08. Android Build Setting ></p>  
   
 `Player Settings`창의 `Other Settings` 항목을 봅니다.
 `Rendering` 항목의 `Auto Graphics API` 항목에 체크를 해제하고 `Vulkan` API를 제거합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/9.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/9.PNG"><br/>
 <09. Redering Setting ></p>    
   
 `Configuration` 항목 아래 `Scripting Backend` 부분은 `IL2CPP`로 변경하고  
 하단 `Target Architecture`항목에 `ARMv7`과 `ARM64`모두 체크해줍니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/10.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/10.PNG"><br/>
 <10. Configuration ></p>    
   
   
@@ -93,21 +93,21 @@ Niantic의 LightshipAR SDK 다운로드 페이지에 접근합니다.
 카메라 오브젝트의 `Camera`컴포넌트의 `Clear Flags`항목을 `Solid Color`로 변경하고 `Background`색상을 검정색으로 변경합니다.  
 카메라 오브젝트에 `AR Camera Position Helper` 및 `AR Rendering Manager`컴포넌트를 추가합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/11.gif"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/11.gif"><br/>
 <11. Main Camera ></p> 
   
   
 빈 게임 오브젝트를 생성하고 해당 오브젝트의 이름을 `SessionManager`로 변경합니다.  
 해당 오브젝트에 `AR Session Manager`, `AR Plane Manager`, `Android Permission Requester` 컴포넌트를 추가합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/12.gif"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/12.gif"><br/>
 <12. Session Manager ></p>
   
   
 `SessionManager`오브젝트의 `AR Plane Manager`컴포넌트를 확인합니다.  
 해당 컴포넌트의 `Plane Prefab` 항목과 `Detected Plane Types`를 다음과 같이 변경합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/13.gif"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/01/13.gif"><br/>
 <13. Plane Detection ></p> 
   
 ## 마무리
