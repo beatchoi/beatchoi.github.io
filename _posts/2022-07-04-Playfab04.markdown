@@ -748,8 +748,29 @@ Playfab Dashboard에 로그인을 합니다.
 <p align="center"><img src="/img/UnityFundamental/Playfab04/17.PNG"><br/>
 <23. Playfab Server Build_05 ></p>
 	
+## LogIn 구현
+멀티플레이 서버에 접속하기위해서는 이전 포스팅의 로그인을 구현해야 합니다.  
+`https://beatchoi.github.io/unity3d/fundamentals/2022/05/26/Playfab03/`를 참조해서 구현하면 됩니다.  
+	
 ##테스트
   
+빌드 업로드 까지 완료가 되었으면 유니티에서 세팅을 해봅니다.  
+유니티 씬의 `Configuration` 오브젝트를 선택하고 `Configuration` 컴포넌트의 `Build Type`항목을 `REMOTE_CLIENT`로 변경합니다.  
+그리고 하단 `Build Id`부분에는 Playfab의 `Multiplayer`항목을 클릭한 창의 빌드된 서버 하단의 문자열을 붙여넣어 줍니다.  
+일단 IP Address와 Port 항목은 비워둡니다.  
+상단 플레이 버튼을 눌러봅니다.  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/18.PNG"><br/>
+<24. Configuration ></p>  
+  
+아이디와(이메일) 비밀번호를 넣고 로그인에 성공하게 되면 다음과 같은 로그창이 띄워지게 됩니다.  
+접속해야 할 IP와 Port번호를 확인하고 플레이를 끈 후 `Configuration` 항목에 작성합니다.  
+<p align="center"><img src="/img/UnityFundamental/Playfab04/19.PNG"><br/>
+<25. Final ></p>
+  
+  
+로그인에 성공하고 `Player`오브젝트인 `Cube`가 성공적으로 띄워지면 Remote Server 접속 성공입니다.  
+	
+	
   
   
   
