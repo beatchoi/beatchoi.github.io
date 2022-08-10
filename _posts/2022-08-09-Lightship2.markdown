@@ -1,0 +1,131 @@
+---
+layout: post
+title:  "LightshipAR SDK 활용하기 - LightshipAR 프로젝트 세팅"
+date:   2022-08-09 14:00:07
+categories: ARPage
+description: "LightshipAR 프로젝트 세팅"
+image: '/img/UnityAR/LightshipAR/01/00.PNG'
+published: true
+canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2022/08/08/Lightship1/
+---
+  
+  
+  {% include adsense.html %}
+  
+  
+## LightshipAR SDK  
+포켓몬고의 개발사로 잘 알려진 Niantic에서 제공하는 증강현실 SDK 입니다.  
+기본적으로 포켓몬고에 적용되는 기능들을 구현할 수 있으며 기본적인 지면인식, 공간인식을 포함하여  
+지오펜싱을 활용한 GPS기반 위치인식, 환경 세그멘테이션 등의 기능들을 활용할 수 있습니다.  
+  
+이번 강좌에서는 화면을 터치하여 공을 던져보도록 하겠습니다.  
+  
+## 콘텐츠 개발
+#### 프로젝트 세팅
+  
+이전 포스팅인 [LightshipAR 프로젝트 세팅](https://beatchoi.github.io/arpage/2022/08/08/Lightship1/)를 참조하여 세팅합니다.  
+    
+  
+#### 씬 세팅
+기본 LightshipAR SDK 세팅이 끝났으면 씬으로 돌아와서 계층구조창에 `Sphere`오브젝트를 하나 생성합니다.  
+해당 오브젝트의 크기를 0.5,0.5,0.5 로 변경합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/02/1.PNG"><br/>
+<01. Sphere 생성 ></p>  
+  
+  
+Sphere 오브젝트에 `Rigidbody` 컴포넌트를 추가합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/02/2.PNG"><br/>
+<02. Rigidbody 생성 ></p> 
+  
+  
+Sphere 오브젝트를 프로젝트 창으로 끌어 내려서 프리펩으로 만들어 줍니다.    
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/02/3.PNG"><br/>
+<03. Sphere Prefab 생성 ></p>    
+
+
+씬에 남아있는 Sphere 오브젝트는 제거하고 `SceneManager.cs`스크립트를 생성합니다.  
+그리고 다음과 같이 스크립트를 작성합니다.  
+  
+```ruby
+using UnityEngine;
+using Niantic.ARDK.AR;
+using Niantic.ARDK.AR.ARSessionEventArgs;
+using Niantic.ARDK.Utilities;
+using Niantic.ARDK.Utilities.Input.Legacy;
+
+//Define our main class
+public class SceneManager : MonoBehaviour
+{
+    public GameObject _ballPrefab;
+    IARSession _ARsession;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        ARSessionFactory.SessionInitialized += OnSessionInitialized;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (PlatformAgnosticInput.touchCount <= 0)
+        {
+            return;
+        }
+        
+        var touch = PlatformAgnosticInput.GetTouch(0);
+        if (touch.phase == TouchPhase.Began)
+        {
+            TouchBegan(touch);
+        }
+    }
+
+    //This function will be called when a new AR Session has been created, as we instructed our 'ARSessionFactory' earlier
+    private void OnSessionInitialized(AnyARSessionInitializedArgs args)
+    {
+        ARSessionFactory.SessionInitialized -= OnSessionInitialized;
+        
+        _ARsession = args.Session;
+    }
+    
+    private void TouchBegan(Touch touch)
+    {
+        GameObject newBall = Instantiate(_ballPrefab);
+        newBall.transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, 0.0f)); 
+        newBall.transform.position = Camera.main.transform.position + Camera.main.transform.forward;  
+
+
+        Rigidbody rigbod = newBall.GetComponent<Rigidbody>();
+        rigbod.velocity = new Vector3(0f, 0f, 0f);
+        float force = 300.0f;
+        rigbod.AddForce(Camera.main.transform.forward * force);
+    }
+}
+```
+  
+위 스크립트는 Niantic LightshipAR 공식 문서에서 가져온 스크립트 입니다.  [https://lightship.dev/guides/lightship-basics/](https://lightship.dev/guides/lightship-basics/)  
+  
+해당 스크립트를 `SessionManager`오브젝트에 인스턴스화 시켜줍니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/02/4.PNG"><br/>
+<04. 스크립트 인스턴스화 ></p>    
+  
+  
+`SessionManager`오브젝트의 `SceneManager`컴포넌트의 `Ball Prefab`항목에 프로젝트 창에 만들어 둔 `Sphere`프리펩을 연결해줍니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/02/5.PNG"><br/>
+<05. Sphere 프리펩 연결 ></p>      
+  
+  
+## 마무리
+해당 프로젝트를 빌드하여 모바일 디바이스에서 확인해봅니다.  
+  
+  
+  
+  {% include adsense.html %}
+  
+  
+  
