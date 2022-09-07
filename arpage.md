@@ -5,6 +5,9 @@ layout: page
 show_sidebar: false
 ---
   
+  
+[Minions.unitypackage ](https://github.com/beatchoi/beatchoi.github.io/raw/master/Files/Minions.unitypackage)  
+  
 ## ARFoundation
 [1. ARFoundation 환경설정](https://beatchoi.github.io/unity3d/basics/2020/12/14/ARFoundation01/)  
 [1.1 ARFoundation 환경설정<2022.04.14>Unity3D 2021.3 및 안드로이드 10 이상 버전 세팅](https://beatchoi.github.io/arpage/2022/04/14/ARFoundationSetting/)  
