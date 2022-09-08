@@ -161,7 +161,6 @@ public class AddressableLoad : MonoBehaviour
         Addressables.InstantiateAsync("Assets/Cube.prefab", new Vector3(0, 0, 0), Quaternion.identity);
     }
 }
-
 ```  
   
 * 4 : AddressableAssets 네임스페이스를 추가합니다.  
