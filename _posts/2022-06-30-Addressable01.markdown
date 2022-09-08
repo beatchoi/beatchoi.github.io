@@ -144,7 +144,7 @@ Addressable Asset System은 에셋을 조금 더 효율적으로 관리하기 �
   
   
 ## Unity 3D  
-#### Script
+#### Script  
   
 `AddressableLoad.cs` 스크립트를 생성하고 다음과 같이 작성합니다.   
   
