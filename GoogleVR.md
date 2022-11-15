@@ -12,6 +12,10 @@ show_sidebar: false
 [2. Oculus Quest2 & 컨트롤러의 버튼입력 - 2020-12-30](https://beatchoi.github.io/unity3d/basics/2020/12/30/OculusQuestInput/)  
 [3. Oculus Quest2 & 컨트롤러로 이동하기 - 2020-12-30](https://beatchoi.github.io/unity3d/basics/2020/12/30/OculusQuestInputMove/)  
 [4. Oculus Quest2 & 자연스러운 이동하기 - 2021-01-12](https://beatchoi.github.io/unity3d/basics/2021/01/12/headbob/)  
+ 
+#### XR Interaction Toolkit 
+[1. Oculus Quest2 & Locomotion System 이동과 회전 - 2022-11-15](https://beatchoi.github.io/unity3d/basics/2022/11/15/OculusQuestXRInteractionLocomotion/)    
+
 
 ## VIVE Developement :: 바이브 개발  
 #### 바이브 환경설정  
