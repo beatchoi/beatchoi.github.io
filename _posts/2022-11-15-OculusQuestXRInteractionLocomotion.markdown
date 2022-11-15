@@ -8,7 +8,11 @@ image: 'img/UnityVR/OculusQuest/01XRToolkit/OculusQuest.png'
 published: true
 canonical_url: http://whtls.com/unity3d/basics/2022/11/15/OculusQuestXRInteractionLocomotion/
 ---
-
+  
+  
+  {% include adsense.html %}
+  
+  
 ## XR Interaction Toolkit Locomotion
 XR Interaction Toolkit의 Locomotion 기능을 활용하여 이동 및 회전을 구현해 봅니다.
   
@@ -54,4 +58,9 @@ XROrigin 오브젝트를 선택하고 `Locomotion System`컴포넌트를 추가�
 월드에서 컨트롤러를 활용하여 이동 및 회전이 구현되는지 확인합니다.  
 <p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/05.PNG"><br/>
 <05. 테스트></p>
+  
+  
+  
+  {% include adsense.html %}
+  
   
