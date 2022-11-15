@@ -25,7 +25,7 @@ XR Interaction Toolkit의 Locomotion 기능을 활용하여 이동 및 회전을
 #### Locomotion System 컴포넌트 추가
 XROrigin 오브젝트를 선택하고 `Locomotion System`컴포넌트를 추가합니다.  
 `XROrigin`오브젝트의 `XR Origin`항목에 `XROrigin`오브젝트를 연결합니다.  
-<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/01.PNG"><br/>
+<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/01.png"><br/>
 <01. Locomotion System></p>
   
   
@@ -34,7 +34,7 @@ XROrigin 오브젝트를 선택하고 `Locomotion System`컴포넌트를 추가�
 `System`항목에 `XROrigin`오브젝트를 연결합니다.  
 `Forward Source`항목에 `Main Camera`를 연결합니다.  
 `Controllers`항목에 리스트를 추가하고 'RightHand Controller`, `LeftHand Controller`항목을 연결합니다.  
-<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/03.PNG"><br/>
+<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/03.png"><br/>
 <03. Continuous Move Provider></p>
   
   
@@ -45,14 +45,14 @@ XROrigin 오브젝트를 선택하고 `Locomotion System`컴포넌트를 추가�
 `XROrigin` 오브젝트에 `Continuous Turn Provider(Device-based)` 컴포넌트를 추가합니다.  
 `System`항목에 `XROrigin`오브젝트를 연결합니다.  
 `Controllers`항목에 리스트를 추가하고 'RightHand Controller`, `LeftHand Controller`항목을 연결합니다.  
-<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/04.PNG"><br/>
+<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/04.png"><br/>
 <04. Continuous Turn Provider></p>
   
   
 #### 회전 확인
 ## 테스트
 월드에서 컨트롤러를 활용하여 이동 및 회전이 구현되는지 확인합니다.  
-<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/05.PNG"><br/>
+<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/05.png"><br/>
 <05. 테스트></p>
   
   
