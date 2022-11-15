@@ -24,13 +24,9 @@ XR Interaction Toolkit의 Locomotion 기능을 활용하여 이동 및 회전을
 
 #### Locomotion System 컴포넌트 추가
 XROrigin 오브젝트를 선택하고 `Locomotion System`컴포넌트를 추가합니다.  
+`XROrigin`오브젝트의 `XR Origin`항목에 `XROrigin`오브젝트를 연결합니다.  
 <p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/01.PNG"><br/>
 <01. Locomotion System></p>
-  
-  
-`XROrigin`오브젝트의 `XR Origin`항목에 `XROrigin`오브젝트를 연결합니다. 
-<p align="center"><img src="/img/UnityVR/OculusQuest/XRToolkitLocomotion/02.PNG"><br/>
-<02. Locomotion System></p>
   
   
 #### 자연스러운 이동 구현
