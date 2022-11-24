@@ -122,8 +122,8 @@ TouchManager 오브젝트에 TouchRotate.cs 스크립트를 연결시킵니다.
 모바일 디바이스에 빌드를 하여 테스트를 해 봅니다.  
   
 결과물  
-<p align="center"><img src="/img/UnityBasic/Input/01.PNG"><br/>
-<02. ></p>  
+<p align="center"><img src="/img/UnityBasic/TouchRotate/3.gif"><br/>
+<03. ></p>  
 
   
   
