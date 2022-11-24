@@ -39,6 +39,7 @@ public class TouchRotate : MonoBehaviour
     [Range(0f, 1.5f)]
     public float touchTimeLimit = 0.28f;
 
+    private bool isTouched;
     private bool isRotated;
     private float touchTime;
 
@@ -52,18 +53,18 @@ public class TouchRotate : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(touch.position);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit) && Obj == null)
+            if (Physics.Raycast(ray, out hit) && !isTouched)
             {
                 Obj = hit.transform.gameObject;
+                isTouched = true;
             }
 
-            if (touch.phase == TouchPhase.Stationary && Obj == null)
+            if (touch.phase == TouchPhase.Stationary)
             {
                 if (touchTime >= touchTimeLimit)
                 {
                     if (!isRotated)
                     {
-                        Vibration.Vibrate(10);
                         Obj.transform.localScale *= DragScale;
                     }
                     touchTime = touchTimeLimit;
@@ -75,7 +76,7 @@ public class TouchRotate : MonoBehaviour
                 }
             }
 
-            if (touch.phase == TouchPhase.Moved && Obj != null)
+            if (touch.phase == TouchPhase.Moved && isTouched)
             {
                 if (touchTime >= touchTimeLimit)
                 {
@@ -88,6 +89,7 @@ public class TouchRotate : MonoBehaviour
                 if (Obj != null)
                 {
                     touchTime = 0;
+                    isTouched = false;
                     if (isRotated)
                     {
                         isRotated = false;
@@ -95,11 +97,11 @@ public class TouchRotate : MonoBehaviour
                     }
                     Obj = null;
                 }
+
             }
         }
     }
 }
-
 ```
   
 #### 씬 수정
