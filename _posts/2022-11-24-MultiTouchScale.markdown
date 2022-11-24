@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유니티 멀티 터치 크기 조절 - UI Pinch Zoom"
-date:   2022-11-24 14:00:07
+date:   2022-11-24 16:00:07
 categories: Unity3D Basics
 description: "유니티 UI 멀티 터치 크기 조절"
 image: '/img/Unity.png'
@@ -68,7 +68,7 @@ public class TouchScale : MonoBehaviour
 #### 씬 수정
   
 계층 구조창에서 `Cube`오브젝트를 생성하여 화면 중앙에 보일 수 있도록 위치를 조정합니다.  
-<p align="center"><img src="/img/UnityBasic/TouchScale/1.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/TouchRotate/1.PNG"><br/>
 <01. 오브젝트 생성 1></p><br/>   
   
  
