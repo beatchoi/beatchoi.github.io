@@ -21,6 +21,7 @@ show_sidebar: false
 [유니티 터치 입력 객체 드래그 - 22-04-19](https://beatchoi.github.io/unity3d/basics/2022/04/19/TouchDrag/)<br/>
 [유니티 터치 입력 객체 이동 - 22-04-19](https://beatchoi.github.io/unity3d/basics/2022/04/19/TouchMove/)<br/>
 [유니티 터치 입력 객체 회전 - 22-11-24](https://beatchoi.github.io/unity3d/basics/2022/11/24/TouchRotate/)<br/>
+[유니티 터치 핀치 스케일 - 22-11-24](https://beatchoi.github.io/unity3d/basics/2022/11/24/MultiTouchScale/)<br/>
   
 [유니티 코루틴(Coroutine) 01 - 22-04-24](https://beatchoi.github.io/unity3d/basics/2022/04/24/Coroutine01/)
   
