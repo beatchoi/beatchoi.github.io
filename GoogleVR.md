@@ -4,6 +4,9 @@ subtitle: Play Around Building VR Contents
 layout: page
 show_sidebar: false
 ---
+  
+[2일차 에셋](https://drive.google.com/file/d/1S2KVYrtq0IvEdZVd70oacnITfWvrHG8U/view?usp=share_link)  
+  
 ## Google VR :: 구글 VR  
 [1. GoogleVR 다운로드 - 2020-06-19](https://beatchoi.github.io/unity3d/vive/2020/06/19/GoogleVRDownload)  
 
