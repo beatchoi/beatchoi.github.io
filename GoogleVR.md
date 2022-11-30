@@ -5,7 +5,7 @@ layout: page
 show_sidebar: false
 ---
   
-//[3일차 에셋](https://drive.google.com/file/d/1fOZgOEVSVH3V_NV5O0_5cg49h99gyEP-/view?usp=share_link)  
+[3일차 에셋]https://drive.google.com/file/d/1fOZgOEVSVH3V_NV5O0_5cg49h99gyEP-/view?usp=share_link
 [캐릭터 애니메이션](https://drive.google.com/file/d/1L_MjHpo8gz9L5xpQK08SwSimkEyEkHgA/view?usp=share_link)
   
 ## Google VR :: 구글 VR  
