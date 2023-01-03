@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유니티 스크립터블 오브젝트 - Scriptable Object"
-date:   2022-11-24 14:00:07
+date:   2023-01-03 14:00:07
 categories: Unity3D Fundamentals
 description: "유니티 스크립터블 오브젝트(Scriptable Objects)"
 image: '/img/Unity.png'
