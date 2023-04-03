@@ -36,4 +36,4 @@ show_sidebar: false
   
 ## LightshipAR SDK  
 [1. LightshipAR SDK 2022 - 08 - 08](https://beatchoi.github.io/arpage/2022/08/08/Lightship1/)  
-[2. LightshipAR SDK 2023 - 04 - 03](https://beatchoi.github.io/arpage/2023/04/03/Lightship3/)  
+[2. LightshipAR SDK 2023 - 04 - 03](https://beatchoi.github.io/arpage/2023/04/03/Lightship3PlaneDetection/)  
