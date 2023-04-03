@@ -6,7 +6,7 @@ categories: ARPage
 description: "LightshipAR 지면 인식의 활용"
 image: '/img/UnityAR/LightshipAR/01/00.PNG'
 published: true
-canonical_url: https://beatchoi.github.io/unity3d/arpage/2022/08/08/Lightship1/
+canonical_url: https://beatchoi.github.io/unity3d/arpage/2023/04/03/Lightship3/
 ---
   
   
