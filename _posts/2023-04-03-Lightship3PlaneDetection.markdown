@@ -28,7 +28,7 @@ canonical_url: https://beatchoi.github.io/unity3d/arpage/2022/08/08/Lightship1/
   
 #### 씬 세팅
 빈 게임 오브젝트를 생성한 후 이름을 `ARSession`으로 변경합니다.  
-해당 오브젝트에 'ARSessionManager.cs', 'CapabilityChecker.cs', `AndroidPermissionRequester.cs' 컴포넌트를 부착합니다.  
+해당 오브젝트에 `ARSessionManager.cs`, `CapabilityChecker.cs`, `AndroidPermissionRequester.cs` 컴포넌트를 부착합니다.  
   
 <p align="center"><img src="/img/UnityAR/LightshipAR/03/01.PNG"><br/>
 <01. ARSession 오브젝트 생성 ></p>  
@@ -45,6 +45,209 @@ Main Camera 오브젝트의 이름을 `ARCamera`로 변경하고
 그리고 다음과 같이 스크립트를 작성합니다.  
   
 ```ruby
+// Copyright 2022 Niantic, Inc. All Rights Reserved.
+
+using System.Collections;
+using Niantic.ARDK.AR;
+using Niantic.ARDK.AR.ARSessionEventArgs;
+using Niantic.ARDK.AR.HitTest;
+using Niantic.ARDK.Utilities;
+using Niantic.ARDK.Utilities.Input.Legacy;
+using UnityEngine;
+
+public class ARPlaneDetector : MonoBehaviour
+{
+    /// The camera used to render the scene. Used to get the center of the screen.
+    public Camera Camera;
+    /// The object we will place to represent the cursor!
+    public GameObject CursorObject;
+    //public GameObject PlacementObjectPf;
+
+    /// A reference to the spawned cursor in the center of the screen.
+    private GameObject _spawnedCursorObject;
+
+    private IARSession _session;
+    [SerializeField]
+    private GameObject ObjectToSpawn;
+
+     void Start()
+    {
+        
+        ARSessionFactory.SessionInitialized += _SessionInitialized;
+        
+
+    }
+    private void OnDestroy()
+    {
+        ARSessionFactory.SessionInitialized -= _SessionInitialized;
+
+        var session = _session;
+        if (session != null)
+            session.FrameUpdated -= _FrameUpdated;
+
+        DestroySpawnedCursor();
+    }
+
+    private void DestroySpawnedCursor()
+    {
+        if (_spawnedCursorObject == null)
+            return;
+
+        Destroy(_spawnedCursorObject);
+        _spawnedCursorObject = null;
+    }
+
+    private void _SessionInitialized(AnyARSessionInitializedArgs args)
+    {
+        var oldSession = _session;
+        if (oldSession != null)
+            oldSession.FrameUpdated -= _FrameUpdated;
+
+        var newSession = args.Session;
+        _session = newSession;
+        newSession.FrameUpdated += _FrameUpdated;
+        newSession.Deinitialized += _OnSessionDeinitialized;
+
+        
+    }
+
+    private void _OnSessionDeinitialized(ARSessionDeinitializedArgs args)
+    {
+        DestroySpawnedCursor();
+    }
+
+    private void _FrameUpdated(FrameUpdatedArgs args)
+    {
+        var camera = Camera;
+        if (camera == null)
+            return;
+
+        var viewportWidth = camera.pixelWidth;
+        var viewportHeight = camera.pixelHeight;
+
+        // Hit testing for cursor in the middle of the screen
+        var middle = new Vector2(viewportWidth / 2f, viewportHeight / 2f);
+
+        var frame = args.Frame;
+        // Perform a hit test and either estimate a horizontal plane, or use an existing plane and its
+        // extents!
+        var hitTestResults =
+            frame.HitTest
+            (
+            viewportWidth,
+            viewportHeight,
+            middle,
+            ARHitTestResultType.ExistingPlaneUsingExtent |
+            ARHitTestResultType.EstimatedHorizontalPlane
+            );
+
+        if (hitTestResults.Count == 0)
+            return;
+
+        if (_spawnedCursorObject == null)
+            _spawnedCursorObject = Instantiate(CursorObject, Vector2.one, Quaternion.identity);
+
+        // Set the cursor object to the hit test result's position
+        _spawnedCursorObject.transform.position = hitTestResults[0].WorldTransform.ToPosition();
+
+        // Orient the cursor object to look at the user, but remain flat on the "ground", aka
+        // only rotate about the y-axis
+
+        _spawnedCursorObject.transform.LookAt
+        (
+            new Vector3
+            (
+            frame.Camera.Transform[0, 3],
+            _spawnedCursorObject.transform.position.y,
+            frame.Camera.Transform[2, 3]
+            )
+        );
+    }
+
+    private void Update()
+    {
+        if (_session == null)
+        {
+            return;
+        }
+
+        if (PlatformAgnosticInput.touchCount <= 0)
+        {
+            return;
+        }
+
+        var touch = PlatformAgnosticInput.GetTouch(0);
+        if (touch.phase == TouchPhase.Began)
+        {
+            TouchBegan(touch);
+
+            //if Cursor removes after touch
+            /*
+            ARSessionFactory.SessionInitialized -= _SessionInitialized;
+
+            var session = _session;
+            if (session != null)
+                session.FrameUpdated -= _FrameUpdated;*/
+        }
+    }
+
+
+    
+
+    private void TouchBegan(Touch touch)
+    {
+        var currentFrame = _session.CurrentFrame;
+        if (currentFrame == null)
+        {
+            return;
+        }
+
+        var camera = Camera;
+        if (camera == null)
+            return;
+
+        var viewportWidth = camera.pixelWidth;
+        var viewportHeight = camera.pixelHeight;
+
+        // Hit testing for cursor in the middle of the screen
+        var middle = new Vector2(viewportWidth / 2f, viewportHeight / 2f);
+
+
+
+        var results = currentFrame.HitTest
+        (
+          Camera.pixelWidth,
+          Camera.pixelHeight,
+          middle,
+          ARHitTestResultType.ExistingPlaneUsingExtent |
+            ARHitTestResultType.EstimatedHorizontalPlane
+        );
+
+        int count = results.Count;
+        Debug.Log("Hit test results: " + count);
+
+        if (count <= 0)
+            return;
+
+        // Get the closest result
+        var result = results[0];
+
+        var hitPosition = result.WorldTransform.ToPosition();
+
+        Instantiate(ObjectToSpawn, hitPosition, Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0));
+
+        var anchor = result.Anchor;
+        Debug.LogFormat
+        (
+          "Spawning cube at {0} (anchor: {1})",
+          hitPosition.ToString("F4"),
+          anchor == null
+            ? "none"
+            : anchor.AnchorType + " " + anchor.Identifier
+        );
+    }
+    
+}
 
 ```
   
