@@ -40,44 +40,44 @@ VPS는 GPS정보와 타겟 매핑 정보를 정합하여 해당 타겟을 인식
 어플리케이션을 실행하면 Lightship 아이디로 로그인을 합니다.  
 메인 화면에서 중앙 하단 `Scan` 버튼을 터치합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/01.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/01.PNG"><br/>
 <01. Wayfarer ></p>    
   
 인식하고자 하는 공간 앞에서 촬영 버튼을 눌러 스캔을 시작합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/02.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/02.PNG"><br/>
 <02. Wayfarer Scan ></p>  
   
 20초 이상 충분히 스캔을 진행하면 하단 정지 버튼을 눌러 스캔을 마무리 합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/03.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/03.PNG"><br/>
 <03. Wayfarer Finish Scan ></p>  
   
 스캔이 마무리 되면 실내, 실외, 인식 타겟의 유무 등에 따라 인식 등급이 나뉘게 됩니다.  
 최대한 좋은 인식 등급을 만든 뒤 하단 업로드 버튼을 눌러 업로드를 진행합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/04_1.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/04_1.PNG"><br/>
 <04. Wayfarer Scan Upload></p>  
     
     
 우측 하단의 DONE 버튼을 누릅니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/04.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/04.PNG"><br/>
 <04. Wayfarer Scan Upload></p>  
   
 Scan Type은 Private 으로 선택 후 NEXT 버튼을 누릅니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/05.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/05.PNG"><br/>
 <05. Check Private Scan ></p>  
   
 Upload Now를 선택하고 DONE 버튼을 누릅니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/06.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/06.PNG"><br/>
 <06. Upload Now ></p>  
   
 어플리케이션 하단 Logbook 항목을 누르고 두번째 Scans 항목을 누르면 위에서 진행한 스캔의 업로드 과정을 확인할 수 있습니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/07.png"><p align="center"><img src="/img/UnityAR/LightshipAR/05/07_1.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/07.PNG"><p align="center"><img src="/img/UnityAR/LightshipAR/05/07_1.PNG"><br/>
 <07. Logbook ></p>  
     
   
