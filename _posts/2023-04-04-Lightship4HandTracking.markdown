@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "LightshipAR SDK 활용하기 - LightshipAR 핸드 트래킹의 활용"
-date:   2023-04-03 14:00:07
+date:   2023-04-04 14:00:07
 categories: ARPage
 description: "LightshipAR 핸드 트래킹의 활용"
 image: '/img/UnityAR/LightshipAR/01/00.PNG'
