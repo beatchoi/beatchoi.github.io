@@ -45,7 +45,7 @@ Main Camera 오브젝트의 이름을 `ARCamera`로 변경하고
 위와 같이 세팅 후 빌드를 하고 테스트를 하면 다음과 같이 손을 인식하는 것을 볼 수 있습니다.  
   
 #### 1차 테스트
-<p align="center"><img src="/img/UnityAR/LightshipAR/04/3.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/04/3.png" width="428" height="926"><br/>
 <03. 1차 테스트 ></p> 
   
   
@@ -172,7 +172,7 @@ public class PlaceARObjectOnHand : MonoBehaviour
 ## 마무리
 해당 프로젝트를 빌드하여 모바일 디바이스에서 확인해봅니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/04/5.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/04/5.png" width="428" height="926"><br/>
 <05. 마지막 테스트 ></p>  
   
   
