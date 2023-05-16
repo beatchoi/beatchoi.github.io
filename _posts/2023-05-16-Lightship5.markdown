@@ -131,27 +131,27 @@ Build Settings 창에 해당 씬을 추가하고 모바일 디바이스에 빌�
   
 어플리케이션을 실행한 후 상단 메시지가 `Localizing`이 되면 타겟을 스캔합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/14.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/14.png" width="428" height="926"><br/>
 <14. Localizing ></p>    
   
   
 스캔이 성공되면 `Localized`, 스캔에 실패하면 `Failed`라는 메시지가 송출됩니다.  
 실패시 우측의 `Restart`버튼을 눌러 다시 스캔을 진행합니다. 
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/15.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/15.png" width="428" height="926"><br/>
 <15. Scan State ></p>  
     
   
 스캔에 성공하면 인식된 면에 터치를 하여 큐브를 생성할 수 있습니다.  
 여러 개의 큐브를 생성하고 우측 `Save`버튼을 누르면 해당 위치를 저장할 수 있습니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/16.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/16.png" width="428" height="926"><br/>
 <16. Save Anchors ></p>  
     
   
 어플리케이션을 재시작 하거나 `Restart`를 하고 다시 스캔 후 `Load`버튼을 누르면 저장했던 큐브가 그대로 다시 생성됩니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/17.png"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/17.png" width="428" height="926"><br/>
 <17. Load Anchors ></p>  
     
   
