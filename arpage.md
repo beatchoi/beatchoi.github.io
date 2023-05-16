@@ -37,3 +37,4 @@ show_sidebar: false
 ## LightshipAR SDK  
 [1. LightshipAR SDK 2022 프로젝트 세팅 - 08 - 08](https://beatchoi.github.io/arpage/2022/08/08/Lightship1/)  
 [2. LightshipAR SDK 2023 지면 인식 구현 - 04 - 03](https://beatchoi.github.io/arpage/2023/04/03/Lightship3PlaneDetection/)  
+[3. LightshipAR SDK 2023 VPS 구현 - 05 - 16](https://beatchoi.github.io/arpage/2023/05/16/Lightship5/). 
