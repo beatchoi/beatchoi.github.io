@@ -40,7 +40,7 @@ VPS는 GPS정보와 타겟 매핑 정보를 정합하여 해당 타겟을 인식
 어플리케이션을 실행하면 Lightship 아이디로 로그인을 합니다.  
 메인 화면에서 중앙 하단 `Scan` 버튼을 터치합니다.  
   
-<p align="center"><img src="/img/UnityAR/LightshipAR/05/1.PNG"><br/>
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/1.PNG" width="428" height="926"><br/>
 <01. Wayfarer ></p>    
   
 인식하고자 하는 공간 앞에서 촬영 버튼을 눌러 스캔을 시작합니다.  
