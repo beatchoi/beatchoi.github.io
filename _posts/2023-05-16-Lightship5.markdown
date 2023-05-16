@@ -1,0 +1,161 @@
+---
+layout: post
+title:  "LightshipAR SDK 활용하기 - LightshipAR VPS의 활용"
+date:   2023-05-16 14:00:07
+categories: ARPage
+description: "LightshipAR VPS의 활용"
+image: '/img/UnityAR/LightshipAR/01/00.PNG'
+published: true
+canonical_url: https://beatchoi.github.io/unity3d/arpage/2023/05/16/Lightship5/
+---
+  
+  
+  {% include adsense.html %}
+  
+  
+## LightshipAR SDK  
+이번 강좌에서는 Visual Positioning System (VPS) 기능을 활용하여 콘텐츠를 개발해 봅니다.  
+VPS는 GPS정보와 타겟 매핑 정보를 정합하여 해당 타겟을 인식하는 기능입니다.  
+따라서 객체나 환경의 변화 및 이동이 잦지 않은 타겟이 스캔 대상이 됩니다.  
+주로 동상, 건물 입구, 가로등 등 위치의 변경이 없는 타겟들이 좋은 타겟입니다.  
+  
+해당 타겟들을 인식시키고 주변에 가상의 오브젝트들을 배치하고 해당 위치를 저장하는 방법을 알아봅니다.  
+  
+## 공간 매핑  
+#### Niantic Wayfarer    
+  
+공간을 인식시키기 위해서 먼저 공간을 매핑해야 합니다.  
+이 과정은 IOS 어플리케이션으로 진행을 할 수 있는데 아래 링크에서  
+  
+1. Testflight  
+2. Wayfarer  
+  
+어플리케이션을 다운로드 및 설치합니다.  
+  
+링크 : https://testflight.apple.com/join/VXu1F2jf  
+
+(안드로이드 Wayfarer 앱 베타) https://play.google.com/store/apps/details?id=com.nianticlabs.argeo.niamapapp  
+  
+  
+어플리케이션을 실행하면 Lightship 아이디로 로그인을 합니다.  
+메인 화면에서 중앙 하단 `Scan` 버튼을 터치합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/01.png"><br/>
+<01. Wayfarer ></p>    
+  
+인식하고자 하는 공간 앞에서 촬영 버튼을 눌러 스캔을 시작합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/02.png"><br/>
+<02. Wayfarer Scan ></p>  
+  
+20초 이상 충분히 스캔을 진행하면 하단 정지 버튼을 눌러 스캔을 마무리 합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/03.png"><br/>
+<03. Wayfarer Finish Scan ></p>  
+  
+스캔이 마무리 되면 실내, 실외, 인식 타겟의 유무 등에 따라 인식 등급이 나뉘게 됩니다.  
+최대한 좋은 인식 등급을 만든 뒤 하단 업로드 버튼을 눌러 업로드를 진행합니다.  
+우측 하단의 DONE 버튼을 누릅니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/04.png"><br/>
+<04. Wayfarer Scan Upload></p>  
+  
+Scan Type은 Private 으로 선택 후 NEXT 버튼을 누릅니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/05.png"><br/>
+<05. Check Private Scan ></p>  
+  
+Upload Now를 선택하고 DONE 버튼을 누릅니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/06.png"><br/>
+<06. Upload Now ></p>  
+  
+어플리케이션 하단 Logbook 항목을 누르고 두번째 Scans 항목을 누르면 위에서 진행한 스캔의 업로드 과정을 확인할 수 있습니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/07.png"><br/>
+<07. Logbook ></p>  
+    
+  
+스캔이 마무리 되면 Lightship.dev 페이지에서 확인해 봅니다.  
+  
+#### Lighship    
+라이트십 페이지에 로그인 후 좌측 Geospatial Browser를 클릭합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/08.png"><br/>
+<08. Geospatial Browser ></p>  
+  
+하단 Private Scans 탭을 눌러 방금 업로드 한 스캔을 확인합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/09.png"><br/>
+<09. Private Scans ></p>  
+  
+Enlarge 버튼을 눌러 세부 항목을 확인할 수 있습니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/10.png"><br/>
+<10. Private Scans ></p>  
+  
+  
+## 콘텐츠 개발
+#### 프로젝트 세팅
+  
+이전 포스팅인 [LightshipAR 프로젝트 세팅](https://beatchoi.github.io/arpage/2022/08/08/Lightship1/)를 참조하여 세팅합니다.  
+    
+  
+#### 씬 빌드
+프로젝트를 생성 한 후 Lightship 페이지의 다운로드 페이지에서 `ARDK Example Scens`를 다운로드 합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/11.png"><br/>
+<11. Download ARDK Example ></p>  
+    
+  
+다운로드 한 패키지 파일을 프로젝트에 임포트 합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/12.png"><br/>
+<12. Import ARDKExample ></p>  
+    
+
+임포트된 ARDKExamples 폴더에서 WayspotAnchors 안에 있는 `WayspotAnchors`씬을 열어줍니다.  
+Build Settings 창에 해당 씬을 추가하고 모바일 디바이스에 빌드해 줍니다.  
+
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/13.png"><br/>
+<13. Build WayspotAnchors Scene ></p>  
+  
+  
+
+## 콘텐츠 체크  
+  
+어플리케이션을 실행한 후 상단 메시지가 `Localizing`이 되면 타겟을 스캔합니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/14.png"><br/>
+<14. Localizing ></p>    
+  
+  
+스캔이 성공되면 `Localized`, 스캔에 실패하면 `Failed`라는 메시지가 송출됩니다.  
+실패시 우측의 `Restart`버튼을 눌러 다시 스캔을 진행합니다. 
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/15.png"><br/>
+<15. Scan State ></p>  
+    
+  
+스캔에 성공하면 인식된 면에 터치를 하여 큐브를 생성할 수 있습니다.  
+여러 개의 큐브를 생성하고 우측 `Save`버튼을 누르면 해당 위치를 저장할 수 있습니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/16.png"><br/>
+<16. Save Anchors ></p>  
+    
+  
+어플리케이션을 재시작 하거나 `Restart`를 하고 다시 스캔 후 `Load`버튼을 누르면 저장했던 큐브가 그대로 다시 생성됩니다.  
+  
+<p align="center"><img src="/img/UnityAR/LightshipAR/05/17.png"><br/>
+<17. Load Anchors ></p>  
+    
+  
+지금까지 VPS의 기본적인 기능을 체험해 보았습니다.  
+  
+  
+  
+  
+  {% include adsense.html %}
+  
+  
+  
