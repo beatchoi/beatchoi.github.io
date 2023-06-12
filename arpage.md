@@ -8,7 +8,7 @@ show_sidebar: false
 [opencvforunity](https://drive.google.com/file/d/1W8bAjMkujnIXvGipAll9CNcM1Bj8FaaT/view?usp=sharing)  
 [Minions.unitypackage ](https://github.com/beatchoi/beatchoi.github.io/raw/master/Files/Minions.unitypackage)  
 
-[Ground Detection Image](https://github.com/beatchoi/img/groundDetect.png)
+[Ground Detection Image](https://github.com/beatchoi/beatchoi.github.io/raw/master/Files/groundDetect.png)
   
 ## ARFoundation
 [1. ARFoundation 환경설정](https://beatchoi.github.io/unity3d/basics/2020/12/14/ARFoundation01/)  
