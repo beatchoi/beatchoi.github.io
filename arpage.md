@@ -8,7 +8,7 @@ show_sidebar: false
 [opencvforunity](https://drive.google.com/file/d/1W8bAjMkujnIXvGipAll9CNcM1Bj8FaaT/view?usp=sharing)  
 [Minions.unitypackage ](https://github.com/beatchoi/beatchoi.github.io/raw/master/Files/Minions.unitypackage)  
 
-[Ground Detection Image](https://github.com/beatchoi/beatchoi.github.io/raw/master/Files/groundDetect.png)
+[Ground Detection Image](https://github.com/beatchoi/beatchoi.github.io/raw/master/Files/groundDetect.png)  
 [URP AR Shadow](https://drive.google.com/file/d/1GHGsg2hzRgpmENauXRWxisQK-uO3oFb2/view?usp=share_link)
   
 ## ARFoundation
