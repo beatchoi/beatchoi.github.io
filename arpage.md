@@ -14,6 +14,7 @@ show_sidebar: false
 [UnityProject Day 1,2](https://drive.google.com/file/d/1ZHHaIliy7qbnY-MsybA1NsX4QjaQn_QF/view?usp=sharing)  
 [VPSAPK_1](https://drive.google.com/file/d/1esWwzrvd2BiV7dzh0P5NeoQul6ikjDf2/view?usp=share_link)  
 [Segmentation](https://drive.google.com/file/d/1LCrOBOKhJ2VNlOPQhayKJcaFXRewpdYp/view?usp=sharing)  
+[ARSegmentationManager.cs](https://drive.google.com/file/d/1UAgl82oj0MBhJnBvbYj9OCweX0OmB7ee/view?usp=sharing)
   
 ## ARFoundation
 [1. ARFoundation 환경설정](https://beatchoi.github.io/unity3d/basics/2020/12/14/ARFoundation01/)  
