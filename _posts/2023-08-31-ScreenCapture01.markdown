@@ -4,7 +4,7 @@ title:  "콘텐츠 개발 기법 - UI 안나오게 화면 캡처(Screen Capture 
 date:   2023-08-31 11:00:07
 categories: Unity3D Fundamentals
 description: "UI가 나오지 않도록 화면을 캡처하는 방법을 알아봅니다."
-image: '/img/UnityFundamental/ObjectPooling/6.gif'
+image: '/img/UnityFundamental/ScreenCapture01/7.PNG'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2023/08/31/ScreenCapture01/
 ---
