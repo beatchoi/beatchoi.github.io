@@ -12,7 +12,8 @@ show_sidebar: false
 ## 개발 기법    
 [오브젝트 풀링 :: Object Pooling - 2021-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/ObjectPooling)    
 [몬스터 시야 설정 :: Field of View - 2021-07-30](https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/FieldOfView)    
-[데이터 베이스에서 아이템 생성 :: Scriptable Object - 2023-01-01](https://beatchoi.github.io/unity3d/fundamentals/2023/01/03/ScriptableObject/)
+[데이터 베이스에서 아이템 생성 :: Scriptable Object - 2023-01-01](https://beatchoi.github.io/unity3d/fundamentals/2023/01/03/ScriptableObject/)    
+[기본 화면 캡처 :: Screen Capture Basics - 2023-08-31](https://beatchoi.github.io/unity3d/fundamentals/2023/08/31/ScreenCapture01/)    
   
 ## Mixamo Animation  
 [1. Mixamo Character & Animation 불러오기- 2021-07-16](https://beatchoi.github.io/unity3d/fundamentals/2021/07/16/MixamoUnity/)  
