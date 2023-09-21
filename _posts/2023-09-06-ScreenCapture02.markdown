@@ -93,7 +93,7 @@ using System.IO;
         }
         texture.SetPixels(pixels);
   ```
-  * 를 통해 각 픽셀을 수작업으로 gamma color space로 변경해 줍니다.  
+* 를 통해 각 픽셀을 수작업으로 gamma color space로 변경해 줍니다.  
   
   
   
