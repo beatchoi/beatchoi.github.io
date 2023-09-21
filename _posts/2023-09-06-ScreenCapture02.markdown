@@ -14,7 +14,11 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2023/09/06/Screen
   
   
 ## 화면 캡처 :: Screen Capture  
-URP환경에서 화면 캡처를 할 때 Bloom 등 Volume을 추가하여 
+일반적으로 URP환경에서 Bloom 등의 Volume 이펙트들이 함께 캡처되지 않는 현상이 일어납니다.  
+두가지 원인이 있는데 첫번째는 저장할 Texture 및 Texture2D의 크기가 작아 모든 텍스쳐를 저장할 수 없는 경우와  
+두번째는 Linear color space의 픽셀을 텍스쳐에 저장 할 수 없는 경우가 있습니다.  
+이번 포스팅에서는 URP 환경에서 해당 이펙트들을 함께 캡쳐하는 방법을 알아봅니다.  
+
 ## 유니티3D 에디터에서  
 #### 스크립트 작성   
 
@@ -37,8 +41,9 @@ using System.IO;
     {
         Directory.CreateDirectory(Application.persistentDataPath + "/Photos");
 
-        RenderTexture renderTexture = new RenderTexture((int)Screen.width, (int)Screen.height, 24);
-        Texture2D texture = new Texture2D ((int)Screen.width, (int)Screen.height, TextureFormat.RGB24, false);
+        RenderTexture renderTexture = new RenderTexture((int)Screen.width, (int)Screen.height, 24, RenderTextureFormat.DefaultHDR, RenderTextureReadWrite.sRGB);
+        Texture2D texture = new Texture2D ((int)Screen.width, (int)Screen.height, TextureFormat.RGBAFloat, false, true);
+
         yield return new WaitForEndOfFrame();
         Camera.main.targetTexture = renderTexture;
         Camera.main.Render();
@@ -56,8 +61,15 @@ using System.IO;
         byte[] bytes;
         string fileExt;
 
-        Texture2D texture = new Texture2D((int)Screen.width, (int)Screen.height, TextureFormat.RGB24, false, true);
+        Texture2D texture = new Texture2D((int)Screen.width, (int)Screen.height, TextureFormat.RGBAFloat, false, true);
         texture = (Texture2D)PhotoDownload.mainTexture;
+
+        Color[] pixels = texture.GetPixels();
+        for (int p = 0; p < pixels.Length; p++)
+        {
+            pixels[p] = pixels[p].gamma;
+        }
+        texture.SetPixels(pixels);
 
         bytes = texture.EncodeToJPG();
         fileExt = ".jpg";
@@ -69,11 +81,19 @@ using System.IO;
     }
 ```
   
-* `TakeScreenShot`, `SavePhoto` 는 각각 화면을 캡처, 캡처된 이미지를 저장 하는 역할을 하는 함수입니다.  
-* `TakeScreenShot` 함수를 통해서 메인 카메라에 렌더링 되고 있는 장면을 PhotoDownload에 입히고,  
-* `SavePhoto` 함수를 통해 PhotoDownload에 그려진 텍스쳐를 지정된 경로에 파일로 저장합니다.  
-* 모바일을 기반으로 진행되어 디바이스의 화면 크기대로 저장됩니다.   
-* 파일 이름은 현재 날짜를 기준으로 jpg로 생성됩니다.  
+* RenderTexture 를 새로 선언하는 코드에 `RenderTextureFormat.DefaultHDR`, `RenderTextureReadWrite.sRGB` 두개의 인자를 추가합니다.  
+* Texture2D를 새로 선언하는 코드에 TextureFormat 인자를 TextureFormat.RGBAFloat으로 변경합니다. 하단 SavePhoto() 함수에도 동일하게 적용합니다.
+* 위 부분에서 텍스쳐 포맷을 변경하여 Volume이 추가된 텍스쳐를 저장할 수 있도록 합니다.
+* SavePhoto()함수 중간에
+  ```ruby
+        Color[] pixels = texture.GetPixels();
+        for (int p = 0; p < pixels.Length; p++)
+        {
+            pixels[p] = pixels[p].gamma;
+        }
+        texture.SetPixels(pixels);
+  ```
+  * 를 통해 각 픽셀을 수작업으로 gamma color space로 변경해 줍니다.  
   
   
   
@@ -83,27 +103,13 @@ using System.IO;
 
   
 ## 테스트
-계층구조창에서 빈 게임 오브젝트를 생성하여 이름을 `ScreenShotManager`로 변경하고 위 스크립트를 연결합니다.  
-RawImage 오브젝트를 하나 생성하여 스크린의 크기와 동일하게 만들어 준 후 PhotoDownload 변수에 연결합니다.  
-<p align="center"><img src="/img/UnityFundamental/ScreenCapture01/5.PNG"><br/>
-<01.></p>  
 
-버튼을 두개 만들어서 첫번째 버튼에 TakeScreenShot 함수, 두번째 버튼에 SavePhoto 함수를 연결합니다.  
-화면을 찍는 동시에 파일로 저장하기 위해서는 두 함수를 순서대로 호출하면 됩니다.  
-<p align="center"><img src="/img/UnityFundamental/ScreenCapture01/1.PNG"><br/>
-<02.></p> 
+<p align="center"><img src="/img/UnityFundamental/ScreenCapture01/70.jpg"><br/>
+<01. 적용 전 캡처본></p>  
+ 
+<p align="center"><img src="/img/UnityFundamental/ScreenCapture01/71.jpg"><br/>
+<02. 적용 후 캡처본></p> 
 
-메인 카메라 앞에 cube 등의 물체를 배치합니다. 카메라에 잘 잡히는지 씬창의 우측 하단에서 확인합니다.  
-<p align="center"><img src="/img/UnityFundamental/ScreenCapture01/2.PNG"><br/>
-<03.></p>
-
-먼저 화면 찍기 버튼을 눌러 `RawImage`에 캡처한 텍스쳐가 잘 표현되는지 확인합니다.  
-<p align="center"><img src="/img/UnityFundamental/ScreenCapture01/6.PNG"><br/>
-<04.></p>
-
-저장하기 버튼을 눌러 지정한 경로에 저장이 되었는지 확인합니다.  
-<p align="center"><img src="/img/UnityFundamental/ScreenCapture01/7.PNG"><br/>
-<05.></p>
 
 
 
