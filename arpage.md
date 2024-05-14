@@ -5,6 +5,9 @@ layout: page
 show_sidebar: false
 ---
 
+[Day2Assets](https://drive.google.com/file/d/1_ipnv_pvkL3EJETsnt6DMUuDf4M8v2EE/view?usp=sharing)  
+
+
 
 [PointCloud](https://drive.google.com/drive/folders/1uyY1AamNHON71kQuZrTGgOHu-guucM_D?usp=share_link)  
   
