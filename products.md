@@ -1,6 +1,6 @@
 ---
-title: Products
-subtitle: Check out our range of products
+title: Portfolio
+subtitle: Unity3D & XR Development
 layout: product-category
 show_sidebar: false
 sort: price
