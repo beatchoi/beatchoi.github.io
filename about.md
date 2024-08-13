@@ -8,8 +8,8 @@ show_sidebar: false
 ![profile](./img/profile.jpg)
 
 [최윤석]  
-• 한양대학교 Humcan Computer Interaction, Maseter's Degree
-• University of Illinois at Urbana Champagin, Bachelor's Degree in Computer Engineering
+• 한양대학교 Humcan Computer Interaction, Maseter's Degree  
+• University of Illinois at Urbana Champagin, Bachelor's Degree in Computer Engineering  
 전) 한양대학교 소프트웨어 융합대학 ICT융합학부 겸임교수   
  
 [Book]  
