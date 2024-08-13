@@ -5,13 +5,9 @@ description: This is a product description
 layout: product
 image: /img/vrplay.gif
 features:
-    - label: Great addition to any home
-      icon: fa-location-arrow
-    - label: Comes in a range of styles
-      icon: fa-grin-stars
-    - label: Available in multiple sizes
-      icon: fa-fighter-jet
-rating: 3
+    - label: 경력 기간 : 2020.04 – 2020.09 (4 년차)  
+    - label: 수행 PJT :  콘텐츠 개발 프로젝트  
+    - label: 담당 업무 : XR 콘텐츠 개발  
 ---
 
 역할  
