@@ -44,6 +44,7 @@ Business License. 246-22-00802
   
 © 왓츠라이프 스튜디오.All rights reserved.  
 
+<!--
 {% include adsense.html %}  
   
-{% include adsense.html %}
+{% include adsense.html %}-->
