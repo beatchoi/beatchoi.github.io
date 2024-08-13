@@ -1,6 +1,6 @@
 ---
 title: 국가정원 대소동 튤립을 지켜라
-subtitle: XR Interactive Contents
+subtitle: `Unity3D` `C#`
 description: This is a product description
 layout: product
 image: /img/vrplay.gif
@@ -9,6 +9,7 @@ features:
     - label: 수행 PJT  - 콘텐츠 개발 프로젝트  
     - label: 담당 업무 - XR 콘텐츠 개발  
 ---
+
 
 주요업무  
 - Unity3D 와 HTC VIVE VR 기기를 활용한 VR 콘텐츠 개발  
