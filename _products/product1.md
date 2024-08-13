@@ -5,7 +5,7 @@ description: This is a product description
 product_code: ABC124
 layout: product
 image: https://via.placeholder.com/640x480
-tags: C# Unity3D
+tags: C#, Unity3D
 features:
     - label: Great addition to any home
       icon: fa-location-arrow
