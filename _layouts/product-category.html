@@ -33,7 +33,7 @@ show_sidebar: false
           {% assign tags = product.tags | split: "," %}
           <div class="tags is-centered">
               {% for tag in tags %}
-              <p class="tag is-dark">{{ tag }}</p>
+              <div class="tag is-dark">{{ tag }}</div>
               {% endfor %}
           </div>
           {% endif %}
