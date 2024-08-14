@@ -3,7 +3,7 @@ title: 순천만 색칠공부
 subtitle: 2021 순천시 4차산업 박람회 ‘2021 NEXPO in 순천
 description: Unity3D,C#,XR,Network
 layout: product
-image: /img/portfolio/VRShooting/vrshooting.PNG
+image: /img/portfolio/arcoloring/arcoloring.png
 features:
     - label: 개발 기간 - 2020.04 – 2020.09 (4 년차)  
     - label: 수행 PJT - 콘텐츠 개발 프로젝트  
