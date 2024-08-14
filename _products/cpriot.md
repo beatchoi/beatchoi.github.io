@@ -4,7 +4,7 @@ subtitle: 주식회사 노바플로
 description: Unity3D,C#,Arduino,BluetoothLE
 layout: product
 image: /img/portfolio/cpriot/cpriot.png
-price: 91
+price: 90
 features:
     - label: 개발 기간 - 2024.1 – 2024.6 (8 년차)
     - label: 수행 PJT  - 기술 개발 R&D 프로젝트  
