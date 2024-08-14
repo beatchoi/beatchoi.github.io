@@ -4,7 +4,7 @@ subtitle: 구로고려대병원 산부인과 연구실
 description: Unity3D,C#,VR,OpenCV,IntelRealsense,Tesseract,OCR,Network
 layout: product
 image: /img/portfolio/obstetricsreader/obstetricsreader.png
-price: 93
+price: 94
 features:
     - label: 개발 기간 -  2021.06 - 2022.02 (5, 6 년차)
     - label: 수행 PJT  - 기술 개발 프로젝트    
