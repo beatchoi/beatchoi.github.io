@@ -24,8 +24,8 @@ features:
    
   
 <p align="center">
-<img src="/img/portfolio/bongnjoule/arartgallery01.jpg" width="49%">
-<img src="/img/portfolio/bongnjoule/arartgallery02.jpg" width="49%">
+<img src="/img/portfolio/arartgallery/arartgallery01.jpg" width="49%">
+<img src="/img/portfolio/arartgallery/arartgallery02.jpg" width="49%">
 <figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
 </p>
 <br/>
