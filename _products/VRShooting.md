@@ -34,7 +34,7 @@ features:
 <p align="center">
     <img src="/img/portfolio/VRShooting/VRShooting01.gif" width="49%">
     <img src="/img/portfolio/VRShooting/VRShooting02.gif" width="49%">
-    <figcaption align="center">대기자 플레이어의 모습</figcaption>
+    <figcaption align="center">대기자 플레이어로부터 소환된 몬스터</figcaption>
 </p>
 <br/>
 
