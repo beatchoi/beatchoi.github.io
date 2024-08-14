@@ -24,7 +24,7 @@ features:
 - Navigation Mesh를 활용한 몬스터의 객체 추적   
 - Microsoft Azure Kinect 깊이 카메라를 이용한 Body Tracking 기능의 활용
   
-<img src="/img/vrplay.gif" width="400" height="300"><img src="/img/portfolio/VRShooting/VRShooting01.gif" width="400" height="300"><br/>
+<img src="/img/vrplay.gif" width="480" height="360"><img src="/img/portfolio/VRShooting/VRShooting01.gif" width="480" height="360"><br/>
 
 
 <p align="center"><img src="/img/portfolio/VRShooting/VRShooting01.gif" width="640" height="480"><br/>
