@@ -3,7 +3,7 @@ title: 국가정원 대소동 튤립을 지켜라
 subtitle: 2021 순천시 4차산업 박람회 ‘2021 NEXPO in 순천
 description: Unity3D,C#,VR,XR,AzureKinect,HTCVive
 layout: product
-image: img/portfolio/VRShooting/vrshooting.PNG
+image: /img/portfolio/VRShooting/vrshooting.PNG
 features:
     - label: 개발 기간 - 2020.04 – 2020.09 (4 년차)  
     - label: 수행 PJT - 콘텐츠 개발 프로젝트  
