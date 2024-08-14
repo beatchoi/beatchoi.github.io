@@ -26,7 +26,7 @@ features:
 <p align="center">
 <img src="/img/portfolio/arartgallery/arartgallery01.jpg" width="49%">
 <img src="/img/portfolio/arartgallery/arartgallery02.jpg" width="49%">
-<figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
+<figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
 </p>
 <br/>
  
