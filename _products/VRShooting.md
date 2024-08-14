@@ -25,8 +25,8 @@ features:
 - Microsoft Azure Kinect 깊이 카메라를 이용한 Body Tracking 기능의 활용
 
 <p align="center">
-    <img src="/img/vrplay.gif" width="600" height="450">
-    <img src="/img/portfolio/VRShooting/VRShooting03.gif" width="600" height="450">
+    <img src="/img/vrplay.gif" width="520" height="390">
+    <img src="/img/portfolio/VRShooting/VRShooting03.gif" width="520" height="390">
     <figcaption align="center">VR 플레이어 및 대기자 플레이어의 모습</figcaption>
 </p>
 <br/>
