@@ -4,7 +4,7 @@ subtitle: 파주시
 description: Unity3D,C#,AR,ARFoundation,QRCode
 layout: product
 image: /img/portfolio/arartgallery/arartgallery.png
-price: 97
+price: 96
 features:
     - label: 개발 기간 - 2021.02 – 2021.04 (5 년차)
     - label: 수행 PJT  - 어플리케이션 개발 프로젝트    
