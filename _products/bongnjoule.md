@@ -4,7 +4,7 @@ subtitle: 봉앤줄
 description: Unity3D,C#,AR,OpenCV,Vision
 layout: product
 image: /img/portfolio/bongnjoule/bongnjoule01.png
-price: 101
+price: 97
 features:
     - label: 개발 기간 - 2020.08 – 2020.12 (4 년차)  
     - label: 수행 PJT  - 기술 연구 프로젝트    
