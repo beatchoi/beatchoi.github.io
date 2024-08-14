@@ -31,14 +31,12 @@ features:
 </p>
 <br/>
 
+<p align="center">
+    <img src="/img/portfolio/VRShooting/VRShooting01.gif" width="49%>
+    <img src="/img/portfolio/VRShooting/VRShooting02.gif" width="49%">
+    <figcaption align="center">대기자 플레이어의 모습</figcaption>
+</p>
+<br/>
 
-<p align="center"><img src="/img/portfolio/VRShooting/VRShooting01.gif" width="640" height="480"><br/>
-<대기자 플레이어로부터 소환된 몬스터 1> </p>  
-
-<p align="center"><img src="/img/portfolio/VRShooting/VRShooting02.gif" width="640" height="480"><br/>
-<대기자 플레이어로부터 소환된 몬스터 2> </p>  
-
-<p align="center"><img src="/img/portfolio/VRShooting/VRShooting03.gif" width="640" height="480"><br/>
-<대기자 플레이어의 모습> </p>  
 
 
