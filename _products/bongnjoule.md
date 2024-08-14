@@ -3,7 +3,7 @@ title: 봉앤줄 인터랙티브 퍼포먼스 AR
 subtitle: 봉앤줄
 description: Unity3D,C#,AR,OpenCV,Vision
 layout: product
-image: /img/portfolio/hellovrseries/hellovrseries.PNG 
+image: /img/portfolio/bongnjoule/bongnjoule01.png
 features:
     - label: 개발 기간 - 2020.08 – 2020.12 (4 년차)  
     - label: 수행 PJT  - 기술 연구 프로젝트    
@@ -21,8 +21,8 @@ features:
 - HSV를 기준으로 한 색상인식 알고리즘 및 객체 인식 기능 구현의 이해   
   
 <p align="center">
-<img src="/img/portfolio/bongnjoule/bongnjoule01.png" width="49%">
-<img src="/img/portfolio/bongnjoule/bongnjoule02.png" width="49%">
+<img src="/img/portfolio/bongnjoule/bongnjoule01.gif" width="49%">
+<img src="/img/portfolio/bongnjoule/bongnjoule02.gif" width="49%">
 <figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
 </p>
 <br/>
