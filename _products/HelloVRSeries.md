@@ -4,6 +4,7 @@ subtitle: 주식회사 헬로브이알
 description: Unity3D,C#,VR,AR,GoogleVR
 layout: product
 image: /img/portfolio/hellovrseries/hellovrseries.PNG 
+price: 100
 features:
     - label: 개발 기간 - 2016.06 – 2020.01 (1,2,3,4 년차)  
     - label: 수행 PJT - 콘텐츠 개발 프로젝트  
