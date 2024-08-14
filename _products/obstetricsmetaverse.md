@@ -4,7 +4,7 @@ subtitle: 구로고려대병원 산부인과 연구실
 description: Unity3D,C#,Metaverse,Network,AzurePlayfab,MPEG-DASH
 layout: product
 image: /img/portfolio/obstetricsmetaverse/obstetricsmetaverse.png
-price: 95
+price: 94
 features:
     - label: 개발 기간 -  2021.03 - 2022.02 (5, 6 년차)
     - label: 수행 PJT  - 어플리케이션 개발 프로젝트    
