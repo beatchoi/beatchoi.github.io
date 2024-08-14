@@ -21,8 +21,8 @@ features:
 - HSV를 기준으로 한 색상인식 알고리즘 및 객체 인식 기능 구현의 이해   
   
 <p align="center">
-<img src="/img/portfolio/bongnjoule/bongnjoule01" width="49%">
-<img src="/img/portfolio/bongnjoule/bongnjoule02" width="49%">
+<img src="/img/portfolio/bongnjoule/bongnjoule01.png" width="49%">
+<img src="/img/portfolio/bongnjoule/bongnjoule02.png" width="49%">
 <figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
 </p>
 <br/>
