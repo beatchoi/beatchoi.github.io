@@ -1,9 +1,9 @@
 ---
-title: 일산 운정 호수공원 증강현실 미술관
-subtitle: 파주시
+title: 양평 소나기 마을 황순원 문학촌 AR
+subtitle: 양평 황순원 문학촌
 description: Unity3D,C#,AR,ARFoundation,QRCode
 layout: product
-image: /img/portfolio/arartgallery/arartgallery.png
+image: /img/portfolio/sonagivillage/sonagivillage.png
 price: 97
 features:
     - label: 개발 기간 - 2021.02 – 2021.04 (5 년차)
@@ -11,7 +11,7 @@ features:
     - label: 담당 업무 - AR 콘텐츠 개발  
 ---
 
-본 프로젝트는 운정 호수 공원 곳곳에 설치한 QR 코드를 인식하여 그림 작가의 작품,  호수 공원에 전시된 전시물 소개 도슨트, 3D 애니메이션 등을 볼 수 있도록 기획된 AOS, IOS 어플리케이션 입니다.  
+본 프로젝트는 양평 소나기마을에서 방문자들이 즐길 수 있는 AR 어플리케이션 개발 프로젝트로, 소나기 마을 황순원 문학촌 곳곳에 설치되어 있는 QRCode를 어플리케이션으로 인식하게 되면 소설 소나기의 이야기를 AR로 즐길 수 있도록 구현되었습니다.  
 
 
 주요업무  
@@ -24,8 +24,8 @@ features:
    
   
 <p align="center">
-<img src="/img/portfolio/arartgallery/arartgallery01.jpg" width="49%">
-<img src="/img/portfolio/arartgallery/arartgallery02.jpg" width="49%">
+<img src="/img/portfolio/sonagivillage/sonagivillage01.jpg" width="49%">
+<img src="/img/portfolio/sonagivillage/sonagivillage02.jpg" width="49%">
 <figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
 </p>
 <br/>
