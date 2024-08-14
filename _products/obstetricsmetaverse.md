@@ -6,7 +6,7 @@ layout: product
 image: /img/portfolio/obstetricsmetaverse/obstetricsmetaverse.png
 price: 94
 features:
-    - label: 개발 기간 -  2021.03 - 2022.02 (5, 6 년차)
+    - label: 개발 기간 -  2022.02 - 2023.03 (6, 7 년차)
     - label: 수행 PJT  - 어플리케이션 개발 프로젝트    
     - label: 담당 업무 - 메타버스 콘텐츠 개발  
 ---
