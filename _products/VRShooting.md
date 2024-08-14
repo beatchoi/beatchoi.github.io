@@ -3,7 +3,7 @@ title: 국가정원 대소동 튤립을 지켜라
 subtitle: 2021 순천시 4차산업 박람회 ‘2021 NEXPO in 순천
 description: Unity3D,C#,VR,XR,AzureKinect,HTCVive
 layout: product
-image: /img/vrplay.gif
+image: /img/portfolio/VRShooting/vrshooting.PNG
 features:
     - label: 개발 기간 - 2020.04 – 2020.09 (4 년차)  
     - label: 수행 PJT - 콘텐츠 개발 프로젝트  
@@ -23,6 +23,9 @@ features:
 - 몬스터와 플레이어간의 공격 구현을 위한 이벤트의 활용  
 - Navigation Mesh를 활용한 몬스터의 객체 추적   
 - Microsoft Azure Kinect 깊이 카메라를 이용한 Body Tracking 기능의 활용
+
+<p align="center"><img src="/img/vrplay.gif" width="640" height="480"><br/>
+<VR 플레이어의 모습></p>  
 
 <p align="center"><img src="/img/portfolio/VRShooting/VRShooting01.gif" width="640" height="480"><br/>
 <대기자 플레이어로부터 소환된 몬스터 1></p>  
