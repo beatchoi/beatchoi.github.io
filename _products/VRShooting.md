@@ -32,7 +32,7 @@ features:
 <br/>
 
 <p align="center">
-    <img src="/img/portfolio/VRShooting/VRShooting01.gif" width="49%>
+    <img src="/img/portfolio/VRShooting/VRShooting01.gif" width="49%">
     <img src="/img/portfolio/VRShooting/VRShooting02.gif" width="49%">
     <figcaption align="center">대기자 플레이어의 모습</figcaption>
 </p>
