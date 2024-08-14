@@ -23,7 +23,7 @@ features:
 - 몬스터와 플레이어간의 공격 구현을 위한 이벤트의 활용  
 - Navigation Mesh를 활용한 몬스터의 객체 추적   
 - Microsoft Azure Kinect 깊이 카메라를 이용한 Body Tracking 기능의 활용
-
+  
 <p align="center"><img src="/img/vrplay.gif" width="640" height="480"><br/>
 <VR 플레이어의 모습></p>  
 
