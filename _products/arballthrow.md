@@ -3,7 +3,7 @@ title: 키즈카페 AR 공던지기 콘텐츠
 subtitle: 개인프로젝트
 description: Unity3D,C#,VR,OpenCV,IntelRealsense
 layout: product
-image: /img/portfolio/arballthrow/arballthrow.png
+image: /img/portfolio/arballthrow/arballthrow.jpg
 price: 94
 features:
     - label: 개발 기간 -  2021.09 - 2022.03 (5, 6 년차)
