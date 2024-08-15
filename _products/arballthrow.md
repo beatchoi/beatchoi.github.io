@@ -25,9 +25,9 @@ features:
    
   
 <p align="center">
-<img src="/img/portfolio/obstetricsreader/obstetricsreader" width="49%">
-<img src="/img/portfolio/obstetricsreader/obstetricsreader" width="49%">
-<figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
+<img src="/img/portfolio/arballthrow/arballthrow01.gif" width="49%">
+<img src="/img/portfolio/arballthrow/arballthrow02.gif" width="49%">
+<figcaption align="center">공 인식 장면 및 벽에 던졌을 때 객체와의 인터랙션 장면</figcaption>
 </p>
 <br/>
  
