@@ -23,15 +23,15 @@ features:
    
   
 <p align="center">
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse01" width="49%">
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse02" width="49%">
+<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse01.gif" width="49%">
+<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse02.gif" width="49%">
 <figcaption align="center">서버 로그인 및 캐릭터 선택 화면</figcaption>
 </p>
 <br/>
 
 <p align="center">
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse03" width="49%">
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse04" width="49%">
+<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse03.gif" width="49%">
+<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse04.gif" width="49%">
 <figcaption align="center">메타버스 환경</figcaption>
 </p>
 <br/>
