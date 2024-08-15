@@ -20,13 +20,21 @@ features:
 획득역량  
 - ARFoundation을 활용한 AR 콘텐츠의 개발    
 - ZXing 라이브러리를 활용한 QRCode 인식 기능  
-- ARFoundation의 device camera의 raw image에 접근하여 픽셀 데이터를 읽는 구조 구현
+- ARFoundation의 device camera의 raw image에 접근하여 픽셀 데이터를 읽는 구조 구현  
+- 사진 촬영 및 영상 녹화 구현  
    
   
 <p align="center">
-<img src="/img/portfolio/sonagivillage/sonagivillage01.jpg" width="49%">
-<img src="/img/portfolio/sonagivillage/sonagivillage02.jpg" width="49%">
-<figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
+<img src="/img/portfolio/sonagivillage/sonagivillage01.gif" width="49%">
+<img src="/img/portfolio/sonagivillage/sonagivillage02.gif" width="49%">
+<figcaption align="center">소나기 AR 콘텐츠</figcaption>
+</p>
+<br/>
+
+<p align="center">
+<img src="/img/portfolio/sonagivillage/sonagivillage03.gif" width="49%">
+<img src="/img/portfolio/sonagivillage/sonagivillage04.gif" width="49%">
+<figcaption align="center">소나기 AR 콘텐츠</figcaption>
 </p>
 <br/>
  
