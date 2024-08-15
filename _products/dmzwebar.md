@@ -3,7 +3,7 @@ title: DMZ 웹 증강현실 플랫폼 개발
 subtitle: 주식회사 노바플로
 description: Unity3D,C#,WebGL
 layout: product
-image: /img/portfolio/dmzwebar/dmzwebar.png
+image: /img/portfolio/dmzwebar/dmzwebar.jpg
 price: 89
 features:
     - label: 개발 기간 - 2024.5– 2024.6 (8 년차)  
@@ -20,9 +20,9 @@ features:
 - 웹 기반 증강현실 콘텐츠 개발 기법  
   
 <p align="center">
-<img src="/img/portfolio/dmzwebar/dmzwebar" width="49%">
-<img src="/img/portfolio/dmzwebar/dmzwebar" width="49%">
-<figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
+<img src="/img/portfolio/dmzwebar/dmzwebar01.gif" width="49%">
+<img src="/img/portfolio/dmzwebar/dmzwebar02.gif" width="49%">
+<figcaption align="center">콘텐츠 시연 모습</figcaption>
 </p>
 <br/>
  
