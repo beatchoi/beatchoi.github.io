@@ -3,7 +3,7 @@ title: Novaflo CPR IoT Device 개발 프로젝트
 subtitle: 주식회사 노바플로
 description: Unity3D,C#,Arduino,BluetoothLE
 layout: product
-image: /img/portfolio/cpriot/cpriot.png
+image: /img/portfolio/cpriot/cpriot.jpg
 price: 90
 features:
     - label: 개발 기간 - 2024.1 – 2024.6 (8 년차)
@@ -19,12 +19,7 @@ features:
 획득역량  
 - Arduino 기기와 안드로이드 어플리케이션의 BLE 통신 구현
   
-<p align="center">
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse01" width="49%">
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse02" width="49%">
-<figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
-</p>
-<br/>
+
  
 
 
