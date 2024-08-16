@@ -24,6 +24,11 @@ features:
    
   
 <p align="center">
+    <video src="/img/portfolio/smar/smar.01" width="49%">
+       이 브라우저에서 지원하지 않는 영상입니다.
+    </video>
+
+
 <img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse01" width="49%">
 <img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse02" width="49%">
 <figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
