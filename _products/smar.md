@@ -24,7 +24,7 @@ features:
    
   
 <p align="center">
-    <video src="/img/portfolio/smar/smar.01" width="49%">
+    <video src="/img/portfolio/smar/smar01.mp4" width="49%">
        이 브라우저에서 지원하지 않는 영상입니다.
     </video>
 </p>
