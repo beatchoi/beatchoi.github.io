@@ -6,11 +6,11 @@ layout: product
 image: /img/portfolio/metaworld/metaworld.PNG
 price: 90.5
 features:
-    - label: 개발 기간 -   2022.6 - 2024.1 (6,7,8 년차)
-    - label: 수행 PJT  - 플랫폼 개발 프로젝트    
-    - label: 담당 업무 - XR 콘텐츠 개발  
+    - label: 개발 기간 -   2022.9 - 2023.1 (6,7,8 년차)
+    - label: 수행 PJT  - 메타버스 개발 프로젝트    
+    - label: 담당 업무 - 메타버스 콘텐츠 개발  
 ---
-
+  
 본 프로젝트는 지원사업의 일환으로서 실제 지역을 모티프로 제작한 메타버스 월드에서 플레이어가 직접 체험을 통해 갯벌 생태계를 경험하고 생소했던 갯벌 생물들을 접하면서 갯벌에 대한 친근감을 높여갈 수 있는 게임 서비스입니다.  
 
 주요업무  
@@ -37,6 +37,3 @@ features:
 <figcaption align="center">서해안 메타월드</figcaption>
 </p>
 <br/>
- 
-
-
