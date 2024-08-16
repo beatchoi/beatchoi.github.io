@@ -20,7 +20,16 @@ features:
 - REST API 를 활용하여 XR 콘텐츠와의 데이터 전송 기법  
 - Niantic Lightship SDK 를 활용한 AR,XR 콘텐츠의 개발 기법  
 - 모바일 기기에서의 Universal Render Pipeline 에 대한 이해  
-- GPS 를 활용한 위치기반 기술의 활용  
+- GPS 를 활용한 위치기반 기술의 활용
+  
+<p align="center">
+<img src="/img/portfolio/smar/smar04.gif" width="33%">
+<img src="/img/portfolio/smar/smar05.gif" width="33%">
+<img src="/img/portfolio/smar/smar06.gif" width="33%">
+<figcaption align="center">플랫폼 갤러리, 커뮤니티, 지오펜싱 지도</figcaption>
+</p>
+<br/>
+
    
 <p align="center">
 <img src="/img/portfolio/smar/smar01.gif" width="33%">
