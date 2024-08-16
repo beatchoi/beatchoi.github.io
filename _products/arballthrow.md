@@ -22,6 +22,8 @@ features:
 - Unity3D 에서 Intel Realsense를 활용한 콘텐츠 구현  
 - 깊이 카메라와 현실 세계 간의 좌표 alignment    
 
+<br/>
+기존 키즈카페에 있는 공던지기 AR 콘텐츠에는 2개 이상의 비싼 장비들로 이루어져 있어 이를 1개의 깊이 카메라를 활용하여 구현해보기 위해 연구를 진행했습니다. 카메라와 전면 프로젝터 영상과의 거리는 약 3-5미터 정도로 세팅되었고 카메라가 공을 인식할 수 있는 영역을 설정하기 위해 좌상단, 우하단에 빨간색으로 마킹을 했습니다. 파란색 공을 인식시키기 위해 OpenCV 라이브러리를 활용하였고 공과 전면 프로젝터 영상과의 거리를 계산하기 위해 Intel Realsense 카메라와 RealsenseSDK를 활용하였습니다. ([https://github.com/IntelRealSense/librealsense/releases/tag/v2.55.1](https://github.com/IntelRealSense/librealsense/releases/tag/v2.55.1) OpenCV 라이브러리에서 인식하는 영상의 해상도와 Realsense에서 인식하는 영상의 해상도에 차이가 있어 이를 맞추는 작업이 필요했습니다. 인식된 파란색 공의 위치값을 가상의 구에 적용시키고 해당 구가 영상에 속의 풍선과 인터랙션 할 수 있도록 구성하였습니다.
    
   
 <p align="center">
