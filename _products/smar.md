@@ -27,7 +27,7 @@ features:
     <video src="/img/portfolio/smar/smar.01" width="49%">
        이 브라우저에서 지원하지 않는 영상입니다.
     </video>
-
+</p>
 
 <img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse01" width="49%">
 <img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse02" width="49%">
