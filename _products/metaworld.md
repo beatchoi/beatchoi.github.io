@@ -1,5 +1,5 @@
 ---
-title: 갯벌 프렌즈: 메타버스 게임 서비스
+title: 갯벌 프렌즈 메타버스 게임 서비스
 subtitle: 주식회사 노바플로
 description: Unity3D,C#,Metaverse,Network
 layout: product
