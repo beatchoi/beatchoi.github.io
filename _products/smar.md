@@ -22,7 +22,7 @@ features:
 - 모바일 기기에서의 Universal Render Pipeline 에 대한 이해  
 - GPS 를 활용한 위치기반 기술의 활용  
    
-  
+<p align="center">
 <img src="/img/portfolio/smar/smar01.gif" width="33%">
 <img src="/img/portfolio/smar/smar02.gif" width="33%">
 <img src="/img/portfolio/smar/smar03.gif" width="33%">
