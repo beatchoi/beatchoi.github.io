@@ -23,18 +23,18 @@ features:
 - GPS 를 활용한 위치기반 기술의 활용
   
 <p align="center">
-<img src="/img/portfolio/smar/smar04.gif" width="33%">
-<img src="/img/portfolio/smar/smar05.gif" width="33%">
-<img src="/img/portfolio/smar/smar06.gif" width="33%">
+<img src="/img/portfolio/smar/smar04.gif" width="32%">
+<img src="/img/portfolio/smar/smar05.gif" width="32%">
+<img src="/img/portfolio/smar/smar06.gif" width="32%">
 <figcaption align="center">플랫폼 갤러리, 커뮤니티, 지오펜싱 지도</figcaption>
 </p>
 <br/>
 
    
 <p align="center">
-<img src="/img/portfolio/smar/smar01.gif" width="33%">
-<img src="/img/portfolio/smar/smar02.gif" width="33%">
-<img src="/img/portfolio/smar/smar03.gif" width="33%">
+<img src="/img/portfolio/smar/smar01.gif" width="32%">
+<img src="/img/portfolio/smar/smar02.gif" width="32%">
+<img src="/img/portfolio/smar/smar03.gif" width="32%">
 <figcaption align="center">SMAR AR 콘텐츠</figcaption>
 </p>
 <br/>
