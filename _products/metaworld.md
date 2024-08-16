@@ -3,8 +3,8 @@ title: 갯벌 프렌즈: 메타버스 게임 서비스
 subtitle: 주식회사 노바플로
 description: Unity3D,C#,Metaverse,Network
 layout: product
-image: /img/portfolio/smar/metaworld.PNG
-price: 91
+image: /img/portfolio/metaworld/metaworld.PNG
+price: 90.5
 features:
     - label: 개발 기간 -   2022.6 - 2024.1 (6,7,8 년차)
     - label: 수행 PJT  - 플랫폼 개발 프로젝트    
