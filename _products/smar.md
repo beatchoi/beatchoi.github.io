@@ -23,15 +23,10 @@ features:
 - GPS 를 활용한 위치기반 기술의 활용  
    
   
-<p align="center">
-    <video src="/img/portfolio/smar/smar01.mp4" type="video/mp4">
-       이 브라우저에서 지원하지 않는 영상입니다.
-    </video>
-</p>
-
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse01" width="49%">
-<img src="/img/portfolio/obstetricsmetaverse/obstetricsmetaverse02" width="49%">
-<figcaption align="center">전시물 소개 도슨트 및 작가 작품 콘텐츠</figcaption>
+<img src="/img/portfolio/smar/smar01.gif" width="33%">
+<img src="/img/portfolio/smar/smar02.gif" width="33%">
+<img src="/img/portfolio/smar/smar03.gif" width="33%">
+<figcaption align="center">SMAR AR 콘텐츠</figcaption>
 </p>
 <br/>
  
