@@ -24,15 +24,19 @@ features:
 - Addressable 기능을 활용한 에셋의 관리
 
 초기화, 메인, 지도, AR, 튜토리얼 씬으로 구성하였으며 
+
 초기화 씬에서는
 - AWS S3에 업로드 되어있는 에셋들을 다운로드  
-- Vuplex Webview로 구현된 웹뷰에서 로그인  
+- Vuplex Webview로 구현된 웹뷰에서 로그인
+  
 메인 씬에서는  
 - GUI로 구현된 메뉴와 사진, 동영상 라이브러리  
-- Vuplex Webview로 구현된 커뮤니티  
+- Vuplex Webview로 구현된 커뮤니티
+
 지도 씬에서는  
 - Mapbox로 구현된 gefencing 지도  
-- 지도 상에서 AR 미션을 선택할 수 있음  
+- 지도 상에서 AR 미션을 선택할 수 있음
+  
 AR 씬 및 튜토리얼 에서는
 - 지도 씬에서 선택된 미션을 addressable로 로드하고 실행   
 - LightshipSDK로 구현된 지면인식 및 VPS 콘텐츠 실행  
