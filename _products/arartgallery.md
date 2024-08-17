@@ -21,8 +21,10 @@ features:
 - ARFoundation을 활용한 AR 콘텐츠의 개발    
 - ZXing 라이브러리를 활용한 QRCode 인식 기능  
 - ARFoundation의 device camera의 raw image에 접근하여 픽셀 데이터를 읽는 구조 구현
-   
-  
+
+AR 콘텐츠는 유니티의 ARFoundation을 활용하여 지면인식을 구현하였고 QRCode인식을 위해 Zxing 라이브러리를 활용하였습니다. ARFoundation과 QR 인식을 동시에 진행하기 위해 ARFoundation의 XRCpuImage.ConversionParams
+구조체를 사용하여 현재 디바이스에 맺힌 이미지를 가져오고 해당 이미지에서 QR을 인식하기 위해 ZXing 라이브러리의 barcodereader를 사용했습니다.  
+
 <p align="center">
 <img src="/img/portfolio/arartgallery/arartgallery01.jpg" width="49%">
 <img src="/img/portfolio/arartgallery/arartgallery02.jpg" width="49%">
