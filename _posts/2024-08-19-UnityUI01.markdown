@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "Unity3D에서의 UI - UI의 구성"
+date:   2024-08-19 11:00:07
+categories: Unity3D Basics
+description: "Unity3D를 활용하여 UI를 구성할 떄 필요한 기본 기능을 알아봅니다"
+image: '/img/UnityBasic/UnityUI01/.PNG'
+published: true
+canonical_url: https://beatchoi.github.io/unity3d/basics/2024/08/19/UnityUI01/
+---
+  
+  
+  {% include adsense.html %}
+  
+  
+## 화면 캡처 :: Screen Capture  
+일반적으로 URP환경에서 Bloom 등의 Volume 이펙트들이 함께 캡처되지 않는 현상이 일어납니다.  
+두가지 원인이 있는데 첫번째는 저장할 Texture 및 Texture2D의 크기가 작아 모든 텍스쳐를 저장할 수 없는 경우와  
+두번째는 Linear color space의 픽셀을 텍스쳐에 저장 할 수 없는 경우가 있습니다.  
+이번 포스팅에서는 URP 환경에서 해당 이펙트들을 함께 캡쳐하는 방법을 알아봅니다.  
+
+
+## 테스트
+
+<p align="center"><img src="/img/UnityBasic/UnityUI01/01.PNG"><br/>
+<01. ></p>  
+ 
+<p align="center"><img src="/img/UnityBasic/UnityUI02/02.PNG"><br/>
+<02. ></p> 
+
+<p align="center"><img src="/img/UnityBasic/UnityUI01/03.PNG"><br/>
+<03. ></p>  
+ 
+<p align="center"><img src="/img/UnityBasic/UnityUI02/04.PNG"><br/>
+<04. ></p> 
+
+<p align="center"><img src="/img/UnityBasic/UnityUI01/05.PNG"><br/>
+<05. ></p>  
+ 
+<p align="center"><img src="/img/UnityBasic/UnityUI02/06.PNG"><br/>
+<06. ></p> 
+
+
+
+
+  
+  {% include adsense.html %}
+
+
+
+  
+  
