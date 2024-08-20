@@ -23,16 +23,26 @@ UI의 생성, UI Canvas의 역할, UI RectTransform에 대하여 알아봅니다
 <p align="center"><img src="/img/UnityBasic/UnityUI01/01.PNG"><br/>
 <01. UI Image의 생성></p>  
 
-생성을 완료하면 다음과 같ㅇ
+생성을 완료하면 계층구조창에 다음과 같이 `Canvas`, `EventSystems` 총 두개의 객체가 생성됩니다. 그리고 우리가 생성한 `Image`객체는 `Canvas`객체 하위에 놓여져 있는 것을 볼 수 있습니다.  
   
 <p align="center"><img src="/img/UnityBasic/UnityUI01/02.PNG"><br/>
-<02. ></p> 
-
+<02. 계층구조창에 생성된 UI 객체></p> 
+  
+씬 창은 프로젝트의 환경에 따라 조금씩 차이가 있지만 보통 아래 사진과 같이 흰색 테두리 안에 흰색 사각형이 위치한 상태로 생성됩니다.  
+  
 <p align="center"><img src="/img/UnityBasic/UnityUI01/03.PNG"><br/>
-<03. ></p>  
+<03.씬 창에서 보여지는 UI Image ></p>  
+
+그리고 게임 창에서는 아래와 같이 좌측 하단에 흰색 사각형이 위치한 것을 확인할 수 있습니다.  
  
 <p align="center"><img src="/img/UnityBasic/UnityUI01/04.PNG"><br/>
-<04. ></p> 
+<04. 게임 창에서 보여지는 UI></p> 
+
+###캔버스  
+
+먼저 구성을 살펴보면 우리는 `Image`를 생성했지만 `Canvas`와 `EventSystems`라고 하는 객체가 자동으로 생성이 되었고 `Canvas`하위에 우리가 생성한 `Image`객체가 위치해 있습니다. 여기서 `Canvas`는 말 그대로 UI 객체들을 표현할 수 있는 도화지라고 생각하시면 됩니다. 그렇기 때문에 모든 UI 객체들은 `Canvas`객체의 자식 오브젝트로 위치해야 합니다. 그렇지 않으면 씬에 표현되지 않습니다. 새로운 UI객체를 생성할 때 만약 씬에 `Canvas`가 존재하지 않을 경우 자동으로 `Canvas`를 생성하고 이미 존재한다면 해당 `Canvas`의 하위에 생성됩니다.  
+
+그리고 `Canvas`의 영역은 씬 창에서 흰색 테두리로 나타나며 이는 게임 창에서 보여지는 상태와 동일하게 보여집니다. 현재 상태에서 게임 창의 크기를 조절하면 해당 크기와 동일하게 `Canvas`의 크기가 조절되는 것을 확인할 수 있습니다.  
 
 <p align="center"><img src="/img/UnityBasic/UnityUI01/05.PNG"><br/>
 <05. ></p>  
