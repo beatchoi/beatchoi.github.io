@@ -38,7 +38,7 @@ UI의 생성, UI Canvas의 역할, UI RectTransform에 대하여 알아봅니다
 <p align="center"><img src="/img/UnityBasic/UnityUI01/04.PNG"><br/>
 <04. 게임 창에서 보여지는 UI></p> 
 
-###캔버스  
+### 캔버스  
 
 먼저 구성을 살펴보면 우리는 `Image`를 생성했지만 `Canvas`와 `EventSystems`라고 하는 객체가 자동으로 생성이 되었고 `Canvas`하위에 우리가 생성한 `Image`객체가 위치해 있습니다. 여기서 `Canvas`는 말 그대로 UI 객체들을 표현할 수 있는 도화지라고 생각하시면 됩니다. 그렇기 때문에 모든 UI 객체들은 `Canvas`객체의 자식 오브젝트로 위치해야 합니다. 그렇지 않으면 씬에 표현되지 않습니다. 새로운 UI객체를 생성할 때 만약 씬에 `Canvas`가 존재하지 않을 경우 자동으로 `Canvas`를 생성하고 이미 존재한다면 해당 `Canvas`의 하위에 생성됩니다.  
 
