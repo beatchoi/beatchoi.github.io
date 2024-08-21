@@ -1,0 +1,103 @@
+---
+layout: post
+title:  "Unity3D에서의 UI - Rect Transform"
+date:   2024-08-21 11:00:07
+categories: Unity3D Basics
+description: "Unity3D를 활용하여 UI를 구성할 떄 필요한 기본 기능을 알아봅니다"
+image: '/img/UnityBasic/UnityUI01/.PNG'
+published: true
+canonical_url: https://beatchoi.github.io/unity3d/basics/2024/08/21/UnityUI02/
+---
+  
+  
+  {% include adsense.html %}
+  
+  
+## Unity UI RectTransform :: 개요  
+UI 객체들의 위치, 크기, 기준점 등등을 담당하는 Rect Transform에 대하여 알아봅니다. 
+
+
+### Position
+
+<p align="center"><img src="/img/UnityBasic/UnityUI01/06.PNG"><br/>
+<01. UI Image의 생성></p>  
+
+생성을 완료하면 계층구조창에 다음과 같이 `Canvas`, `EventSystems` 총 두개의 객체가 생성됩니다. 그리고 우리가 생성한 `Image`객체는 `Canvas`객체 하위에 놓여져 있는 것을 볼 수 있습니다.  
+  
+<p align="center"><img src="/img/UnityBasic/UnityUI01/07.PNG"><br/>
+<02. 계층구조창에 생성된 UI 객체></p> 
+  
+씬 창은 프로젝트의 환경에 따라 조금씩 차이가 있지만 보통 아래 사진과 같이 흰색 테두리 안에 흰색 사각형이 위치한 상태로 생성됩니다.  
+  
+<p align="center"><img src="/img/UnityBasic/UnityUI01/08.PNG"><br/>
+<03.씬 창에서 보여지는 UI Image ></p>  
+
+그리고 게임 창에서는 아래와 같이 좌측 하단에 흰색 사각형이 위치한 것을 확인할 수 있습니다.  
+ 
+<p align="center">
+<img src="/img/UnityBasic/UnityUI01/09.PNG" width="49%">
+<img src="/img/UnityBasic/UnityUI01/10.PNG" width="49%">
+<figcaption align="center"></figcaption>
+</p> 
+<br/>
+
+
+<p align="center">
+<img src="/img/UnityBasic/UnityUI01/11.PNG" width="49%">
+<img src="/img/UnityBasic/UnityUI01/12.PNG" width="49%">
+<figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
+</p> 
+<br/>
+
+<p align="center">
+<img src="/img/UnityBasic/UnityUI01/13.PNG" width="49%">
+<img src="/img/UnityBasic/UnityUI01/14.PNG" width="49%">
+<figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
+</p> 
+<br/>
+
+<p align="center">
+<img src="/img/UnityBasic/UnityUI01/15.PNG" width="49%">
+<img src="/img/UnityBasic/UnityUI01/16.PNG" width="49%">
+<figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
+</p> 
+<br/>
+
+### Anchors  
+
+<p align="center">
+<img src="/img/UnityBasic/UnityUI01/17.PNG" width="49%">
+<img src="/img/UnityBasic/UnityUI01/18.PNG" width="49%">
+<figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
+</p> 
+<br/>
+
+<p align="center">
+<img src="/img/UnityBasic/UnityUI01/19.PNG" width="49%">
+<img src="/img/UnityBasic/UnityUI01/20.PNG" width="49%">
+<figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
+</p> 
+<br/>
+
+<p align="center">
+<img src="/img/UnityBasic/UnityUI01/21.PNG" width="49%">
+<img src="/img/UnityBasic/UnityUI01/22.PNG" width="49%">
+<figcaption align="center">파란색 짐볼에 객체 인식 장면</figcaption>
+</p> 
+<br/>
+
+### 캔버스  
+ 
+
+## 마무리
+
+
+
+
+  
+  {% include adsense.html %}
+
+
+
+  
+  
