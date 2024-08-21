@@ -28,6 +28,10 @@ show_sidebar: false
 #### 중급  
 [싱글톤 패턴, 다른 객체에서 참조하기 :: Singleton Pattern - 21-07-23](https://beatchoi.github.io/unity3d/basics/2021/07/23/SingletonAndStatic/)<br/>
 [get, set 프로퍼티로 이벤트 호출하기 :: Getter Setter Property - 21-08-02](https://beatchoi.github.io/unity3d/basics/2021/08/02/GetterSetterProperty/)
+
+## 유니티 UI :: Unity UI<br/>
+[Unity UI :: 개요 및 Canvas](https://beatchoi.github.io/unity3d/basics/2024/08/19/UnityUI01/)<br/>
+[Unity UI RectTransform](https://beatchoi.github.io/unity3d/basics/2024/08/21/UnityUI02/)<br/>
   
 ## 자료구조 :: DataStructure  
 [리스트 :: List - 21-07-31](https://beatchoi.github.io/unity3d/basics/2021/07/31/DataStructureList/)  
