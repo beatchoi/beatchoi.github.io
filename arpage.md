@@ -4,7 +4,7 @@ subtitle: Build AR Contents with Unity3D
 layout: page
 show_sidebar: false
 ---
-
+<!--
 [Day2Assets](https://drive.google.com/file/d/1_ipnv_pvkL3EJETsnt6DMUuDf4M8v2EE/view?usp=sharing)  
 [Day4Assets](https://drive.google.com/file/d/1j8fkmJa5CQP07-321Zl4nsKZ7P2DLrxL/view?usp=sharing)  
 
@@ -21,6 +21,7 @@ show_sidebar: false
 [VPSAPK_1](https://drive.google.com/file/d/1esWwzrvd2BiV7dzh0P5NeoQul6ikjDf2/view?usp=share_link)  
 [Segmentation](https://drive.google.com/file/d/1LCrOBOKhJ2VNlOPQhayKJcaFXRewpdYp/view?usp=sharing)  
 [ARSegmentationManager.cs](https://drive.google.com/file/d/1UAgl82oj0MBhJnBvbYj9OCweX0OmB7ee/view?usp=sharing)
+-->
   
 ## ARFoundation
 [1. ARFoundation 환경설정](https://beatchoi.github.io/unity3d/basics/2020/12/14/ARFoundation01/)  
