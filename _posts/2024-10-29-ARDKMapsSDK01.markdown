@@ -48,7 +48,7 @@ Lightship의 geofencing 기능을 구현할 수 있는 Maps SDK 활용법을 알
 
 Project창 하단 `Packages`항목 하위에 있는 Lightship Maps SDK -> Themes -> Lighttime 폴더에 있는 Lighttime_Unlit_Theme_URP 프리펩을 선택, 드래그하여 위 `Map Theme` 항목에 추가합니다.  
 
-<p align="center"><img src="/img/UnityAR/MapsSDK/01/03.png"><br/>
+<p align="center"><img src="/img/UnityAR/MapsSDK/01/03.png" width = "50%"><br/>
 <03. Map Theme 추가 ></p>  
 
 <p align="center"><img src="/img/UnityAR/MapsSDK/01/04.png"><br/>
