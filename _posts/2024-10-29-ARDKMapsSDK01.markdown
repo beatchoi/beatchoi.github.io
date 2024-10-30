@@ -86,9 +86,12 @@ OrthographicCamera 객체의 자식 오브젝트로 MainCamera를 이동시킵�
 
 OrthographicCameraController.cs 스크립트를 아래와 같이 수정합니다.  
 
- Start() 함수 제일 첫번째 줄에 아래 코드를 추가합니다.  
+Start() 함수 제일 첫번째 줄에 아래 코드를 추가합니다.  
+  
+```ruby
 _camera = transform.GetChild(0).GetComponent<Camera>();
-
+```
+  
 계층구조창에서 마우스 오른쪽 클릭, UI -> EventSystem 을 선택해서 객체를 생성합니다.  
 
 <p align="center"><img src="/img/UnityAR/MapsSDK/01/04.png"><br/>
