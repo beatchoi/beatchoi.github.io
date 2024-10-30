@@ -24,11 +24,12 @@ show_sidebar: false
 -->
 
 ## LightshipAR SDK  
+#### ARDK SDK (2.1v)  
 [1. LightshipAR SDK 2022 프로젝트 세팅 - 08 - 08](https://beatchoi.github.io/arpage/2022/08/08/Lightship1/)  
 [2. LightshipAR SDK 2023 지면 인식 구현 - 04 - 03](https://beatchoi.github.io/arpage/2023/04/03/Lightship3PlaneDetection/)  
 [3. LightshipAR SDK 2023 핸드트래킹 구현 - 04 - 04](https://beatchoi.github.io/arpage/2023/04/04/Lightship4HandTracking/)  
 [4. LightshipAR SDK 2023 VPS 구현 - 05 - 16](https://beatchoi.github.io/arpage/2023/05/16/Lightship5/). 
-#### ARDK Maps SDK (0.4v)
+#### ARDK Maps SDK (0.4v)  
 [1.Maps SDK 기본 - TopDown 지도 생성](https://beatchoi.github.io/arpage/2024/10/29/ARDKMapsSDK01/).  
   
 ## ARFoundation
