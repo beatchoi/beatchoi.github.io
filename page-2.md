@@ -5,6 +5,10 @@ layout: page
 show_sidebar: false
 ---
  
+## Unity3D DOTS
+[Unity3D DOTS 개요 - 2025-02-12]()
+[DOTS를 활용하여 키보드 입력 받기]
+
 ## 캐릭터 구현해보기 
 [캐릭터 구성하기 :: 스탯 클래스를 작성하여 공격 구현 - 2021-07-30](https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/CharacterStats/)  
 [캐릭터 구성하기 :: 가상 함수를 활용하여 캐릭터 제거 - 2021-07-30](https://beatchoi.github.io/unity3d/fundamentals/2021/07/30/CharacterStats2/)  
