@@ -16,7 +16,7 @@ canonical_url: http://whtls.com/unity3d/basics/2020/04/17/unity_00Installation/
 <p align="center"><img src="/img/UnityBasic/InstallUnity6/01.png"><br/>
 <01. 유니티 다운로드 페이지></p>  
   
-[https://unity3d.com/kr/get-unity/download](https://unity3d.com/download)로 들어가서 `DOWNLOAD FOR xxx` 를 선택합니다
+[https://unity3d.com/download](https://unity3d.com/download)로 들어가서 `DOWNLOAD FOR xxx` 를 선택합니다
 
 ## 유니티 허브 설치  
   
