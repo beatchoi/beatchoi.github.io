@@ -13,14 +13,14 @@ canonical_url: http://whtls.com/unity3d/basics/2020/04/17/unity_00Installation/
 
 ## 유니티 허브 다운로드  
 
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/01.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/01.png"><br/>
 <01. 유니티 다운로드 페이지></p>  
   
 [https://unity3d.com/kr/get-unity/download](https://unity3d.com/download)로 들어가서 `DOWNLOAD FOR xxx` 를 선택합니다
 
 ## 유니티 허브 설치  
   
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/02.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/02.png"><br/>
 <02. 유니티 허브 설치></p>  
   
 다운로드 받은 파일을 열어서 설치를 진행합니다. 유니티3D 툴에는 다양한 버전이 있습니다. 짧으면 몇달 주기로 버전업이 된 툴이 출시가 되는데 개발 형편상 매번 유니티 툴을 업데이트 할 수는 없습니다. 기존의 프로젝트에서 사용하던 third party sdk 나 소프트웨어들이 새로운 버전의 유니티에서 작동하리란 보장이 없기 때문입니다. 따라서 필요에 따라 여러 버전의 유니티 툴을 한 컴퓨터에 설치할 수 있는데 이를 모두 관리하기 위해 Unity HUB 를 사용한다고 생각하시면 됩니다.
@@ -28,12 +28,12 @@ canonical_url: http://whtls.com/unity3d/basics/2020/04/17/unity_00Installation/
 ## 유니티 아이디 생성
 아이디를 생성해야 유니티 라이선스를 발급받을 수 있기 때문에 다음 절차에 따라 가입을 진행합니다.  
   
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/04.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/04.png"><br/>
 <03. 유니티 아이디 생성></p>  
   
 설치된 허브를 실행시키고 `Create account` 버튼을 클릭합니다.  
 
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/05.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/05.png"><br/>
 <04. 유니티 아이디 생성></p>  
   
 리다이렉트된 페이지에서 회원가입을 진행합니다. 
@@ -58,21 +58,21 @@ canonical_url: http://whtls.com/unity3d/basics/2020/04/17/unity_00Installation/
   
 ## 유니티의 설치  
   
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/06.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/06.png"><br/>
 <05. 유니티 에디터 설치></p>  
 
 `Install` 탭에서 유니티를 설치해 봅니다. 해당 탭의 우측 상단 `Install Editor` 버튼을 눌러줍니다. 
 `Official Release`는 정식 버전의 유니티 입니다. `(LTS)`는 Long Term Service stream 이라는 뜻으로 장기 지원 버전이라고 생각하시면 됩니다. 각 년도 버전마다 장기지원 버전이 존재합니다.
 `Pre-Release`는 알파 또는 베타버전의 유니티 입니다. 새로운 기능들을 활용해 볼 수 있습니다.
 
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/07.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/07.png"><br/>
 <06. 유니티 에디터 설치></p>  
 
 Official releases의 UNITY 6 버전을 선택하고 우측 `Install`버튼을 눌러 진행합니다.
 
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/08.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/08.png"><br/>
 <07. 유니티 에디터 설치></p>  
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/09.PNG"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/09.png"><br/>
 <08. 유니티 에디터 설치></p>  
 
 다음 창에서는 콘텐츠 개발 플랫폼을 선택해 줍니다. 유니티는 다양한 플랫폼을 지원하기 때문에 콘텐츠 개발이 용이합니다. 다만 `IOS` 플랫폼의 경우 프로젝트를 빌드 하기 위해서는 `맥OS`가 필요합니다. 맥OS에서는 `Android`, `IOS` 모두 가능합니다. 
