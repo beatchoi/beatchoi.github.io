@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유니티3D 설치"
-date:   2020-04-17 10:50:07
+date:   2025-03-11 10:50:07
 categories: Unity3D Basics
 description: "유니티3D를 설치하고 사용법을 익혀봅니다"
 image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
@@ -83,11 +83,17 @@ Official releases의 UNITY 6 버전을 선택하고 우측 `Install`버튼을 �
 ## 라이선스 활성화
 유니티3D 툴은 무료 유료 라이센스가 있고 무료의 경우에도 다음과 같이 라이선스를 활성화 시켜야합니다.
 
-로그인을 했으면 허브의 좌측 상단 세팅 버튼을 눌러줍니다. 
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/10.png"><br/>
+<09. 유니티 라이선스 활성화></p>  
 
-좌측 `라이선스`탭을 누르고 상단 `Activate New License`를 누릅니다. 
+로그인을 했으면 허브의 좌측 상단 프로필 버튼을 누르고. 좌측 `Manage Licenses`탭을 선택합니다. 
 
-생성된 창에서 `Unity Personal`을 선택하고 하단 `Done`버튼을 눌러 생성을 완료합니다. 
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/11.png"><br/>
+<10. 유니티 라이선스 활성화></p>  
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/12.png"><br/>
+<11. 유니티 라이선스 활성화></p>  
+
+생성된 창에서 우측 상단 `Add` 버튼을 클릭하고 라이선스 중 `Get a free personal license`버튼을 눌러 생성을 완료합니다. 
 
 ## 프로젝트의 생성
 허브에서 좌측 `Project`탭을 누릅니다.
