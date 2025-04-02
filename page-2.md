@@ -6,7 +6,7 @@ show_sidebar: false
 ---
  
 ## Unity3D DOTS
-[Unity3D DOTS 개요 - 2025-02-12]()
+[Unity3D DOTS 개요 - 2025-02-12](https://beatchoi.github.io/unity3d/fundamentals/2025/03/29/DOTSFundamental01/)
 [DOTS를 활용하여 키보드 입력 받기]
 
 ## 캐릭터 구현해보기 
