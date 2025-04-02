@@ -6,7 +6,7 @@ categories: Unity3D Fundamentals
 description: "Unity3D DOTS를 알아봅니다"
 image: '/img/UnityFundamental/DOTS/1.jpg'
 published: true
-canonical_url: https://beatchoi.github.io/unity3d/arpage/2025/03/29/DOTSFundamental01/
+canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2025/03/29/DOTSFundamental01/
 ---
   
   
