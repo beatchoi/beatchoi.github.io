@@ -4,7 +4,7 @@ title:  "Unity3D DOTS 개요 - DOTS 알아보기"
 date:   2025-03-29 14:00:07
 categories: Unity3D Fundamentals
 description: "Unity3D DOTS를 알아봅니다"
-image: '/img/UnityAR/LightshipAR/01/00.PNG'
+image: '/img/UnityFundamental/DOTS/1.jpg'
 published: true
 canonical_url: https://beatchoi.github.io/unity3d/arpage/2025/03/29/DOTSFundamental01/
 ---
@@ -37,7 +37,7 @@ World는 Entity들이 모여있는 세계라고 생각하면 편한데 World에 
 ###### Archetype과 Chunk
 Unity의 ECS에서 동일한 Component로 구성된 모든 Entity들은 같은 Archetype으로 저장됩니다. 예를들어 A,B,C 컴포넌트를 가진 모든 Entity가 하나의 Archetype으로 저장되고, A와 B 컴포넌트를 가진 모든 Entity가 또 하나의 Archetype으로 저장됩니다. 만약 Entity의 컴포넌트 구성에 변화가 생긴다면 현재 Archetype에서 다른 Archetype으로 변경됩니다.  
   
-<p align="center"><img src="/img/UnityAR/MapsSDK/01/01.png"><br/>
+<p align="center"><img src="/img/UnityFundamental/DOTS/2.jpeg"><br/>
 <01. Archetype ></p>
    
 이 때 Entity와 Component는 Chunk라고 하는 메모리 블럭 형태로 Archetype에 저장됩니다. Chunk는 최대 128개의 Entity들을 저장할 수 있고 Entity ID와 각 타입의 Component들을 저장하는 배열로 이루어져있습니다. 예를 들어 A, B, C Component를 가진 Entity의 Archetype에는 4개의 배열을 저장하는데,  
@@ -47,7 +47,7 @@ Unity의 ECS에서 동일한 Component로 구성된 모든 Entity들은 같은 A
 - C Component를 저장하는 두 번째 배열
   로 이루어지게 됩니다.
   
-<p align="center"><img src="/img/UnityAR/MapsSDK/01/01.png"><br/>
+<p align="center"><img src="/img/UnityFundamental/DOTS/3.jpeg"><br/>
 <02. Chunk ></p>
   
 Chunk는 항상 빈틈없이 채워지게 되는데,
