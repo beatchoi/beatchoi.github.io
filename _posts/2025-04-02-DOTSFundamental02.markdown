@@ -12,75 +12,92 @@ canonical_url: https://beatchoi.github.io/unity3d/fundamentals/2025/04/02/DOTSFu
   
   {% include adsense.html %}
   
+
+
+## 들어가기 앞서
+이번 포스팅에서는 DOTS의 ECS를 활용하여 객체를 만들어 보고 기존의 GameObject 기반의 개발과 Data 기반의 개발의 차이점을 확인해 보겠습니다. 단순한 Sphere 객체를 Entity를 활용해 띄워 보도록 합니다.  
+
+#### 프로젝트 설정
+DOTS를 활용하기 위한 `Entity` 패키지를 프로젝트에 임포트 합니다.  
+Package Manager 창의 Unity Registry 항목에 Entities 를 검색합니다. 다음 패키지 중 `Entities` 와 `Entities Graphics`를 임포트 합니다.  
+<p align="center"><img src="/img/UnityFundamental/DOTS/6.png"><br/>
+<01. Package Manager - Import Packages ></p>
   
-## DOTS 개요 
-DOTS는 `Data Oriented Tech Stack`의 약자로서 기본 상태에서 최적의 성능을 확보할 수 있는 전혀 다른 방식의 코드 작성 방법입니다. DOTS 방식으로 코드를 짠다면 멀티스레드 성능을 통해 더 많은 개체, 더 많은 이펙트, 더 나은 비주얼을 가진 복잡한 콘텐츠를 만들 수 있습니다.  
-DOTS는 `Entity Component System`, `C# Job System`, `Burst Compiler` 세 가지 요소로 이루어져 있습니다. 본 포스팅에서는 `ECS`에 대해서 알아봅니다.   
 
-## Entity Component System 이란?
-Entity Component System은 Data-Oriented(데이터 지향적) 방식으로 코딩을 하기 위한 프레임워크로서 기존 유니티의 GameObject 중심의 코딩이 아닌 Data와 Logic을 중심으로 코딩을 하게 됩니다. Entity는 각 Component들의 ID역할을 하는, 아주 가벼운 GameObject와 같은 역할을 하며, Component에는 Data가 담기고 System은 Component에 담긴 Data를 기반으로 Logic 수행하는 역할을 합니다. 
-예를들어 이동하는 몬스터를 구현한다면, Monster 라는 entity에 Transform Component를 구성하고 MonsterMove 라는 Transform Component를 수정하는 System을 만들어서 몬스터를 이동시킬 수 있습니다.  
-
-#### World
-World는 Entity들이 모여있는 세계라고 생각하면 편한데 World에 존재하는 각각의 Entity들은 고유한 ID를 가지고 있습니다. 다른 World에 동일한 ID를 가진 Entity가 있더라도 현재 World의 Entity와는 관계없습니다.   
-- World -> Entity의 모음  
-- Entity Manager  
-    - CreateEntity() 새로운 Entity 생성
-    - Instantiate() 존재하는 Entity의 모든 Component를 복제한 새로운 Entity 생성
-    - DestroyEntity() 존재하는 Entity 제거  
-    - AddComponent() 존재하는 Entity에 컴포넌트 추가  
-    - RemoveComponent() 존재하는 Entity에 컴포넌트 제거  
-    - HasComponent() Entity가 현재 해당 컴포넌트를 가지고 있으면 참 반환
-
-#### Archetype과 Chunk
-Unity의 ECS에서 동일한 Component로 구성된 모든 Entity들은 같은 Archetype으로 저장됩니다. 예를들어 A,B,C 컴포넌트를 가진 모든 Entity가 하나의 Archetype으로 저장되고, A와 B 컴포넌트를 가진 모든 Entity가 또 하나의 Archetype으로 저장됩니다. 만약 Entity의 컴포넌트 구성에 변화가 생긴다면 현재 Archetype에서 다른 Archetype으로 변경됩니다.  
+그리고 Projet Settings 창에서 좌측 Editor 항목을 선택하고 Enter Play Mode Setting을 Do not reload Domain or Scene으로 변경합니다.  
+<p align="center"><img src="/img/UnityFundamental/DOTS/7.png"><br/>
+<02. Project Settings - Enter Play Mode Settings ></p>
   
-<p align="center"><img src="/img/UnityFundamental/DOTS/2.jpeg"><br/>
-<01. Archetype ></p>
-   
-이 때 Entity와 Component는 Chunk라고 하는 메모리 블럭 형태로 Archetype에 저장됩니다. Chunk는 최대 128개의 Entity들을 저장할 수 있고 Entity ID와 각 타입의 Component들을 저장하는 배열로 이루어져있습니다. 예를 들어 A, B, C Component를 가진 Entity의 Archetype에는 4개의 배열을 저장하는데,  
-- Entity ID를 저장하는 첫 번째 배열  
-- A Component를 저장하는 두 번째 배열
-- B Component를 저장하는 두 번째 배열
-- C Component를 저장하는 두 번째 배열
-  로 이루어지게 됩니다.
+#### Component 생성
+Project 창에서 마우스 우클릭, Create -> Entities -> IComponentData Script 선택  
+이름을 SphereData로 수정하고 해당 스크립트를 다음과 같이 작성합니다.  
+
+<p align="center"><img src="/img/UnityFundamental/DOTS/5.png"><br/>
+<03. Component Script ></p>
+
+```ruby
+using Unity.Entities;
+using Unity.Mathematics;
+public struct SphereData : IComponentData
+{
+    public float3 position;
+}
+```
+본 스크립트는 이전 포스팅에서 언급한 ECS 중 Component에 해당하는 부분입니다. 이전에 언급한 것 처럼, IComponentData를 상속받는 구조체로서 Entity의 Data를 가지고 있는 것을 확인할 수 있습니다. 이번 케이스는 Sphere 객체의 속도에 해당하는 Data가 될 것입니다.  
+
+다시 한번 IComponentData Script를 생성하고 이름을 SpawnerData로 수정합니다.
+아래와 같이 작성합니다.  
+
+```ruby
+using Unity.Entities;
+using Unity.Mathematics;
+public struct SpawnerData : IComponentData
+{
+    public Entity Prefab;
+    public int NumToSpawn;
+}
+```
+본 스크립트는 위 Sphere Entity를 생성하는 역할을 하는 Data 입니다. 목적에 맞게 Entity와 몇 개의 Sphere를 생성할지 정하는 변수가 선언되어 있습니다.  
   
-<p align="center"><img src="/img/UnityFundamental/DOTS/3.jpeg"><br/>
-<02. Chunk ></p>
+#### Baker 생성  
+이번엔 Entity를 생성할 수 있는 Baking System을 생성해 보겠습니다.  
+Project 창에서 마우스 우클릭, Create -> Entities -> Baker Script 선택  
+이름을 SpawnerAuthoring으로 수정하고 해당 스크립트를 다음과 같이 작성합니다.  
+
+<p align="center"><img src="/img/UnityFundamental/DOTS/8.png"><br/>
+<04. Baker Script ></p>
+
+```ruby
+using Unity.Entities;
+using UnityEngine;
+
+class SpawnerAuthoring : MonoBehaviour
+{
+    public GameObject prefab;
+    public int numToSpawn;
+}
+
+class SpawnerAuthoringBaker : Baker<SpawnerAuthoring>
+{
+    public override void Bake(SpawnerAuthoring authoring)
+    {
+        var entity = GetEntity(TransformUsageFlags.Dynamic);
+        AddComponent(entity, new SpawnerData
+        {
+            Prefab = GetEntity(authoring.prefab, TransformUsageFlags.Dynamic),
+            NumToSpawn = authoring.numToSpawn
+        });
+    }
+}
+```
+MonoBehaviour를 상속받는 SpawnerAuthoring 클래스는 아래 Baker 클래스에서 생성할 Entity에 활용하기 위해 객체와 데이터를 참조하는 역할을 합니다.  
+하단 Baker 클래스에서 Entity를 생성하고 해당 Entity에 컴포넌트를 추가합니다. 이 과정에서 이전에 생성한 SpawnerData 컴포넌트의 데이터를 참조하게 됩니다. 
   
-Chunk는 항상 빈틈없이 채워지게 되는데,
-- 새로운 Entity가 추가되면, 배열의 비어있는 첫 번째 인덱스에 채워지고
-- 기존 Entity가 제거되면 Chunk의 마지막 Entity가 빈 인덱스를 채웁니다.
-  
-#### Query
-Archetype 구조의 데이터 레이아웃의 이점은 특정 Component 타입으로 구성된 Entity를 찾아 순회하는 반복작업이 가능하다는 부분입니다. 조건을 만족하는 모든 Archetype을 찾아 해당 Archetype의 Chunk에서 Entity를 순회합니다. 검색 작업에 활용되어 Query와 일치한 Archetype은 World에 새로운 Archetype이 추가되기 전까지 캐싱되어 순회 작업을 빠르게 진행할 수 있도록 합니다.  
-
-#### System
-System은 Entity의 World에 속해있는 코드 단위로서 Unity의 메인 스레드에서 돌아가며 보통의 경우 각 World에 속해있는 Entity에만 접근할 수 있습니다. System은 Component의 Data를 현재 상태에서 다음 상태로 변환시켜주는 로직을 제공합니다. 예를 들어 이동하고있는 Entity의 위치를 지속적으로 갱신하기위해 System은 속도에 이전 갱신시간과 현재 시간의 차이를 곱해줄 수 있습니다.   
-  - OnUpdate() : 프레임당 한 번씩 호출  
-  - OnCreate() : OnUpdate 이전에 한 번 또는 System이 재개될 때 한 번 호출  
-  - OnDestroy() : System이 제거될 때 한번 호출
-    
-###### SystemBase 클래스
-Managed Data에 접근할 수 있는 클래스. MonoBehaviour나 Burst Compiler와 호환되지 않는 클래스를 참조할 수 있으며 메인스레드에서 동작합니다. Managed System을 만드는데 사용합니다. SystemBase에서 Job을 활용하기 위해서 다음과 같은 메커니즘을 활용하면 좋습니다.  
-  - Job.WithCode : 람다 표현식을 백그라운드 작업으로 실행  
-  - IJobEntity : Entity data에 순회하여 접근합니다.  
-  - IJobChunk : Archetype Chunk의 Data에 순회하여 접근합니다.  
-
-
-###### ISystem 인터페이스
-Managed Data에 접근할 수 없는 인터페이스. 대신 Burst Compiler를 활용하여 컴파일이 가능하기 때문에 퍼포먼스 향상이 가능합니다.(멀티스레딩) SystemBase와 달리 ISystem의 이벤트 메소드들은 Burst Compiler를 통해 컴파일 할 수 있습니다. Oncreate, OnUpdate, OnDestry 메소드들은 ref SystemState라고 하는 매개 변수를 전달하여 World, WorldUnmanaged 또는 EntityManager등의 데이터나 API에 접근할 수 있습니다.   
-  - IJobEntity : Entity data에 순회하여 접근합니다.  
-  - IJobChunk : Archetype Chunk의 Data에 순회하여 접근합니다.  
-
-<p align="center"><img src="/img/UnityFundamental/DOTS/4.png"><br/>
-<03. System의 Event 순서 ></p>
-
-###### System Group
-System Gruop은 System과 다른 System Group들을 자식으로 가지고 있을 수 있으며 해당 하위 자식들을 메인스레드에서 정렬된 순서대로 실행시킵니다. 
+#### SubScene 구성하기
+이번엔 Baker를 작동시킬 SubScene을 구성해 보겠습니다. 
 
 ## Overall
-지금까지 DOTS의 ECS에 대하여 간단하게 알아보았습니다. 다음 포스팅에서는 간단하게 Entity를 구현해보고 구조를 알아보겠습니다.  
+지금까지 DOTS의 ECS에 활용하여 객체를 생성해 보았습니다.  
 
     
   {% include adsense.html %}
