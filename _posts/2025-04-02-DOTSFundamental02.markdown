@@ -94,7 +94,76 @@ MonoBehaviour를 상속받는 SpawnerAuthoring 클래스는 아래 Baker 클래�
 하단 Baker 클래스에서 Entity를 생성하고 해당 Entity에 컴포넌트를 추가합니다. 이 과정에서 이전에 생성한 SpawnerData 컴포넌트의 데이터를 참조하게 됩니다. 
   
 #### SubScene 구성하기
-이번엔 Baker를 작동시킬 SubScene을 구성해 보겠습니다. 
+이번엔 Baker를 작동시킬 SubScene을 구성해 보겠습니다.  
+Scene 창 에서 마우스 우 클릭 -> New Sub Scene -> Empty Scene 을 선택합니다.  
+
+<p align="center"><img src="/img/UnityFundamental/DOTS/9.png"><br/>
+<05. Baker Sub Scene ></p>
+
+해당 Sub Scene에서 빈 게임 오브젝트를 하나 생성하고 해당 객체에 위에서 작성한 SpawnerAuthoring baker 스크립트를 연결합니다.  
+그리고 Sphere 프리펩을 하나 생성하고 해당 프리펩을 SpawnerAuthoring 컴포넌트의 인자에 연결합니다. NumToSpawn 항목은 일단 1로 지정합니다.  
+
+#### System 구성하기
+지금 까지의 과정으로 Entity를 World에 생성할 수 있게 되었습니다. 하지만 아직 Entity는 데이터 조각일 뿐 눈에 보이거나 인터랙티브한 기능을 가지고 있지 않습니다. 때문에 어떠한 작업을 진행 할 System 이 필요합니다.  
+
+Project 창에서 마우스 우클릭 -> Create -> Entities -> ISystem Scripts 을 선택하고 이름을 SpawnerSystem으로 변경한 뒤 아래와 같이 작성합니다.  
+
+```ruby
+using Unity.Burst;
+using Unity.Entities;
+using Unity.Transforms;
+using Unity.Mathematics;
+
+partial struct SpanwerSystem : ISystem
+{
+    Random rng;
+    [BurstCompile]
+    public void OnCreate(ref SystemState state)
+    {
+        rng = new Random(100);
+    }
+
+    [BurstCompile]
+    public void OnUpdate(ref SystemState state)
+    {
+        EntityCommandBuffer ecb = new EntityCommandBuffer(Unity.Collections.Allocator.Temp);
+        
+        foreach(var (spawner, entity) in SystemAPI.Query<RefRO<SpawnerData>>().WithEntityAccess())
+        {
+            SpawnSphere(ref state, spawner, ecb);
+            ecb.DestroyEntity(entity);
+        }
+
+        ecb.Playback(state.EntityManager);
+        ecb.Dispose();
+    }
+
+    [BurstCompile]
+    public void OnDestroy(ref SystemState state)
+    {
+        
+    }
+
+    private void SpawnSphere(ref SystemState state, RefRO<SpawnerData> spawner, EntityCommandBuffer ecb)
+    {
+        for (int i = 0; i < spawner.ValueRO.NumToSpawn; i++)
+        {
+            Entity newEntity = state.EntityManager.Instantiate(spawner.ValueRO.Prefab);
+
+            ecb.SetComponent(newEntity, new LocalTransform
+            {
+                Position = new float3(rng.NextFloat(-50,50), rng.NextFloat(-50, 50), rng.NextFloat(-50, 50)),
+                Scale = 1f
+            });
+        }
+    }
+}
+```
+DOTS에서는 시스템 실행 중 다음 작업들은 위험합니다.
+- Entity의 생성 및 삭제
+- Archetype의 구조 변경 (컴포넌트 추가 및 제거)
+때문에 EntityCommandBuffer를 통해 여러 작업을 안전하게 진행할 수 있습니다. 예를 들어 시스템 업데이트 중에도 Entity를 안전하게 생성 및 삭제할 수 있고 Component의 수정 작업을 예약할 수 있습니다. 또한 병렬로 JOB과 함께 활용할 수 있고 예약된 작업을 Playback()을 통해 실행시킬 수 있습니다.
+
 
 ## Overall
 지금까지 DOTS의 ECS에 활용하여 객체를 생성해 보았습니다.  
