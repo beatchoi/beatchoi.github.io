@@ -103,8 +103,14 @@ Scene 창 에서 마우스 우 클릭 -> New Sub Scene -> Empty Scene 을 선택
 해당 Sub Scene에서 빈 게임 오브젝트를 하나 생성하고 해당 객체에 위에서 작성한 SpawnerAuthoring baker 스크립트를 연결합니다.  
 그리고 Sphere 프리펩을 하나 생성하고 해당 프리펩을 SpawnerAuthoring 컴포넌트의 인자에 연결합니다. NumToSpawn 항목은 일단 1로 지정합니다.  
 
+<p align="center"><img src="/img/UnityFundamental/DOTS/10.png"><br/>
+<06. Sub Scene ></p>
+
 #### System 구성하기
 지금 까지의 과정으로 Entity를 World에 생성할 수 있게 되었습니다. 하지만 아직 Entity는 데이터 조각일 뿐 눈에 보이거나 인터랙티브한 기능을 가지고 있지 않습니다. 때문에 어떠한 작업을 진행 할 System 이 필요합니다.  
+
+<p align="center"><img src="/img/UnityFundamental/DOTS/11.png"><br/>
+<07. System Script ></p>
 
 Project 창에서 마우스 우클릭 -> Create -> Entities -> ISystem Scripts 을 선택하고 이름을 SpawnerSystem으로 변경한 뒤 아래와 같이 작성합니다.  
 
