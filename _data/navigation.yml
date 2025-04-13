@@ -13,6 +13,8 @@
       link: /GoogleVR/
     - name: Unity3D + AR
       link: /arpage/
+    - name: Downloads
+      link: /downloads/
     - name: Sponsors Page
       link: /sponsors/
 - name: Portfolio
