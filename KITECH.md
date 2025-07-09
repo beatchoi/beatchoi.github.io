@@ -13,7 +13,7 @@ show_sidebar: false
   
 #### Day 2: HDRP 기반 실감형 환경  
 [코스 커리큘럼](https://docs.google.com/document/d/1JIGFVfvohCt5VvK_SG6fWkGMly6rnCPEjVQY1qCD7uA/edit?usp=sharing)  
-[HDRPCourseMaterialPackage](https://drive.google.com/file/d/1UP6cEgYYQh_W0nj22GiHo7eCc2WQA6PN/view?usp=share_link)
+[HDRPCourseMaterialPackage](https://drive.google.com/file/d/1UP6cEgYYQh_W0nj22GiHo7eCc2WQA6PN/view?usp=share_link)  
 [Day2Project]()
 
 #### Day 3: 산업용 데이터 통신  
