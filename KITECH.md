@@ -17,9 +17,31 @@ show_sidebar: false
 [Day2Project](https://drive.google.com/file/d/1hgwtcge5j4DlCcyb3bQCxNCt-X8_e6FY/view?usp=sharing)  
 [Day2Slides](https://drive.google.com/drive/folders/1-xosc52dFSEev-5sLbhzFSdQrn6B8nqa?usp=sharing)  
 #### Day 3: 산업용 데이터 통신  
+[코스 커리큘럼](https://docs.google.com/document/d/1ScV2P275sSV5ppLruTPuBt0zZYP4IU1w1_YlqDaG-oY/edit?usp=sharing)  
+[SensorNetworkCourseMaterialPackage]()  
+[Day3Project]()  
+[Day3Slides]()  
 #### Day 4: 다중 센서 디지털 트윈  
+[코스 커리큘럼]()  
+[Day4Project]()  
+[Day4Slides]()  
 #### Day 5: 산업용 로봇 디지털 트윈  
+[코스 커리큘럼]()  
+[RoboticsCourseMaterialPackage]()  
+[Day5Project]()  
+[Day5Slides]()  
 #### Day 6: ROS2 연동 및 Sim-to-Real 전이  
+[코스 커리큘럼]()  
+[Day6Project]()  
+[Day6Slides]()  
 #### Day 7: ECS 기반 대규모 팩토리  
+[코스 커리큘럼]()  
+[ECSCourseMaterialPackage]()  
+[Day7Project]()  
+[Day7Slides]()  
 #### Day 8: AI 기반 지능형 최적화  
+[코스 커리큘럼]()  
+[AICourseMaterialPackage]()  
+[Day8Project]()  
+[Day8Slides]()  
 
