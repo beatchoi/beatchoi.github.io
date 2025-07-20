@@ -19,6 +19,7 @@ show_sidebar: false
 #### Day 3: 산업용 데이터 통신  
 [코스 커리큘럼](https://docs.google.com/document/d/1ScV2P275sSV5ppLruTPuBt0zZYP4IU1w1_YlqDaG-oY/edit?usp=sharing)  
 [SensorNetworkCourseMaterialPackage](https://drive.google.com/file/d/1QQ4dE9R9Ddy5lxuu95UIPd_qUonnxq1j/view?usp=sharing)  
+[SensorNetworkPythonScripts](https://drive.google.com/drive/folders/10oCu1spgebfeEZ9w5opHt6EmYMkC8TVZ?usp=sharing)  
 [Day3Project]()  
 [Day3Slides]()  
 #### Day 4: 다중 센서 디지털 트윈  
