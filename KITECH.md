@@ -24,6 +24,7 @@ show_sidebar: false
 [Day3Slides]()  
 #### Day 4: 다중 센서 디지털 트윈  
 [코스 커리큘럼]()  
+[KITECHHello.bytes](Files/KITECHHello.bytes);
 [Day4Project]()  
 [Day4Slides]()  
 #### Day 5: 산업용 로봇 디지털 트윈  
