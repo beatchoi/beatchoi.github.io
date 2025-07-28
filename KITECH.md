@@ -20,18 +20,16 @@ show_sidebar: false
 [코스 커리큘럼](https://docs.google.com/document/d/1ScV2P275sSV5ppLruTPuBt0zZYP4IU1w1_YlqDaG-oY/edit?usp=sharing)  
 [SensorNetworkCourseMaterialPackage](https://drive.google.com/file/d/1QQ4dE9R9Ddy5lxuu95UIPd_qUonnxq1j/view?usp=sharing)  
 [SensorNetworkPythonScripts](https://drive.google.com/drive/folders/10oCu1spgebfeEZ9w5opHt6EmYMkC8TVZ?usp=sharing)  
-[Day3Project]()  
-[Day3Slides]()  
+[Day3Project](https://drive.google.com/file/d/1MfFwIJdnNBt4O09J0nNIPrLgUIdLOAe4/view?usp=sharing)  
+[Day3Slides](https://drive.google.com/drive/folders/1K0Nu1-52S7pMqptcc3XAwmxclhUHgDjF?usp=sharing)  
 #### Day 4: 다중 센서 디지털 트윈  
 [코스 커리큘럼]()  
 [KITECHHello.bytes](https://drive.google.com/file/d/1L4k3riM0FG8N447rSUOzBjF44hXMNayI/view?usp=sharing);
-[Day4Project]()  
-[Day4Slides]()  
 #### Day 5: 산업용 로봇 디지털 트윈  
-[코스 커리큘럼]()  
-[RoboticsCourseMaterialPackage]()  
-[Day5Project]()  
-[Day5Slides]()  
+[코스 커리큘럼]  
+[RoboticsCourseMaterialPackage]  
+[Day5Project]  
+[Day5Slides]  
 #### Day 6: ROS2 연동 및 Sim-to-Real 전이  
 [코스 커리큘럼]()  
 [Day6Project]()  
