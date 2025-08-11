@@ -27,7 +27,9 @@ show_sidebar: false
 [KITECHHello.bytes](https://drive.google.com/file/d/1L4k3riM0FG8N447rSUOzBjF44hXMNayI/view?usp=sharing);
 #### Day 5: 산업용 로봇 디지털 트윈  
 [코스 커리큘럼]  
-[RoboticsCourseMaterialPackage]  
+[RoboticsCourseMaterial_Dockerfile](https://drive.google.com/file/d/1OGa7JbDGR5_BAuxhGJ2YPa22W37Q6OgD/view?usp=sharing)  
+[RoboticsCourseMaterial_Mirobotpackage](https://drive.google.com/file/d/1UsGC6pSn2ZZbrDVHcdspTWbxUwysk8id/view?usp=sharing)  
+[RoboticsCourseMaterial_ROS](https://drive.google.com/file/d/1z2pCT2z3nX-x8gJf8BqBhusNFzAOw8S2/view?usp=sharing) 
 [Day5Project]  
 [Day5Slides]  
 #### Day 6: ROS2 연동 및 Sim-to-Real 전이  
