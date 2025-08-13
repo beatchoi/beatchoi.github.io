@@ -23,20 +23,16 @@ show_sidebar: false
 [Day3Project](https://drive.google.com/file/d/1MfFwIJdnNBt4O09J0nNIPrLgUIdLOAe4/view?usp=sharing)  
 [Day3Slides](https://drive.google.com/drive/folders/1K0Nu1-52S7pMqptcc3XAwmxclhUHgDjF?usp=sharing)  
 #### Day 4: 다중 센서 디지털 트윈  
-[코스 커리큘럼]()  
-[KITECHHello.bytes](https://drive.google.com/file/d/1L4k3riM0FG8N447rSUOzBjF44hXMNayI/view?usp=sharing);
-#### Day 5: 산업용 로봇 디지털 트윈  
-[코스 커리큘럼]  
+[코스 커리큘럼](https://docs.google.com/document/d/1i-xekXx1gC-faDTLumS1bLS1MOg9yVqYqsDA6GpuNUQ/edit?usp=sharing)  
+[KITECHHello.bytes](https://drive.google.com/file/d/1L4k3riM0FG8N447rSUOzBjF44hXMNayI/view?usp=sharing)  
+#### Day 5,6: 산업용 로봇 디지털 트윈 // ROS2 연동 및 Sim-to-Real 전이   
+[코스 커리큘럼](https://docs.google.com/document/d/1VY5X0CizJGJG-MGtnQhblw_tR8RjACEoImQVE3XDkHU/edit?usp=sharing)  
 [RoboticsCourseMaterial_Dockerfile](https://drive.google.com/file/d/1OGa7JbDGR5_BAuxhGJ2YPa22W37Q6OgD/view?usp=sharing)  
 [RoboticsCourseMaterial_Mirobotpackage](https://drive.google.com/file/d/1UsGC6pSn2ZZbrDVHcdspTWbxUwysk8id/view?usp=sharing)  
 [RoboticsCourseMaterial_ROS](https://drive.google.com/file/d/1z2pCT2z3nX-x8gJf8BqBhusNFzAOw8S2/view?usp=sharing)  
 [MirobotURDF](https://drive.google.com/file/d/1iIJMO3YdOoSjxammdN06t_2Tp2l9uvRE/view?usp=sharing)  
-[Day5Project]  
+[Day5Project](https://drive.google.com/file/d/1VmerS4P7NDZLRkiJcIIC7UzptaYrE_pA/view?usp=sharing)  
 [Day5Slides]  
-#### Day 6: ROS2 연동 및 Sim-to-Real 전이  
-[코스 커리큘럼]()  
-[Day6Project]()  
-[Day6Slides]()  
 #### Day 7: ECS 기반 대규모 팩토리  
 [코스 커리큘럼]()  
 [ECSCourseMaterialPackage]()  
