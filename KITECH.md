@@ -34,8 +34,8 @@ show_sidebar: false
 [Day5Project](https://drive.google.com/file/d/1VmerS4P7NDZLRkiJcIIC7UzptaYrE_pA/view?usp=sharing)  
 [Day5Slides]  
 #### Day 7: ECS 기반 대규모 팩토리  
-[코스 커리큘럼]()  
-[ECSCourseMaterialPackage]()  
+[코스 커리큘럼](https://docs.google.com/document/d/1trsHqXYeHNin6ppUcngIpbS9loHdvH07z09PjVU1L-0/edit?usp=sharing)  
+[ECSCourseMaterialPackage](https://drive.google.com/file/d/1fplIGWnHA_dS9SW8B1WycZYSCuWI4R_F/view?usp=sharing)  
 [Day7Project]()  
 [Day7Slides]()  
 #### Day 8: AI 기반 지능형 최적화  
