@@ -39,8 +39,9 @@ show_sidebar: false
 [Day7Project]()  
 [Day7Slides]()  
 #### Day 8: AI 기반 지능형 최적화  
-[코스 커리큘럼]()  
-[AICourseMaterialPackage]()  
+[코스 커리큘럼]  
+[InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
+[PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
 [Day8Project]()  
 [Day8Slides]()  
 
