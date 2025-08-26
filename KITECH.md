@@ -42,6 +42,7 @@ show_sidebar: false
 [코스 커리큘럼]  
 [InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
 [PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
+[Hemetonnx](https://drive.google.com/file/d/12nXkasUVq3oDFJsmpbf_4Q1pDAvDRqZw/view?usp=sharing)  
 [Day8Project]()  
 [Day8Slides]()  
 
