@@ -43,6 +43,7 @@ show_sidebar: false
 [InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
 [PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
 [Hemetonnx](https://drive.google.com/file/d/12nXkasUVq3oDFJsmpbf_4Q1pDAvDRqZw/view?usp=sharing)  
+[HelmetOnnxBetter](https://drive.google.com/file/d/1NphpZGdpK8ko9vD5f_3vKJk82ZqzHLuq/view?usp=sharing)  
 [Day8Project]()  
 [Day8Slides]()  
 
