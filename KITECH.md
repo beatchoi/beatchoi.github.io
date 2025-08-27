@@ -36,7 +36,7 @@ show_sidebar: false
 #### Day 7: ECS 기반 대규모 팩토리  
 [코스 커리큘럼](https://docs.google.com/document/d/1trsHqXYeHNin6ppUcngIpbS9loHdvH07z09PjVU1L-0/edit?usp=sharing)  
 [ECSCourseMaterialPackage](https://drive.google.com/file/d/1fplIGWnHA_dS9SW8B1WycZYSCuWI4R_F/view?usp=sharing)  
-[Day7Project]()  
+[Day7Project](https://drive.google.com/file/d/1_3zPgrqLL6bDdjBiubm9FCLC-tT3WjFy/view?usp=sharing)  
 [Day7Slides]()  
 #### Day 8: AI 기반 지능형 최적화  
 [코스 커리큘럼]  
@@ -44,6 +44,7 @@ show_sidebar: false
 [PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
 [Hemetonnx](https://drive.google.com/file/d/12nXkasUVq3oDFJsmpbf_4Q1pDAvDRqZw/view?usp=sharing)  
 [HelmetOnnxBetter](https://drive.google.com/file/d/1NphpZGdpK8ko9vD5f_3vKJk82ZqzHLuq/view?usp=sharing)  
-[Day8Project]()  
+[Day8Inference_Project](https://drive.google.com/file/d/1cRJMXhw16aoayLxAWVyF1tNxEDu5IzGp/view?usp=sharing)  
+[Day8Perception_Project]  
 [Day8Slides]()  
 
