@@ -46,5 +46,5 @@ show_sidebar: false
 [HelmetOnnxBetter](https://drive.google.com/file/d/1NphpZGdpK8ko9vD5f_3vKJk82ZqzHLuq/view?usp=sharing)  
 [Day8Inference_Project](https://drive.google.com/file/d/1cRJMXhw16aoayLxAWVyF1tNxEDu5IzGp/view?usp=sharing)  
 [Day8Perception_Project]  
-[Day8Slides]()  
+[Day8Slides](https://drive.google.com/drive/folders/1ekKkWEnJ3hQvuu9BbgP1z7H3iVBLzPDr?usp=sharing)  
 
