@@ -37,7 +37,7 @@ show_sidebar: false
 [코스 커리큘럼](https://docs.google.com/document/d/1trsHqXYeHNin6ppUcngIpbS9loHdvH07z09PjVU1L-0/edit?usp=sharing)  
 [ECSCourseMaterialPackage](https://drive.google.com/file/d/1fplIGWnHA_dS9SW8B1WycZYSCuWI4R_F/view?usp=sharing)  
 [Day7Project](https://drive.google.com/file/d/1_3zPgrqLL6bDdjBiubm9FCLC-tT3WjFy/view?usp=sharing)  
-[Day7Slides]()  
+[Day7Slides](https://drive.google.com/drive/folders/1Tl5oMTDCqrWj0omkTYN4OrrF2DggcS1z?usp=sharing)  
 #### Day 8: AI 기반 지능형 최적화  
 [코스 커리큘럼]  
 [InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
