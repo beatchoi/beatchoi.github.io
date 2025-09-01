@@ -16,15 +16,16 @@ show_sidebar: false
 [HDRPCourseMaterialPackage](https://drive.google.com/file/d/1UP6cEgYYQh_W0nj22GiHo7eCc2WQA6PN/view?usp=share_link)  
 [Day2Project](https://drive.google.com/file/d/1hgwtcge5j4DlCcyb3bQCxNCt-X8_e6FY/view?usp=sharing)  
 [Day2Slides](https://drive.google.com/drive/folders/1-xosc52dFSEev-5sLbhzFSdQrn6B8nqa?usp=sharing)  
-#### Day 3: 산업용 데이터 통신  
-[코스 커리큘럼](https://docs.google.com/document/d/1ScV2P275sSV5ppLruTPuBt0zZYP4IU1w1_YlqDaG-oY/edit?usp=sharing)  
+
+#### Day 3: 산업용 데이터 통신  && Day 4: 다중 센서 디지털 트윈 
+[코스 커리큘럼 Day3](https://docs.google.com/document/d/1ScV2P275sSV5ppLruTPuBt0zZYP4IU1w1_YlqDaG-oY/edit?usp=sharing)  
+[코스 커리큘럼 Day4](https://docs.google.com/document/d/1i-xekXx1gC-faDTLumS1bLS1MOg9yVqYqsDA6GpuNUQ/edit?usp=sharing)  
+[KITECHHello.bytes](https://drive.google.com/file/d/1L4k3riM0FG8N447rSUOzBjF44hXMNayI/view?usp=sharing)  
 [SensorNetworkCourseMaterialPackage](https://drive.google.com/file/d/1QQ4dE9R9Ddy5lxuu95UIPd_qUonnxq1j/view?usp=sharing)  
 [SensorNetworkPythonScripts](https://drive.google.com/drive/folders/10oCu1spgebfeEZ9w5opHt6EmYMkC8TVZ?usp=sharing)  
-[Day3Project](https://drive.google.com/file/d/1MfFwIJdnNBt4O09J0nNIPrLgUIdLOAe4/view?usp=sharing)  
-[Day3Slides](https://drive.google.com/drive/folders/1K0Nu1-52S7pMqptcc3XAwmxclhUHgDjF?usp=sharing)  
-#### Day 4: 다중 센서 디지털 트윈  
-[코스 커리큘럼](https://docs.google.com/document/d/1i-xekXx1gC-faDTLumS1bLS1MOg9yVqYqsDA6GpuNUQ/edit?usp=sharing)  
-[KITECHHello.bytes](https://drive.google.com/file/d/1L4k3riM0FG8N447rSUOzBjF44hXMNayI/view?usp=sharing)  
+[Day3,4Project](https://drive.google.com/file/d/1MfFwIJdnNBt4O09J0nNIPrLgUIdLOAe4/view?usp=sharing)  
+[Day3,4Slides](https://drive.google.com/drive/folders/1K0Nu1-52S7pMqptcc3XAwmxclhUHgDjF?usp=sharing)  
+  
 #### Day 5,6: 산업용 로봇 디지털 트윈 // ROS2 연동 및 Sim-to-Real 전이   
 [코스 커리큘럼](https://docs.google.com/document/d/1VY5X0CizJGJG-MGtnQhblw_tR8RjACEoImQVE3XDkHU/edit?usp=sharing)  
 [RoboticsCourseMaterial_Dockerfile](https://drive.google.com/file/d/1OGa7JbDGR5_BAuxhGJ2YPa22W37Q6OgD/view?usp=sharing)  
