@@ -65,7 +65,7 @@ canonical_url: http://whtls.com/unity3d/basics/2025/03/11/unity_00Installation/
 `Official Release`는 정식 버전의 유니티 입니다. `(LTS)`는 Long Term Service stream 이라는 뜻으로 장기 지원 버전이라고 생각하시면 됩니다. 각 년도 버전마다 장기지원 버전이 존재합니다.
 `Pre-Release`는 알파 또는 베타버전의 유니티 입니다. 새로운 기능들을 활용해 볼 수 있습니다.
 
-<p align="center"><img src="/img/UnityBasic/InstallUnity6/07.png"><br/>
+<p align="center"><img src="/img/UnityBasic/InstallUnity6/install6.png"><br/>
 <06. 유니티 에디터 설치></p>  
 
 Official releases의 UNITY 6 버전을 선택하고 우측 `Install`버튼을 눌러 진행합니다.
