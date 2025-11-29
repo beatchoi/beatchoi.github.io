@@ -6,7 +6,7 @@ show_sidebar: false
 ---
 
 #### Pre-Requisite  
-[유니티 설치하](https://beatchoi.github.io/unity3d/basics/2025/03/11/unity_00Installation/)  
+[유니티 설치하기](https://beatchoi.github.io/unity3d/basics/2025/03/11/unity_00Installation/)  
 [유니티 프로젝트 생성하기](https://beatchoi.github.io/unity3d/basics/2025/04/13/createproject/)  
 
 #### Day 1: HDRP 기반 실감형 환경  
