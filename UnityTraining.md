@@ -19,11 +19,3 @@ show_sidebar: false
 #### Day 2: AI 기반 지능형 최적화  
 ###### 수업자료  
 []()  
-[코스 커리큘럼]  
-[InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
-[PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
-[Hemetonnx](https://drive.google.com/file/d/12nXkasUVq3oDFJsmpbf_4Q1pDAvDRqZw/view?usp=sharing)  
-[HelmetOnnxBetter](https://drive.google.com/file/d/1NphpZGdpK8ko9vD5f_3vKJk82ZqzHLuq/view?usp=sharing)  
-[Day8Inference_Project](https://drive.google.com/file/d/1cRJMXhw16aoayLxAWVyF1tNxEDu5IzGp/view?usp=sharing)  
-[Day8Perception_Project]  
-[Day8Slides](https://drive.google.com/drive/folders/1ekKkWEnJ3hQvuu9BbgP1z7H3iVBLzPDr?usp=sharing)  
