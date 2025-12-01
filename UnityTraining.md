@@ -13,9 +13,10 @@ show_sidebar: false
 <!--[코스 커리큘럼](https://docs.google.com/document/d/1JIGFVfvohCt5VvK_SG6fWkGMly6rnCPEjVQY1qCD7uA/edit?usp=sharing)  -->
 ###### 수업자료  
 [HDRPCourseMaterialPackage](https://drive.google.com/file/d/1UP6cEgYYQh_W0nj22GiHo7eCc2WQA6PN/view?usp=share_link)  
-<!--[Day2Project](https://drive.google.com/file/d/1hgwtcge5j4DlCcyb3bQCxNCt-X8_e6FY/view?usp=sharing)  -->
-<!--[Day2Slides](https://drive.google.com/drive/folders/1-xosc52dFSEev-5sLbhzFSdQrn6B8nqa?usp=sharing)  -->
+[Day2Project](https://drive.google.com/file/d/1hgwtcge5j4DlCcyb3bQCxNCt-X8_e6FY/view?usp=sharing)  
+[Day2Slides](https://drive.google.com/drive/folders/1-xosc52dFSEev-5sLbhzFSdQrn6B8nqa?usp=sharing)  
 
 #### Day 2: AI 기반 지능형 최적화  
 ###### 수업자료  
-[]()  
+[InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
+[PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
