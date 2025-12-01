@@ -18,5 +18,5 @@ show_sidebar: false
 
 #### Day 2: AI 기반 지능형 최적화  
 ###### 수업자료  
-[InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
-[PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
+<!--[InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
+[PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  -->
