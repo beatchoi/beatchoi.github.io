@@ -18,5 +18,9 @@ show_sidebar: false
 
 #### Day 2: AI 기반 지능형 최적화  
 ###### 수업자료  
-<!--[InferenceEngineMaterialPackage](https://drive.google.com/file/d/1xK-y3xJtqvlThZPOiejWxxmDFpw6Fhms/view?usp=sharing)  
-[PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  -->
+[BlazeHandsFace_Package](https://drive.google.com/file/d/1MNHNRgEzbxP8TZyH0tj36NQ8dEgdTpbw/view?usp=sharing)  
+[Midas_Package](https://drive.google.com/file/d/1npRUMzR-90WcIMc2v8T8yMv092z2bfzV/view?usp=sharing)  
+[MNIST_Package](https://drive.google.com/file/d/1Lh24c4vbm_0sYZAHg4CoOlGr3_NoV1YK/view?usp=sharing)  
+[MobileNet_Package](https://drive.google.com/file/d/1P-Duwnjl97A43DUUIS1Y4PDLfGZ6sxEp/view?usp=sharing)  
+[Yolo_Package](https://drive.google.com/file/d/1cjSJGusdrud9haEHkYs2BpFj4yPKGaVt/view?usp=sharing)  
+[PerceptionMaterialPackage](https://drive.google.com/file/d/1JgYP6AinQD3lzQO5-6pdR5vBw4Zlsv30/view?usp=sharing)  
