@@ -11,12 +11,16 @@ show_sidebar: false
 
 #### Day 1: HDRP 기반 실감형 환경  
 <!--[코스 커리큘럼](https://docs.google.com/document/d/1JIGFVfvohCt5VvK_SG6fWkGMly6rnCPEjVQY1qCD7uA/edit?usp=sharing)  -->
+###### 슬라이드  
+[Day1Project](https://drive.google.com/file/d/1hgwtcge5j4DlCcyb3bQCxNCt-X8_e6FY/view?usp=sharing)  
+[Day1Slides](https://drive.google.com/drive/folders/1-xosc52dFSEev-5sLbhzFSdQrn6B8nqa?usp=sharing)  
 ###### 수업자료  
 [HDRPCourseMaterialPackage](https://drive.google.com/file/d/1UP6cEgYYQh_W0nj22GiHo7eCc2WQA6PN/view?usp=share_link)  
-[Day2Project](https://drive.google.com/file/d/1hgwtcge5j4DlCcyb3bQCxNCt-X8_e6FY/view?usp=sharing)  
-[Day2Slides](https://drive.google.com/drive/folders/1-xosc52dFSEev-5sLbhzFSdQrn6B8nqa?usp=sharing)  
+
 
 #### Day 2: AI 기반 지능형 최적화  
+###### 슬라이드  
+[Day2Slides](https://drive.google.com/drive/folders/1ekKkWEnJ3hQvuu9BbgP1z7H3iVBLzPDr?usp=sharing)  
 ###### 수업자료  
 [BlazeHandsFace_Package](https://drive.google.com/file/d/1MNHNRgEzbxP8TZyH0tj36NQ8dEgdTpbw/view?usp=sharing)  
 [Midas_Package](https://drive.google.com/file/d/1npRUMzR-90WcIMc2v8T8yMv092z2bfzV/view?usp=sharing)  
@@ -25,4 +29,6 @@ show_sidebar: false
 [Yolo_Package](https://drive.google.com/file/d/1cjSJGusdrud9haEHkYs2BpFj4yPKGaVt/view?usp=sharing)  
 [PerceptionMaterialPackage](https://drive.google.com/file/d/17F8obcRmHr3v_FvvwF4SL0hoZEvTeyCY/view?usp=sharing)  
 [UnityFactoryScene](https://drive.google.com/file/d/12AmWBDDwkByp0WD0DRUql7LwYTfqCcRe/view?usp=sharing)  
-[solo2yolohelmet.py](https://drive.google.com/file/d/1gKwXUJ7NL_7f5nX-SYpZ6gp6eTDs1dnG/view?usp=sharing)  
+[solo2yolohelmet.py](https://drive.google.com/file/d/1YskJka7kV2OHi27eGs0vuDZyFBkFhWkV/view?usp=sharing)  
+[HelmetONNX](https://drive.google.com/file/d/1epQnefng2nL8a7H-rn5qeub8VBjfZx47/view?usp=sharing)  
+
