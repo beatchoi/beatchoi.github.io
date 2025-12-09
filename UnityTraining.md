@@ -9,13 +9,14 @@ show_sidebar: false
 [유니티 설치하기](https://beatchoi.github.io/unity3d/basics/2025/03/11/unity_00Installation/)  
 [유니티 프로젝트 생성하기](https://beatchoi.github.io/unity3d/basics/2025/04/13/createproject/)  
 
-#### Day 1: HDRP 기반 실감형 환경  
+#### Day 1: Sensor Network & HDRP 기반 실감형 환경 
 <!--[코스 커리큘럼](https://docs.google.com/document/d/1JIGFVfvohCt5VvK_SG6fWkGMly6rnCPEjVQY1qCD7uA/edit?usp=sharing)  -->
 ###### 슬라이드  
 [Day1Project](https://drive.google.com/file/d/1hgwtcge5j4DlCcyb3bQCxNCt-X8_e6FY/view?usp=sharing)  
 [Day1Slides](https://drive.google.com/drive/folders/1-xosc52dFSEev-5sLbhzFSdQrn6B8nqa?usp=sharing)  
 ###### 수업자료  
 [HDRPCourseMaterialPackage](https://drive.google.com/file/d/1UP6cEgYYQh_W0nj22GiHo7eCc2WQA6PN/view?usp=share_link)  
+[SimpleTopicSend.cs](https://drive.google.com/file/d/14HnIsMIvhvAFW7h5OVwp8JHNRqP4rWku/view?usp=sharing)  
 
 
 #### Day 2: AI 기반 지능형 최적화  
