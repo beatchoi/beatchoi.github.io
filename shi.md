@@ -11,4 +11,10 @@ show_sidebar: false
 [ScriptableObject](https://docs.google.com/document/d/1nQ4ArVTQydPTSuHFSLw2J7WTFyCDpVyv/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
 [Custom Editors](https://docs.google.com/document/d/1kULQLIvtL1BnD56An_x4KOIy5Ox8xhzX/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
 [Gizmos & Handles](https://docs.google.com/document/d/1Au1g4EaUTITxWQ95OGxMZa5AEws1sL-2/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
-  
+
+
+#### GPU 컴퓨팅을 활용한 고성능 시뮬레이션
+
+#### 대규모 렌더링 최적화 및 IoT 데이터 연동
+
+#### 갤럭시 XR(Android XR) 기반 현장 지원 솔루션
