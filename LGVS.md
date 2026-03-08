@@ -10,6 +10,7 @@ show_sidebar: false
 [FigmaToUnityConverter](https://drive.google.com/file/d/1_nsykQnSXfy4EGhq9SQzneV10aj13m4L/view?usp=sharing)  
 [HMIGraphicDesign.Package](https://drive.google.com/file/d/1CJbjFXRkMJavoDfTvlnmKI-NCI482uiU/view?usp=sharing)  
 [InstrumentCluster](https://drive.google.com/file/d/1OBYjJ7QoNM1T-lEkSVYx1aFvts6Pfykh/view?usp=sharing)  
+[ExtraResources](https://drive.google.com/file/d/1Zg1ZVRzbYQB6U5aW3kwFgT3pf19BUqp5/view?usp=sharing)  
 
 #### Day 1: Unity 적응 및 레이아웃 
 [코스 커리큘럼]()  
