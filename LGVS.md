@@ -7,13 +7,13 @@ show_sidebar: false
 
 본 페이지는 3일의 2026 LGVS 디자인연구소 인터렉션디자인 트레이닝 기간동안 활용할 리소스들에 접근하실 수 있는 페이지입니다.
 
-[FigmaToUnityConverter](https://drive.google.com/file/d/1_nsykQnSXfy4EGhq9SQzneV10aj13m4L/view?usp=sharing)  
+<!-- [FigmaToUnityConverter](https://drive.google.com/file/d/1_nsykQnSXfy4EGhq9SQzneV10aj13m4L/view?usp=sharing)  -->
 [HMIGraphicDesign.Package](https://drive.google.com/file/d/1CJbjFXRkMJavoDfTvlnmKI-NCI482uiU/view?usp=sharing)  
 [InstrumentCluster](https://drive.google.com/file/d/1OBYjJ7QoNM1T-lEkSVYx1aFvts6Pfykh/view?usp=sharing)  
 [ExtraResources](https://drive.google.com/file/d/1Zg1ZVRzbYQB6U5aW3kwFgT3pf19BUqp5/view?usp=sharing)  
 
-[Figma Link1](https://www.figma.com/design/fjcZoaWcDtHOIU5JUqRqwq/HMI_UI?node-id=0-1&t=DyHtOi15jKlg65XF-1)  
-[Figma_Link2](https://www.figma.com/design/Ug9qWx6ZR4HDFpyp2pbc7q/Untitled?node-id=0-1&t=OjMyT2oOAYKTLKjJ-1)  
+<!-- [Figma Link1](https://www.figma.com/design/fjcZoaWcDtHOIU5JUqRqwq/HMI_UI?node-id=0-1&t=DyHtOi15jKlg65XF-1)  -->
+[Figma](https://www.figma.com/design/Ug9qWx6ZR4HDFpyp2pbc7q/Untitled?node-id=0-1&t=OjMyT2oOAYKTLKjJ-1)  
 
 #### Day 1: Unity 적응 및 레이아웃 
 [코스 커리큘럼]()  
