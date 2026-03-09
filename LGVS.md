@@ -13,7 +13,7 @@ show_sidebar: false
 [ExtraResources](https://drive.google.com/file/d/1Zg1ZVRzbYQB6U5aW3kwFgT3pf19BUqp5/view?usp=sharing)  
 
 <!-- [Figma Link1](https://www.figma.com/design/fjcZoaWcDtHOIU5JUqRqwq/HMI_UI?node-id=0-1&t=DyHtOi15jKlg65XF-1)  -->
-[Figma](https://www.figma.com/design/Ug9qWx6ZR4HDFpyp2pbc7q/Untitled?node-id=0-1&t=OjMyT2oOAYKTLKjJ-1)  
+[Figma_Sample](https://www.figma.com/design/Ug9qWx6ZR4HDFpyp2pbc7q/Untitled?node-id=0-1&t=OjMyT2oOAYKTLKjJ-1)  
 
 #### Day 1: Unity 적응 및 레이아웃 
 [코스 커리큘럼](https://docs.google.com/document/d/1yvFZV9t3u_LaVC6jWMWgKLYjyH_aFtoK/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
