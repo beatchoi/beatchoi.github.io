@@ -15,6 +15,9 @@ show_sidebar: false
 [Figma HMI](https://www.figma.com/design/fjcZoaWcDtHOIU5JUqRqwq/HMI_UI?node-id=0-1&t=DyHtOi15jKlg65XF-1)  
 [Figma_Sample](https://www.figma.com/design/Ug9qWx6ZR4HDFpyp2pbc7q/Untitled?node-id=0-1&t=OjMyT2oOAYKTLKjJ-1)  
 [HMI_Canvas_Prefab](https://drive.google.com/file/d/1cWKFBUG4PBepVx52nkF5kdPgtUXovR36/view?usp=sharing)  
+
+[car model](https://drive.google.com/file/d/1JSy8uxvMw1-LlTJrRdvuBfgnpDV4CgJF/view?usp=sharing)  
+
 #### Day 1: Unity 적응 및 레이아웃 
 [코스 커리큘럼](https://docs.google.com/document/d/1yvFZV9t3u_LaVC6jWMWgKLYjyH_aFtoK/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
 [코스 슬라이드]()  
