@@ -28,6 +28,6 @@ show_sidebar: false
 
 #### Day 3: 인터렉션과 애니메이션 No Code
 [코스 커리큘럼](https://docs.google.com/document/d/1MG0f41JCTlaF3ahv9lZ81_pDRAdPs6v8/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
-[코스 슬라이드]()  
+[코스 슬라이드](https://docs.google.com/presentation/d/1irttJjr8DwQakF8Rm38HQjI7n35-1tly/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
 
   
