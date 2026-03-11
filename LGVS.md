@@ -11,7 +11,7 @@ show_sidebar: false
 [HMIGraphicDesign.Package](https://drive.google.com/file/d/1CJbjFXRkMJavoDfTvlnmKI-NCI482uiU/view?usp=sharing)  
 [InstrumentCluster](https://drive.google.com/file/d/1OBYjJ7QoNM1T-lEkSVYx1aFvts6Pfykh/view?usp=sharing)  
 [ExtraResources](https://drive.google.com/file/d/1Zg1ZVRzbYQB6U5aW3kwFgT3pf19BUqp5/view?usp=sharing)  
-[Day3Resources](https://drive.google.com/file/d/1kI8r_iqddxFN-HGAVT866fdCSZ_2QOpx/view?usp=sharing)  
+[Day3 Resources](https://drive.google.com/file/d/1msRuFRwo6mtXUcxrOV7co2MwJmQqmd9p/view?usp=sharing)  
 
 [Figma HMI](https://www.figma.com/design/fjcZoaWcDtHOIU5JUqRqwq/HMI_UI?node-id=0-1&t=DyHtOi15jKlg65XF-1)  
 [Figma_Sample](https://www.figma.com/design/Ug9qWx6ZR4HDFpyp2pbc7q/Untitled?node-id=0-1&t=OjMyT2oOAYKTLKjJ-1)  
