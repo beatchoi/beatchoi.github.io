@@ -20,7 +20,7 @@ show_sidebar: false
 
 #### Day 1: Unity 적응 및 레이아웃 
 [코스 커리큘럼](https://docs.google.com/document/d/1yvFZV9t3u_LaVC6jWMWgKLYjyH_aFtoK/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
-[코스 슬라이드]()  
+[코스 슬라이드](https://docs.google.com/presentation/d/1iSRXRgP8QkfGqrkAYeNDwqPiwIn00CNW/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
   
 #### Day 2: Figma to Unity Pipeline
 [코스 커리큘럼](https://docs.google.com/document/d/1OnBzIzdIKq_wN3-iwVqlPJ3zaFtOqX2d/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
