@@ -5,6 +5,7 @@ layout: page
 show_sidebar: false
 ---
 
+[ECS_Burst_Job_코드](https://drive.google.com/file/d/18V31jCO23oLj7YrJFFv9yX8XsOB7b__f/view?usp=sharing)  
 
 #### Day 1: 데이터 구조와 ECS 기초  
 [코스 커리큘럼](https://docs.google.com/document/d/1h2iF7Cb2Xx-fioGxP_reuK-JA7SHa6H-6aYS5M4UnnI/edit?usp=sharing)  
