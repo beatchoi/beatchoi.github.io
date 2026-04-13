@@ -16,7 +16,7 @@ show_sidebar: false
   
 
 #### Day 3: 렌더링 최적화와 비주얼
-[코스 커리큘럼]  
+[코스 커리큘럼](https://docs.google.com/document/d/1ArKfh7n3yyLhwT4L8XTniiEGkkzyNxMDDw-i4BhI2sw/edit?usp=sharing)    
 [코스 슬라이드]  
   
 
