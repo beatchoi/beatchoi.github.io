@@ -16,11 +16,12 @@ show_sidebar: false
 #### Day 2: Job System과 Burst 실전  
 [코스 커리큘럼](https://docs.google.com/document/d/1yMcQXFLasDtZ6Vwt_nRBy63hbfTC2oWzf9AObtHs-EA/edit?usp=sharing)  
 [게임프로젝트파일](https://drive.google.com/file/d/1U_6dKzljPlQ7ZvRQE98eBjk-clS6ZP-K/view?usp=sharing)  
+[코스 슬라이드](https://docs.google.com/presentation/d/1rKVm5D04NHrPty6cuPOadQbG2MGQuOr-/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
   
 
 #### Day 3: 렌더링 최적화와 비주얼
 [코스 커리큘럼](https://docs.google.com/document/d/1ArKfh7n3yyLhwT4L8XTniiEGkkzyNxMDDw-i4BhI2sw/edit?usp=sharing)    
-[코스 슬라이드]  
-  
+[코스 슬라이드 1](https://docs.google.com/presentation/d/12sxokcAutbUxXmIlAIkNR2HNYQzWOLtO/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
+[코스 슬라이드 2](https://docs.google.com/presentation/d/1CuFu75H1smUsOOF1jEI1QWhcg4y0friD/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)    
 
 
