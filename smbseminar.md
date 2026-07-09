@@ -20,4 +20,7 @@ show_sidebar: false
   
 #### Unity AI - Asset Transformer Toolkit를 활용한 최적화
 [세션 자료](https://drive.google.com/file/d/1uZuEgMDhD9LiSigwy46dZsdqQ9_7F8-m/view?usp=sharing)  
-[ScriptableObject](https://docs.google.com/document/d/1nQ4ArVTQydPTSuHFSLw2J7WTFyCDpVyv/edit?usp=sharing&ouid=116791564338234830131&rtpof=true&sd=true)  
+[코스 슬라이드_1](https://docs.google.com/presentation/d/1PibF5LYi1ss74eusdNxubWFCDvPLPAPuwR9X63IBYfE/edit?usp=sharing)  
+[코스 슬라이드_2](https://docs.google.com/presentation/d/1uH7LMWchczrz8jbJduxlRVMgod-y6b7jMkeifHMZSGM/edit?usp=sharing)  
+[코스 슬라이드_3](https://docs.google.com/presentation/d/1uvE-1UKGTgKC6n3_uXl1FAd44PtQOlnmFQP5-V7I24o/edit?usp=sharing)  
+[코스 슬라이드_4](https://docs.google.com/presentation/d/1HESUPgns-8EiNBrTDTVhydRpXfN4PpnvPk2iorh8dz0/edit?usp=sharing)  
