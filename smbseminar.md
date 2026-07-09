@@ -6,9 +6,6 @@ show_sidebar: false
 ---
 
 
-[코스 커리큘럼](https://docs.google.com/document/d/1F_mQFE5hu3iyIjP6xMKeyY_jmK_s-RK2np-w6zTVZL0/edit?usp=sharing)  
-  
-
 #### Compute Shader - GPU 컴퓨팅의 활용
 [세션 자료](https://drive.google.com/file/d/1YbxOwaqoY3uinKYcWMc8sW8I7yh7AlIo/view?usp=sharing)  
 [코스 슬라이드_1](https://docs.google.com/presentation/d/1de7zUKhwwfGYRpXFaP2LQsKtJ5roxoiAkxt_1Z5kGno/edit?usp=sharing)  
