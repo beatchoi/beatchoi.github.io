@@ -6,17 +6,39 @@ layout: default
     {% if page.subtitle %}<p class="sub">{{ page.subtitle }}</p>{% endif %}
   </header></div></div>
 <section class="wrap page">
-    <div class="prose">{{ content }}</div>
+  <div class="prose">{{ content }}</div>
   {% assign sorted = site.products | sort: page.sort | reverse %}
-  <ul class="works">
-    {% for w in sorted %}
-    <li>
-      <a href="{{ w.url | relative_url }}">
-        {% if w.image %}<img src="{{ w.image | relative_url }}" alt="" loading="lazy">{% endif %}
-        <span class="w-t">{{ w.title }}</span>
-        <span class="w-s">{{ w.subtitle }}</span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+  {% assign unity = sorted | where: "group", "unity" %}
+  {% assign legacy = sorted | where_exp: "p", "p.group != 'unity'" %}
+
+  <div class="works-group">
+    <div class="sec-head"><h2>Unity Technologies Korea</h2><span class="more">2025 —</span></div>
+    <ul class="works works-text">
+      {% for w in unity %}
+      <li>
+        <a href="{{ w.url | relative_url }}">
+          {% if w.image and w.image != "" %}<img src="{{ w.image | relative_url }}" alt="" loading="lazy">{% endif %}
+          <span class="w-t">{{ w.title }}</span>
+          <span class="w-s">{{ w.description | split: "," | slice: 0, 4 | join: " · " }}</span>
+          {% for f in w.features limit:1 %}<span class="w-f">{{ f.label | split: " - " | last }}</span>{% endfor %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="works-group">
+    <div class="sec-head"><h2>왓츠라이프 스튜디오 · 헬로브이알 · 노바플로</h2><span class="more">2016 – 2024</span></div>
+    <ul class="works">
+      {% for w in legacy %}
+      <li>
+        <a href="{{ w.url | relative_url }}">
+          {% if w.image and w.image != "" %}<img src="{{ w.image | relative_url }}" alt="" loading="lazy">{% endif %}
+          <span class="w-t">{{ w.title }}</span>
+          <span class="w-s">{{ w.subtitle }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
