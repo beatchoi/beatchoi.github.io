@@ -4,7 +4,7 @@ title:  "드로우콜 하나, 부품 만 개"
 date:   2026-09-17 01:10:00 +0900
 categories: Notes
 description: "디지털 트윈의 병목은 폴리곤이 아니라 드로우콜입니다. 같은 물건 만 개를 한 번에 그리는 GPU 인스턴싱을 세 가지 방법, 숫자 하나, 그리고 클릭이 안 되는 문제까지 정리합니다."
-image: ''
+image: '/img/notes/gpu-instancing/demo-warehouse-heat.jpg'
 published: true
 canonical_url: https://beatchoi.github.io/notes/2026/09/17/gpu-instancing/
 ---
@@ -52,6 +52,11 @@ GPU 인스턴싱은 같은 메시와 같은 머티리얼을 쓰는 복사본들�
 
 "Indirect"라는 이름은 그릴 개수와 인덱스 수 같은 인자까지 GPU 버퍼에 들어 있다는 뜻입니다. CPU는 "저 버퍼에 적힌 대로 그려라" 한 번만 말합니다. 만 개도, 십만 개도 드로우콜 하나입니다.
 
+<figure class="note-fig">
+<img src="/img/notes/gpu-instancing/demo-compare.jpg" alt="" loading="lazy">
+<figcaption>세션 1 데모. 같은 원기둥 만 개를 세 방법으로 바꿔 그리며 프레임 시간과 드로우콜 수를 비교합니다. 사진은 게임오브젝트 만 개를 쓰는 첫 번째 방법입니다.</figcaption>
+</figure>
+
 ## 셰이더가 자기 자리를 찾는 법
 
 세 번째 방법이 가능한 이유는 앞 글의 컴퓨트 셰이더와 같은 장치에 있습니다. 인스턴스 만 개의 변환 행렬을 `StructuredBuffer`에 올려 두고, 셰이더가 자기 번호로 자기 행렬을 읽습니다. 앞 글에서 정점이 `SV_VertexID`로 자기 위치를 읽었다면, 여기서는 인스턴스가 `SV_InstanceID`로 자기 행렬을 읽습니다.
@@ -93,6 +98,11 @@ void Update()
 
 만 개를 한 번에 그렸는데 전부 같은 색, 같은 높이면 디지털 트윈으로는 쓸 수 없습니다. 센서 값이 물체마다 달라야 합니다. 두 번째 세션은 인스턴스마다 값 하나를 담는 버퍼를 하나 더 두고, 그 값으로 높이와 색을 정합니다. 버텍스 셰이더가 값에 비례해 Y 크기를 키우고, 프래그먼트 셰이더가 파란색에서 노란색, 빨간색으로 색을 바꿉니다.
 
+<figure class="note-fig">
+<img src="/img/notes/gpu-instancing/demo-heatmap.jpg" alt="" loading="lazy">
+<figcaption>세션 2 데모. 파이프 만 개가 드로우콜 하나이고, 화면 위 프레임 시간은 5.2ms입니다. 오른쪽 위에 이상 값이 생긴 파이프가 붉게 솟아 있습니다.</figcaption>
+</figure>
+
 이 데모에서 CPU가 하는 일은 매 프레임 센서 값 배열 하나를 GPU로 올리는 것뿐입니다. 만 개의 높이와 색은 전부 GPU가 정합니다. 공장의 센서 수백 개를 실시간으로 보는 화면이 이 구조 위에 그대로 올라갑니다.
 
 ## 게임오브젝트가 없으면 클릭은 어떻게 하나
@@ -127,11 +137,29 @@ void Update()
 
 읽기는 클릭할 때 한 번만 합니다. 앞 글에서 GPU 결과를 매 프레임 읽어 오는 것이 왜 나쁜지 이야기했는데, 픽셀 하나를 클릭 순간에 읽는 것은 그 규칙의 예외에 해당합니다. 대신 그 순간 CPU가 GPU를 기다리느라 한 프레임이 살짝 튑니다. 프로파일러에 그 스파이크가 그대로 찍힙니다.
 
+<figure class="note-fig">
+<img src="/img/notes/gpu-instancing/demo-picking.jpg" alt="" loading="lazy">
+<figcaption>GPU 피킹. 클릭한 파이프 하나가 주황색 윤곽으로 선택됩니다. 콜라이더 없이 화면 밖 텍스처의 픽셀 하나를 읽어 찾아낸 결과입니다.</figcaption>
+</figure>
+
 ## 실제 창고로
 
 세 번째 세션은 원기둥 만 개 대신 진짜 창고 씬을 씁니다. 팔레트, 선반, 상자, 트롤리처럼 메시가 열세 종류, 물체는 삼천 개쯤입니다. 흐름은 세 단계입니다. 에디터에서 씬을 훑어 메시 이름별로 위치·회전·크기를 JSON으로 뽑고, 실행 시 그 이름을 프리팹의 메시와 머티리얼에 연결하고, 메시 종류마다 버퍼 한 세트를 만들어 종류마다 한 번씩 그립니다. 열세 종류면 드로우콜 열세 번입니다.
 
 게임오브젝트 삼천 개였을 때 중급 GPU에서 15에서 25fps였던 씬이 같은 모양으로 드로우콜 열세 번이 됩니다. 텍스처와 색을 원래 프리팹에서 복사해 오지 않으면 전부 흰색으로 나오는 것, 배치마다 인스턴스 번호가 0부터 다시 시작하니 피킹할 때 배치 오프셋을 더해 줘야 하는 것이 여기서 만나는 두 함정입니다.
+
+<div class="media-grid">
+<figure >
+<img src="/img/notes/gpu-instancing/demo-warehouse.jpg" alt="" loading="lazy">
+<figcaption>세션 3 데모. 팔레트, 선반, 상자, 트롤리 삼천 개가 메시 종류별 열세 번의 드로우콜로 그려집니다. 원래 프리팹의 텍스처와 색을 그대로 가져옵니다.</figcaption>
+</figure>
+
+<figure >
+<img src="/img/notes/gpu-instancing/demo-warehouse-heat.jpg" alt="" loading="lazy">
+<figcaption>같은 씬에 히트맵을 덮은 상태. 팔레트마다 센서 값이 다르고, 셰이더 하나가 원래 텍스처와 열 색을 섞어 그립니다.</figcaption>
+</figure>
+
+</div>
 
 ## 그런데 CPU가 튄다
 

@@ -4,7 +4,7 @@ title:  "컴퓨트 셰이더, 화면에 그리지 않는 셰이더"
 date:   2026-09-16 22:40:00 +0900
 categories: Notes
 description: "GPU를 그림이 아니라 계산에 쓰는 법. 정의에서 시작해 구조, 데이터 흐름, CPU와의 성능 차이, 그리고 CPU와 GPU가 협력하는 지점까지 세미나 순서대로 정리합니다."
-image: '/img/notes/compute-shader/graphics-vs-compute.jpg'
+image: '/img/notes/compute-shader/demo-buoyancy.jpg'
 published: true
 canonical_url: https://beatchoi.github.io/notes/2026/09/16/compute-shader-intro/
 ---
@@ -93,9 +93,19 @@ CPU와 GPU는 메모리가 다릅니다. 둘 사이를 잇는 것이 버퍼입�
 
 이것이 4시간 과정의 절반입니다. 컴퓨트 셰이더가 계산하고, 버퍼에 저장하고, 렌더링 셰이더가 읽는다. 데이터가 GPU를 떠나지 않는다. C#은 시작할 때 버퍼를 만들고 바인딩하는 일과, 매 프레임 파라미터를 넘기고 Dispatch를 부르는 일만 합니다. 세션 1의 데모는 이 구조로 64×64 격자의 색을 GPU에서 계산하고, 마우스를 클릭하면 그 자리에 물결이 퍼지게 합니다. CPU는 어디를 클릭했는지만 전달하고, 어떻게 보일지는 전부 GPU가 계산합니다.
 
+<figure class="note-fig">
+<img src="/img/notes/compute-shader/demo-colorgrid.jpg" alt="" loading="lazy">
+<figcaption>세션 1 데모. 64×64 격자의 색을 컴퓨트 셰이더가 매 프레임 계산하고, 렌더링 셰이더가 버퍼를 바로 읽어 그립니다. 클릭한 자리에서 물결이 퍼집니다.</figcaption>
+</figure>
+
 ## 숫자로 보는 차이
 
 세션 2는 같은 파도 공식을 CPU와 GPU에서 각각 돌려 나란히 놓습니다. 공식은 사인 파도보다 현실적인 게르스트너 파도이고, 여덟 개를 겹칩니다. 정점 하나에 사인, 코사인, 제곱근이 들어간 연산이 약 40번이니 256×256에서는 한 프레임에 260만 번입니다. 격자를 올리면서 시간을 재면 이렇게 나옵니다.
+
+<figure class="note-fig">
+<img src="/img/notes/compute-shader/demo-cpu-vs-gpu.jpg" alt="" loading="lazy">
+<figcaption>세션 2 데모. 왼쪽은 CPU가 for 문으로, 오른쪽은 GPU가 컴퓨트 셰이더로 같은 게르스트너 파도를 계산합니다. 위쪽에 두 방식의 프레임 시간이 나란히 뜹니다.</figcaption>
+</figure>
 
 | 격자 | 정점 수 | CPU 한 프레임 | GPU 한 프레임 |
 |---|---|---|---|
@@ -113,6 +123,11 @@ CPU는 정점 수에 비례해 늘어나고, GPU는 코어가 남는 동안 거�
 세션 3은 이 파이프라인을 처음부터 끝까지 직접 만듭니다. 파일은 세 개입니다. 메시를 만들고 버퍼를 관리하고 Dispatch를 부르는 C#, 정점을 밀어 올리는 컴퓨트 셰이더, 버퍼를 읽어 그리는 렌더링 셰이더. 버퍼도 세 개입니다. 원래 위치, 변위된 위치, 그리고 법선.
 
 법선이 따로 필요한 이유는 조명입니다. GPU가 정점을 움직였으니 면의 방향도 바뀌었는데, 메시에 저장된 법선은 평평할 때의 것입니다. 그래서 두 번째 커널이 이웃 정점의 차이로 법선을 다시 계산합니다. 변위 커널이 끝난 뒤에 법선 커널을 부르는 순서가 중요합니다.
+
+<figure class="note-fig">
+<img src="/img/notes/compute-shader/demo-sinewave.jpg" alt="" loading="lazy">
+<figcaption>세션 3 데모. 코드로 만든 128×128 메시를 GPU가 사인 파도로 밀어 올립니다. 진폭, 주파수, 속도 슬라이더가 C#을 거쳐 그대로 커널 파라미터가 됩니다.</figcaption>
+</figure>
 
 세미나에서 가장 많이 걸리는 함정은 메시 바운드입니다. Unity는 메시의 바운드로 카메라 밖 물체를 걸러 내는데, GPU가 정점을 움직여도 CPU 쪽 바운드는 그대로입니다. 그래서 카메라를 돌리면 바다가 사라집니다. 바운드를 충분히 크게 직접 잡아 줘야 합니다.
 
@@ -135,6 +150,11 @@ GPU 버퍼를 CPU로 읽어 오는 `AsyncGPUReadback`이 있지만, 결과가 �
 </figure>
 
 이 선택 기준은 부력 밖에서도 그대로 씁니다. 공식이 결정적이고 필요한 점이 적고 같은 프레임에 답이 필요하면 CPU에 공식을 복제합니다. 전체 결과가 필요하고 한두 프레임 늦어도 되면 읽어 옵니다. CPU에서 쓸 일이 없으면 GPU 안에서 끝냅니다.
+
+<figure class="note-fig">
+<img src="/img/notes/compute-shader/demo-buoyancy.jpg" alt="" loading="lazy">
+<figcaption>세션 4 데모. GPU가 계산한 게르스트너 바다 위에 배가 떠 있습니다. 배 아래 여섯 점의 높이는 CPU가 같은 공식으로 따로 구합니다.</figcaption>
+</figure>
 
 ## 정리
 
