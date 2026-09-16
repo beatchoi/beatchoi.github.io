@@ -311,3 +311,10 @@ nav.top a:hover, nav.top a.is-active { color: var(--blue); }
 .empty a { color: var(--blue); }
 .eyebrow.year { margin: 32px 0 6px; }
 .posts + .eyebrow.year { margin-top: 36px; }
+
+// ── Notes 글 요소
+.prose .note-fig { margin: 1.6em 0; }
+.prose .note-fig svg { width: 100%; height: auto; display: block; color: var(--ink); }
+.prose .note-fig figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.prose .note-meta { margin-top: 3em; padding-top: 1em; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--muted); }
+.prose .note-meta a { color: var(--blue); }
