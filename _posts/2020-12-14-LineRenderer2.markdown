@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 라인 렌더러로 글씨 그려보기"
 image: '/img/UnityBasic/LineRenderer2/05.gif'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/14/LineRenderer2/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/14/LineRenderer2/
 ---
 
 ## 라인 렌더러로 글씨 그리기

@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "Character Controller 컴포넌트의 활용"
 image: '/img/UnityBasic/CharacterController/06.gif'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2021/01/04/CharacterController/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2021/01/04/CharacterController/
 ---
 
 ## 캐릭터 컨트롤러의 활용 :: Character Controller

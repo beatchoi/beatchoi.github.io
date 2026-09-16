@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "안드로이드 디바이스로의 빌드"
 image: '/img/UnityBasic/AndroidBuild/06.gif'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2021/01/08/AndroidBuild/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2021/01/08/AndroidBuild/
 ---
 
 ## APK 파일의 생성

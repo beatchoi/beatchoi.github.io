@@ -4,9 +4,9 @@ title:  "정수 문자열 형변환"
 date:   2020-04-23 17:00:00
 categories: Unity3D Basics
 description: "유니티 정수 문자열 형변환"
-image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+image: ''
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/04/23/type-conversion/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/04/23/type-conversion/
 ---
 
 유니티에서 문자와 정수를 형변환을 해봅니다.

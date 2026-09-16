@@ -1,52 +1,22 @@
 ---
 layout: default
-show_sidebar: false
 ---
-
-<div class="columns is-multiline">
-
-  <div class="column is-12">
-    {{ page.content }}
-  </div>
-
-  {% assign sorted_products = site.products | sort:page.sort %}
-
-  {% for product in sorted_products %}
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="{{ product.url | prepend: site.baseurl }}">
-
-      <div class="card">
-
-        {% if product.image %}
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="{{ product.image }}" alt="{{ product.title }}" />
-          </figure>
-        </div>
-        {% endif %}
-        <div class="card-content">
-
-          <p class="title is-4">{{ product.title }}</h2>
-
-          {% if product.tags %}
-          {% assign tags = product.description | split: "," %}
-          <div class="tags is-centered">
-              {% for tag in tags %}
-              <div class="tag is-dark">{{ tag }}</div>
-              {% endfor %}
-          </div>
-          {% endif %}
-          <!-- 주석 내용 -->
-          <!--<p class="subtitle is-4">{{ product.tag }}</p>  -->
-          <!--<p class="title is-5 has-text-right">{{ product.price }}</p> -->
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-{% endfor %}
-</div>
-
+<section class="wrap page">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="sub">{{ page.subtitle }}</p>{% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+  {% assign sorted = site.products | sort: page.sort | reverse %}
+  <ul class="works">
+    {% for w in sorted %}
+    <li>
+      <a href="{{ w.url | relative_url }}">
+        {% if w.image %}<img src="{{ w.image | relative_url }}" alt="" loading="lazy">{% endif %}
+        <span class="w-t">{{ w.title }}</span>
+        <span class="w-s">{{ w.subtitle }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

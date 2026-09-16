@@ -4,7 +4,7 @@ title:  "유니티 터치 기초"
 date:   2022-04-18 13:50:07
 categories: Unity3D Basics
 description: "유니티에서 터치 입력을 받아봅니다"
-image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+image: ''
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2022/04/18/TouchBasic/
 ---

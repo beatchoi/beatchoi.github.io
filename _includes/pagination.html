@@ -1,23 +1,11 @@
-<nav class="pagination is-centered">
-    {% if paginator.previous_page %}
-    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="pagination-previous is-info">Previous</a>
-    {% else %}
-    <p class="pagination-previous" disabled>Previous</p>
-    {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="pagination-next is-info">Next</a>
-    {% else %}
-    <p class="pagination-next" disabled >Next</p>
-    {% endif %}
-    <ul class="pagination-list">
-        {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <li><a class="pagination-link is-current">{{ page }}</a></li>
-        {% elsif page == 1 %}
-        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-link">{{ page }}</a></li>
-        {% else %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination-link">{{ page }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
+{% if paginator.total_pages > 1 %}
+<nav class="pager" aria-label="페이지">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | relative_url }}">← 이전</a>
+  {% else %}<span></span>{% endif %}
+  <span class="pager-n">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | relative_url }}">다음 →</a>
+  {% else %}<span></span>{% endif %}
 </nav>
+{% endif %}

@@ -1,0 +1,89 @@
+---
+layout: default
+---
+<section class="sheet">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Unity · 실시간 3D · 1인 작업실</p>
+        <h1>{{ page.headline }}</h1>
+        <p class="lede">{{ page.lede }}</p>
+      </div>
+      <div class="tblock" aria-label="표제란">
+        <div><small>Studio</small>What's Life Studio</div>
+        <div><small>Since</small>2016</div>
+        <div><small>By</small>최윤석</div>
+        <div><small>Rev.</small>{{ site.time | date: "%Y-%m" }}</div>
+      </div>
+    </div>
+
+    <div class="doors" role="navigation" aria-label="방문 목적별 안내">
+      <a class="door" href="{{ '/training/' | relative_url }}"><span class="who">수업 참가자</span><h3>오늘 수업의 자료</h3><span class="go">교육 자료 →</span></a>
+      <a class="door" href="{{ '/about/' | relative_url }}"><span class="who">함께 일할 분</span><h3>어떤 사람인지, 연락처</h3><span class="go">소개 →</span></a>
+      <a class="door" href="{{ '/blog/' | relative_url }}"><span class="who">Unity를 배우는 분</span><h3>R&amp;D 노트와 튜토리얼 {{ site.posts | size }}편</h3><span class="go">글 →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="bench">
+  <div class="wrap">
+    <div class="sec-head"><h2>지금 작업대 위에</h2></div>
+    <div class="bench">
+      {% for b in site.data.bench %}
+      <article class="item">
+        <span class="tag">{{ b.tag }}</span>
+        <h3>{{ b.title }}</h3>
+        <p>{{ b.text }}</p>
+        {% if b.fig %}<span class="fig">{{ b.fig }}</span>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="writing">
+  <div class="wrap two">
+    <div>
+      <div class="sec-head"><h2>글</h2><a class="more" href="{{ '/blog/' | relative_url }}">전체 목록 →</a></div>
+      <ul class="posts">
+        {% for u in site.data.upcoming %}
+        <li class="next"><time>{{ u.status }}</time><span class="t">{{ u.title }}</span><span class="k">{{ u.kind }}</span></li>
+        {% endfor %}
+        {% for post in site.posts limit:5 %}{% include post-list-item.html %}{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="sec-head"><h2>튜토리얼</h2><a class="more" href="{{ '/tutorials/' | relative_url }}">2020 – 2025</a></div>
+      <ul class="series">
+        {% for s in site.data.series %}
+        <li><a href="{{ s.link | relative_url }}">{{ s.name }}<span>{{ s.count }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="training">
+  <div class="wrap">
+    <div class="sec-head"><h2>교육 자료</h2><a class="more" href="{{ '/training/' | relative_url }}">전체 →</a></div>
+    <ul class="courses">
+      {% for c in site.data.training limit:6 %}
+      <li><a class="n" href="{{ c.link | relative_url }}">{{ c.name }}</a><span class="len">{{ c.len }}</span><a class="res" href="{{ c.link | relative_url }}">자료 →</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap about">
+    <div class="about-text">
+      {{ content }}
+      <p class="mail"><a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="{{ '/about/' | relative_url }}">더 보기 →</a></p>
+    </div>
+    <ul class="tl" aria-label="이력">
+      {% for t in site.data.timeline %}
+      <li><time>{{ t.time }}</time><div>{{ t.name }}{% if t.role != "" %}<span>{{ t.role }}</span>{% endif %}</div></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

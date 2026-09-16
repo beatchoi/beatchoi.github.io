@@ -4,9 +4,9 @@ title:  "유니티 입력 기초"
 date:   2020-04-21 10:50:07
 categories: Unity3D Basics
 description: "유니티에서 키 입력을 받아봅니다"
-image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+image: ''
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/04/21/touch01/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/04/21/touch01/
 ---
 
 ## 마우스 및 터치 입력

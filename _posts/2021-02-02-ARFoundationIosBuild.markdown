@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "ARFoundation을 모바일 IOS 플랫폼으로 빌드하기"
 image: '/img/UnityVR/OculusQuest/01XRToolkit/ARFoundation.jpg'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2021/02/02/ARFoundationIosBuild/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2021/02/02/ARFoundationIosBuild/
 ---
 
 ## ARFoundation을 IOS 모바일 플랫폼으로 빌드합니다.  

@@ -4,9 +4,9 @@ title:  "Unity3D Project 생성하기"
 date:   2025-04-13 10:50:07
 categories: Unity3D Basics
 description: "Unity3D 프로젝트를 생성해 봅니다"
-image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+image: ''
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2025/04/13/createproject/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2025/04/13/createproject/
 ---
 
 유니티3D를 설치해봅니다.

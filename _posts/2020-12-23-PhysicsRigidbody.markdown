@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "Rigidbody를 활용한 이동"
 image: '/img/UnityBasic/PhysicsRigidbody/04.gif'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/23/PhysicsRigidbody/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/23/PhysicsRigidbody/
 ---
 
 ## 유니티에서의 물리엔진을 활용한 이동 해보기

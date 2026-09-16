@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 기본 이동 함수"
 image: '/img/UnityBasic/Move/05.gif'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/31/BasicMovement/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/31/BasicMovement/
 ---
 
 ## 유니티에서의 객체 이동 :: Translate

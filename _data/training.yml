@@ -1,0 +1,40 @@
+# 교육 자료 페이지 목록. 참가자용. 기업명 대신 프로그램 성격으로 표기.
+- name: Unity AI Factory Summer Training
+  len: 8일
+  link: /KITECH/
+- name: Unity Winter Training
+  len: 2일
+  link: /UnityTraining/
+- name: MCP for Unity
+  len: 2일
+  link: /KITECHMCP/
+- name: HDRP Visual Twin
+  len: 2일
+  link: /hdksoe/
+- name: Unity Enablement Session
+  len: 5세션
+  link: /shi/
+- name: Automotive UX/UI 디자이너를 위한 3D
+  len: 2일
+  link: /unityhmi/
+- name: GPU 컴퓨팅 세미나
+  len: 3세션
+  link: /smbseminar/
+- name: ECS · Burst · Jobs
+  len: 2일
+  link: /seobuk/
+- name: Unity & Digital Twin 특강
+  len: 1회
+  link: /digitaltwin/
+- name: Unity AI
+  len: 1회
+  link: /UnityAI/
+- name: Unity Optimization
+  len: 3일
+  link: /UnityOptimization/
+- name: 신입 개발자 Unity 입문 프로젝트
+  len: 1일
+  link: /nc/
+- name: Unite Seoul 2025 Hands On
+  len: 1회
+  link: /downloads/

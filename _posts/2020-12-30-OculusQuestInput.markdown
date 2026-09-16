@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "오큘러스 퀘스트2 - 컨트롤러 입력 값 설정하기"
 image: 'img/UnityVR/OculusQuest/01XRToolkit/OculusQuest.png'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/30/OculusQuestInput/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/30/OculusQuestInput/
 ---
 
 ## 오큘러스 퀘스트2 개발을 위한 컨트롤러 입력 값 설정하기

@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "GetKey를 이용한 키 입력"
 image: '/img/Unity.png'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/23/Input02/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/23/Input02/
 ---
 
 ## 유니티에서의 키 입력

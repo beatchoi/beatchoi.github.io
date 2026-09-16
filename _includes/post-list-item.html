@@ -1,0 +1,5 @@
+<li>
+  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+  <a class="t" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  <span class="k">{{ post.categories | join: " " | replace: "Unity3D ", "" | replace: "ARPage", "AR" | replace: "page-UsefulAssets", "Assets" }}</span>
+</li>

@@ -2,6 +2,7 @@
 title: 2026 Seobuk Training
 subtitle: Seobuk Unity Training
 layout: page
+permalink: /seobuk/
 show_sidebar: false
 ---
 

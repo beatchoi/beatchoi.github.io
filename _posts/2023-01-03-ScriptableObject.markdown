@@ -6,7 +6,7 @@ categories: Unity3D Fundamentals
 description: "유니티 스크립터블 오브젝트(Scriptable Objects)"
 image: '/img/Unity.png'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2023/01/03/ScriptableObject/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2023/01/03/ScriptableObject/
 ---
   
   {% include adsense.html %}    

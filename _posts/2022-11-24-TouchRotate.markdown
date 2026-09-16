@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 UI 터치 회전"
 image: '/img/Unity.png'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2022/11/24/TouchRotate/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2022/11/24/TouchRotate/
 ---
   
   {% include adsense.html %}    

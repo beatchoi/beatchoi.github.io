@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-
-{% if page.toc %}
-    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
-{% endif %}
-<div class="content">
+<article class="wrap page">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="sub">{{ page.subtitle }}</p>{% endif %}
+  </header>
+  <div class="prose">
     {{ content }}
-</div>
+  </div>
+</article>

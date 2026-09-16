@@ -1,20 +1,18 @@
-<footer class="footer">
-    <div class="container">
-        
-        {% if site.footer_menu %}
-        <div class="columns is-multiline">
-            {% for item in site.data[site.footer_menu] %}
-            <div class="column has-text-centered">
-                <div>
-                    <a href="{{ item.link | prepend: site.baseurl }}" class="link">{{ item.name }}</a>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        {% endif %}
-
-        <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
-        </div>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-row">
+      <span class="foot-brand">{{ site.title }}</span>
+      <ul class="foot-links">
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a href="https://github.com/beatchoi" rel="noopener">GitHub</a></li>
+        <li><a href="{{ '/portfolio/' | relative_url }}">포트폴리오</a></li>
+        <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+      </ul>
     </div>
+    <div class="legal">
+      <span>왓츠라이프 스튜디오 · 최윤석</span>
+      <span>사업자등록번호 246-22-00802</span>
+      <span>© 2016–{{ site.time | date: "%Y" }}</span>
+    </div>
+  </div>
 </footer>

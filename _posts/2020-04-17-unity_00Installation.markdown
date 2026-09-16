@@ -4,9 +4,9 @@ title:  "유니티3D 설치"
 date:   2025-03-11 10:50:07
 categories: Unity3D Basics
 description: "유니티3D를 설치하고 사용법을 익혀봅니다"
-image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+image: ''
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2025/03/11/unity_00Installation/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2025/03/11/unity_00Installation/
 ---
 
 유니티3D를 설치해봅니다.

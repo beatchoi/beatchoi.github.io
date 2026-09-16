@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 라인 렌더러 기초"
 image: '/img/UnityBasic/LineRenderer/08.PNG'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/11/LineRenderer/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/11/LineRenderer/
 ---
 
 ## 라인 렌더러 알아보기

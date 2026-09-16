@@ -4,7 +4,7 @@ title:  "유니티 터치 이동"
 date:   2022-04-19 15:50:07
 categories: Unity3D Basics
 description: "유니티에서 터치한 위치로 물체를 이동시켜봅니다"
-image: 'https://www.csrhymes.com//img/static-site-generator.jpg'
+image: ''
 published: true
 canonical_url: http://beatchoi.github.io/unity3d/basics/2022/04/19/TouchMove/
 ---

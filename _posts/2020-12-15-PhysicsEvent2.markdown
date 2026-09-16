@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "유니티 물리 이벤트 함수 Trigger"
 image: '/img/UnityBasic/PhysicsEvent/05.gif'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/15/PhysicsEvent2/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/15/PhysicsEvent2/
 ---
 
 ## 유니티에서의 물리엔진의 이벤트 함수 알아보기

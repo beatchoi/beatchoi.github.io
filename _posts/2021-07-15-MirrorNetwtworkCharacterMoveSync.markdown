@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "MirrorNetwork를 활용하여 캐릭터 이동 구현하기"
 image: '/img/UnityFundamental/MirrorNetwork/01.PNG'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/21/MirrorNetwork/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/21/MirrorNetwork/
 ---
   
   

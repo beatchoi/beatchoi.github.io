@@ -1,20 +1,21 @@
 ---
 layout: default
 ---
-
-<div class="content">
-
-    <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
-
+<article class="wrap post">
+  <header class="page-head">
+    <p class="eyebrow">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% if page.categories.size > 0 %} · {{ page.categories | join: " / " }}{% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="sub">{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="prose">
     {{ content }}
-</div>
-
-<div class="tags">
-    {% for tag in page.tags %}
-    <span class="tag is-primary">{{ tag }}</span>
-    {% endfor %}
-</div>
-
-{% if site.disqus.shortname %}
-  {% include disqus.html %}
-{% endif %}
+  </div>
+  <nav class="post-nav" aria-label="이전 · 다음 글">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><small>이전</small>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+    {% if page.next %}<a class="r" href="{{ page.next.url | relative_url }}"><small>다음</small>{{ page.next.title }}</a>{% else %}<span></span>{% endif %}
+  </nav>
+  {% if site.disqus.shortname %}{% include disqus.html %}{% endif %}
+</article>

@@ -6,7 +6,7 @@ categories: Unity3D Fundamentals
 description: "클라이언트를 수정하지 않고 이미지 콘텐츠를 변경하기"
 image: '/img/Unity.png'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2022/11/18/JSONLoadImage/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2022/11/18/JSONLoadImage/
 ---
 
 ## 개요

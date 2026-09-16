@@ -6,7 +6,7 @@ categories: Unity3D Basics
 description: "오큘러스 퀘스트2 - XR Toolkit 적용하기"
 image: 'img/UnityVR/OculusQuest/01XRToolkit/OculusQuest.png'
 published: true
-canonical_url: http://whtls.com/unity3d/basics/2020/12/11/OculusQuest01XRToolKit/
+canonical_url: https://beatchoi.github.io/unity3d/basics/2020/12/11/OculusQuest01XRToolKit/
 ---
 
 ## 오큘러스 퀘스트2 개발을 위한 XR Toolkit 시작하기

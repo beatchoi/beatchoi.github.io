@@ -1,25 +1,10 @@
-- name: About
-  link: /about/
-- name: Pages
-  link: /#
-  dropdown:
-    - name: Unity3d Basic
-      link: /page-1/
-    - name: Unity3D Fundamentals
-      link: /page-2/
-    - name: Unity3D Useful Assets
-      link: /page-UsefulAssets/
-    - name: Unity3D & VR
-      link: /GoogleVR/
-    - name: Unity3D + AR
-      link: /arpage/
-    - name: Downloads
-      link: /downloads/
-    - name: Sponsors Page
-      link: /sponsors/
-- name: Portfolio
-  link: /portfolio/
-#- name: Showcase
-#  link: /showcase/
-- name: Blog
+- name: 작업대
+  link: /#bench
+- name: 글
   link: /blog/
+- name: 튜토리얼
+  link: /tutorials/
+- name: 교육 자료
+  link: /training/
+- name: 소개
+  link: /about/
