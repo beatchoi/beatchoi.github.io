@@ -22,3 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { threshold: 0.6 });
   panels.forEach(function (p) { io.observe(p); });
 });
+
+// 첫 화면 영상은 천천히
+document.addEventListener('DOMContentLoaded', function () {
+  var v = document.querySelector('.hero-bg');
+  if (v) { try { v.playbackRate = 0.6; } catch (e) {} }
+});
