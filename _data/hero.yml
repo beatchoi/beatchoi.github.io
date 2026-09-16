@@ -1,0 +1,6 @@
+# 첫 화면 오른쪽 영상. 라이트 모드에서는 CSS로 색 반전.
+video: /img/home/hero-grid.mp4
+poster: /img/home/hero-grid.jpg
+credit: N. Narracci · Pexels
+credit_url: https://www.pexels.com/video/a-black-and-white-image-of-a-grid-27936889/
+license: Pexels License (무료, 출처 표기 불필요)

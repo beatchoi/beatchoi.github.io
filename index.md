@@ -2,7 +2,7 @@
 title: What's Life Studio
 layout: home
 hide_footer: true
-headline: 만들고, 배운 것을 남깁니다.
+headline: 만들고,<br>배운 것을 남깁니다.
 lede: Unity로 산업의 문제를 실시간 3D로 옮겨 보고, 그 과정에서 배운 것을 글과 수업 자료로 정리하는 작업실입니다.
 ---
 

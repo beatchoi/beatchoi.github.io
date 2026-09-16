@@ -6,6 +6,7 @@
   --rule: #D5D9D1; --rule-2: #BFC4BC; --blue: #2E52A8; --blue-ink: #23407F;
   --grid: rgba(46, 82, 168, .07);
   --code-bg: #ECEEE8; --code-ink: #2A2F2C;
+  --hero-filter: invert(1) contrast(1.05) brightness(.97);
   --display: "Instrument Sans", "IBM Plex Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
   --sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Pretendard", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -15,6 +16,7 @@
     --paper: #15181A; --paper-2: #1C2023; --ink: #E7E9E3; --ink-2: #B3B9B3; --muted: #7F8681;
     --rule: #2B3033; --rule-2: #3A4044; --blue: #8AA6EA; --blue-ink: #AFC3F2; --grid: rgba(138, 166, 234, .08);
     --code-bg: #1C2023; --code-ink: #D7DBD3;
+    --hero-filter: none;
   }
 }
 
@@ -246,3 +248,20 @@ nav.top a:hover, nav.top a.is-active { color: var(--blue); }
   .layout-home #about .about { padding-bottom: 0; }
   .layout-home #about .works-strip { margin-bottom: 40px; }
 }
+
+// ── 첫 화면 채우기
+.hero-grid { align-items: center; }
+.hero-side { display: flex; flex-direction: column; gap: 12px; width: min(40vw, 460px); }
+@media (max-width: 820px) { .hero-side { width: 100%; } }
+.hero-video { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; border: 1px solid var(--rule-2); background: var(--paper-2); filter: var(--hero-filter); }
+.tblock .span2 { grid-column: 1 / -1; }
+.tblock a:hover { color: var(--blue); }
+.status { margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-family: var(--mono); font-size: 12.5px; }
+.status span { color: var(--muted); margin-right: 4px; }
+.status a { padding: 2px 8px; border: 1px solid var(--rule-2); color: var(--ink-2); }
+.status a:hover { border-color: var(--blue); color: var(--blue); }
+.hint { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); width: 24px; height: 36px; display: none; z-index: 2; }
+.hint span { position: absolute; left: 50%; top: 0; width: 1px; height: 100%; background: var(--rule-2); transform-origin: top; animation: hint 2.2s ease-in-out infinite; }
+@keyframes hint { 0% { transform: scaleY(0); opacity: 0; } 30% { opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
+@media (min-width: 900px) and (min-height: 640px) { .hint { display: block; } }
+@media (prefers-reduced-motion: reduce) { .hint span { animation: none; } }
