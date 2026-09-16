@@ -142,7 +142,7 @@ nav.top a:hover, nav.top a.is-active { color: var(--blue); }
 .page-head { margin: 0; }
 .page-head h1 { font-family: var(--display); font-weight: 600; font-size: clamp(26px, 3.4vw, 36px); letter-spacing: -.02em; margin-top: 6px; }
 .page-head .sub { margin: 10px 0 0; color: var(--ink-2); font-size: 16px; }
-.prose { max-width: 72ch; }
+.prose { max-width: none; }
 .prose > * + * { margin-top: 0; }
 .prose p { margin: 0 0 1em; }
 .prose h2 { margin: 2.2em 0 .7em; padding-top: .6em; border-top: 1px solid var(--rule); }
