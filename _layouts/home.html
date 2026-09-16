@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="sheet">
+<section class="sheet snap" id="top">
   <div class="wrap">
     <div class="hero-grid">
       <div>
@@ -25,7 +25,7 @@ layout: default
   </div>
 </section>
 
-<section class="sec" id="bench">
+<section class="sec snap" id="bench">
   <div class="wrap">
     <div class="sec-head"><h2>지금 작업대 위에</h2></div>
     <div class="bench">
@@ -41,7 +41,7 @@ layout: default
   </div>
 </section>
 
-<section class="sec" id="writing">
+<section class="sec snap" id="writing">
   <div class="wrap two">
     <div>
       <div class="sec-head"><h2>글</h2><a class="more" href="{{ '/blog/' | relative_url }}">전체 목록 →</a></div>
@@ -63,7 +63,7 @@ layout: default
   </div>
 </section>
 
-<section class="sec" id="training">
+<section class="sec snap" id="training">
   <div class="wrap">
     <div class="sec-head"><h2>교육 자료</h2><a class="more" href="{{ '/training/' | relative_url }}">전체 →</a></div>
     <ul class="courses">
@@ -74,7 +74,7 @@ layout: default
   </div>
 </section>
 
-<section class="sec" id="about">
+<section class="sec snap" id="about">
   <div class="wrap about">
     <div class="about-text">
       {{ content }}
@@ -86,4 +86,9 @@ layout: default
       {% endfor %}
     </ul>
   </div>
+  {% include footer.html %}
 </section>
+
+<nav class="dots" aria-label="섹션 이동">
+  <a href="#top" title="인트로"></a><a href="#bench" title="작업대"></a><a href="#writing" title="글"></a><a href="#training" title="교육 자료"></a><a href="#about" title="소개"></a>
+</nav>

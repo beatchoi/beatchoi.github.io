@@ -20,7 +20,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-html, body { max-width: 100%; overflow-x: hidden; }
+html { overflow-x: hidden; }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
   font-family: var(--sans); font-size: 16px; line-height: 1.75;
@@ -196,3 +196,21 @@ nav.top a:hover, nav.top a.is-active { color: var(--blue); }
 .legal { margin-top: 24px; font-family: var(--mono); font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 20px; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
+
+// ── 홈 스크롤 스냅 (데스크톱·충분한 높이에서만)
+.dots { display: none; }
+@media (min-width: 900px) and (min-height: 640px) {
+  html:has(body.layout-home) { scroll-snap-type: y mandatory; scroll-padding-top: 65px; }
+  .layout-home .mast { position: sticky; top: 0; z-index: 20; background: var(--paper); }
+  .layout-home .snap { scroll-snap-align: start; scroll-snap-stop: always; min-height: calc(100vh - 65px); display: flex; flex-direction: column; justify-content: center; }
+  .layout-home .snap > .wrap { width: 100%; }
+  .layout-home .sheet.snap { padding-block: 0; }
+  .layout-home .sec.snap { padding-block: 48px; }
+  .layout-home #about.snap { justify-content: flex-end; padding-bottom: 0; }
+  .layout-home #about .about { padding-bottom: 48px; }
+  .layout-home #about .foot { margin-top: 0; width: 100%; }
+  .layout-home .sheet::after { background: linear-gradient(180deg, transparent 50%, var(--paper) 100%); }
+  .dots { display: flex; flex-direction: column; gap: 10px; position: fixed; right: 18px; top: 50%; transform: translateY(-50%); z-index: 15; }
+  .dots a { width: 7px; height: 7px; border-radius: 50%; border: 1px solid var(--rule-2); background: transparent; transition: background .2s, border-color .2s; }
+  .dots a:hover, .dots a.is-on { background: var(--blue); border-color: var(--blue); }
+}

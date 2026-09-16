@@ -7,7 +7,7 @@
   <main id="main">
     {{ content }}
   </main>
-  {% include footer.html %}
+  {% unless page.hide_footer %}{% include footer.html %}{% endunless %}
   <script src="{{ '/assets/js/app.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}" defer></script>
 </body>
 </html>
