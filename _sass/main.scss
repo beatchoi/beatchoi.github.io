@@ -305,3 +305,9 @@ nav.top a:hover, nav.top a.is-active { color: var(--blue); }
 .prose .media-grid video, .prose .media-grid img { width: 100%; display: block; background: var(--paper-2); aspect-ratio: 16 / 9; object-fit: cover; }
 .prose .media-grid figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
 .prose .media-grid.one video { aspect-ratio: auto; }
+
+// ── 글/튜토리얼 분리
+.empty { margin-top: 24px; color: var(--ink-2); font-size: 15px; }
+.empty a { color: var(--blue); }
+.eyebrow.year { margin: 32px 0 6px; }
+.posts + .eyebrow.year { margin-top: 36px; }

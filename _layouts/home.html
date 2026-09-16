@@ -17,7 +17,7 @@ layout: default
       <nav class="paths" aria-label="방문 목적별 안내">
         <a href="{{ '/training/' | relative_url }}"><small>수업 참가자</small>교육 자료 →</a>
         <a href="{{ '/about/' | relative_url }}"><small>함께 일할 분</small>소개 →</a>
-        <a href="{{ '/blog/' | relative_url }}"><small>Unity를 배우는 분</small>글 {{ site.posts | size }}편 →</a>
+        <a href="{{ '/blog/' | relative_url }}"><small>Unity를 배우는 분</small>글과 튜토리얼 →</a>
       </nav>
     </div>
   </div>
@@ -31,7 +31,7 @@ layout: default
         {% for u in site.data.upcoming %}
         <li class="next"><time>{{ u.status }}</time><span class="t">{{ u.title }}</span><span class="k">{{ u.kind }}</span></li>
         {% endfor %}
-        {% for post in site.posts limit:5 %}{% include post-list-item.html %}{% endfor %}
+        {% assign notes = site.categories.Notes | default: empty %}{% for post in notes limit:5 %}{% include post-list-item.html %}{% endfor %}
       </ul>
     </div>
     <div>

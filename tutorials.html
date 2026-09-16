@@ -1,0 +1,27 @@
+---
+title: 튜토리얼
+subtitle: 2020년부터 쌓인 단계별 글. 주제별 목차로 들어가거나, 아래 전체 목록에서 고릅니다.
+layout: page
+permalink: /tutorials/
+---
+
+<ul class="courses">
+{% for s in site.data.series %}
+<li><a class="n" href="{{ s.link | relative_url }}">{{ s.name }}</a><span class="len">{{ s.count }}편</span><a class="res" href="{{ s.link | relative_url }}">목차 →</a></li>
+{% endfor %}
+</ul>
+
+{% assign tut_count = 0 %}{% for post in site.posts %}{% unless post.categories contains 'Notes' %}{% assign tut_count = tut_count | plus: 1 %}{% endunless %}{% endfor %}
+<div class="sec-head" style="margin-top:56px"><h2>전체 목록</h2><span class="more">{{ tut_count }}편</span></div>
+{% assign current = "" %}{% assign opened = false %}
+{% for post in site.posts %}{% unless post.categories contains 'Notes' %}
+{% assign y = post.date | date: "%Y" %}
+{% if y != current %}
+{% if opened %}</ul>{% endif %}
+<p class="eyebrow year">{{ y }}</p>
+<ul class="posts">
+{% assign current = y %}{% assign opened = true %}
+{% endif %}
+{% include post-list-item.html %}
+{% endunless %}{% endfor %}
+{% if opened %}</ul>{% endif %}

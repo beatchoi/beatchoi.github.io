@@ -8,7 +8,7 @@
       {% for item in site.data.navigation %}
       {% assign active = false %}
       {% if item.link == page.url %}{% assign active = true %}{% endif %}
-      {% if item.link == '/blog/' and page.layout == 'post' %}{% assign active = true %}{% endif %}
+      {% if page.layout == 'post' %}{% if page.categories contains 'Notes' %}{% if item.link == '/blog/' %}{% assign active = true %}{% endif %}{% else %}{% if item.link == '/tutorials/' %}{% assign active = true %}{% endif %}{% endif %}{% endif %}
       <a href="{{ item.link | relative_url }}"{% if active %} class="is-active"{% endif %}>{{ item.name }}</a>
       {% endfor %}
     </nav>

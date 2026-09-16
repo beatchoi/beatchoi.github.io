@@ -11,16 +11,12 @@ permalink: pretty
 future: true
 lang: ko
 
-paginate: 20
-paginate_path: "/blog/page:num"
-
 # Disqus 댓글은 사용하지 않습니다. 다시 켜려면 shortname 을 채우세요.
 disqus:
   shortname:
 
 plugins:
   - jekyll-sitemap
-  - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
 
