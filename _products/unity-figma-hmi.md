@@ -4,7 +4,7 @@ subtitle: Unity Technologies Korea
 description: Automotive HMI,Figma REST API,UGUI,UI Toolkit,Editor Extension,Unity AI,Designer Workflow
 layout: product
 group: unity
-image: ''
+image: /img/portfolio/unity/hmi-hero.jpg
 price: 207
 features:
     - label: 기간 - 2026.03 – 2026.07 (Unity 2년차)
@@ -29,6 +29,12 @@ Figma 디자인을 Unity UI 프리팹으로 자동 변환하는 에디터 확장
 
 이 도구 위에 10시간짜리 디자이너 코스를 설계했습니다. 코딩 경험이 없는 디자이너가 자기 Figma 파일을 Unity로 가져오고, Unity AI에게 말로 인터랙션을 설명해 동작하는 HMI 프로토타입을 만드는 과정입니다.  
 목표는 디자이너를 개발자로 만드는 것이 아니라, 개발자 없이 프로토타입을 만들 수 있게 하는 것입니다.
+
+##### 화면
+<div class="media-grid">
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/hmi-convert-poster.jpg"><source src="/img/portfolio/unity/hmi-convert.mp4" type="video/mp4"></video><figcaption>Figma 프레임을 그대로 가져온 클러스터 화면. 게이지, 텍스트, 기어 버튼이 UGUI 컴포넌트로 살아 있습니다.</figcaption></figure>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/hmi-unityai-poster.jpg"><source src="/img/portfolio/unity/hmi-unityai.mp4" type="video/mp4"></video><figcaption>변환한 HMI를 주행 씬에 붙이고 Unity AI로 인터랙션을 더한 프로토타입.</figcaption></figure>
+</div>
 
 ##### 사업적 결과
 - 자동차 전장 기업과 완성차 기업의 디자인·HMI 팀에 코스와 워크플로를 전달했고, 반응이 좋았습니다.  

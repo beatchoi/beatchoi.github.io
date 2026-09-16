@@ -4,7 +4,7 @@ subtitle: Unity Technologies Korea
 description: Curriculum Design,Digital Twin,HDRP,ROS2,ECS,Inference Engine,GPU Computing,Automotive HMI
 layout: product
 group: unity
-image: ''
+image: /img/portfolio/unity/training-hero.jpg
 price: 206
 features:
     - label: 기간 - 2025.02 – 현재 (Unity 1~2년차)
@@ -32,6 +32,12 @@ features:
 - 게임사 신입 개발자 입문 프로젝트, 대학 특강, Unite Seoul 핸즈온  
 
 교재 프로젝트 자체가 자산이 되었습니다. 창고와 공장 씬, 해양 파도 컴퓨트 셰이더와 GPU 인스턴싱 샘플, 센서 네트워크 패키지, 로봇 URDF와 ROS 도커 환경, 추론 엔진용 학습 모델이 코스에서 코스로 이어졌습니다.
+
+##### 화면
+<div class="media-grid">
+<figure><img src="/img/portfolio/unity/training-hero.jpg" alt="" loading="lazy"><figcaption>교재 프로젝트로 쓰는 로봇 팔 에셋.</figcaption></figure>
+<figure><img src="/img/portfolio/unity/training-robot.jpg" alt="" loading="lazy"><figcaption>로봇 디지털 트윈 세션에서 다루는 산업용 로봇 팔 모델.</figcaption></figure>
+</div>
 
 ##### 사업적 결과
 - 한국에서 Unity 교육 사업은 KITECH 계약을 컨설팅 형태에서 교육 형태로 전환한 데서 시작했습니다. 완전 맞춤형 과정에 대한 신뢰가 계약 갱신으로 이어졌습니다.  

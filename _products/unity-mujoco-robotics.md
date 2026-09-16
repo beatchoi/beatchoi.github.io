@@ -4,7 +4,7 @@ subtitle: Unity Technologies Korea
 description: MuJoCo,Robotics,URDF/MJCF,ML-Agents,Reinforcement Learning,Contact-rich Manipulation
 layout: product
 group: unity
-image: ''
+image: /img/portfolio/unity/mujoco-hero.jpg
 price: 209
 features:
     - label: 기간 - 2026.05 – 2026.07 (Unity 2년차)
@@ -31,6 +31,12 @@ features:
 
 이 두 프로젝트를 바탕으로 14시간짜리 중급·고급 코스를 설계했습니다. 플러그인과 네이티브 라이브러리 설치, MJCF 작성과 임포트, 액추에이터와 센서 구성, PhysX와 MuJoCo의 트레이드오프, 외부 Python 프로세스와 물리 상태 동기화까지를 한 줄로 이었습니다.  
 범위도 분명히 정했습니다. 비전과 합성 데이터는 추론 엔진 코스로, 강화학습 알고리즘은 ML-Agents 코스로, 산업 통신은 별도 코스로 보냅니다.
+
+##### 화면
+<div class="media-grid">
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/mujoco-grasp-poster.jpg"><source src="/img/portfolio/unity/mujoco-grasp.mp4" type="video/mp4"></video><figcaption>OpenArm과 ORCA 손이 큐브를 집어 옮기는 장면. 물리는 MuJoCo, 렌더링은 Unity.</figcaption></figure>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/mlagent-training-poster.jpg"><source src="/img/portfolio/unity/mlagent-training.mp4" type="video/mp4"></video><figcaption>ML-Agents 학습 중인 로봇 팔. 움직임은 스크립트가 아니라 정책의 출력입니다.</figcaption></figure>
+</div>
 
 ##### 사업적 결과
 - 로보틱스 고객과의 대화에서 "Unity로 물리 정확도가 나오느냐"는 질문에 제안서가 아니라 돌아가는 데모로 답할 수 있게 되었습니다.  

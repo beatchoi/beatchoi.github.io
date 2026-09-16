@@ -296,3 +296,12 @@ nav.top a:hover, nav.top a.is-active { color: var(--blue); }
 .works-text .w-f { font-size: 14px; color: var(--ink-2); }
 .works-text img { margin-bottom: 6px; }
 .facts li { list-style: none; }
+
+// ── 포트폴리오 미디어
+.prose .media-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 24px; margin: 8px 0 1.6em; }
+.prose .media-grid.one { grid-template-columns: 1fr; }
+@media (max-width: 640px) { .prose .media-grid { grid-template-columns: 1fr; } }
+.prose .media-grid figure { margin: 0; }
+.prose .media-grid video, .prose .media-grid img { width: 100%; display: block; background: var(--paper-2); aspect-ratio: 16 / 9; object-fit: cover; }
+.prose .media-grid figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+.prose .media-grid.one video { aspect-ratio: auto; }

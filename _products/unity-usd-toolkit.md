@@ -4,7 +4,7 @@ subtitle: Unity Technologies Korea
 description: OpenUSD,Runtime Import/Export,UPM Package,C++ Native,P/Invoke,Windows/macOS/Linux
 layout: product
 group: unity
-image: ''
+image: /img/portfolio/unity/usd-hero.jpg
 price: 210
 features:
     - label: 기간 - 2026.06 – 2026.09 (Unity 2년차)
@@ -30,6 +30,11 @@ Pixar OpenUSD를 감싼 C++ 네이티브 래퍼를 만들고 Unity C#에서 P/In
 - 릴리스: 2026년 6월부터 9월까지 0.1.0에서 0.7.2까지 13개 버전, 버전마다 체인지로그와 네이티브 ABI 버전 관리
 
 씬 계층 보존, 서브메시 머티리얼, PBR 텍스처 같은 핵심 기능은 고객 요구 목록에 없었지만 실제 콘텐츠를 만나면 없이는 버티지 못한다고 판단해 먼저 넣었습니다. 고객 리뷰에서 나온 요청은 그 위에 얹었습니다.
+
+##### 화면
+<div class="media-grid one">
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/usd-import-poster.jpg"><source src="/img/portfolio/unity/usd-import.mp4" type="video/mp4"></video><figcaption>빌드된 앱 안의 런타임 USD 임포트 브라우저. 산업 설비 모델(정점 175만 개)을 열어 계층과 머티리얼을 복원합니다.</figcaption></figure>
+</div>
 
 ##### 사업적 결과
 - 하나의 패키지가 두 고객 인게이지먼트를 받쳤습니다. 전자 대기업 교육에서 시작한 요구를 KITECH 교육에서 범용 툴킷으로 넓혔고, 두 곳 모두에 같은 패키지를 전달했습니다.  

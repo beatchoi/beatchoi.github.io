@@ -4,7 +4,7 @@ subtitle: Unity Technologies Korea
 description: LiDAR,Synthetic Data,Domain Randomization,ROS2,Compute Shader,YOLO,Perception
 layout: product
 group: unity
-image: ''
+image: /img/portfolio/unity/lidar-hero.jpg
 price: 208
 features:
     - label: 기간 - 2025.10 – 2026.06 (Unity 1~2년차)
@@ -29,6 +29,14 @@ Unity에는 렌더링, 물리, ROS 연동이 이미 있습니다. 빠진 것은 
 - 에디터 워크플로: 캡처 전에 레이어·재질·태그를 검사하는 씬 검증 마법사, 로봇을 씬에 자율 주행시켜 프레임·포즈·3D 박스를 쓰는 데이터셋 레코더, 재현 가능한 내보내기 프로파일  
 
 같은 흐름의 카메라 쪽으로 도메인 랜덤라이저를 만들어 합성 이미지를 뽑고, 그 결과로 헬멧 착용 검출 모델(YOLO)을 학습시켜 Unity 추론 엔진에서 돌리는 파이프라인까지 이었습니다. 이 마지막 단계는 KITECH 8일 과정의 마지막 날 교재가 되었습니다.
+
+##### 화면
+<div class="media-grid">
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/lidar-semantic-poster.jpg"><source src="/img/portfolio/unity/lidar-semantic.mp4" type="video/mp4"></video><figcaption>점마다 시맨틱 라벨이 붙은 건설 현장 스캔. 재질 프리셋으로 반사율과 드롭아웃을 정합니다.</figcaption></figure>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/lidar-weather-poster.jpg"><source src="/img/portfolio/unity/lidar-weather.mp4" type="video/mp4"></video><figcaption>비·안개 후방산란과 센서 노이즈를 켠 상태의 스캔.</figcaption></figure>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/lidar-mapping-poster.jpg"><source src="/img/portfolio/unity/lidar-mapping.mp4" type="video/mp4"></video><figcaption>실내 씬을 주행하며 쌓은 3D 점군 지도와 점유 격자.</figcaption></figure>
+<figure><video autoplay muted loop playsinline preload="metadata" poster="/img/portfolio/unity/lidar-autodrive-poster.jpg"><source src="/img/portfolio/unity/lidar-autodrive.mp4" type="video/mp4"></video><figcaption>창고 씬에서 경로를 계획해 자율 주행하며 데이터를 모으는 로봇.</figcaption></figure>
+</div>
 
 ##### 사업적 결과
 - 중공업 고객을 위해 만든 가상 센서 모듈이 이후 전자 대기업의 1일 교육에 그대로 재투입되었습니다. 하나의 자산이 두 고객에게 쓰인 첫 사례입니다.  
