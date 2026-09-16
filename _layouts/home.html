@@ -31,6 +31,11 @@ layout: default
     <div class="bench">
       {% for b in site.data.bench %}
       <article class="item">
+        {% if b.video and b.video != "" %}
+        <video class="item-media" autoplay muted loop playsinline preload="metadata" poster="{{ b.image | relative_url }}"><source src="{{ b.video | relative_url }}" type="video/mp4"></video>
+        {% elsif b.image and b.image != "" %}
+        <img class="item-media" src="{{ b.image | relative_url }}" alt="" loading="lazy">
+        {% endif %}
         <span class="tag">{{ b.tag }}</span>
         <h3>{{ b.title }}</h3>
         <p>{{ b.text }}</p>
@@ -54,9 +59,12 @@ layout: default
     </div>
     <div>
       <div class="sec-head"><h2>튜토리얼</h2><a class="more" href="{{ '/tutorials/' | relative_url }}">2020 – 2025</a></div>
-      <ul class="series">
+      <ul class="series-cards">
         {% for s in site.data.series %}
-        <li><a href="{{ s.link | relative_url }}">{{ s.name }}<span>{{ s.count }}</span></a></li>
+        <li><a href="{{ s.link | relative_url }}">
+          {% if s.image %}<img src="{{ s.image | relative_url }}" alt="" loading="lazy">{% endif %}
+          <span class="sc-n">{{ s.name }}</span><span class="sc-c">{{ s.count }}편</span>
+        </a></li>
         {% endfor %}
       </ul>
     </div>
@@ -66,23 +74,40 @@ layout: default
 <section class="sec snap" id="training">
   <div class="wrap">
     <div class="sec-head"><h2>교육 자료</h2><a class="more" href="{{ '/training/' | relative_url }}">전체 →</a></div>
-    <ul class="courses">
-      {% for c in site.data.training limit:6 %}
-      <li><a class="n" href="{{ c.link | relative_url }}">{{ c.name }}</a><span class="len">{{ c.len }}</span><a class="res" href="{{ c.link | relative_url }}">자료 →</a></li>
+    <ul class="course-grid">
+      {% for c in site.data.training limit:9 %}
+      <li><a href="{{ c.link | relative_url }}">
+        <span class="cg-len">{{ c.len }}</span>
+        <span class="cg-n">{{ c.name }}</span>
+        <span class="cg-d">{{ c.desc }}</span>
+        <span class="cg-go">자료 →</span>
+      </a></li>
       {% endfor %}
     </ul>
   </div>
 </section>
 
 <section class="sec snap" id="about">
-  <div class="wrap about">
-    <div class="about-text">
-      {{ content }}
-      <p class="mail"><a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="{{ '/about/' | relative_url }}">더 보기 →</a></p>
+  <div class="wrap">
+    <div class="about">
+      <div class="about-text">
+        <img class="profile" src="{{ '/img/profile.jpg' | relative_url }}" alt="최윤석" width="72" height="72">
+        {{ content }}
+        <p class="mail"><a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="{{ '/about/' | relative_url }}">더 보기 →</a></p>
+      </div>
+      <ul class="tl" aria-label="이력">
+        {% for t in site.data.timeline %}
+        <li><time>{{ t.time }}</time><div>{{ t.name }}{% if t.role != "" %}<span>{{ t.role }}</span>{% endif %}</div></li>
+        {% endfor %}
+      </ul>
     </div>
-    <ul class="tl" aria-label="이력">
-      {% for t in site.data.timeline %}
-      <li><time>{{ t.time }}</time><div>{{ t.name }}{% if t.role != "" %}<span>{{ t.role }}</span>{% endif %}</div></li>
+    <div class="works-head"><span class="eyebrow">2016년부터 만든 것들</span><a class="more" href="{{ '/portfolio/' | relative_url }}">포트폴리오 →</a></div>
+    <ul class="works-strip">
+      {% for w in site.data.works %}
+      <li><a href="{{ w.link | relative_url }}">
+        <video autoplay muted loop playsinline preload="metadata" poster="{{ w.poster | relative_url }}"><source src="{{ w.video | relative_url }}" type="video/mp4"></video>
+        <span class="ws-n">{{ w.name }}</span><span class="ws-y">{{ w.year }}</span>
+      </a></li>
       {% endfor %}
     </ul>
   </div>

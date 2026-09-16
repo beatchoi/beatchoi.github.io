@@ -1,0 +1,31 @@
+# 소개 패널의 "만든 것들" 스트립. 포트폴리오 항목으로 링크.
+- name: 헬로브이알 시리즈
+  year: 2016
+  video: /img/home/work-hellovr.mp4
+  poster: /img/home/work-hellovr.jpg
+  link: /products/HelloVRSeries/
+- name: 순천만 색칠공부
+  year: 2018
+  video: /img/home/work-arcolor.mp4
+  poster: /img/home/work-arcolor.jpg
+  link: /products/arcoloring/
+- name: 튤립을 지켜라
+  year: 2019
+  video: /img/home/work-vrshoot.mp4
+  poster: /img/home/work-vrshoot.jpg
+  link: /products/VRShooting/
+- name: 소나기 마을 AR
+  year: 2020
+  video: /img/home/work-sonagi.mp4
+  poster: /img/home/work-sonagi.jpg
+  link: /products/sonagivillage/
+- name: 봉앤줄 퍼포먼스 AR
+  year: 2021
+  video: /img/home/work-bongnjoule.mp4
+  poster: /img/home/work-bongnjoule.jpg
+  link: /products/bongnjoule/
+- name: DMZ 웹 AR
+  year: 2022
+  video: /img/home/work-dmz.mp4
+  poster: /img/home/work-dmz.jpg
+  link: /products/dmzwebar/

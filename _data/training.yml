@@ -1,40 +1,53 @@
 # 교육 자료 페이지 목록. 참가자용. 기업명 대신 프로그램 성격으로 표기.
 - name: Unity AI Factory Summer Training
+  desc: 디지털 트윈 기초, HDRP, 산업 데이터 통신, ROS2 로봇, ECS 팩토리, 추론 엔진
   len: 8일
   link: /KITECH/
 - name: Unity Winter Training
+  desc: 센서 네트워크와 HDRP 실감 환경, AI 기반 최적화
   len: 2일
   link: /UnityTraining/
 - name: MCP for Unity
+  desc: 에이전트가 에디터를 조작하는 워크플로. 창고와 로봇 팔 프로젝트
   len: 2일
   link: /KITECHMCP/
 - name: HDRP Visual Twin
+  desc: HDRP 기반 실감형 환경을 검토 도구로 쓰는 과정
   len: 2일
   link: /hdksoe/
 - name: Unity Enablement Session
+  desc: 에디터 확장과 데이터 관리, GPU 컴퓨팅, 대규모 렌더링, Android XR
   len: 5세션
   link: /shi/
 - name: Automotive UX/UI 디자이너를 위한 3D
+  desc: Figma 화면이 차 안의 HMI가 되기까지
   len: 2일
   link: /unityhmi/
 - name: GPU 컴퓨팅 세미나
+  desc: Compute Shader, GPU Instancing, Asset Transformer Toolkit
   len: 3세션
   link: /smbseminar/
 - name: ECS · Burst · Jobs
+  desc: 뱀서류 게임으로 배우는 데이터 지향 설계
   len: 2일
   link: /seobuk/
 - name: Unity & Digital Twin 특강
+  desc: 공장과 창고 씬으로 보는 디지털 트윈 개요
   len: 1회
   link: /digitaltwin/
 - name: Unity AI
+  desc: Unity AI 어시스턴트와 생성 도구
   len: 1회
   link: /UnityAI/
 - name: Unity Optimization
+  desc: 프로파일링, 메모리, HLSL 기초
   len: 3일
   link: /UnityOptimization/
 - name: 신입 개발자 Unity 입문 프로젝트
+  desc: 설치와 프로젝트 생성에서 첫 빌드까지
   len: 1일
   link: /nc/
 - name: Unite Seoul 2025 Hands On
+  desc: 2D 플랫포머 핸즈온 자료
   len: 1회
   link: /downloads/

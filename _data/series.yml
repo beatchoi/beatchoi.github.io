@@ -1,21 +1,26 @@
 # 튜토리얼 아카이브 묶음. link 는 기존 목차 페이지.
 - name: Unity3D Basics
+  image: /img/home/series-basics.jpg
   desc: 설치, 입력, 물리, 캐릭터, C# 기법과 자료구조
   link: /page-1/
   count: 45
 - name: Unity3D Fundamentals
+  image: /img/home/series-fund.jpg
   desc: DOTS, PlayFab, Addressable, 화면 캡처, 캐릭터 구성
   link: /page-2/
   count: 18
 - name: AR Foundation · Lightship
+  image: /img/home/series-ar.jpg
   desc: 지면 인식, 이미지 트래킹, QR, 오클루전, VPS
   link: /arpage/
   count: 15
 - name: VR · Oculus · VIVE
+  image: /img/home/series-vr.jpg
   desc: XR Interaction Toolkit, SteamVR, GoogleVR
   link: /GoogleVR/
   count: 6
 - name: Useful Assets
+  image: /img/home/series-assets.jpg
   desc: Stylized Water, Bezier Path Creator
   link: /page-UsefulAssets/
   count: 2
