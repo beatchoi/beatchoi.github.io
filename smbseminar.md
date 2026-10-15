@@ -14,6 +14,12 @@ show_sidebar: false
 #### GPU Instancing - 대규모 렌더링 최적화 
 [세션 자료](https://drive.google.com/file/d/1F9LzuNkUiThjK7d_bWv_0oEaI-RnoMr4/view?usp=sharing)  
 [코스 슬라이드](https://docs.google.com/presentation/d/1RoH2KHtuNzeEqviIilnHfFBb50n4LQ6ZsuDT_x_5gg8/edit?usp=sharing)  
+
+#### Unity 기반 AI/ML 실전 Agentic Workflow
+[코스 슬라이드](https://docs.google.com/presentation/d/116lWB1z0Hsezmj7-HSe-d_XakNX87Iy-1MO7BXq6lsw/edit?usp=sharing)  
+
+#### Sentis로 모바일 기반에서 동작하는 런타임 에이전트 구축하기
+[코스 슬라이드](https://docs.google.com/presentation/d/1Of4fXDOYUf2IDl7VtZ8IptiQXfH82wpBte_pfa8tqTc/edit?usp=sharing)  
   
 #### Unity AI - Asset Transformer Toolkit를 활용한 최적화
 [세션 자료](https://drive.google.com/file/d/1uZuEgMDhD9LiSigwy46dZsdqQ9_7F8-m/view?usp=sharing)  
