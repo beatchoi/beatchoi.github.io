@@ -1,36 +1,14 @@
 ---
 title: LG & Unity AI Seminar
 subtitle: LG와 Unity가 함께하는 AI 세미나 자료 페이지입니다.
-layout: page
-permalink: /lg-unity-ai-seminar/
+permalink: "/lg-unity-ai-seminar/"
+layout: locked
+sitemap: false
+noindex: true
+lock:
+  v: 1
+  iter: 600000
+  salt: KydkgfmyRXSM09dviRG+AA==
+  iv: z+xG/Qabdm34XWjY
+  ct: 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
 ---
-
-<div class="cobrand" role="img" aria-label="LG × Unity AI Seminar">
-  <p class="cb-top"><span>AI Seminar</span><span>2026</span></p>
-  <div class="cb-mark"><span>LG</span><span class="cb-x">×</span><span>UNITY</span></div>
-  <p class="cb-sub">실시간 3D와 AI로 산업의 문제를 다룹니다</p>
-  <p class="cb-foot"><span>Unity Technologies Korea</span><span>beatchoi.github.io</span></p>
-</div>
-
-#### Session 1. Unity × AI: AI를 활용한 Unity 개발 워크플로우
-Unity 개발 과정에서 AI를 활용할 수 있는 주요 영역과 실제 적용 사례를 소개합니다. AI 에이전트를 활용하여 공장 씬을 구성하고, 배치 및 검증 작업을 자동화하는 과정을 라이브 데모로 보여드릴 예정입니다.
-
-[슬라이드](https://drive.google.com/file/d/1QWZy-RgS9vw0XolFqxFeZFM4AVPbX4oo/view?usp=sharing)  
-
-#### Session 2. Unity 로보틱스: 로봇 시뮬레이션 및 HMI 연동
-6축 로봇(SO-101)을 Unity로 가져와 구동하는 과정과 Figma 기반의 로봇 조작 화면(HMI)을 Unity에 연동하는 과정을 소개합니다. NVIDIA Isaac Sim 등 외부 시뮬레이션 도구와 Unity의 연계 활용 방안도 함께 다룰 예정입니다.
-
-[프로젝트 자료](https://drive.google.com/drive/folders/1ZY6hdCshRdtDisGzK-dZJwwU487IRjEY?usp=sharing)  
-[슬라이드](https://drive.google.com/file/d/1CQRy8gfaHkr_GWzWVgz7oJ_A45xJAPkv/view?usp=sharing)  
-
-#### Session 3. XR 고급 기술: 대규모 씬 렌더링 및 성능 최적화
-대규모 물류·창고 환경을 XR 기기에서 안정적으로 구현하기 위한 최적화 기술을 소개합니다. GPU Instancing 및 Compute Shader를 활용한 렌더링 방식과 성능 차이를 실제 프로파일러 데이터를 통해 비교할 예정입니다.
-
-[프로젝트 자료](https://drive.google.com/drive/folders/1pvRvaSDOX9VD2lpvtu-aviPXpb4wfhbp?usp=sharing)  
-[슬라이드](https://drive.google.com/file/d/1MXB9N83H0FmgdqxNpFEQJcFIBdITo9zL/view?usp=sharing)  
-
-#### Session 4. Unity Inference Engine(구 Sentis): Unity 환경에서의 AI 모델 활용
-학습된 AI 모델을 Unity 런타임에서 직접 실행하는 방법을 소개합니다. 가상 공장 환경에서의 AI 비전 검사와 카메라 입력을 기반으로 로봇을 제어하는 데모를 통해 디지털 트윈 및 로보틱스 분야의 활용 가능성을 살펴볼 예정입니다.
-
-[프로젝트 자료](https://drive.google.com/drive/folders/18e7WDPSXwU1mkzv47YK4Kz37yTbzEe4B?usp=sharing)  
-[슬라이드](https://drive.google.com/file/d/1bnXzk0KAyQwekfpNq-rd5YhWsYe4Giht/view?usp=sharing)  

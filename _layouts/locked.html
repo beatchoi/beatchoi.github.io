@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{%- comment -%}
+  잠금 페이지. 본문은 page.lock 에 AES-256-GCM 암호문으로만 들어 있고,
+  비밀번호를 넣으면 브라우저 안에서 복호화해 .prose 에 넣습니다. 원본은 _private/, 생성은 bin/lock.
+{%- endcomment -%}
+<div class="sheet sheet-sm"><div class="wrap"><header class="page-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="sub">{{ page.subtitle }}</p>{% endif %}
+  </header></div></div>
+<article class="wrap page">
+  <form class="lock" id="lock-form" autocomplete="off">
+    <p class="lock-k">비공개 자료</p>
+    <p class="lock-t">참가자에게 안내된 비밀번호를 입력해 주세요.</p>
+    <div class="lock-row">
+      <input id="lock-pw" type="password" aria-label="비밀번호" placeholder="비밀번호" required autofocus>
+      <button type="submit">열기</button>
+    </div>
+    <p class="lock-msg" id="lock-msg" role="status" aria-live="polite"></p>
+  </form>
+  <div class="prose" id="lock-body" hidden></div>
+</article>
+<script type="application/json" id="lock-data">{{ page.lock | jsonify }}</script>
+<script>
+(function () {
+  var data = JSON.parse(document.getElementById('lock-data').textContent);
+  var form = document.getElementById('lock-form'), input = document.getElementById('lock-pw');
+  var msg = document.getElementById('lock-msg'), body = document.getElementById('lock-body');
+  var KEY = 'lock:' + location.pathname;
+  function b64(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
+
+  async function open(pw) {
+    var enc = new TextEncoder();
+    var base = await crypto.subtle.importKey('raw', enc.encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key = await crypto.subtle.deriveKey(
+      { name: 'PBKDF2', salt: b64(data.salt), iterations: data.iter, hash: 'SHA-256' },
+      base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    var pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(data.iv) }, key, b64(data.ct));
+    body.innerHTML = new TextDecoder().decode(pt);
+    body.hidden = false; form.hidden = true;
+    // 새로고침할 때 다시 묻지 않도록, 이 탭에서만 기억
+    try { sessionStorage.setItem(KEY, pw); } catch (e) {}
+  }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    msg.textContent = '확인하는 중…';
+    try { await open(input.value); msg.textContent = ''; }
+    catch (err) { msg.textContent = '비밀번호가 맞지 않습니다.'; input.select(); }
+  });
+
+  if (!window.crypto || !crypto.subtle) { msg.textContent = '이 브라우저에서는 열 수 없습니다. 최신 브라우저를 사용해 주세요.'; return; }
+  var saved = null;
+  try { saved = sessionStorage.getItem(KEY); } catch (e) {}
+  if (saved) open(saved).catch(function () { try { sessionStorage.removeItem(KEY); } catch (e) {} });
+})();
+</script>

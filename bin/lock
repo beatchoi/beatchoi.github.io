@@ -1,0 +1,67 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+#
+# 잠금 페이지 만들기
+#
+#   bundle exec ruby bin/lock <이름>
+#
+# _private/<이름>.md (평문 원본, git에 올리지 않음)를 HTML로 바꾼 뒤
+# 비밀번호로 AES-256-GCM 암호화해서 <이름>.md (암호문만 들어 있음)로 씁니다.
+# 브라우저에서는 _layouts/locked.html 이 비밀번호를 받아 복호화합니다.
+#
+# 비밀번호는 터미널에서 두 번 입력받습니다(화면에 보이지 않음).
+# 자동화용으로 환경변수 PAGE_PASSWORD 도 받습니다.
+
+require "openssl"
+require "base64"
+require "yaml"
+require "io/console"
+require "kramdown"
+require "kramdown-parser-gfm"
+
+ITERATIONS = 600_000 # PBKDF2-SHA256. 브라우저 쪽과 같은 값을 페이지에 함께 기록
+
+name = ARGV[0] or abort "사용법: bundle exec ruby bin/lock <이름>   (_private/<이름>.md 를 암호화)"
+name = File.basename(name, ".md")
+root = File.expand_path("..", __dir__)
+src  = File.join(root, "_private", "#{name}.md")
+out  = File.join(root, "#{name}.md")
+File.exist?(src) or abort "원본이 없습니다: _private/#{name}.md"
+
+raw = File.read(src)
+m = raw.match(/\A---\s*\n(.*?)\n---\s*\n(.*)\z/m) or abort "원본 맨 위에 --- 로 감싼 front matter 가 필요합니다."
+front = YAML.safe_load(m[1]) || {}
+body  = m[2]
+
+html = Kramdown::Document.new(body, input: "GFM", hard_wrap: false, auto_ids: false).to_html
+
+password = ENV["PAGE_PASSWORD"]
+if password.nil? || password.empty?
+  $stdin.tty? or abort "비밀번호를 입력받을 터미널이 없습니다. PAGE_PASSWORD 환경변수를 쓰세요."
+  print "비밀번호: ";       password = $stdin.noecho(&:gets).to_s.chomp; puts
+  print "비밀번호 확인: "; again    = $stdin.noecho(&:gets).to_s.chomp; puts
+  password == again or abort "두 비밀번호가 다릅니다."
+end
+password.length >= 10 or abort "비밀번호는 10자 이상으로 해 주세요. (짧으면 무차별 대입에 약합니다)"
+
+salt = OpenSSL::Random.random_bytes(16)
+iv   = OpenSSL::Random.random_bytes(12)
+key  = OpenSSL::KDF.pbkdf2_hmac(password, salt: salt, iterations: ITERATIONS, length: 32, hash: "sha256")
+c = OpenSSL::Cipher.new("aes-256-gcm").encrypt
+c.key = key
+c.iv  = iv
+ct = c.update(html) + c.final + c.auth_tag # WebCrypto 는 암호문 뒤에 태그가 붙은 형태를 받음
+
+b64 = ->(s) { Base64.strict_encode64(s) }
+page = {
+  "title"    => front["title"],
+  "subtitle" => front["subtitle"],
+  "permalink"=> front["permalink"] || "/#{name}/",
+  "layout"   => "locked",
+  "sitemap"  => false,
+  "noindex"  => true,
+  "lock"     => { "v" => 1, "iter" => ITERATIONS, "salt" => b64.(salt), "iv" => b64.(iv), "ct" => b64.(ct) },
+}.compact
+
+File.write(out, "#{page.to_yaml}---\n")
+puts "잠금 페이지를 썼습니다: #{name}.md  (주소 #{page['permalink']})"
