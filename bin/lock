@@ -9,8 +9,11 @@
 # 비밀번호로 AES-256-GCM 암호화해서 <이름>.md (암호문만 들어 있음)로 씁니다.
 # 브라우저에서는 _layouts/locked.html 이 비밀번호를 받아 복호화합니다.
 #
-# 비밀번호는 터미널에서 두 번 입력받습니다(화면에 보이지 않음).
-# 자동화용으로 환경변수 PAGE_PASSWORD 도 받습니다.
+# 비밀번호는 아래 순서로 찾습니다. (_private/ 는 git 에 올라가지 않음)
+#   1. 환경변수 PAGE_PASSWORD
+#   2. _private/<이름>.password   (이 페이지만 다른 비밀번호를 쓸 때)
+#   3. _private/.password         (모든 페이지 공통 기본 비밀번호)
+#   4. 없으면 터미널에서 두 번 입력(화면에 보이지 않음)
 
 require "openssl"
 require "base64"
@@ -36,6 +39,12 @@ body  = m[2]
 html = Kramdown::Document.new(body, input: "GFM", hard_wrap: false, auto_ids: false).to_html
 
 password = ENV["PAGE_PASSWORD"]
+[File.join(root, "_private", "#{name}.password"), File.join(root, "_private", ".password")].each do |f|
+  break unless password.nil? || password.empty?
+  next unless File.exist?(f)
+  password = File.read(f).strip
+  puts "비밀번호 파일 사용: #{f.sub("#{root}/", "")}"
+end
 if password.nil? || password.empty?
   $stdin.tty? or abort "비밀번호를 입력받을 터미널이 없습니다. PAGE_PASSWORD 환경변수를 쓰세요."
   print "비밀번호: ";       password = $stdin.noecho(&:gets).to_s.chomp; puts
